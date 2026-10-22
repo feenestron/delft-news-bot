@@ -37,6 +37,19 @@ def post_link(channel_id: str, message_id: int) -> str:
     return f"сообщение #{message_id}"
 
 
+def publish_hint(description: str) -> str:
+    d = description.lower()
+    if "can't send messages to the bot" in d:
+        return ("\n\nВ секрете CHANNEL_ID указан бот, а не канал. Укажите @имя публичного канала "
+                "или числовой id вида -100… (бот присылает его, когда его добавляют в канал).")
+    if "chat not found" in d:
+        return ("\n\nКанал не найден: проверьте CHANNEL_ID (@имя канала или -100…) и что бот "
+                "добавлен в канал.")
+    if "not enough rights" in d or "need administrator" in d or "not a member" in d:
+        return "\n\nСделайте бота администратором канала с правом публикации сообщений."
+    return ""
+
+
 class Moderator:
     def __init__(self, cfg: Config, tg: Telegram, state: dict, save: Callable[[], None],
                  now: Callable[[], datetime]):
@@ -87,8 +100,9 @@ class Moderator:
             msg = self.tg.send(self.cfg.channel_id, p["post"])
         except TelegramError as exc:
             p["status"] = "pending"
+            p["last_error"] = f"{self.now().isoformat()} {exc.description}"
             self.save()
-            return f"⚠️ Не удалось опубликовать: {exc.description}"
+            return f"⚠️ Не удалось опубликовать: {exc.description}" + publish_hint(exc.description)
         p.update(status="published", decided=self.now().isoformat(),
                  channel_message_id=msg["message_id"])
         stamp = self.now().isoformat()
@@ -156,6 +170,10 @@ class Moderator:
                 self.tg.send_text(admin, reply)
             return
 
+        if "my_chat_member" in update:
+            self._on_added(update["my_chat_member"])
+            return
+
         message = update.get("message")
         if not message:
             return
@@ -184,6 +202,26 @@ class Moderator:
             answer = "Чтобы поправить черновик, ответьте (Reply) именно на него. /help — подсказка."
         if answer:
             self.tg.send_text(admin, answer)
+
+    def _on_added(self, upd: dict) -> None:
+        """Бота добавили в канал/группу (или убрали) — сообщаем модератору id этого чата."""
+        admin = self.cfg.admin_chat_id
+        chat = upd.get("chat", {})
+        status = (upd.get("new_chat_member") or {}).get("status")
+        if admin is None or chat.get("type") == "private":
+            return
+        kind = {"channel": "канал", "group": "группу", "supergroup": "группу"}.get(chat.get("type"), "чат")
+        title = chat.get("title", "")
+        if status in ("administrator", "member"):
+            ident = f"@{chat['username']}" if chat.get("username") else str(chat.get("id"))
+            text = (f"Меня добавили в {kind} «{title}» ({'администратором' if status == 'administrator' else 'участником'}).\n"
+                    f"Чтобы публиковать туда, укажите в секрете CHANNEL_ID: {ident}\n"
+                    f"(числовой id: {chat.get('id')})")
+            if status != "administrator":
+                text += "\n\n⚠️ Для публикации сделайте меня администратором с правом отправки сообщений."
+        else:
+            text = f"Меня убрали из «{title}» (статус: {status})."
+        self.tg.send_text(admin, text)
 
     def poll(self, until: datetime | None = None) -> None:
         """Обрабатывает входящие обновления. С until — ждёт, пока черновик не решён или не наступит until."""

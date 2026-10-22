@@ -416,6 +416,27 @@ class ModerationTests(unittest.TestCase):
         self.mod.poll()
         self.assertEqual(self.st["pending"]["status"], "pending")
 
+    def test_added_to_channel_reports_id(self):
+        self.tg.updates = [{"update_id": 1, "my_chat_member": {
+            "chat": {"id": -1001234, "type": "channel", "title": "Delft test"},
+            "new_chat_member": {"status": "administrator"}}}]
+        self.mod.poll()
+        self.assertIn("-1001234", self.tg.sent[-1]["post"]["text"])
+
+    def test_publish_error_hint(self):
+        from bot.telegram import TelegramError
+
+        def boom(chat_id, post, reply_markup=None, reply_to=None):
+            if chat_id == "@delft_test":
+                raise TelegramError("Forbidden: the bot can't send messages to the bot", 403)
+            return FakeTelegram.send(self.tg, chat_id, post, reply_markup, reply_to)
+
+        self.tg.send = boom
+        self.tg.updates = [self.cb(1, "pub:d1")]
+        self.mod.poll()
+        self.assertEqual(self.st["pending"]["status"], "pending")
+        self.assertIn("CHANNEL_ID указан бот", self.tg.sent[-1]["post"]["text"])
+
     def test_setup_mode_reports_chat_id(self):
         c = cfg()
         c.admin_chat_id = None

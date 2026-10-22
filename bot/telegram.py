@@ -73,4 +73,4 @@ class Telegram:
 
     def get_updates(self, offset: int, timeout: int) -> list[dict]:
         return self.call("getUpdates", offset=offset, timeout=timeout,
-                         allowed_updates=["message", "callback_query"])
+                         allowed_updates=["message", "callback_query", "my_chat_member"])
