@@ -67,6 +67,7 @@ jobs:
           git config user.name "delft-news-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A -- state 2>/dev/null || true
+          git add -A -- preview 2>/dev/null || true
           if git diff --cached --quiet; then echo "state unchanged"; exit 0; fi
           git commit -m "state: digest $(date -u +%F)"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done

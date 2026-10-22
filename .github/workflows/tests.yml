@@ -2,7 +2,7 @@ name: Tests
 
 on:
   push:
-    paths-ignore: ["state/**"]
+    paths-ignore: ["state/**", "preview/**"]
   pull_request:
 
 jobs:

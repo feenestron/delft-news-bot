@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 import secrets
 import sys
 from datetime import datetime, timedelta
@@ -41,6 +42,24 @@ def service_note(collected, used_llm: bool, llm_error: str | None, now: datetime
         lines.append("\n⚠️ Перевод не выполнен" + (f" ({llm_error})" if llm_error else
                      " (нет ANTHROPIC_API_KEY)") + " — заголовки в оригинале.")
     return "\n".join(lines)
+
+
+def dry_run_report(collected, note: str, text: str, now: datetime) -> str:
+    """Отчёт пробного прогона: служебная заметка, сам пост и все кандидаты."""
+    lines = [f"# Пробный прогон {now:%Y-%m-%d %H:%M}", "", "## Служебное сообщение", "",
+             "```", note, "```", "", "## Пост (HTML для Telegram)", "", "```html", text, "```", "",
+             f"## Кандидаты: новости ({len(collected.news)})", ""]
+    for n in collected.news:
+        when = n.published.strftime("%d.%m %H:%M") if n.published else "без даты"
+        lines.append(f"- [{n.source}] {when} — [{n.title}]({n.url})")
+    lines += ["", f"## Кандидаты: события ({len(collected.events)})", ""]
+    for e in collected.events:
+        dates = e.start.isoformat() if e.start else "?"
+        if e.end and e.end != e.start:
+            dates += f"..{e.end.isoformat()}"
+        extra = " · ".join(x for x in (e.time_text, e.venue, e.price) if x)
+        lines.append(f"- [{e.source}] {dates} — [{e.title}]({e.url})" + (f" ({extra})" if extra else ""))
+    return "\n".join(lines) + "\n"
 
 
 def cmd_digest(cfg: Config, args) -> int:
@@ -80,8 +99,11 @@ def cmd_digest(cfg: Config, args) -> int:
     text = render(digest)
 
     if args.dry_run:
-        print(service_note(collected, used_llm, llm_error, now))
-        print("\n" + "-" * 40 + "\n" + text)
+        report = dry_run_report(collected, service_note(collected, used_llm, llm_error, now), text, now)
+        print(report)
+        os.makedirs("preview", exist_ok=True)
+        with open("preview/last_dry_run.md", "w", encoding="utf-8") as f:
+            f.write(report)
         return 0
 
     tg = Telegram(cfg.bot_token)
