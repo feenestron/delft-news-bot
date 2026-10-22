@@ -261,22 +261,29 @@
    "decided": "2026-10-22T12:21:48.428274+02:00",
    "id": "20261022-8b08",
    "status": "rejected"
+  },
+  {
+   "channel_message_id": null,
+   "created": "2026-10-22T12:21:49.590159+02:00",
+   "decided": null,
+   "id": "20261022-f7bc",
+   "status": "superseded"
   }
  ],
  "last_draft_date": "2026-10-22",
  "pending": {
-  "created": "2026-10-22T12:21:49.590159+02:00",
+  "created": "2026-10-22T12:34:57.075911+02:00",
   "event_urls": [
    "https://uitdelft.com/event/willem-van-oranje-de-musical-2/",
-   "https://uitdelft.com/event/cultuurbarbaren-zwermende-drones-tu-delft/",
-   "https://uitdelft.com/event/der-held-vom-bahnhof-friedrichstrase-deutsches-kino-english-subtitles/",
+   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles",
    "https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/",
+   "https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/",
    "https://uitdelft.com/event/status-quo-forever-cultuurlab-live/",
    "https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/",
    "https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/",
    "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek"
   ],
-  "id": "20261022-f7bc",
+  "id": "20261022-b45f",
   "news_urls": [
    "https://www.delft.nl/storing-reisdocumenten-verholpen",
    "https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van",
@@ -302,10 +309,10 @@
   "note": "📝 Черновик дайджеста на 22.10. Проверьте и нажмите кнопку под ним.\nЧтобы поправить — ответьте на черновик исправленным текстом.\n\nНайдено: Omroep Delft (новости): 10, Delft op Zondag (новости): 0, Gemeente Delft (новости): 4, Delta (TU Delft) (новости): 6, Uit Delft (афиша): 47, Delft op Zondag (афиша): 0, In Delft (афиша): 4.",
   "post": {
    "parse_mode": "HTML",
-   "text": "<b>🗞 Делфт · четверг, 22 октября</b>\n\n<b>📰 События</b>\n• <b>Крупный пожар в центре Делфта на Kerkstraat: эвакуированы жители десяти домов</b> — Пожар у кафе De Ruif и Microtheater начался около 6:15 утра в четверг. Пожар под контролем, пострадавших нет, причина неизвестна. Около 20 человек приняли в кафе на Markt. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/grote-brand-in-delftse-binnenstad/\">Omroep Delft</a>\n• <b>Пожар полностью уничтожил кафе De Ruif в центре Делфта</b> — Владелец Jan Teun van der Veen смог лишь заглянуть внутрь через окно. Ущерб Microtheater, по предварительным данным, невелик; причина пожара пока неизвестна. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/\">Omroep Delft</a>\n• <b>Из-за уязвимости в PHP отключались сайты гемеенте Delft, TU и EBS</b> — Не работали сайты гемеенте, автобусной компании EBS, а также DigiD и MijnOverheid. Обновление для устранения проблемы вышло, сбой с оформлением проездных документов в гемеенте уже устранён. <a href=\"https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/\">Omroep Delft</a>\n• <b>Забастовка водителей автобусов 22 октября отменена</b> — Работодатели дали важные обещания, профсоюзы приостановили все акции на две недели. Если соглашения не будет, акции могут возобновиться с 4 ноября. <a href=\"https://www.omroepdelft.nl/delft/donderdag-opnieuw-staking-streekvervoer-minder-busritten-in-delft/\">Omroep Delft</a>\n• <b>У Kruithuisweg к студентке TU приставал мужчина: задержан подросток</b> — Полиция 17 октября задержала несовершеннолетнего после серии инцидентов, о которых сообщали и другие женщины. В районе усилено патрулирование. <a href=\"https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/\">Omroep Delft</a>\n• <b>Краудфандинг на покупку Microtheater почти собрал нужную сумму</b> — Из цели в €139 000 не хватило около €3 000. Театральная группа De Flits надеется закрыть разницу за счёт облигаций. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/crowdfunding-microtheater-delft-afgerond-daar-zijn-we-ongelooflijk-trots-op/\">Omroep Delft</a>\n\n<b>📅 Анонсы</b>\n• <b>чт 22 окт, 19:30</b> · Мюзикл Willem van Oranje (Prinsentheater, €45). Музыкальный спектакль в Prinsentheater; также идёт в пятницу 23 окт. <a href=\"https://uitdelft.com/event/willem-van-oranje-de-musical-2/\">→</a>\n• <b>чт 22 окт, 10:00–15:00</b> · Cultuurbarbaren: рой дронов от TU Delft (Open Delft, бесплатно). Демонстрация того, как дроны общаются и совместно решают задачи, как стая птиц. <a href=\"https://uitdelft.com/event/cultuurbarbaren-zwermende-drones-tu-delft/\">→</a>\n• <b>чт 22 окт, 20:35</b> · Deutsches Kino: Der Held vom Bahnhof Friedrichstraße (Filmhuis Lumen, €12,70). Трагикомедия режиссёра Wolfgang Becker («Гуд бай, Ленин!») с английскими субтитрами. <a href=\"https://uitdelft.com/event/der-held-vom-bahnhof-friedrichstrase-deutsches-kino-english-subtitles/\">→</a>\n• <b>пт 23 окт, 20:15</b> · 50 Years of Rumours: концерт Cosmic Carnival и афтепати Boogie Night (Theater De Veste, Asvest 1) <a href=\"https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/\">→</a>\n• <b>сб 24 окт, 21:00</b> · Status Quo Forever: концерт в Cultuurlab (Cultuurlab, Brabantse Turfmarkt 9). Живой концерт трибьют-группы Status Quo Forever. <a href=\"https://uitdelft.com/event/status-quo-forever-cultuurlab-live/\">→</a>\n• <b>сб 24 окт</b> · Tim Burton’s Universe by Mystery Ensemble (Nieuwe Kerk, Markt 80) <a href=\"https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/\">→</a>\n• <b>сб 24 окт</b> · The Rose Show: финал 3-го сезона комедийного конкурса (The Social Hub Delft). Интерактивный вечер стендап-комедии. <a href=\"https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/\">→</a>"
+   "text": "<b>🗞 Делфт · четверг, 22 октября</b>\n\n<b>📰 События</b>\n• <b>Крупный пожар в центре Делфта: эвакуированы не менее десяти домов</b> — Утром в четверг около 06:15 загорелись кафе De Ruif и Microtheater на Kerkstraat. Пожар взят под контроль, пострадавших нет, причина неизвестна. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/grote-brand-in-delftse-binnenstad/\">Omroep Delft</a>\n• <b>Кафе De Ruif после пожара на Kerkstraat полностью разрушено</b> — Владелец смог лишь заглянуть внутрь через окно. Ущерб в соседнем Microtheater, похоже, невелик; около 20 жильцов эвакуировали и приютили в кафе De Engel. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/\">Omroep Delft</a>\n• <b>Забастовка автобусов в четверг отменена</b> — Профсоюзы приостановили все акции на две недели после уступок работодателей. Если соглашения не будет, акции могут возобновиться с 4 ноября. <a href=\"https://www.omroepdelft.nl/delft/donderdag-opnieuw-staking-streekvervoer-minder-busritten-in-delft/\">Omroep Delft</a>\n• <b>Сбой с выдачей проездных документов устранён</b> — Из-за сбоя временно нельзя было заказать или получить паспорта и другие документы. Теперь проблема решена. <a href=\"https://www.delft.nl/storing-reisdocumenten-verholpen\">Gemeente Delft</a>\n• <b>Из-за уязвимости PHP не работали сайты gemeente Delft, TU и DigiD</b> — Были недоступны сайты гемеенте Delft, автобусной компании EBS, а также DigiD и MijnOverheid. Обновление для PHP уже выпущено. <a href=\"https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/\">Omroep Delft</a>\n• <b>Возле Kruithuisweg к студенткам TU приставали: задержан подросток</b> — 17 октября полиция задержала несовершеннолетнего после серии инцидентов. Рядом усилено патрулирование, его причастность проверяют. <a href=\"https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/\">Omroep Delft</a>\n• <b>Краудфандинг на покупку Microtheater почти достиг цели</b> — Не хватило около 3000 из 139 000 евро. Театральная группа De Flits надеется покрыть разницу за счёт облигаций. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/crowdfunding-microtheater-delft-afgerond-daar-zijn-we-ongelooflijk-trots-op/\">Omroep Delft</a>\n\n<b>📅 Анонсы</b>\n• <b>чт 22 окт, 19:30</b> · Мюзикл «Willem van Oranje» (Prinsentheater, €45) <a href=\"https://uitdelft.com/event/willem-van-oranje-de-musical-2/\">→</a>\n• <b>чт 22 окт, 20:35</b> · Deutsches Kino: «Der Held vom Bahnhof Friedrichstraße» (Filmhuis Lumen, €12,70). Трагикомедия режиссёра «Good Bye, Lenin!» Вольфганга Беккера. <a href=\"https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles\">→</a>\n• <b>пт 23 окт, 20:15</b> · 50 Years of Rumours: The Cosmic Carnival Concert и Boogie Night Afterparty (Theater De Veste, Asvest 1). Концерт к 50-летию Rumours с афтерпати. <a href=\"https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/\">→</a>\n• <b>пт 23 окт, 20:00</b> · RUIS: Ambient Noise Lounge (De Koornbeurs). Вечер от Delft-ского молодёжного объединения OJV. <a href=\"https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/\">→</a>\n• <b>сб 24 окт, 21:00</b> · Status Quo Forever — концерт в Cultuurlab (Cultuurlab, Brabantse Turfmarkt 9) <a href=\"https://uitdelft.com/event/status-quo-forever-cultuurlab-live/\">→</a>\n• <b>сб 24 окт</b> · Tim Burton’s Universe by Mystery Ensemble (Nieuwe Kerk, Markt 80). Музыка из вселенной Тима Бёртона в Nieuwe Kerk. <a href=\"https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/\">→</a>\n• <b>сб 24 окт</b> · Финал стендап-конкурса The Rose Show Comedy Competition (сезон 3) (The Social Hub Delft) <a href=\"https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/\">→</a>"
   },
   "preview_ids": [
-   16
+   20
   ],
   "status": "pending"
  },
@@ -343,6 +350,6 @@
   "https://www.delftopzondag.nl/nieuws/sport/111380/de-derde-helft-bij-full-speed-": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/sport/111383/niels-van-der-steuijt-streeft-naar-nieuwe-finale-in-ahoy": "2026-10-22T12:10:58.149191+02:00"
  },
- "tg_offset": 232833760,
+ "tg_offset": 232833766,
  "version": 1
 }
