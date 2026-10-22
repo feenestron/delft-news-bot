@@ -260,6 +260,41 @@ class DigestTests(unittest.TestCase):
         self.assertIn("Concert &lt;live&gt;", html)
         self.assertIn("сб 24 окт, 20:15", html)
 
+    def test_claude_falls_back_to_auto_tool_choice(self):
+        from unittest import mock
+        from bot import digest as dg
+
+        class R:
+            def __init__(self, code, data):
+                self.status_code, self._data = code, data
+                self.text = __import__("json").dumps(data)
+
+            def json(self):
+                return self._data
+
+        err = R(400, {"type": "error", "error": {"type": "invalid_request_error", "message":
+                      'tool_choice: type "tool" and "any" are not supported with thinking'}})
+        ok = R(200, {"content": [{"type": "thinking", "thinking": "..."},
+                                 {"type": "tool_use", "name": "submit_digest",
+                                  "input": {"news": [{"id": "n0", "title": "Пожар", "summary": "x"}],
+                                            "events": []}}]})
+        calls = []
+
+        def fake_post(url, json=None, **kw):
+            calls.append(json["tool_choice"]["type"])
+            return err if len(calls) == 1 else ok
+
+        with mock.patch.object(dg.requests, "post", side_effect=fake_post):
+            d = dg.llm_digest(self.collected(), NOW, TODAY + timedelta(days=3), "k", "m", 8, 8)
+        self.assertEqual(calls, ["tool", "auto"])
+        self.assertEqual(d.news[0].title, "Пожар")
+
+    def test_extract_result_from_text_json(self):
+        from bot.digest import extract_result
+        content = [{"type": "text", "text": 'Вот дайджест:\n```json\n{"news": [], "events": []}\n```'}]
+        self.assertEqual(extract_result(content), {"news": [], "events": []})
+        self.assertIsNone(extract_result([{"type": "text", "text": "нет данных"}]))
+
     def test_render_limit(self):
         from bot.digest import Digest, NewsLine
         d = Digest(TODAY, [NewsLine("Заголовок " * 10, "Текст " * 60, "https://x/" + str(i), "Src")

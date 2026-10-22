@@ -163,28 +163,57 @@ def llm_digest(c: Collected, now: datetime, horizon_end: date, api_key: str, mod
                max_news: int, max_events: int) -> Digest:
     body = {
         "model": model,
-        "max_tokens": 4000,
+        "max_tokens": 16000,  # с запасом: часть токенов может уйти на «размышление» модели
         "system": SYSTEM_PROMPT,
         "tools": [TOOL],
+        # Принудительный вызов инструмента ("tool") поддерживается не всеми моделями
+        # (например, с включённым размышлением) — при отказе API повторяем с "auto".
         "tool_choice": {"type": "tool", "name": "submit_digest"},
-        "messages": [{"role": "user", "content": build_input(c, now, horizon_end, max_news, max_events)}],
+        "messages": [{"role": "user", "content": build_input(c, now, horizon_end, max_news, max_events)
+                      + "\n\nОбязательно верни результат вызовом инструмента submit_digest."}],
     }
-    headers = {"x-api-key": api_key, "anthropic-version": "2023-06-01",
-               "content-type": "application/json"}
-    for attempt in range(4):
-        r = requests.post(ANTHROPIC_URL, json=body, headers=headers, timeout=180)
-        if r.status_code in (429, 500, 502, 503, 529) and attempt < 3:
-            log.warning("Claude API %s, повтор", r.status_code)
-            time.sleep(10 * (attempt + 1))
-            continue
-        if r.status_code != 200:
-            raise RuntimeError(f"Claude API {r.status_code}: {r.text[:200]}")
-        break
-    content = r.json().get("content", [])
-    result = next((b.get("input") for b in content if b.get("type") == "tool_use"), None)
-    if not isinstance(result, dict):
+    content = _call_claude(body, api_key)
+    result = extract_result(content)
+    if result is None:
         raise RuntimeError("Модель не вернула дайджест")
     return digest_from_llm(result, c, now.date(), max_news, max_events)
+
+
+def _call_claude(body: dict, api_key: str) -> list[dict]:
+    headers = {"x-api-key": api_key, "anthropic-version": "2023-06-01",
+               "content-type": "application/json"}
+    attempt = 0
+    while True:
+        r = requests.post(ANTHROPIC_URL, json=body, headers=headers, timeout=300)
+        if r.status_code == 400 and "tool_choice" in r.text and body.get("tool_choice", {}).get("type") != "auto":
+            log.info("Модель не поддерживает принудительный tool_choice — повтор с auto")
+            body = {**body, "tool_choice": {"type": "auto"}}
+            continue
+        if r.status_code in (429, 500, 502, 503, 529) and attempt < 3:
+            attempt += 1
+            log.warning("Claude API %s, повтор", r.status_code)
+            time.sleep(10 * attempt)
+            continue
+        if r.status_code != 200:
+            raise RuntimeError(f"Claude API {r.status_code}: {r.text[:300]}")
+        return r.json().get("content", [])
+
+
+def extract_result(content: list[dict]) -> dict | None:
+    """Дайджест из ответа: вызов инструмента или, на крайний случай, JSON в тексте."""
+    for block in content:
+        if block.get("type") == "tool_use" and isinstance(block.get("input"), dict):
+            return block["input"]
+    text = "".join(b.get("text", "") for b in content if b.get("type") == "text")
+    start, end = text.find("{"), text.rfind("}")
+    if start != -1 and end > start:
+        try:
+            data = json.loads(text[start:end + 1])
+        except json.JSONDecodeError:
+            return None
+        if isinstance(data, dict) and ("news" in data or "events" in data):
+            return data
+    return None
 
 
 def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_events: int) -> Digest:
