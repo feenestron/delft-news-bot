@@ -1,4 +1,4 @@
-# Пробный прогон 2026-10-22 11:37
+# Пробный прогон 2026-10-22 11:39
 
 ## Служебное сообщение
 
@@ -6,7 +6,7 @@
 📝 Черновик дайджеста на 22.10. Проверьте и нажмите кнопку под ним.
 Чтобы поправить — ответьте на черновик исправленным текстом.
 
-Найдено: Omroep Delft (новости): 10, Delft op Zondag (новости): 0, Gemeente Delft (новости): 3, Delta (TU Delft) (новости): 6, Uit Delft (афиша): 47, Delft op Zondag (афиша): 0, In Delft (афиша): 6.
+Найдено: Omroep Delft (новости): 10, Delft op Zondag (новости): 0, Gemeente Delft (новости): 3, Delta (TU Delft) (новости): 6, Uit Delft (афиша): 47, Delft op Zondag (афиша): 0, In Delft (афиша): 4.
 Первый запуск для: Delft op Zondag, Gemeente Delft — взяты только материалы с явной свежей датой.
 
 ⚠️ Перевод не выполнен (нет ANTHROPIC_API_KEY) — заголовки в оригинале.
@@ -29,7 +29,7 @@
 
 <b>📅 Анонсы</b>
 • <b>чт 22 окт, 14:30–16:30</b> · 22 oktober | De Bijbel, hoezo? | Vrijzinnig Delft (Motiv, Voorstraat 60) <a href="https://uitdelft.com/event/22-oktober-de-bijbel-hoezo-vrijzinnig-delft/">→</a>
-• <b>чт 22 окт – 23 окт</b> · ARK | Connor Schumacher - Asset, Liability &amp; Equity (Theater de Veste) <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity">→</a>
+• <b>чт 22 окт</b> · ARK | Connor Schumacher - Asset, Liability &amp; Equity (Theater de Veste) <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity">→</a>
 • <b>чт 22 окт, 16:10–18:10</b> · Coward (Filmhuis Lumen – Zaal 2) <a href="https://uitdelft.com/event/coward/">→</a>
 • <b>чт 22 окт, 10:00–15:00</b> · Cultuurbarbaren Minecraft Robots (Open Delft, Gratis) <a href="https://uitdelft.com/event/cultuurbarbaren-minecraft-robots/">→</a>
 • <b>чт 22 окт, 11:00–12:00</b> · Cultuurbarbaren Workshops voor en door Cultuurbarbaren (Open Delft, Gratis) <a href="https://uitdelft.com/event/cultuurbarbaren-workshops-voor-en-door-cultuurbarbaren/">→</a>
@@ -60,15 +60,10 @@
 - [Delta (TU Delft)] 21.10 10:40 — [Levend archief: 12 duizend zaden te zien in Hortus Botanicus](https://delta.tudelft.nl/article/levend-archief-12-duizend-zaden-te-zien-in-hortus-botanicus)
 - [Delta (TU Delft)] 21.10 09:01 — [Nieuwe gedragscode voor wetenschap benadrukt ‘eigenheid en autonomie’](https://delta.tudelft.nl/article/nieuwe-gedragscode-voor-wetenschap-benadrukt-eigenheid-en-autonomie)
 
-## Кандидаты: события (53)
+## Кандидаты: события (51)
 
-- [In Delft] 2025-07-07..2026-10-26 — [Science Day TU Delft 2026 | Gratis festival voor jong & oud](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek) (TU Delft Science Centre)
-- [In Delft] 2026-01-05..2026-11-02 — [Urban Blue - from Bricks to Tiles](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1313884287/urban-blue-from-bricks-to-tiles) (Royal Delft Museum)
-- [In Delft] 2026-06-03..2026-10-29 — [Rondleiding: Student Life on Campus](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3350607929/rondleiding-student-life-on-campus)
-- [In Delft] 2026-09-17..2026-11-01 — [Geschiedenis van de gezondheidszorg in Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1413701722/de-gezondheidszorg-van-toen-museum-de-griffioen)
-- [In Delft] 2026-09-29..2026-10-23 — [Deutsches Kino: Der Held vom Bahnhof Friedrichstraße](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles)
 - [Uit Delft] 2026-10-22 — [22 oktober | De Bijbel, hoezo? | Vrijzinnig Delft](https://uitdelft.com/event/22-oktober-de-bijbel-hoezo-vrijzinnig-delft/) (14:30–16:30 · Motiv, Voorstraat 60)
-- [In Delft] 2026-10-22..2026-10-23 — [ARK | Connor Schumacher - Asset, Liability & Equity](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity) (Theater de Veste)
+- [In Delft] 2026-10-22 — [ARK | Connor Schumacher - Asset, Liability & Equity](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity) (es minder Wanneer Geannuleerd Donderdag 22 oktober 2026 20.15 - 21.35 uur Prijzen Regulier € 22,50 CJP (Cultureel Jongeren Paspoort) € · Theater de Veste)
 - [Uit Delft] 2026-10-22 — [Coward](https://uitdelft.com/event/coward/) (16:10–18:10 · Filmhuis Lumen – Zaal 2)
 - [Uit Delft] 2026-10-22 — [Cultuurbarbaren Minecraft Robots](https://uitdelft.com/event/cultuurbarbaren-minecraft-robots/) (10:00–15:00 · Open Delft · Gratis)
 - [Uit Delft] 2026-10-22 — [Cultuurbarbaren Workshops voor en door Cultuurbarbaren](https://uitdelft.com/event/cultuurbarbaren-workshops-voor-en-door-cultuurbarbaren/) (11:00–12:00 · Open Delft · Gratis)
@@ -80,12 +75,14 @@
 - [Uit Delft] 2026-10-22 — [Dans en Grietje (4-9 jaar)](https://uitdelft.com/event/dans-en-grietje-4-9-jaar/) (14:00–16:00 · Hal015, Schieweg 15b)
 - [Uit Delft] 2026-10-22 — [De Manager](https://uitdelft.com/event/de-manager/) (16:40–18:40 · Filmhuis Lumen – Zaal 3)
 - [Uit Delft] 2026-10-22 — [Der Held vom Bahnhof Friedrichstraße || Deutsches Kino (+ English Subtitles)](https://uitdelft.com/event/der-held-vom-bahnhof-friedrichstrase-deutsches-kino-english-subtitles/) (20:35–22:35 · Filmhuis Lumen – Zaal 3)
+- [In Delft] 2026-10-22 — [Deutsches Kino: Der Held vom Bahnhof Friedrichstraße](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles) (aar worden verbonden. Wanneer Donderdag 22 oktober 2026 om 20.35 uur Prijzen € 12,70 In de buurt Kaartelementen overslaan Deel deze pag)
 - [Uit Delft] 2026-10-22 — [Lotte op zoek naar de draken (4+) || Cinekid & Herfstvakantie](https://uitdelft.com/event/lotte-op-zoek-naar-de-draken-4-cinekid-herfstvakantie/) (15:40–17:40 · Filmhuis Lumen – Zaal 4)
 - [Uit Delft] 2026-10-22 — [Maand van de Geschiedenis: Zelfportret van je Innerlijk](https://uitdelft.com/event/maand-van-de-geschiedenis-zelfportret-van-je-innerlijk/) (19:30–21:30 · Dok Tanthof · Gratis)
 - [Uit Delft] 2026-10-22 — [Moppervis (4+)](https://uitdelft.com/event/moppervis-4/) (13:45–15:45 · Filmhuis Lumen – Zaal 4)
 - [Uit Delft] 2026-10-22 — [Nachtwacht van de Kurk](https://uitdelft.com/event/nachtwacht-van-de-kurk/) (23:00–23:59 · De Kurk – Lokaal Proef Festijn)
 - [Uit Delft] 2026-10-22 — [Naza](https://uitdelft.com/event/naza/) (17:30–19:30 · Filmhuis Lumen – Zaal 4)
 - [Uit Delft] 2026-10-22 — [Peutervoorlezen+](https://uitdelft.com/event/peutervoorlezen/) (10:30–11:00 · Open Delft · Gratis)
+- [In Delft] 2026-10-22 — [Rondleiding: Student Life on Campus](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3350607929/rondleiding-student-life-on-campus) (ederland. Lees minder Wanneer Donderdag 22 oktober 2026 12.00 - 14.00 uur Vrijdag 23 oktober 2026 12.00 - 14.00 uur Woensdag 28 oktober)
 - [Uit Delft] 2026-10-22 — [Sense and Sensibility](https://uitdelft.com/event/sense-and-sensibility/) (21:00–23:00 · Filmhuis Lumen – Zaal 2)
 - [Uit Delft] 2026-10-22 — [Shaun het schaap: Het beest van de boerderij (6+)](https://uitdelft.com/event/shaun-het-schaap-het-beest-van-de-boerderij-6/) (14:15–16:15 · Filmhuis Lumen – Zaal 2)
 - [Uit Delft] 2026-10-22 — [Taalhuis](https://uitdelft.com/event/taalhuis/) (14:00–17:30 · Dok Voorhof)
@@ -114,4 +111,5 @@
 - [Uit Delft] 2026-10-24 — [The Rose Show Comedy Competition – Season 3 Finals!](https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/) (весь день · The Social Hub Delft)
 - [Uit Delft] 2026-10-24 — [Tim Burton’s Universe by Mystery Ensemble](https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/) (весь день · Nieuwe Kerk, Markt 80)
 - [Uit Delft] 2026-10-25 — [Droomtijdloop](https://uitdelft.com/event/droomtijdloop-4/) (весь день · Binnenstad, Wippolder en Delftse Hout)
+- [In Delft] 2026-10-25 — [Science Day TU Delft 2026 | Gratis festival voor jong & oud](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek) (an een plek! Lees minder Wanneer Zondag 25 oktober 2026 11.00 - 17.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze · TU Delft Science Centre)
 - [Uit Delft] 2026-10-25 — [Sunday Sounds- Anja Verrijp en Robert Kwakkelstein](https://uitdelft.com/event/sunday-sounds-anja-verrijp-en-robert-kwakkelstein/) (весь день · Koepoortplaats 3, Koepoortplaats 3)
