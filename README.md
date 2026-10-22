@@ -96,7 +96,7 @@ Telegram-бот, который каждое утро собирает мест�
 |---|---|
 | Omroep Delft (RSS) | Uit Delft (JSON API) |
 | Delft op Zondag | Delft op Zondag — агенда |
-| Gemeente Delft | OPEN Delft / DOK |
+| Gemeente Delft | OPEN Delft / DOK (выключен: дублирует Uit Delft) |
 | Delta, TU Delft (RSS) | In Delft — Uitagenda |
 
 Бот соблюдает `robots.txt`, представляется отдельным User-Agent и заходит на каждый

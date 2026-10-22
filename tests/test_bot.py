@@ -117,6 +117,14 @@ class ParsingTests(unittest.TestCase):
         self.assertEqual(s, date(2027, 1, 1))
         self.assertEqual(find_dutch_dates("geen datum hier", TODAY)[0], None)
 
+    def test_dates_anchor_far_below(self):
+        page = ("<html><body><main><p>Tickets vanaf 7 juli 2026 t/m 26 oktober.</p>"
+                + "<p>" + "lorem ipsum " * 400 + "</p>"
+                + "<h2>WANNEER</h2><p>Zondag 25 oktober 2026</p></main></body></html>")
+        d = page_details(page)
+        s, e, _ = find_dutch_dates(d["full_text"], TODAY)
+        self.assertEqual((s, e), (date(2026, 10, 25), None))
+
 
 class CollectTests(unittest.TestCase):
     def make(self, pages, state=None):

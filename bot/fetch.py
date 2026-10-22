@@ -168,7 +168,9 @@ def page_details(html: str, scope_selector: str | None = None) -> dict:
         tag.decompose()
     scope = (soup.select_one(scope_selector) if scope_selector else None) \
         or soup.select_one("main") or soup.select_one("article") or soup.body or soup
-    details["text"] = clean_text(scope.get_text(" "), 2500)
+    full = clean_text(scope.get_text(" "))
+    details["text"] = clean_text(full, 2500)
+    details["full_text"] = full[:30000]  # для поиска дат: блок «Wanneer» бывает далеко внизу
     return details
 
 
@@ -249,7 +251,7 @@ def find_dutch_dates(text: str, today: date) -> tuple[date | None, date | None, 
     """Первая дата (или диапазон) в тексте: (начало, конец, фрагмент текста вокруг)."""
     if not text:
         return None, None, ""
-    anchor = re.search(r"\b(Wanneer|Datum|Data|When)\b", text)
+    anchor = re.search(r"\b(Wanneer|Datum|Data|When)\b", text, re.IGNORECASE)
     search_from = anchor.start() if anchor else 0
     matches = list(_DATE_RX.finditer(text, search_from)) or list(_DATE_RX.finditer(text))
     if not matches:

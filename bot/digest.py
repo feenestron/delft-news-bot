@@ -60,8 +60,13 @@ SYSTEM_PROMPT = """\
   без местной привязки. Если несколько материалов об одном и том же — оставь один
   (предпочтительно с более полной информацией).
 - Мероприятия: только в Делфте и ближайших окрестностях (Delfgauw, Den Hoorn), проходящие
-  в указанный период. Не больше 1–2 длительных выставок/«ежедневных» мероприятий;
-  предпочитай разовые события. Объединяй дубликаты из разных источников.
+  в указанный период; события из других городов (Den Haag и т. п.) не включай.
+  Выбирай самое интересное для широкой публики и делай подборку разнообразной:
+  концерты, спектакли, фестивали, ярмарки, лекции, городские праздники, спорт, выставки.
+  Не больше 1–2 длительных выставок и не больше 2 детских мероприятий.
+  Не включай рутину: обычные сеансы кинотеатров (только фестивальные и спецпоказы),
+  регулярные консультации и кружки (Taalhuis, IDO, Digitale Huiskamer, чтения для малышей),
+  ежедневные/еженедельные «ночные» акции баров. Объединяй дубликаты из разных источников.
 - Ничего не выдумывай: используй только факты из входных данных. Если нет места, цены или
   времени — оставь поле пустым.
 
@@ -143,11 +148,11 @@ def build_input(c: Collected, now: datetime, horizon_end: date, max_news: int, m
             for i, n in enumerate(c.news[:30])
         ],
         "events": [
-            {"id": f"e{i}", "source": e.source, "title": e.title,
+            {"id": f"e{i}", "source": e.source, "title": e.title[:200],
              "start": e.start.isoformat() if e.start else None,
              "end": e.end.isoformat() if e.end else None,
-             "time": e.time_text, "venue": e.venue, "price": e.price, "text": e.text[:400]}
-            for i, e in enumerate(c.events[:60])
+             "time": e.time_text, "venue": e.venue, "price": e.price, "text": e.text[:250]}
+            for i, e in enumerate(c.events[:150])
         ],
     }
     return ("Подготовь дайджест на сегодня. Входные данные (JSON):\n\n"
@@ -212,9 +217,11 @@ def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_ev
 def plain_digest(c: Collected, day: date, max_news: int, max_events: int) -> Digest:
     """Запасной вариант без LLM: оригинальные заголовки без перевода."""
     news = [NewsLine(n.title, "", n.url, n.source) for n in c.news[:max_news]]
+    # разовые события вперёд, длительные (начавшиеся раньше) — в конец
+    ordered = sorted(c.events, key=lambda e: (e.start is None or e.start < day, e.start or day))
     events = [EventLine(e.title, _event_when_fallback(e.start, e.end, e.time_text), e.venue,
                         e.price, "", e.url, e.start.isoformat() if e.start else "")
-              for e in c.events[:max_events]]
+              for e in ordered[:max_events]]
     return Digest(day, news, events)
 
 

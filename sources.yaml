@@ -47,7 +47,9 @@ events:
     link_pattern: '^https://www\.delftopzondag\.nl/agenda/(?P<y>\d{4})/(?P<m>\d{1,2})/(?P<d>\d{1,2})/'
     max_fetch: 15
 
+  # Агенда OPEN/DOK уже целиком входит в Uit Delft — включайте, только если Uit Delft сломается.
   - name: OPEN Delft
+    enabled: false
     type: html_links
     url: https://www.opendelft.info/agenda
     link_pattern: '^https://dok\.op-shop\.nl/\d+/[^/]+/(?P<d>\d{2})-(?P<m>\d{2})-(?P<y>\d{4})'

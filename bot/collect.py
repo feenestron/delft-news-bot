@@ -195,7 +195,7 @@ class Collector:
                     s = s.date() if isinstance(s, datetime) else s
                     e = e.date() if isinstance(e, datetime) else e
                     if not s:
-                        s, e, snippet = find_dutch_dates(d["text"], self.today)
+                        s, e, snippet = find_dutch_dates(d["full_text"], self.today)
                     cached = {
                         "title": d["title"], "venue": d["venue"],
                         "text": d["description"] or d["text"][:500],
