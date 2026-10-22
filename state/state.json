@@ -1,11 +1,269 @@
 {
  "announced_events": {},
- "bootstrapped_sources": [],
- "event_cache": {},
+ "bootstrapped_sources": [
+  "Delft op Zondag",
+  "Gemeente Delft"
+ ],
+ "event_cache": {
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1313884287/urban-blue-from-bricks-to-tiles": {
+   "date_text": "en wordt gevierd. Wanneer Dagelijks t/m 1 november 2026 09.30 - 17.00 uur Prijzen € 11,50 Studenten € 17,50 Volwassenen € 10,00 Jongere",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-11-01",
+   "text": "Met de tentoonstelling Urban Blue – from Bricks to Tiles slaan Royal Delft Museum en STRAAT Museum Amsterdam een brug tussen traditie en vernieuwing. Zes internationale street artists laten zich inspireren door het keramisch vakmanschap van Delft en vertalen deze rijke historie naar een eigentijdse",
+   "title": "Urban Blue - from Bricks to Tiles",
+   "venue": "Royal Delft Museum"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1373327559/escaperoute-het-geheim-van-de-beeldenstorm": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2024-07-17",
+   "text": "Ontdek de Oude en Nieuwe Kerk met een interactieve escaperoute vol puzzels, codes en aanwijzingen rond het verhaal van de beeldenstorm.",
+   "title": "Escaperoute Het geheim van de beeldenstorm Delft",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1413701722/de-gezondheidszorg-van-toen-museum-de-griffioen": {
+   "date_text": "dichtbij te bekijken. Wanneer Zaterdag 31 oktober 2026 10.00 - 17.00 uur Prijzen € 5,00 In de buurt Kaartelementen overslaan Deel deze",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-10-31",
+   "text": "Ontdek in Museum De Griffioen historische medische instrumenten, een apotheek van vroeger en het werk van Delftse onderzoekers en artsen.",
+   "title": "Geschiedenis van de gezondheidszorg in Delft",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1877632834/willem-van-oranje-grieks-driegangen-diner-in-hartje-delft": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-21",
+   "text": "Wilt u gezellig uit eten in Delft? Bij De Kleine Griek kunt u heerlijk Grieks eten voor een schappelijke prijs. Ons sfeervolle restaurant ligt in de gezellige binnenstad van Delft, gelegen aan de mooiste gracht op de Oude Delft. Bij ons kunt u tijdens het diner genieten van diverse Griekse specials",
+   "title": "Willem van Oranje - Grieks driegangen diner in hartje Delft",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1906086426/willem-van-oranje-all-in-arrangement-bij-ludique": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-21",
+   "text": "Begin of eindig uw theateravond in ontspannen sfeer, met verrassende gerechten en zorgvuldig geselecteerde wijnen. Speciaal voor musicalbezoekers stellen wij arrangementen samen die perfect aansluiten op de voorstelling. Kies voor een zorgvuldig afgestemd menu dat qua timing én sfeer aansluit.",
+   "title": "Willem van Oranje all-in arrangement bij Ludique",
+   "venue": "Ludique"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1929379417/de-leukste-stadswandeling-van-delft": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-03-03",
+   "text": "De stadswandelingen van Do DELFT zijn informatief, soms ook praktisch, maar altijd ontspannen en gezellig! Niet alleen historische feitjes, maar ook mooie anekdotes en de nodige humor. We struinen door de klinkerstraatjes, langs de grachten en over vorstelijke pleinen. Benieuwd waarom?",
+   "title": "De leukste stadswandeling van Delft",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2107916490/oog-in-oog-met-willem-van-oranje-rondleiding-kerken": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-02-09",
+   "text": "Laat honderden jaren aan geschiedenis aan je voorbij gaan tijdens rondleidingen in de Oude en Nieuwe Kerk. Bezichtig de kerken zelfstandig met behulp van onze brochures, of reserveer vooraf een persoonlijke rondleiding! Tijdens een rondleiding maak je kennis met de vele en gevarieerde verhalen.",
+   "title": "Oog in oog met Willem van Oranje - Rondleiding kerken",
+   "venue": "De Oude en Nieuwe Kerk van Delft"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/212051172/bezoek-het-lekkerste-winkeltje-van-delft": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2025-02-06",
+   "text": "Voor echte zoetekauwen: Winkeltje Kouwenhoven - het leukste en oudste winkeltje van de stad - maakt deel uit van Museum Prinsenhof Delft. Je vindt hier Oudhollandse snoepjes.",
+   "title": "Bezoek het lekkerste winkeltje van Delft",
+   "venue": "Winkeltje Kouwenhoven"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2257175159/willem-van-oranje-schilderworkshop": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-21",
+   "text": "Willem van Oranje staat opnieuw in de schijnwerpers met de gelijknamige musical. Een mooi moment om zijn bijzondere band met Delft verder te ontdekken! Bij Royal Delft Museum doe je dat niet alleen door de verhalen in het museum, maar ook op een creatieve manier. Tijdens onze schilderworkshops!",
+   "title": "Willem van Oranje Schilderworkshop",
+   "venue": "Royal Delft Museum"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2677207862/willem-van-oranje-delftse-hapjesboom-bij-het-boterhuis": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-21",
+   "text": "Tijdens je bezoek aan Willem van Oranje - De Musical mag een gezellige culinaire stop niet ontbreken. Midden in het hart van Delft vind je Het Boterhuis, een van de meest veelzijdige horecagelegenheden van de stad. Hier proef je de stad letterlijk met een unieke ervaring: de Delftse Hapjesboom.",
+   "title": "Willem van Oranje - Delftse Hapjesboom bij Het Boterhuis",
+   "venue": "Het Boterhuis"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2821328719/proef-de-historie-bij-delfts-brouwhuis": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-28",
+   "text": "n een unieke, 700 jaar oude kelder - ooit een Delftse brouwerij - geniet je van ambachtelijke bieren van Delftse Brouwers en goed eten in een prachtige historische setting. Tijdens archeologisch onderzoek zijn hier zelfs scherven van een middeleeuwse bierpul gevonden. Een perfecte plek.",
+   "title": "Proef de historie bij Delfts Brouwhuis",
+   "venue": "Delfts Brouwhuis"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek": {
+   "date_text": "an een plek! Lees minder Wanneer Zondag 25 oktober 2026 11.00 - 17.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-10-25",
+   "text": "Beleef wetenschap live op Science Day 25 okt bij de TU Delft. Workshops, shows & rondleidingen. Tickets gratis vanaf sept. Meld je nu aan!",
+   "title": "Science Day TU Delft 2026 | Gratis festival voor jong & oud",
+   "venue": "TU Delft Science Centre"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles": {
+   "date_text": "aar worden verbonden. Wanneer Donderdag 22 oktober 2026 om 20.35 uur Prijzen € 12,70 In de buurt Kaartelementen overslaan Deel deze pag",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-10-22",
+   "text": "Bekijk Der Held vom Bahnhof Friedrichstraße tijdens Deutsches Kino bij Filmhuis Lumen, een tragikomedie van Good Bye, Lenin!-regisseur Wolfgang Becker.",
+   "title": "Deutsches Kino: Der Held vom Bahnhof Friedrichstraße",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3325431448/kom-in-de-willem-van-oranje-mood-bij-moodz": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-28",
+   "text": "Maak je bezoek aan de voorstelling van Willem van Oranje - De Musical compleet met een heerlijk 3- of 4-gangen diner bij Moodz! Moodz serveert eten vanuit de hele wereld. Ze halen de lekkerste gerechten uit verschillende landen en streken, zo leer je niet alleen nieuwe gerechten kennen.",
+   "title": "Kom in de Willem van Oranje-mood bij Moodz",
+   "venue": "MOODZ eten & drinken"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3350607929/rondleiding-student-life-on-campus": {
+   "date_text": "ederland. Lees minder Wanneer Donderdag 22 oktober 2026 12.00 - 14.00 uur Vrijdag 23 oktober 2026 12.00 - 14.00 uur Woensdag 28 oktober",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-10-22",
+   "text": "Benieuwd hoe het studentenleven op de TU Delft er écht uitziet? Tijdens de Student Life on Campus Tour wandel je in ongeveer 50 minuten over de campus en ontdek je waar studenten studeren, sporten, ontspannen en samenkomen. Je bezoekt iconische plekken zoals de Universiteitsbibliotheek en Echo.",
+   "title": "Rondleiding: Student Life on Campus",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity": {
+   "date_text": "es minder Wanneer Geannuleerd Donderdag 22 oktober 2026 20.15 - 21.35 uur Prijzen Regulier € 22,50 CJP (Cultureel Jongeren Paspoort) €",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-10-22",
+   "text": "ARK | Connor Schumacher - Asset, Liability & Equity Geannuleerd donderdag 22 oktober Contact Theater de Veste Theater de Veste Asvest 1 2611 PK Delft Plan je route naar ARK | Connor Schumacher - Asset, Liability & Equity Route Plan je route naar ARK | Connor Schumacher - Asset, Liability & Equity Bel Bel: 015 - 212 13 12 ARK | Connor Schumacher - Asset, Liability & Equity Website Bezoek de website van ARK | Connor Schumacher - Asset, Liability & Equity Koop tickets Let op! Deze activiteit is gea",
+   "title": "ARK | Connor Schumacher - Asset, Liability & Equity",
+   "venue": "Theater de Veste"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3487279521/warenmarkt-markt-brabantse-turfmarkt": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2024-05-21",
+   "text": "Iedere donderdag kun je de warenmarkt van Delft bezoeken op de Markt en Brabantse Turfmarkt!",
+   "title": "Warenmarkt - Markt & Brabantse Turfmarkt",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3522607083/restaurantpartner-willem-van-oranje-de-musical-san-marco": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-28",
+   "text": "Met het Willem van Oranje Theater Arrangement geniet je van een compleet 3-gangen diner, zonder haast en zonder keuzestress. Wij zorgen voor een vlot verloop, zodat je op tijd en relaxed richting het Prinsentheater kan vertrekken. San Marco is al decennialang een begrip in Delft, met grote passie.",
+   "title": "Het Willem van Oranje Theater Menu",
+   "venue": "San Marco Pizzeria Ristorante"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3744284633/een-avond-vol-theater-historie-lekker-eten-bij-de-waag": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-28",
+   "text": "De Waag gelooft dat de echte magie van dineren, schuilt in warmte, oprechtheid en gedeelde momenten. In dit prachtige historische pand, gelegen in Hartje Delft, combineert erfgoedcharme met verfijnd comfort; fluwele zitmeubelen, houten vloeren, dieprode en gouden accenten, gallerijachtige kunst",
+   "title": "Een avond vol theater, historie & lekker eten bij de Waag",
+   "venue": "De Waag"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3902129056/uniek-dineren-in-delft-met-willem-van-oranje": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-22T12:10:58.149191+02:00",
+   "start": "2026-01-21",
+   "text": "Combineer jouw bezoek aan de musical met een diner bij LEF Restaurant & Bar in Delft! LEF is hét leukste eetcafé van Delft; levendig, gastvrij en met een heel knus terras aan het Doelenplein, vlak achter het beroemde “Straatje van Vermeer”. Van lunch tot diner, studenten tot toeristen.",
+   "title": "Uniek dineren in Delft met Willem van Oranje",
+   "venue": "LEF"
+  }
+ },
  "history": [],
- "last_draft_date": null,
- "pending": null,
- "seen": {},
+ "last_draft_date": "2026-10-22",
+ "pending": {
+  "created": "2026-10-22T12:11:52.141517+02:00",
+  "event_urls": [
+   "https://uitdelft.com/event/22-oktober-de-bijbel-hoezo-vrijzinnig-delft/",
+   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity",
+   "https://uitdelft.com/event/coward/",
+   "https://uitdelft.com/event/cultuurbarbaren-minecraft-robots/",
+   "https://uitdelft.com/event/cultuurbarbaren-workshops-voor-en-door-cultuurbarbaren/",
+   "https://uitdelft.com/event/cultuurbarbaren-ellen-leest-herrie-in-de-tent-harmen-van-straaten/",
+   "https://uitdelft.com/event/cultuurbarbaren-spot-on-dj-vak-activiteit/",
+   "https://uitdelft.com/event/cultuurbarbaren-superhelden-gezocht-vak-activiteit/"
+  ],
+  "id": "20261022-dea7",
+  "post": {
+   "parse_mode": "HTML",
+   "text": "<b>🗞 Делфт · четверг, 22 октября</b>\n\n<b>📰 События</b>\n• <b>Tijdelijk geen reisdocumenten</b> <a href=\"https://www.delft.nl/tijdelijk-geen-reisdocumenten\">Gemeente Delft</a>\n• <b>Ongewenst gedrag? Zeg er iets van!</b> <a href=\"https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van\">Gemeente Delft</a>\n• <b>Balies gemeente dicht</b> <a href=\"https://www.delft.nl/balies-gemeente-dicht\">Gemeente Delft</a>\n• <b>Brand Kerkstraat</b> <a href=\"https://www.delft.nl/brand-kerkstraat\">Gemeente Delft</a>\n• <b>Ministerie van OCW moet bezuinigen op personeel</b> <a href=\"https://delta.tudelft.nl/article/ministerie-van-ocw-moet-bezuinigen-op-personeel\">Delta (TU Delft)</a>\n• <b>6 vragen over het PHP-lek aan TU cybersecurity onderzoeker Harm Griffioen</b> <a href=\"https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen\">Delta (TU Delft)</a>\n• <b>Schrik zit er goed in na grote brand in centrum van Delft: ‘Ik kon alleen de deur opendoen’</b> <a href=\"https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/\">Omroep Delft</a>\n• <b>Jevons paradox</b> <a href=\"https://delta.tudelft.nl/article/jevons-paradox-2\">Delta (TU Delft)</a>\n\n<b>📅 Анонсы</b>\n• <b>чт 22 окт, 14:30–16:30</b> · 22 oktober | De Bijbel, hoezo? | Vrijzinnig Delft (Motiv, Voorstraat 60) <a href=\"https://uitdelft.com/event/22-oktober-de-bijbel-hoezo-vrijzinnig-delft/\">→</a>\n• <b>чт 22 окт</b> · ARK | Connor Schumacher - Asset, Liability &amp; Equity (Theater de Veste) <a href=\"https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity\">→</a>\n• <b>чт 22 окт, 16:10–18:10</b> · Coward (Filmhuis Lumen – Zaal 2) <a href=\"https://uitdelft.com/event/coward/\">→</a>\n• <b>чт 22 окт, 10:00–15:00</b> · Cultuurbarbaren Minecraft Robots (Open Delft, Gratis) <a href=\"https://uitdelft.com/event/cultuurbarbaren-minecraft-robots/\">→</a>\n• <b>чт 22 окт, 11:00–12:00</b> · Cultuurbarbaren Workshops voor en door Cultuurbarbaren (Open Delft, Gratis) <a href=\"https://uitdelft.com/event/cultuurbarbaren-workshops-voor-en-door-cultuurbarbaren/\">→</a>\n• <b>чт 22 окт, 10:00–11:00</b> · Cultuurbarbaren: Ellen Leest: Herrie in de Tent – Harmen van Straaten (Open Delft) <a href=\"https://uitdelft.com/event/cultuurbarbaren-ellen-leest-herrie-in-de-tent-harmen-van-straaten/\">→</a>\n• <b>чт 22 окт, 10:00–11:00</b> · Cultuurbarbaren: Spot On DJ! (vak-activiteit) (Open Delft, €8) <a href=\"https://uitdelft.com/event/cultuurbarbaren-spot-on-dj-vak-activiteit/\">→</a>\n• <b>чт 22 окт, 10:00–11:00</b> · Cultuurbarbaren: Superhelden Gezocht! (vak-activiteit) (Open Delft, €8) <a href=\"https://uitdelft.com/event/cultuurbarbaren-superhelden-gezocht-vak-activiteit/\">→</a>"
+  },
+  "preview_ids": [
+   7
+  ],
+  "status": "pending"
+ },
+ "seen": {
+  "https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/groepswerk": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/jevons-paradox-2": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/levend-archief-12-duizend-zaden-te-zien-in-hortus-botanicus": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/ministerie-van-ocw-moet-bezuinigen-op-personeel": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/nieuwe-gedragscode-voor-wetenschap-benadrukt-eigenheid-en-autonomie": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/poging-om-tu-studente-van-fiets-te-trekken-bij-kruithuisweg-minderjarige-aangehouden": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/terwijl-penetrante-stank-de-aula-vult-breken-palestina-demonstranten-tentenkamp-af": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/tu-delft-verwelkomt-meer-eerstejaars-ondanks-landelijke-daling": "2026-10-22T12:10:58.149191+02:00",
+  "https://delta.tudelft.nl/article/waarom-studentenvakbond-lsvb-zich-verzet-tegen-militarisering": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/asielopvang-nootdorpsepadsportring": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/balies-gemeente-dicht": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/brand-kerkstraat": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/dag-van-de-ondernemer": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/deel-uw-loopervaring": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/een-week-vol-cultuur": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/gezond-ontbijten-met-de-burgemeester": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/stadsgesprek-jongeren": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/tijdelijk-geen-reisdocumenten": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111041/door-de-lens-van-koos-club-delft-festival": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111042/door-de-lens-van-koos-mooi-weer-spelen-in-delft": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111043/door-de-lens-van-koos-swim-to-fight-cancer-delft": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111368/door-de-lens-van-koos-opening-eerste-expositie-frans-kieftenbeld": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111386/jaarlijkse-xxl-pompoenen-liggen-weer-in-de-vier-delftse-jumbo-s": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111386/jaarlijkse-xxl-pompoenen-liggen-weer-in-de-vier-delftse-jumbos": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111388/de-geschiedenis-van-het-delflandplein": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111389/hoopvolle-cijfers-meer-eerstejaars-studenten-aan-de-tu-delft": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111390/zorgdrager-zo-lang-mogelijk-comfortabel-en-veilig-thuis": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111393/geen-kind-komt-naar-de-sportclub-om-er-een-bende-van-te-maken": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111394/win-kaarten-voor-dutch-classics-in-de-oude-kerk-in-delft-": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111395/beter-lopen-begint-bij-je-voeten": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111396/het-hot-pot-seizoen-is-begonnen-gezellig-samen-koken-aan-tafel": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111401/huis-te-koop-wordt-deze-week-aangeboden-door-van-silfhout-hogetoorn-makelaars": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111405/ehbo-vereniging-delft-viert-jubileum-met-feestelijke-avond": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111406/lions-club-delft-princestad-steunt-kinderfestival-cultuurbarbaren": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111409/charles-van-harling-geniet-van-succesvolle-winacties": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111410/dproject-orchestra-kijkt-terug-op-geslaagd-concert-in-de-doelen": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111412/ontwerp-nieuwe-fietsdoorsteek-definitief": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111423/terugblik-zesde-editie-delft-maakt-ruimte": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/sport/111380/de-derde-helft-bij-full-speed-": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delftopzondag.nl/nieuws/sport/111383/niels-van-der-steuijt-streeft-naar-nieuwe-finale-in-ahoy": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/crowdfunding-microtheater-delft-afgerond-daar-zijn-we-ongelooflijk-trots-op/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/grote-brand-in-delftse-binnenstad/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/van-delft-naar-singapore-kunstenaar-rene-jacobs-exposeert-in-miljoenenstad/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/delftse-boyan-slat-wint-prijs-in-qatar-voor-opvissen-van-miljoenen-kilos-afval/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/donderdag-opnieuw-staking-streekvervoer-minder-busritten-in-delft/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/recordstijging-van-kosten-voor-dsw-zorgverzekering/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/tu-campus/alternatieve-eendenbek-haalt-met-crowdfunding-ruim-twee-ton-op-ver-boven-onze-verwachting/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/": "2026-10-22T12:10:58.149191+02:00"
+ },
  "tg_offset": 232833757,
  "version": 1
 }
