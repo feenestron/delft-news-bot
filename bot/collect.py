@@ -191,9 +191,14 @@ class Collector:
                     log.warning("%s: %s", url, exc)
                     d = None
                 if d:
-                    s, e, snippet = (d["event_start"], d["event_end"], "")
-                    s = s.date() if isinstance(s, datetime) else s
-                    e = e.date() if isinstance(e, datetime) else e
+                    # 1) блок «Wanneer/Datum» на странице — самый надёжный;
+                    # 2) schema.org Event (у некоторых сайтов там период показа объявления);
+                    # 3) первая дата в тексте.
+                    s, e, snippet = find_dutch_dates(d["full_text"], self.today, anchored_only=True)
+                    if not s and d["event_start"]:
+                        s, e = d["event_start"], d["event_end"]
+                        s = s.date() if isinstance(s, datetime) else s
+                        e = e.date() if isinstance(e, datetime) else e
                     if not s:
                         s, e, snippet = find_dutch_dates(d["full_text"], self.today)
                     cached = {

@@ -247,13 +247,22 @@ def _mkdate(day: int, month: int, year: int | None, today: date) -> date | None:
         return None
 
 
-def find_dutch_dates(text: str, today: date) -> tuple[date | None, date | None, str]:
-    """Первая дата (или диапазон) в тексте: (начало, конец, фрагмент текста вокруг)."""
+def find_dutch_dates(text: str, today: date, anchored_only: bool = False
+                     ) -> tuple[date | None, date | None, str]:
+    """Первая дата (или диапазон) в тексте: (начало, конец, фрагмент текста вокруг).
+
+    Сначала ищет после слов «Wanneer/Datum/When». С anchored_only=True без такого
+    блока ничего не возвращает."""
     if not text:
         return None, None, ""
     anchor = re.search(r"\b(Wanneer|Datum|Data|When)\b", text, re.IGNORECASE)
+    if anchored_only and not anchor:
+        return None, None, ""
     search_from = anchor.start() if anchor else 0
-    matches = list(_DATE_RX.finditer(text, search_from)) or list(_DATE_RX.finditer(text))
+    matches = list(_DATE_RX.finditer(text, search_from))
+    if not matches and anchored_only:
+        return None, None, ""
+    matches = matches or list(_DATE_RX.finditer(text))
     if not matches:
         return None, None, ""
     m = matches[0]

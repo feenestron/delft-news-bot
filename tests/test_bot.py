@@ -124,6 +124,20 @@ class ParsingTests(unittest.TestCase):
         d = page_details(page)
         s, e, _ = find_dutch_dates(d["full_text"], TODAY)
         self.assertEqual((s, e), (date(2026, 10, 25), None))
+        self.assertEqual(find_dutch_dates("Op 5 november", TODAY, anchored_only=True)[0], None)
+
+    def test_text_dates_beat_jsonld_listing_period(self):
+        listing = '<main><a href="/nl/uitagenda/uitagenda-delft/1/sd">SD</a></main>'
+        page = ('<html><head><script type="application/ld+json">{"@type":"Event",'
+                '"startDate":"2025-07-07","endDate":"2026-10-26"}</script></head>'
+                '<body><main><p>Wanneer: zondag 25 oktober 2026</p></main></body></html>')
+        src = {"name": "In Delft", "url": "https://www.indelft.nl/nl/uitagenda",
+               "link_pattern": r"^https://www\.indelft\.nl/nl/uitagenda/uitagenda-delft/\d+/"}
+        c = Collector(FakeFetcher({src["url"]: listing,
+                                   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1/sd": page}),
+                      fresh_state(), NOW, 30, 3)
+        items = c.events_html(src)
+        self.assertEqual((items[0].start, items[0].end), (date(2026, 10, 25), None))
 
 
 class CollectTests(unittest.TestCase):
