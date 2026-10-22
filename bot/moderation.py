@@ -59,7 +59,7 @@ class Moderator:
         self.state["pending"] = {
             "id": draft_id, "status": "pending", "post": post,
             "preview_ids": [msg["message_id"]], "event_urls": event_urls,
-            "created": self.now().isoformat(),
+            "created": self.now().isoformat(), "note": service_note,
         }
         self.save()
 
