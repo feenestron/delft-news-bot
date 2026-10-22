@@ -189,6 +189,7 @@ class Moderator:
             long_poll = max(0, min(50, remaining)) if until else 0
             updates = self.tg.get_updates(self.state.get("tg_offset", 0), long_poll)
             for u in updates:
+                self.processed = getattr(self, "processed", 0) + 1
                 self.state["tg_offset"] = u["update_id"] + 1
                 try:
                     self.handle(u)

@@ -147,10 +147,28 @@ def cmd_moderate(cfg: Config, args) -> int:
         raise SystemExit("Не задан TELEGRAM_BOT_TOKEN")
     st = state_mod.load(cfg.state_path)
     tg = Telegram(cfg.bot_token)
+    me = tg.call("getMe")
     mod = Moderator(cfg, tg, st, lambda: state_mod.save(cfg.state_path, st),
                     lambda: datetime.now(cfg.tz))
     mod.poll()
     state_mod.save(cfg.state_path, st)
+    received = getattr(mod, "processed", 0)
+
+    lines = [f"## Бот @{me.get('username')}", "",
+             f"Новых сообщений и нажатий: **{received}**.", ""]
+    if cfg.admin_chat_id is None:
+        if received:
+            lines.append("`ADMIN_CHAT_ID` не задан — бот ответил отправителям их chat_id в Telegram.")
+        else:
+            lines.append(f"`ADMIN_CHAT_ID` не задан, а сообщений нет. Откройте https://t.me/{me.get('username')}, "
+                         "нажмите **Start** (или отправьте любое сообщение) и запустите Moderate ещё раз.")
+    else:
+        lines.append(f"Модератор: `{cfg.admin_chat_id}`. {mod.status()}")
+    summary = "\n".join(lines) + "\n"
+    log.info(summary)
+    if os.environ.get("GITHUB_STEP_SUMMARY"):
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+            f.write(summary)
     return 0
 
 
