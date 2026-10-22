@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: bot-state
@@ -48,3 +49,14 @@ jobs:
           git commit -m "state: moderation $(date -u +%F\ %H:%M)"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
           exit 1
+
+      - name: Alert admin on failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+        run: |
+          [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$ADMIN_CHAT_ID" ] || exit 0
+          curl -s -o /dev/null -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${ADMIN_CHAT_ID}" \
+            --data-urlencode "text=⚠️ Сбой «${{ github.workflow }}». Подробности: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

@@ -2,9 +2,10 @@ name: Daily digest
 
 on:
   schedule:
-    # 04:23 и 05:23 UTC = 06:23 по Амстердаму летом и зимой соответственно.
-    # Лишний запуск сам завершится: скрипт проверяет местное время и «уже был сегодня».
-    - cron: "23 4,5 * * *"
+    # 04:23 и 05:23 UTC = 06:23 по Амстердаму летом и зимой соответственно;
+    # 06:23 UTC — резерв на случай, если GitHub пропустит основной запуск.
+    # Лишние запуски сами завершатся: скрипт проверяет местное время и «уже был сегодня».
+    - cron: "23 4,5,6 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -22,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: bot-state
@@ -72,3 +74,24 @@ jobs:
           git commit -m "state: digest $(date -u +%F)"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
           exit 1
+
+      - name: Keep schedules enabled
+        # GitHub отключает расписание в публичных репозиториях после 60 дней без активности.
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for wf in digest.yml moderate.yml; do
+            gh api -X PUT "repos/${{ github.repository }}/actions/workflows/$wf/enable" || true
+          done
+
+      - name: Alert admin on failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+        run: |
+          [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$ADMIN_CHAT_ID" ] || exit 0
+          curl -s -o /dev/null -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${ADMIN_CHAT_ID}" \
+            --data-urlencode "text=⚠️ Сбой «${{ github.workflow }}». Подробности: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
