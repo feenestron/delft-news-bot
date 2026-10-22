@@ -350,7 +350,7 @@ class ModerationTests(unittest.TestCase):
 
         self.mod = Moderator(cfg(), self.tg, self.st, save, lambda: NOW)
         self.mod.submit_draft("d1", {"text": "<b>Дайджест</b>", "parse_mode": "HTML"}, "note",
-                              ["https://e/1"])
+                              ["https://e/1"], ["https://n/1"])
         self.preview = self.st["pending"]["preview_ids"][0]
 
     def cb(self, uid, data, user=ADMIN):
@@ -372,6 +372,7 @@ class ModerationTests(unittest.TestCase):
         self.assertEqual(channel_posts[0]["post"]["parse_mode"], "HTML")
         self.assertEqual(self.st["pending"]["status"], "published")
         self.assertIn("https://e/1", self.st["announced_events"])
+        self.assertIn("https://n/1", self.st["seen"])
         self.assertEqual(self.st["tg_offset"], 2)
         self.assertIn(self.preview, self.tg.removed)
         self.assertIn("https://t.me/delft_test/", self.tg.sent[-1]["post"]["text"])
@@ -403,6 +404,7 @@ class ModerationTests(unittest.TestCase):
         self.tg.updates = [self.cb(1, "rej:d1"), self.cb(2, "pub:old")]
         self.mod.poll()
         self.assertEqual(self.st["pending"]["status"], "rejected")
+        self.assertNotIn("https://n/1", self.st["seen"])  # отклонённые новости вернутся завтра
         self.assertIn("Этот черновик устарел", self.tg.answers)
         self.assertFalse([s for s in self.tg.sent if s["chat"] == "@delft_test"])
 

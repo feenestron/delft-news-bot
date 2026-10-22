@@ -111,7 +111,10 @@ def cmd_digest(cfg: Config, args) -> int:
     mod = Moderator(cfg, tg, st, save, lambda: datetime.now(cfg.tz))
     mod.poll()  # сначала разбираем накопившиеся обновления, чтобы не перепутать черновики
 
-    st["seen"].update({u: now.isoformat() for u in collected.seen_urls})
+    # Новости-кандидаты отмечаются показанными только после публикации (см. Moderator.publish),
+    # чтобы отклонённый или пересобранный черновик не «съедал» их. Остальные ссылки — сразу.
+    news_urls = [n.url for n in collected.news]
+    st["seen"].update({u: now.isoformat() for u in collected.seen_urls if u not in set(news_urls)})
     for name in collected.newly_bootstrapped:
         if name not in st["bootstrapped_sources"]:
             st["bootstrapped_sources"].append(name)
@@ -130,7 +133,7 @@ def cmd_digest(cfg: Config, args) -> int:
     draft_id = f"{now:%Y%m%d}-{secrets.token_hex(2)}"
     mod.submit_draft(draft_id, {"text": text, "parse_mode": "HTML"},
                      service_note(collected, used_llm, llm_error, now),
-                     [e.url for e in digest.events])
+                     [e.url for e in digest.events], news_urls)
     log.info("Черновик %s отправлен модератору", draft_id)
 
     if not args.no_wait:

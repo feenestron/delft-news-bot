@@ -51,14 +51,15 @@ class Moderator:
         return bool(p and p.get("status") == "pending")
 
     # -------------------------------------------------------------- draft
-    def submit_draft(self, draft_id: str, post: dict, service_note: str, event_urls: list[str]) -> None:
+    def submit_draft(self, draft_id: str, post: dict, service_note: str, event_urls: list[str],
+                     news_urls: list[str] | None = None) -> None:
         self.supersede()
         admin = self.cfg.admin_chat_id
         self.tg.send_text(admin, service_note)
         msg = self.tg.send(admin, post, reply_markup=keyboard(draft_id))
         self.state["pending"] = {
             "id": draft_id, "status": "pending", "post": post,
-            "preview_ids": [msg["message_id"]], "event_urls": event_urls,
+            "preview_ids": [msg["message_id"]], "event_urls": event_urls, "news_urls": news_urls or [],
             "created": self.now().isoformat(), "note": service_note,
         }
         self.save()
@@ -93,6 +94,8 @@ class Moderator:
         stamp = self.now().isoformat()
         for url in p.get("event_urls", []):
             self.state["announced_events"][url] = stamp
+        for url in p.get("news_urls", []):
+            self.state["seen"][url] = stamp
         for mid in p.get("preview_ids", []):
             self.tg.remove_buttons(self.cfg.admin_chat_id, mid)
         self._archive(p)
