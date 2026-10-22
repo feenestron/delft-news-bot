@@ -437,6 +437,18 @@ class ModerationTests(unittest.TestCase):
         self.assertEqual(self.st["pending"]["status"], "pending")
         self.assertIn("CHANNEL_ID указан бот", self.tg.sent[-1]["post"]["text"])
 
+    def test_id_command_in_group(self):
+        upd = {"update_id": 1, "message": {"message_id": 5, "text": "/id@delft_bot",
+               "chat": {"id": -1009, "type": "supergroup", "title": "G"}, "from": {"id": ADMIN}}}
+        stranger = {"update_id": 2, "message": {"message_id": 6, "text": "/id",
+                    "chat": {"id": -1009, "type": "supergroup"}, "from": {"id": 1}}}
+        self.tg.updates = [upd, stranger]
+        n = len(self.tg.sent)
+        self.mod.poll()
+        self.assertEqual(len(self.tg.sent), n + 1)
+        self.assertIn("-1009", self.tg.sent[-1]["post"]["text"])
+        self.assertEqual(self.tg.sent[-1]["chat"], -1009)
+
     def test_setup_mode_reports_chat_id(self):
         c = cfg()
         c.admin_chat_id = None

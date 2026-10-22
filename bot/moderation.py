@@ -178,6 +178,15 @@ class Moderator:
         if not message:
             return
         chat_id = message["chat"]["id"]
+        text0 = (message.get("text") or "").strip().split()
+        if (text0 and text0[0].split("@")[0].lower() == "/id"
+                and message["chat"].get("type") != "private"
+                and admin is not None and (message.get("from") or {}).get("id") == admin):
+            chat = message["chat"]
+            ident = f"@{chat['username']}" if chat.get("username") else str(chat_id)
+            self.tg.send_text(chat_id, f"id этого чата: {chat_id}\n"
+                                       f"Для публикации сюда укажите в секрете CHANNEL_ID: {ident}")
+            return
         if admin is None:
             # Бот ещё не настроен: подсказываем chat_id, чтобы записать его в секрет ADMIN_CHAT_ID.
             log.info("Сообщение от chat_id=%s (%s)", chat_id, message["chat"].get("username"))
