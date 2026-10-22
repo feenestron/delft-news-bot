@@ -1,0 +1,50 @@
+name: Moderate
+
+# Обрабатывает нажатия кнопок и сообщения модератора, пришедшие после утреннего окна.
+# Также используется при настройке: напишите боту /start и запустите вручную —
+# бот ответит вашим chat_id.
+
+on:
+  schedule:
+    - cron: "47 9-21 * * *"   # раз в час днём и вечером
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bot-state
+  cancel-in-progress: false
+
+jobs:
+  moderate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Process updates
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+        run: python -m bot moderate
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "delft-news-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p state
+          git add -A -- state 2>/dev/null || true
+          if git diff --cached --quiet; then echo "state unchanged"; exit 0; fi
+          git commit -m "state: moderation $(date -u +%F\ %H:%M)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1

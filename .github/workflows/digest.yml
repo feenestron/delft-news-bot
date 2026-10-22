@@ -1,0 +1,73 @@
+name: Daily digest
+
+on:
+  schedule:
+    # 04:23 и 05:23 UTC = 06:23 по Амстердаму летом и зимой соответственно.
+    # Лишний запуск сам завершится: скрипт проверяет местное время и «уже был сегодня».
+    - cron: "23 4,5 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Собрать черновик сейчас (игнорировать расписание)"
+        type: boolean
+        default: true
+      no_wait:
+        description: "Не ждать решения модератора (кнопки обработает почасовой запуск)"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Пробный прогон: только напечатать дайджест в лог, ничего не отправлять"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bot-state
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build draft and wait for moderation
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          DRAFT_HOUR: ${{ vars.DRAFT_HOUR }}
+          MODERATION_UNTIL_HOUR: ${{ vars.MODERATION_UNTIL_HOUR }}
+          NEWS_WINDOW_HOURS: ${{ vars.NEWS_WINDOW_HOURS }}
+          EVENT_HORIZON_DAYS: ${{ vars.EVENT_HORIZON_DAYS }}
+          MAX_NEWS: ${{ vars.MAX_NEWS }}
+          MAX_EVENTS: ${{ vars.MAX_EVENTS }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ "${{ inputs.no_wait }}" = "true" ]; then ARGS="$ARGS --no-wait"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python -m bot digest $ARGS
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "delft-news-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- state 2>/dev/null || true
+          if git diff --cached --quiet; then echo "state unchanged"; exit 0; fi
+          git commit -m "state: digest $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1

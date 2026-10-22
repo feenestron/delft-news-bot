@@ -1,0 +1,60 @@
+# Источники дайджеста. Можно добавлять/отключать (enabled: false) без правки кода.
+#
+# Типы источников:
+#   rss           — RSS/Atom-лента.
+#   html_links    — страница-список; берутся ссылки, подходящие под link_pattern.
+#                   Для событий в link_pattern можно указать именованные группы
+#                   (?P<y>)(?P<m>)(?P<d>) — тогда дата берётся прямо из ссылки.
+#                   Без них дата ищется на странице события (нидерландский текст).
+#   tribe_events  — сайты на WordPress + The Events Calendar (JSON API).
+#
+# Общие параметры: name, type, url, enabled (по умолчанию true),
+#   exclude_pattern — регулярка для ссылок, которые надо пропустить,
+#   scope_selector  — CSS-селектор области страницы, где искать ссылки,
+#   max_fetch       — сколько новых страниц открывать за запуск.
+
+news:
+  - name: Omroep Delft
+    type: rss
+    url: https://www.omroepdelft.nl/feed/
+
+  - name: Delft op Zondag
+    type: html_links
+    url: https://www.delftopzondag.nl/
+    link_pattern: '^https://www\.delftopzondag\.nl/nieuws/[a-z0-9-]+/\d+/'
+    exclude_pattern: '/nieuws/(partnerbijdrage|advertorial|prijsvraag)/'
+
+  - name: Gemeente Delft
+    type: html_links
+    url: https://www.delft.nl/nieuws
+    link_pattern: '^https://www\.delft\.nl/[a-z0-9-]+$'
+    exclude_pattern: '^https://www\.delft\.nl/(nieuws|gemeenteberichten|contact|zoeken|english|login|privacy|cookies|toegankelijkheid|evenementen-delft)$'
+    scope_selector: main
+
+  - name: Delta (TU Delft)
+    type: rss
+    url: https://delta.tudelft.nl/feed/
+
+events:
+  - name: Uit Delft
+    type: tribe_events
+    url: https://uitdelft.com
+    cities: [Delft, Delfgauw, Den Hoorn]
+
+  - name: Delft op Zondag
+    type: html_links
+    url: https://www.delftopzondag.nl/agenda
+    link_pattern: '^https://www\.delftopzondag\.nl/agenda/(?P<y>\d{4})/(?P<m>\d{1,2})/(?P<d>\d{1,2})/'
+    max_fetch: 15
+
+  - name: OPEN Delft
+    type: html_links
+    url: https://www.opendelft.info/agenda
+    link_pattern: '^https://dok\.op-shop\.nl/\d+/[^/]+/(?P<d>\d{2})-(?P<m>\d{2})-(?P<y>\d{4})'
+    max_fetch: 10
+
+  - name: In Delft
+    type: html_links
+    url: https://www.indelft.nl/nl/uitagenda
+    link_pattern: '^https://www\.indelft\.nl/nl/uitagenda/uitagenda-delft/\d+/'
+    max_fetch: 20
