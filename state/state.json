@@ -247,29 +247,36 @@
    "decided": "2026-10-22T12:16:11.091539+02:00",
    "id": "20261022-dea7",
    "status": "rejected"
+  },
+  {
+   "channel_message_id": null,
+   "created": "2026-10-22T12:16:12.117079+02:00",
+   "decided": "2026-10-22T12:18:55.006943+02:00",
+   "id": "20261022-7579",
+   "status": "rejected"
   }
  ],
  "last_draft_date": "2026-10-22",
  "pending": {
-  "created": "2026-10-22T12:16:12.117079+02:00",
+  "created": "2026-10-22T12:18:55.671482+02:00",
   "event_urls": [
-   "https://uitdelft.com/event/22-oktober-de-bijbel-hoezo-vrijzinnig-delft/",
-   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity",
-   "https://uitdelft.com/event/coward/",
-   "https://uitdelft.com/event/cultuurbarbaren-minecraft-robots/",
-   "https://uitdelft.com/event/cultuurbarbaren-workshops-voor-en-door-cultuurbarbaren/",
-   "https://uitdelft.com/event/cultuurbarbaren-ellen-leest-herrie-in-de-tent-harmen-van-straaten/",
-   "https://uitdelft.com/event/cultuurbarbaren-spot-on-dj-vak-activiteit/",
-   "https://uitdelft.com/event/cultuurbarbaren-superhelden-gezocht-vak-activiteit/"
+   "https://uitdelft.com/event/willem-van-oranje-de-musical-2/",
+   "https://uitdelft.com/event/cultuurbarbaren-zwermende-drones-tu-delft/",
+   "https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/",
+   "https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/",
+   "https://uitdelft.com/event/status-quo-forever-cultuurlab-live/",
+   "https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/",
+   "https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/",
+   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek"
   ],
-  "id": "20261022-7579",
-  "note": "📝 Черновик дайджеста на 22.10. Проверьте и нажмите кнопку под ним.\nЧтобы поправить — ответьте на черновик исправленным текстом.\n\nНайдено: Omroep Delft (новости): 0, Delft op Zondag (новости): 0, Gemeente Delft (новости): 0, Delta (TU Delft) (новости): 0, Uit Delft (афиша): 47, Delft op Zondag (афиша): 0, In Delft (афиша): 4.\n\n⚠️ Перевод не выполнен (RuntimeError: Claude API 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"tool_choice: type \\\"tool\\\" and \\\"any\\) — заголовки в оригинале.",
+  "id": "20261022-8b08",
+  "note": "📝 Черновик дайджеста на 22.10. Проверьте и нажмите кнопку под ним.\nЧтобы поправить — ответьте на черновик исправленным текстом.\n\nНайдено: Omroep Delft (новости): 0, Delft op Zondag (новости): 0, Gemeente Delft (новости): 0, Delta (TU Delft) (новости): 0, Uit Delft (афиша): 47, Delft op Zondag (афиша): 0, In Delft (афиша): 4.",
   "post": {
    "parse_mode": "HTML",
-   "text": "<b>🗞 Делфт · четверг, 22 октября</b>\n\n<b>📅 Анонсы</b>\n• <b>чт 22 окт, 14:30–16:30</b> · 22 oktober | De Bijbel, hoezo? | Vrijzinnig Delft (Motiv, Voorstraat 60) <a href=\"https://uitdelft.com/event/22-oktober-de-bijbel-hoezo-vrijzinnig-delft/\">→</a>\n• <b>чт 22 окт</b> · ARK | Connor Schumacher - Asset, Liability &amp; Equity (Theater de Veste) <a href=\"https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3382911383/ark-connor-schumacher-asset-liability-equity\">→</a>\n• <b>чт 22 окт, 16:10–18:10</b> · Coward (Filmhuis Lumen – Zaal 2) <a href=\"https://uitdelft.com/event/coward/\">→</a>\n• <b>чт 22 окт, 10:00–15:00</b> · Cultuurbarbaren Minecraft Robots (Open Delft, Gratis) <a href=\"https://uitdelft.com/event/cultuurbarbaren-minecraft-robots/\">→</a>\n• <b>чт 22 окт, 11:00–12:00</b> · Cultuurbarbaren Workshops voor en door Cultuurbarbaren (Open Delft, Gratis) <a href=\"https://uitdelft.com/event/cultuurbarbaren-workshops-voor-en-door-cultuurbarbaren/\">→</a>\n• <b>чт 22 окт, 10:00–11:00</b> · Cultuurbarbaren: Ellen Leest: Herrie in de Tent – Harmen van Straaten (Open Delft) <a href=\"https://uitdelft.com/event/cultuurbarbaren-ellen-leest-herrie-in-de-tent-harmen-van-straaten/\">→</a>\n• <b>чт 22 окт, 10:00–11:00</b> · Cultuurbarbaren: Spot On DJ! (vak-activiteit) (Open Delft, €8) <a href=\"https://uitdelft.com/event/cultuurbarbaren-spot-on-dj-vak-activiteit/\">→</a>\n• <b>чт 22 окт, 10:00–11:00</b> · Cultuurbarbaren: Superhelden Gezocht! (vak-activiteit) (Open Delft, €8) <a href=\"https://uitdelft.com/event/cultuurbarbaren-superhelden-gezocht-vak-activiteit/\">→</a>"
+   "text": "<b>🗞 Делфт · четверг, 22 октября</b>\n\n<b>📅 Анонсы</b>\n• <b>чт 22 окт, 19:30</b> · Мюзикл «Willem van Oranje» (Prinsentheater, €45). Мюзикл о Вильгельме Оранском; следующий показ — в пятницу 23 октября в 19:30. <a href=\"https://uitdelft.com/event/willem-van-oranje-de-musical-2/\">→</a>\n• <b>чт 22 окт, 10:00–15:00</b> · Cultuurbarbaren: демонстрация роя дронов от TU Delft (Open Delft, бесплатно). Показ того, как дроны общаются и совместно решают задачи, подобно стае птиц или рою пчёл. <a href=\"https://uitdelft.com/event/cultuurbarbaren-zwermende-drones-tu-delft/\">→</a>\n• <b>пт 23 окт, 20:15</b> · Концерт «50 Years of Rumours» — The Cosmic Carnival и вечеринка Boogie Night (Theater De Veste, Asvest 1) <a href=\"https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/\">→</a>\n• <b>пт 23 окт, 20:00</b> · Ruis: Ambient Noise Lounge (De Koornbeurs). Регулярный вечер молодёжной ассоциации OJV в формате ambient-лаунжа. <a href=\"https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/\">→</a>\n• <b>сб 24 окт, 21:00</b> · Status Quo Forever — концерт Cultuurlab Live (Cultuurlab, Brabantse Turfmarkt 9) <a href=\"https://uitdelft.com/event/status-quo-forever-cultuurlab-live/\">→</a>\n• <b>сб 24 окт</b> · Tim Burton’s Universe by Mystery Ensemble (Nieuwe Kerk, Markt 80) <a href=\"https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/\">→</a>\n• <b>сб 24 окт</b> · The Rose Show Comedy Competition — финал 3-го сезона (The Social Hub Delft). Финал стендап-соревнования. <a href=\"https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/\">→</a>\n• <b>вс 25 окт, 11:00–17:00</b> · Science Day TU Delft 2026 (TU Delft Science Centre, бесплатно). Бесплатный научный фестиваль для детей и взрослых: мастер-классы, шоу и экскурсии. <a href=\"https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek\">→</a>"
   },
   "preview_ids": [
-   10
+   13
   ],
   "status": "pending"
  },
@@ -327,6 +334,6 @@
   "https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/": "2026-10-22T12:10:58.149191+02:00",
   "https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/": "2026-10-22T12:10:58.149191+02:00"
  },
- "tg_offset": 232833758,
+ "tg_offset": 232833759,
  "version": 1
 }
