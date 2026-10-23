@@ -1,6 +1,6 @@
 """Точка входа.
 
-    python -m bot digest [--force] [--dry-run]
+    python -m bot digest [--force] [--dry-run [--ignore-seen]]
         Собрать новости и анонсы и сразу опубликовать дайджест в группу/канал (CHANNEL_ID).
         Без --force публикует один раз в день, с POST_HOUR до POST_UNTIL_HOUR.
         --dry-run печатает дайджест и кандидатов, ничего не отправляет и не меняет состояние.
@@ -94,8 +94,16 @@ def cmd_digest(cfg: Config, args) -> int:
     if not args.dry_run:
         cfg.require_telegram()
 
-    collected = collect(Fetcher(), st, now, load_sources(cfg.sources_path),
-                        cfg.news_window_hours, cfg.event_horizon_days)
+    window = cfg.news_window_hours
+    collect_state = st
+    if args.dry_run and getattr(args, "ignore_seen", False):
+        # Для настройки отбора: берём все свежие материалы за 3 дня, даже уже опубликованные.
+        import copy
+        collect_state = copy.deepcopy(st)
+        collect_state["seen"], collect_state["announced_events"] = {}, {}
+        window = max(window, 72)
+    collected = collect(Fetcher(), collect_state, now, load_sources(cfg.sources_path),
+                        window, cfg.event_horizon_days)
     log.info("Собрано: новостей %d, событий %d, ошибок %d",
              len(collected.news), len(collected.events), len(collected.errors))
     problems = list(collected.errors)
@@ -202,6 +210,8 @@ def main(argv: list[str] | None = None) -> int:
     d = sub.add_parser("digest")
     d.add_argument("--force", action="store_true", help="игнорировать расписание и «уже был сегодня»")
     d.add_argument("--dry-run", action="store_true", help="только напечатать, ничего не отправлять")
+    d.add_argument("--ignore-seen", action="store_true",
+                   help="с --dry-run: брать и уже опубликованные материалы за 3 дня (для настройки отбора)")
     sub.add_parser("chats")
     args = p.parse_args(argv)
     cfg = Config.from_env()

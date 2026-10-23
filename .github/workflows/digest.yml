@@ -16,6 +16,10 @@ on:
         description: "Пробный прогон: только показать дайджест в Summary, ничего не отправлять"
         type: boolean
         default: true
+      ignore_seen:
+        description: "Для пробного прогона: взять и уже опубликованные новости за 3 дня (проверка отбора)"
+        type: boolean
+        default: false
       force:
         description: "Опубликовать сейчас, даже если сегодня уже публиковали"
         type: boolean
@@ -59,6 +63,7 @@ jobs:
         run: |
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run";
+            if [ "${{ inputs.ignore_seen }}" = "true" ]; then ARGS="$ARGS --ignore-seen"; fi
           elif [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
           python -m bot digest $ARGS
 
