@@ -280,6 +280,19 @@ def plain_digest(c: Collected, day: date, max_news: int, max_events: int) -> Dig
     return Digest(day, news, events)
 
 
+def digest_to_dict(d: Digest, published: datetime) -> dict:
+    """Дайджест в JSON — для внешних читателей (например, виджета на домашней странице)."""
+    return {
+        "version": 1,
+        "date": d.day.isoformat(),
+        "title": f"Делфт · {ru_date(d.day)}",
+        "published": published.isoformat(),
+        "news": [{"title": n.title, "summary": n.summary, "url": n.url, "source": n.source} for n in d.news],
+        "events": [{"title": e.title, "when": e.when, "where": e.where, "price": e.price,
+                    "summary": e.summary, "url": e.url, "date": e.sort_key} for e in d.events],
+    }
+
+
 def render_news(n: NewsLine) -> str:
     """<b>Заголовок</b> — <a>Источник</a>\n<i>Краткое содержание</i>"""
     head = f'<b>{escape(n.title)}</b> — <a href="{escape(n.url, quote=True)}">{escape(n.source)}</a>'

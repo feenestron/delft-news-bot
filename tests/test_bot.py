@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import copy
+import os
 import unittest
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
@@ -409,6 +410,36 @@ class PostingTests(unittest.TestCase):
         self.assertIn("https://www.omroepdelft.nl/delft/brand/", st["seen"])
         # без ANTHROPIC_API_KEY это «проблема» — админ получает заметку
         self.assertTrue(any(s["chat"] == ADMIN for s in self.tg.sent))
+
+    def test_published_digest_saved_as_json(self):
+        import json as _json
+        self.run_digest()
+        base = os.path.dirname(self.path)
+        with open(os.path.join(base, "latest.json"), encoding="utf-8") as f:
+            latest = _json.load(f)
+        self.assertEqual(latest["date"], "2026-10-22")
+        self.assertTrue(latest["news"] and latest["events"])
+        self.assertTrue(all(n["url"].startswith("http") for n in latest["news"]))
+        self.assertTrue(os.path.exists(os.path.join(base, "digests", "2026-10-22.json")))
+        with open(os.path.join(base, "digests", "index.json"), encoding="utf-8") as f:
+            self.assertEqual(_json.load(f), ["2026-10-22"])
+
+    def test_archive_keeps_last_days(self):
+        from datetime import date as _date
+        from bot.digest import Digest
+        base = os.path.dirname(self.path)
+        for day in range(1, 11):
+            self.main.save_archive(self.path, Digest(_date(2026, 10, day), [], []), self.now)
+        names = sorted(os.listdir(os.path.join(base, "digests")))
+        self.assertEqual(len([n for n in names if n != "index.json"]), self.main.ARCHIVE_DAYS)
+        self.assertNotIn("2026-10-03.json", names)
+        self.assertIn("2026-10-10.json", names)
+
+    def test_nothing_published_keeps_previous_archive(self):
+        self.collected.news.clear()
+        self.collected.events.clear()
+        self.run_digest()
+        self.assertFalse(os.path.exists(os.path.join(os.path.dirname(self.path), "latest.json")))
 
     def test_once_per_day_and_time_window(self):
         self.run_digest()

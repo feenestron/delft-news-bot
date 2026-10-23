@@ -11,6 +11,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import os
 import sys
@@ -19,7 +20,7 @@ from datetime import datetime, timedelta
 from . import state as state_mod
 from .collect import collect, load_sources
 from .config import Config
-from .digest import llm_digest, plain_digest, render
+from .digest import digest_to_dict, llm_digest, plain_digest, render
 from .fetch import Fetcher
 from .telegram import Telegram, TelegramError
 
@@ -31,6 +32,26 @@ def write_summary(text: str) -> None:
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
             f.write(text + "\n")
+
+
+ARCHIVE_DAYS = 7
+
+
+def save_archive(state_path: str, digest, now: datetime) -> None:
+    """Сохраняет опубликованный дайджест в JSON рядом с состоянием:
+    state/latest.json и state/digests/ГГГГ-ММ-ДД.json (последние ARCHIVE_DAYS выпусков)."""
+    base = os.path.dirname(state_path) or "."
+    folder = os.path.join(base, "digests")
+    os.makedirs(folder, exist_ok=True)
+    data = json.dumps(digest_to_dict(digest, now), ensure_ascii=False, indent=1)
+    for path in (os.path.join(base, "latest.json"), os.path.join(folder, f"{digest.day.isoformat()}.json")):
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(data + "\n")
+    days = sorted(n[:-5] for n in os.listdir(folder) if n.endswith(".json") and n != "index.json")
+    for day in days[:-ARCHIVE_DAYS]:
+        os.remove(os.path.join(folder, day + ".json"))
+    with open(os.path.join(folder, "index.json"), "w", encoding="utf-8") as f:
+        json.dump(sorted(days[-ARCHIVE_DAYS:], reverse=True), f)
 
 
 def due(cfg: Config, st: dict, now: datetime) -> tuple[bool, str]:
@@ -139,6 +160,10 @@ def cmd_digest(cfg: Config, args) -> int:
     message_id = None
     if has_content:
         message_id = publish(tg, cfg.channel_id, messages, problems)
+        try:
+            save_archive(cfg.state_path, digest, now)
+        except OSError as exc:  # архив — дополнительная функция, публикацию не ломает
+            log.warning("Не удалось сохранить архив дайджеста: %s", exc)
         # Показанными считаются только опубликованные анонсы; новости-кандидаты — все,
         # т. к. отобранное и отброшенное Claude не должно всплывать завтра снова.
         for e in digest.events:

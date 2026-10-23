@@ -151,3 +151,10 @@ python -m unittest discover -s tests    # тесты
    * Request body: `{"event_type": "daily-digest"}`
 3. Нажмите **Test run** — ответ должен быть `204`, а в Actions появится запуск
    «Daily digest». Если дайджест за сегодня уже был, запуск просто завершится.
+
+## Архив дайджестов в JSON
+
+После каждой публикации бот сохраняет тот же дайджест в `state/latest.json` и
+`state/digests/ГГГГ-ММ-ДД.json` (последние 7 выпусков, список — `state/digests/index.json`).
+Их читает, например, виджет «Новости Делфта» на домашней странице: файлы доступны по адресу
+`https://raw.githubusercontent.com/feenestron/delft-news-bot/main/state/latest.json`.
