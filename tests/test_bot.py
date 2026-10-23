@@ -11,7 +11,6 @@ from bot.collect import Collector
 from bot.config import Config
 from bot.digest import digest_from_llm, plain_digest, render
 from bot.fetch import extract_links, find_dutch_dates, page_details, parse_feed
-from bot.moderation import Moderator
 
 TZ = ZoneInfo("Europe/Amsterdam")
 NOW = datetime(2026, 10, 22, 6, 25, tzinfo=TZ)
@@ -303,26 +302,24 @@ class DigestTests(unittest.TestCase):
 
 
 class FakeTelegram:
-    def __init__(self):
+    def __init__(self, fail_for=None):
         self.sent = []
-        self.removed = []
-        self.answers = []
         self.updates = []
         self.next_id = 100
+        self.fail_for = fail_for or {}
 
     def send(self, chat_id, post, reply_markup=None, reply_to=None):
+        if chat_id in self.fail_for:
+            raise self.fail_for[chat_id]
         self.next_id += 1
-        self.sent.append({"chat": chat_id, "post": post, "markup": reply_markup, "id": self.next_id})
+        self.sent.append({"chat": chat_id, "post": post, "id": self.next_id})
         return {"message_id": self.next_id}
 
     def send_text(self, chat_id, text, reply_to=None):
         return self.send(chat_id, {"text": text})
 
-    def remove_buttons(self, chat_id, message_id):
-        self.removed.append(message_id)
-
-    def answer_callback(self, cid, text=""):
-        self.answers.append(text)
+    def call(self, method, **kw):
+        return {"username": "delft_bot"}
 
     def get_updates(self, offset, timeout):
         out = [u for u in self.updates if u["update_id"] >= offset]
@@ -333,136 +330,122 @@ class FakeTelegram:
 ADMIN = 555
 
 
-def cfg():
+def cfg(path=""):
     return Config(bot_token="t", admin_chat_id=ADMIN, channel_id="@delft_test", anthropic_key="",
-                  model="m", tz=TZ, draft_hour=6, moderation_until_hour=12, news_window_hours=30,
-                  event_horizon_days=3, max_news=8, max_events=8, state_path="", sources_path="")
+                  model="m", tz=TZ, post_hour=6, post_until_hour=12, news_window_hours=30,
+                  event_horizon_days=3, max_news=8, max_events=8, state_path=path, sources_path="")
 
 
-class ModerationTests(unittest.TestCase):
+class PostingTests(unittest.TestCase):
+    """Публикация без модерации: сразу в группу, админу — только при проблемах."""
+
     def setUp(self):
-        self.st = fresh_state()
+        import os
+        import tempfile
+        from unittest import mock
+        from bot import __main__ as main_mod
+        from bot.collect import Event
+
+        self.tmp = tempfile.TemporaryDirectory()
+        self.path = os.path.join(self.tmp.name, "state.json")
+        self.main = main_mod
         self.tg = FakeTelegram()
-        self.saves = 0
+        c, _ = CollectTests().make({"https://feed": RSS})
+        c.run({"news": [{"name": "Omroep Delft", "type": "rss", "url": "https://feed"}], "events": []})
+        c.out.events.append(Event("Uit Delft", "Concert", "https://e/1", date(2026, 10, 24)))
+        self.collected = c.out
+        self.patches = [
+            mock.patch.object(main_mod, "Telegram", lambda token: self.tg),
+            mock.patch.object(main_mod, "collect", lambda *a, **k: self.collected),
+            mock.patch.object(main_mod, "load_sources", lambda p: {}),
+            mock.patch.object(main_mod, "Fetcher", lambda: None),
+        ]
+        for p in self.patches:
+            p.start()
+        self.now = NOW
 
-        def save():
-            self.saves += 1
+    def tearDown(self):
+        from unittest import mock
+        mock.patch.stopall()
+        self.tmp.cleanup()
 
-        self.mod = Moderator(cfg(), self.tg, self.st, save, lambda: NOW)
-        self.mod.submit_draft("d1", {"text": "<b>Дайджест</b>", "parse_mode": "HTML"}, "note",
-                              ["https://e/1"], ["https://n/1"])
-        self.preview = self.st["pending"]["preview_ids"][0]
+    def run_digest(self, force=False, conf=None):
+        import argparse
+        from unittest import mock
 
-    def cb(self, uid, data, user=ADMIN):
-        return {"update_id": uid, "callback_query": {"id": f"c{uid}", "from": {"id": user}, "data": data}}
+        class Clock(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return self.now
 
-    def msg(self, uid, text, reply_to=None, chat=ADMIN, entities=None):
-        m = {"message_id": 900 + uid, "chat": {"id": chat}, "text": text}
-        if reply_to:
-            m["reply_to_message"] = {"message_id": reply_to}
-        if entities:
-            m["entities"] = entities
-        return {"update_id": uid, "message": m}
+        with mock.patch.object(self.main, "datetime", Clock):
+            return self.main.cmd_digest(conf or cfg(self.path),
+                                        argparse.Namespace(force=force, dry_run=False))
 
-    def test_publish_via_button(self):
-        self.tg.updates = [self.cb(1, "pub:d1")]
-        self.mod.poll()
-        channel_posts = [s for s in self.tg.sent if s["chat"] == "@delft_test"]
-        self.assertEqual(len(channel_posts), 1)
-        self.assertEqual(channel_posts[0]["post"]["parse_mode"], "HTML")
-        self.assertEqual(self.st["pending"]["status"], "published")
-        self.assertIn("https://e/1", self.st["announced_events"])
-        self.assertIn("https://n/1", self.st["seen"])
-        self.assertEqual(self.st["tg_offset"], 2)
-        self.assertIn(self.preview, self.tg.removed)
-        self.assertIn("https://t.me/delft_test/", self.tg.sent[-1]["post"]["text"])
+    def test_posts_directly_and_marks_seen(self):
+        self.run_digest()
+        posts = [s for s in self.tg.sent if s["chat"] == "@delft_test"]
+        self.assertEqual(len(posts), 1)
+        self.assertEqual(posts[0]["post"]["parse_mode"], "HTML")
+        st = state_mod.load(self.path)
+        self.assertEqual(st["last_post_date"], "2026-10-22")
+        self.assertIn("https://e/1", st["announced_events"])
+        self.assertIn("https://www.omroepdelft.nl/delft/brand/", st["seen"])
+        # без ANTHROPIC_API_KEY это «проблема» — админ получает заметку
+        self.assertTrue(any(s["chat"] == ADMIN for s in self.tg.sent))
 
-    def test_double_click_publishes_once(self):
-        self.tg.updates = [self.cb(1, "pub:d1"), self.cb(2, "pub:d1")]
-        self.mod.poll()
+    def test_once_per_day_and_time_window(self):
+        self.run_digest()
+        self.run_digest()  # второй запуск того же дня ничего не публикует
         self.assertEqual(len([s for s in self.tg.sent if s["chat"] == "@delft_test"]), 1)
+        self.now = NOW.replace(day=23, hour=13)  # после окна
+        self.run_digest()
+        self.now = NOW.replace(day=23, hour=5)   # до окна
+        self.run_digest()
+        self.assertEqual(len([s for s in self.tg.sent if s["chat"] == "@delft_test"]), 1)
+        self.now = NOW.replace(day=23, hour=9)   # расписание опоздало — всё равно публикуем
+        self.run_digest()
+        self.assertEqual(len([s for s in self.tg.sent if s["chat"] == "@delft_test"]), 2)
 
-    def test_stranger_cannot_publish(self):
-        self.tg.updates = [self.cb(1, "pub:d1", user=999), self.msg(2, "/publish", chat=999)]
-        self.mod.poll()
-        self.assertEqual(self.st["pending"]["status"], "pending")
+    def test_legacy_state_counts_as_posted_today(self):
+        state_mod.save(self.path, {"last_draft_date": "2026-10-22", "pending": {"id": "x"}})
+        self.run_digest()
         self.assertFalse([s for s in self.tg.sent if s["chat"] == "@delft_test"])
+        self.assertNotIn("pending", state_mod.load(self.path))
 
-    def test_edit_by_reply_then_publish(self):
-        ents = [{"type": "bold", "offset": 0, "length": 4}]
-        self.tg.updates = [self.msg(1, "Новый текст", reply_to=self.preview, entities=ents)]
-        self.mod.poll()
-        p = self.st["pending"]
-        self.assertEqual(p["post"], {"text": "Новый текст", "entities": ents})
-        self.assertEqual(len(p["preview_ids"]), 2)
-        self.tg.updates = [self.cb(2, "pub:d1")]
-        self.mod.poll()
-        post = [s for s in self.tg.sent if s["chat"] == "@delft_test"][0]["post"]
-        self.assertEqual(post["text"], "Новый текст")
-
-    def test_reject_and_stale_draft(self):
-        self.tg.updates = [self.cb(1, "rej:d1"), self.cb(2, "pub:old")]
-        self.mod.poll()
-        self.assertEqual(self.st["pending"]["status"], "rejected")
-        self.assertNotIn("https://n/1", self.st["seen"])  # отклонённые новости вернутся завтра
-        self.assertIn("Этот черновик устарел", self.tg.answers)
+    def test_nothing_to_post_notifies_admin_only(self):
+        self.collected.news.clear()
+        self.collected.events.clear()
+        self.run_digest()
         self.assertFalse([s for s in self.tg.sent if s["chat"] == "@delft_test"])
+        self.assertIn("новых материалов нет", self.tg.sent[-1]["post"]["text"])
+        self.assertEqual(state_mod.load(self.path)["last_post_date"], "2026-10-22")
 
-    def test_new_draft_supersedes_old(self):
-        self.mod.submit_draft("d2", {"text": "x", "parse_mode": "HTML"}, "note", [])
-        self.assertEqual(self.st["history"][-1]["status"], "superseded")
-        self.assertIn(self.preview, self.tg.removed)
-        self.tg.updates = [self.cb(1, "pub:d1")]
-        self.mod.poll()
-        self.assertEqual(self.st["pending"]["status"], "pending")
-
-    def test_added_to_channel_reports_id(self):
-        self.tg.updates = [{"update_id": 1, "my_chat_member": {
-            "chat": {"id": -1001234, "type": "channel", "title": "Delft test"},
-            "new_chat_member": {"status": "administrator"}}}]
-        self.mod.poll()
-        self.assertIn("-1001234", self.tg.sent[-1]["post"]["text"])
-
-    def test_publish_error_hint(self):
+    def test_failed_post_keeps_state_untouched(self):
         from bot.telegram import TelegramError
+        self.tg.fail_for = {"@delft_test": TelegramError("Forbidden: bot was kicked", 403)}
+        with self.assertRaises(TelegramError):
+            self.run_digest()
+        st = state_mod.load(self.path)
+        self.assertIsNone(st["last_post_date"])
+        self.assertEqual(st["seen"], {})
 
-        def boom(chat_id, post, reply_markup=None, reply_to=None):
-            if chat_id == "@delft_test":
-                raise TelegramError("Forbidden: the bot can't send messages to the bot", 403)
-            return FakeTelegram.send(self.tg, chat_id, post, reply_markup, reply_to)
+    def test_group_migrated_to_supergroup(self):
+        from bot.telegram import TelegramError
+        self.tg.fail_for = {"@delft_test": TelegramError("group upgraded", 400,
+                                                         {"migrate_to_chat_id": -100777})}
+        self.run_digest()
+        self.assertEqual([s["chat"] for s in self.tg.sent if s["chat"] != ADMIN], ["-100777"])
+        self.assertIn("-100777", self.tg.sent[-1]["post"]["text"])  # заметка админу
 
-        self.tg.send = boom
-        self.tg.updates = [self.cb(1, "pub:d1")]
-        self.mod.poll()
-        self.assertEqual(self.st["pending"]["status"], "pending")
-        self.assertIn("CHANNEL_ID указан бот", self.tg.sent[-1]["post"]["text"])
-
-    def test_id_command_in_group(self):
-        upd = {"update_id": 1, "message": {"message_id": 5, "text": "/id@delft_bot",
-               "chat": {"id": -1009, "type": "supergroup", "title": "G"}, "from": {"id": ADMIN}}}
-        stranger = {"update_id": 2, "message": {"message_id": 6, "text": "/id",
-                    "chat": {"id": -1009, "type": "supergroup"}, "from": {"id": 1}}}
-        self.tg.updates = [upd, stranger]
-        n = len(self.tg.sent)
-        self.mod.poll()
-        self.assertEqual(len(self.tg.sent), n + 1)
-        self.assertIn("-1009", self.tg.sent[-1]["post"]["text"])
-        self.assertEqual(self.tg.sent[-1]["chat"], -1009)
-
-    def test_setup_mode_reports_chat_id(self):
-        c = cfg()
-        c.admin_chat_id = None
-        mod = Moderator(c, self.tg, fresh_state(), lambda: None, lambda: NOW)
-        self.tg.updates = [self.msg(1, "/start", chat=4242)]
-        mod.poll()
-        self.assertIn("4242", self.tg.sent[-1]["post"]["text"])
-
-    def test_wait_until_returns_after_decision(self):
-        clock = [NOW]
-        self.mod.now = lambda: clock[0]
-        self.tg.updates = [self.cb(1, "pub:d1")]
-        self.mod.poll(until=NOW + timedelta(hours=5))  # не должен висеть
-        self.assertEqual(self.st["pending"]["status"], "published")
+    def test_chats_lists_groups(self):
+        self.tg.updates = [{"update_id": 7, "my_chat_member": {
+            "chat": {"id": -1009, "type": "supergroup", "title": "Delft"},
+            "new_chat_member": {"status": "administrator"}}}]
+        self.main.cmd_chats(cfg(self.path), None)
+        st = state_mod.load(self.path)
+        self.assertIn("-1009", st["known_chats"])
+        self.assertEqual(st["tg_offset"], 8)
 
 
 class StateTests(unittest.TestCase):

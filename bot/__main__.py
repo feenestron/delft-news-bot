@@ -1,18 +1,18 @@
 """Точка входа.
 
-    python -m bot digest [--force] [--dry-run] [--no-wait]
-        Собрать новости, отправить черновик модератору и (по умолчанию) ждать решения
-        до MODERATION_UNTIL_HOUR. --dry-run печатает дайджест и ничего не отправляет.
+    python -m bot digest [--force] [--dry-run]
+        Собрать новости и анонсы и сразу опубликовать дайджест в группу/канал (CHANNEL_ID).
+        Без --force публикует один раз в день, с POST_HOUR до POST_UNTIL_HOUR.
+        --dry-run печатает дайджест и кандидатов, ничего не отправляет и не меняет состояние.
 
-    python -m bot moderate
-        Обработать накопившиеся нажатия кнопок и сообщения модератора.
+    python -m bot chats
+        Показать группы и каналы, куда добавлен бот, и их chat_id (для секрета CHANNEL_ID).
 """
 from __future__ import annotations
 
 import argparse
 import logging
 import os
-import secrets
 import sys
 from datetime import datetime, timedelta
 
@@ -21,34 +21,36 @@ from .collect import collect, load_sources
 from .config import Config
 from .digest import llm_digest, plain_digest, render
 from .fetch import Fetcher
-from .moderation import Moderator
-from .telegram import Telegram
+from .telegram import Telegram, TelegramError
 
 log = logging.getLogger("bot")
 
 
-def service_note(collected, used_llm: bool, llm_error: str | None, now: datetime) -> str:
-    lines = [f"📝 Черновик дайджеста на {now:%d.%m}. Проверьте и нажмите кнопку под ним.",
-             "Чтобы поправить — ответьте на черновик исправленным текстом."]
-    counts = ", ".join(f"{k}: {v}" for k, v in collected.per_source.items())
-    if counts:
-        lines.append(f"\nНайдено: {counts}.")
-    if collected.newly_bootstrapped:
-        lines.append("Первый запуск для: " + ", ".join(collected.newly_bootstrapped)
-                     + " — взяты только материалы с явной свежей датой.")
-    if collected.errors:
-        lines.append("\n⚠️ Проблемы с источниками:\n" + "\n".join(f"• {e}" for e in collected.errors))
-    if not used_llm:
-        lines.append("\n⚠️ Перевод не выполнен" + (f" ({llm_error})" if llm_error else
-                     " (нет ANTHROPIC_API_KEY)") + " — заголовки в оригинале.")
-    return "\n".join(lines)
+def write_summary(text: str) -> None:
+    log.info("\n%s", text)
+    if os.environ.get("GITHUB_STEP_SUMMARY"):
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+            f.write(text + "\n")
 
 
-def dry_run_report(collected, note: str, text: str, now: datetime) -> str:
-    """Отчёт пробного прогона: служебная заметка, сам пост и все кандидаты."""
-    lines = [f"# Пробный прогон {now:%Y-%m-%d %H:%M}", "", "## Служебное сообщение", "",
-             "```", note, "```", "", "## Пост (HTML для Telegram)", "", "```html", text, "```", "",
-             f"## Кандидаты: новости ({len(collected.news)})", ""]
+def due(cfg: Config, st: dict, now: datetime) -> tuple[bool, str]:
+    if st.get("last_post_date") == now.date().isoformat():
+        return False, "сегодня дайджест уже был"
+    # Расписание GitHub может опаздывать на часы, поэтому публикуем при первом запуске в окне.
+    if not (cfg.post_hour <= now.hour < max(cfg.post_until_hour, cfg.post_hour + 1)):
+        return False, f"сейчас {now:%H:%M}, публикация с {cfg.post_hour}:00 до {cfg.post_until_hour}:00"
+    return True, ""
+
+
+def report(collected, text: str, problems: list[str], now: datetime) -> str:
+    """Отчёт запуска: источники, проблемы, сам пост и все кандидаты."""
+    lines = [f"# Дайджест {now:%Y-%m-%d %H:%M}", "", "## Источники", ""]
+    lines += [f"- {k}: {v}" for k, v in collected.per_source.items()]
+    if problems:
+        lines += ["", "## Проблемы", ""] + [f"- {p}" for p in problems]
+    lines += ["", "## Пост (HTML для Telegram)", ""]
+    lines += ["```html", text, "```"] if text else ["_Публиковать нечего._"]
+    lines += ["", f"## Кандидаты: новости ({len(collected.news)})", ""]
     for n in collected.news:
         when = n.published.strftime("%d.%m %H:%M") if n.published else "без даты"
         lines.append(f"- [{n.source}] {when} — [{n.title}]({n.url})")
@@ -62,118 +64,119 @@ def dry_run_report(collected, note: str, text: str, now: datetime) -> str:
     return "\n".join(lines) + "\n"
 
 
+def publish(tg: Telegram, chat_id: str, text: str, problems: list[str]) -> dict:
+    post = {"text": text, "parse_mode": "HTML"}
+    try:
+        return tg.send(chat_id, post)
+    except TelegramError as exc:
+        new_id = exc.parameters.get("migrate_to_chat_id")
+        if not new_id:
+            raise
+        # группа стала супергруппой — у неё новый id
+        problems.append(f"группа сменила id на {new_id} — обновите секрет CHANNEL_ID")
+        return tg.send(str(new_id), post)
+
+
 def cmd_digest(cfg: Config, args) -> int:
     now = datetime.now(cfg.tz)
     st = state_mod.load(cfg.state_path)
-    today = now.date().isoformat()
     if not args.force and not args.dry_run:
-        if st.get("last_draft_date") == today:
-            log.info("Черновик на %s уже был, пропускаю", today)
-            return 0
-        # Расписание GitHub может опаздывать на часы или пропускать запуски,
-        # поэтому черновик готовится при первом запуске в окне DRAFT_HOUR..MODERATION_UNTIL_HOUR.
-        if not (cfg.draft_hour <= now.hour < max(cfg.moderation_until_hour, cfg.draft_hour + 3)):
-            log.info("Сейчас %s по местному времени — не время для черновика (DRAFT_HOUR=%s)",
-                     now.strftime("%H:%M"), cfg.draft_hour)
+        ok, why = due(cfg, st, now)
+        if not ok:
+            log.info("Пропускаю: %s", why)
             return 0
     if not args.dry_run:
         cfg.require_telegram()
-        if cfg.admin_chat_id is None:
-            raise SystemExit("Не задан ADMIN_CHAT_ID. Напишите боту /start и запустите workflow «Moderate».")
 
-    sources = load_sources(cfg.sources_path)
-    collected = collect(Fetcher(), st, now, sources, cfg.news_window_hours, cfg.event_horizon_days)
+    collected = collect(Fetcher(), st, now, load_sources(cfg.sources_path),
+                        cfg.news_window_hours, cfg.event_horizon_days)
     log.info("Собрано: новостей %d, событий %d, ошибок %d",
              len(collected.news), len(collected.events), len(collected.errors))
+    problems = list(collected.errors)
     horizon_end = now.date() + timedelta(days=cfg.event_horizon_days)
 
-    used_llm, llm_error = False, None
-    if cfg.anthropic_key and (collected.news or collected.events):
-        try:
-            digest = llm_digest(collected, now, horizon_end, cfg.anthropic_key, cfg.model,
-                                cfg.max_news, cfg.max_events)
-            used_llm = True
-        except Exception as exc:
-            log.exception("LLM не сработал")
-            llm_error = f"{type(exc).__name__}: {str(exc)[:120]}"
-    if not used_llm:
-        digest = plain_digest(collected, now.date(), cfg.max_news, cfg.max_events)
-    text = render(digest)
+    digest = None
+    if collected.news or collected.events:
+        if cfg.anthropic_key:
+            try:
+                digest = llm_digest(collected, now, horizon_end, cfg.anthropic_key, cfg.model,
+                                    cfg.max_news, cfg.max_events)
+            except Exception as exc:
+                log.exception("Claude не сработал")
+                problems.append(f"перевод не выполнен ({type(exc).__name__}: {str(exc)[:150]}) — "
+                                "опубликованы заголовки в оригинале")
+        else:
+            problems.append("нет ANTHROPIC_API_KEY — заголовки в оригинале")
+        if digest is None:
+            digest = plain_digest(collected, now.date(), cfg.max_news, cfg.max_events)
+    has_content = bool(digest and (digest.news or digest.events))
+    text = render(digest) if has_content else ""
 
+    write_summary(report(collected, text, problems, now))
     if args.dry_run:
-        report = dry_run_report(collected, service_note(collected, used_llm, llm_error, now), text, now)
-        print(report)
         os.makedirs("preview", exist_ok=True)
         with open("preview/last_dry_run.md", "w", encoding="utf-8") as f:
-            f.write(report)
+            f.write(report(collected, text, problems, now))
         return 0
 
     tg = Telegram(cfg.bot_token)
-    save = lambda: state_mod.save(cfg.state_path, st)  # noqa: E731
-    mod = Moderator(cfg, tg, st, save, lambda: datetime.now(cfg.tz))
-    mod.poll()  # сначала разбираем накопившиеся обновления, чтобы не перепутать черновики
-
-    # Новости-кандидаты отмечаются показанными только после публикации (см. Moderator.publish),
-    # чтобы отклонённый или пересобранный черновик не «съедал» их. Остальные ссылки — сразу.
-    news_urls = [n.url for n in collected.news]
-    st["seen"].update({u: now.isoformat() for u in collected.seen_urls if u not in set(news_urls)})
+    stamp = now.isoformat()
+    message_id = None
+    if has_content:
+        message_id = publish(tg, cfg.channel_id, text, problems)["message_id"]
+        # Показанными считаются только опубликованные анонсы; новости-кандидаты — все,
+        # т. к. отобранное и отброшенное Claude не должно всплывать завтра снова.
+        for e in digest.events:
+            st["announced_events"][e.url] = stamp
+    st["seen"].update({u: stamp for u in collected.seen_urls})
     for name in collected.newly_bootstrapped:
         if name not in st["bootstrapped_sources"]:
             st["bootstrapped_sources"].append(name)
-    st["last_draft_date"] = today
+    st["last_post_date"] = now.date().isoformat()
+    st["history"].append({"date": now.date().isoformat(), "news": len(digest.news) if has_content else 0,
+                          "events": len(digest.events) if has_content else 0, "message_id": message_id})
     state_mod.prune(st, now)
+    state_mod.save(cfg.state_path, st)
 
-    if not digest.news and not digest.events:
-        mod.supersede()
-        note = f"📭 {now:%d.%m}: новых материалов нет, черновика сегодня не будет."
-        if collected.errors:
-            note += "\n\n⚠️ Проблемы с источниками:\n" + "\n".join(f"• {e}" for e in collected.errors)
-        tg.send_text(cfg.admin_chat_id, note)
-        save()
-        return 0
-
-    draft_id = f"{now:%Y%m%d}-{secrets.token_hex(2)}"
-    mod.submit_draft(draft_id, {"text": text, "parse_mode": "HTML"},
-                     service_note(collected, used_llm, llm_error, now),
-                     [e.url for e in digest.events], news_urls)
-    log.info("Черновик %s отправлен модератору", draft_id)
-
-    if not args.no_wait:
-        until = now.replace(hour=cfg.moderation_until_hour, minute=0, second=0, microsecond=0)
-        if until > datetime.now(cfg.tz):
-            log.info("Жду решения модератора до %s", until.strftime("%H:%M"))
-            mod.poll(until=until)
-    save()
+    # Админу пишем, только если что-то не так — как в боте выставок.
+    if cfg.admin_chat_id and (problems or not has_content):
+        note = [f"🗞 Дайджест {now:%d.%m}: " + ("опубликован." if has_content
+                                              else "новых материалов нет, ничего не отправлено.")]
+        if problems:
+            note.append("\n⚠️ Проблемы:\n" + "\n".join(f"• {p}" for p in problems))
+        try:
+            tg.send_text(cfg.admin_chat_id, "\n".join(note))
+        except TelegramError as exc:
+            log.warning("Не удалось написать админу: %s", exc)
     return 0
 
 
-def cmd_moderate(cfg: Config, args) -> int:
+def cmd_chats(cfg: Config, args) -> int:
     if not cfg.bot_token:
         raise SystemExit("Не задан TELEGRAM_BOT_TOKEN")
     st = state_mod.load(cfg.state_path)
     tg = Telegram(cfg.bot_token)
     me = tg.call("getMe")
-    mod = Moderator(cfg, tg, st, lambda: state_mod.save(cfg.state_path, st),
-                    lambda: datetime.now(cfg.tz))
-    mod.poll()
+    for u in tg.get_updates(st["tg_offset"], 0):
+        st["tg_offset"] = max(st["tg_offset"], u["update_id"] + 1)
+        chat = (u.get("my_chat_member") or u.get("message") or {}).get("chat") or {}
+        if chat.get("id") and chat.get("type") != "private":
+            st["known_chats"][str(chat["id"])] = f"{chat.get('title', '')} ({chat.get('type')})"
+        member = u.get("my_chat_member", {}).get("new_chat_member", {})
+        if member.get("status") in ("left", "kicked"):
+            st["known_chats"].pop(str(chat.get("id")), None)
     state_mod.save(cfg.state_path, st)
-    received = getattr(mod, "processed", 0)
-
-    lines = [f"## Бот @{me.get('username')}", "",
-             f"Новых сообщений и нажатий: **{received}**.", ""]
-    if cfg.admin_chat_id is None:
-        if received:
-            lines.append("`ADMIN_CHAT_ID` не задан — бот ответил отправителям их chat_id в Telegram.")
-        else:
-            lines.append(f"`ADMIN_CHAT_ID` не задан, а сообщений нет. Откройте https://t.me/{me.get('username')}, "
-                         "нажмите **Start** (или отправьте любое сообщение) и запустите Moderate ещё раз.")
+    lines = [f"## Бот @{me.get('username')}", ""]
+    if st["known_chats"]:
+        lines += ["Группы и каналы, куда добавлен бот (значение для секрета `CHANNEL_ID`):", ""]
+        lines += [f"- `{cid}` — {title}" for cid, title in st["known_chats"].items()]
     else:
-        lines.append(f"Модератор: `{cfg.admin_chat_id}`. {mod.status()}")
-    summary = "\n".join(lines) + "\n"
-    log.info(summary)
-    if os.environ.get("GITHUB_STEP_SUMMARY"):
-        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
-            f.write(summary)
+        lines.append("Бот пока не видит ни одной группы. Добавьте его в группу (или удалите и "
+                     "добавьте снова, если он уже там), напишите в группе любое сообщение "
+                     "и запустите этот workflow ещё раз.")
+    if cfg.channel_id:
+        lines += ["", f"Сейчас в `CHANNEL_ID`: `{cfg.channel_id}`"]
+    write_summary("\n".join(lines))
     return 0
 
 
@@ -184,11 +187,22 @@ def main(argv: list[str] | None = None) -> int:
     d = sub.add_parser("digest")
     d.add_argument("--force", action="store_true", help="игнорировать расписание и «уже был сегодня»")
     d.add_argument("--dry-run", action="store_true", help="только напечатать, ничего не отправлять")
-    d.add_argument("--no-wait", action="store_true", help="не ждать решения модератора")
-    sub.add_parser("moderate")
+    sub.add_parser("chats")
     args = p.parse_args(argv)
     cfg = Config.from_env()
-    return cmd_digest(cfg, args) if args.cmd == "digest" else cmd_moderate(cfg, args)
+    if args.cmd == "chats":
+        return cmd_chats(cfg, args)
+    try:
+        return cmd_digest(cfg, args)
+    except Exception as exc:
+        # Причину — сразу админу; workflow всё равно упадёт и пришлёт ссылку на лог.
+        if cfg.bot_token and cfg.admin_chat_id and not args.dry_run:
+            try:
+                Telegram(cfg.bot_token).send_text(
+                    cfg.admin_chat_id, f"⚠️ Дайджест не опубликован: {str(exc)[:600]}")
+            except Exception:
+                log.exception("Не удалось написать админу")
+        raise
 
 
 if __name__ == "__main__":

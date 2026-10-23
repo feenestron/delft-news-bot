@@ -4,7 +4,7 @@ on:
   schedule:
     # Расписание GitHub ненадёжно: запуски опаздывают и пропускаются. Поэтому запусков
     # несколько (каждые 30 минут с 04:23 до 09:53 UTC); первый, попавший в окно после
-    # 06:00 по Амстердаму, готовит черновик, остальные завершаются за секунды.
+    # 06:00 по Амстердаму, публикует дайджест, остальные завершаются за секунды.
     # Основной триггер — внешний планировщик (cron-job.org), см. README.
     - cron: "23,53 4-9 * * *"
   repository_dispatch:
@@ -12,16 +12,12 @@ on:
     types: [daily-digest]
   workflow_dispatch:
     inputs:
-      force:
-        description: "Собрать черновик сейчас (игнорировать расписание)"
+      dry_run:
+        description: "Пробный прогон: только показать дайджест в Summary, ничего не отправлять"
         type: boolean
         default: true
-      no_wait:
-        description: "Не ждать решения модератора (кнопки обработает почасовой запуск)"
-        type: boolean
-        default: false
-      dry_run:
-        description: "Пробный прогон: только напечатать дайджест в лог, ничего не отправлять"
+      force:
+        description: "Опубликовать сейчас, даже если сегодня уже публиковали"
         type: boolean
         default: false
 
@@ -36,7 +32,7 @@ concurrency:
 jobs:
   digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -47,24 +43,23 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Build draft and wait for moderation
+      - name: Build and post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
-          DRAFT_HOUR: ${{ vars.DRAFT_HOUR }}
-          MODERATION_UNTIL_HOUR: ${{ vars.MODERATION_UNTIL_HOUR }}
+          POST_HOUR: ${{ vars.POST_HOUR }}
+          POST_UNTIL_HOUR: ${{ vars.POST_UNTIL_HOUR }}
           NEWS_WINDOW_HOURS: ${{ vars.NEWS_WINDOW_HOURS }}
           EVENT_HORIZON_DAYS: ${{ vars.EVENT_HORIZON_DAYS }}
           MAX_NEWS: ${{ vars.MAX_NEWS }}
           MAX_EVENTS: ${{ vars.MAX_EVENTS }}
         run: |
           ARGS=""
-          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
-          if [ "${{ inputs.no_wait }}" = "true" ]; then ARGS="$ARGS --no-wait"; fi
-          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run";
+          elif [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
           python -m bot digest $ARGS
 
       - name: Save state
@@ -85,9 +80,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          for wf in digest.yml moderate.yml; do
-            gh api -X PUT "repos/${{ github.repository }}/actions/workflows/$wf/enable" || true
-          done
+          gh api -X PUT "repos/${{ github.repository }}/actions/workflows/digest.yml/enable" || true
 
       - name: Alert admin on failure
         if: failure()

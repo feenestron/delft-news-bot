@@ -13,9 +13,9 @@ DEFAULT_STATE: dict = {
     "announced_events": {},     # url события -> когда опубликовали анонс
     "bootstrapped_sources": [], # источники, по которым уже собран "базовый" список ссылок
     "event_cache": {},          # url события -> извлечённые данные страницы
-    "tg_offset": 0,             # offset для getUpdates
-    "pending": None,            # текущий черновик на модерации
-    "last_draft_date": None,
+    "tg_offset": 0,             # offset для getUpdates (команда chats)
+    "known_chats": {},          # группы/каналы, куда добавлен бот: id -> название
+    "last_post_date": None,
     "history": [],
 }
 
@@ -25,6 +25,11 @@ def load(path: str) -> dict:
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
             state.update(json.load(f))
+    # миграция со схемы с модерацией черновиков
+    legacy_date = state.pop("last_draft_date", None)
+    if not state.get("last_post_date") and legacy_date:
+        state["last_post_date"] = legacy_date
+    state.pop("pending", None)
     return state
 
 

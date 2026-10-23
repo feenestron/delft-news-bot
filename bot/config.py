@@ -23,8 +23,8 @@ class Config:
     anthropic_key: str
     model: str
     tz: ZoneInfo
-    draft_hour: int              # с какого часа (местного) готовить черновик
-    moderation_until_hour: int   # до какого часа утренний запуск ждёт решения модератора
+    post_hour: int               # с какого часа (местного) публиковать
+    post_until_hour: int         # до какого часа ещё можно опубликовать, если расписание опоздало
     news_window_hours: int       # насколько свежими должны быть новости
     event_horizon_days: int      # на сколько дней вперёд брать анонсы
     max_news: int
@@ -38,12 +38,12 @@ class Config:
         return cls(
             bot_token=_str("TELEGRAM_BOT_TOKEN"),
             admin_chat_id=int(admin) if admin else None,
-            channel_id=_str("CHANNEL_ID"),
+            channel_id=_str("CHANNEL_ID") or _str("CHAT_ID"),
             anthropic_key=_str("ANTHROPIC_API_KEY"),
             model=_str("ANTHROPIC_MODEL", "claude-sonnet-5-5"),
             tz=ZoneInfo(_str("TIMEZONE", "Europe/Amsterdam")),
-            draft_hour=_int("DRAFT_HOUR", 6),
-            moderation_until_hour=_int("MODERATION_UNTIL_HOUR", 12),
+            post_hour=_int("POST_HOUR", _int("DRAFT_HOUR", 6)),
+            post_until_hour=_int("POST_UNTIL_HOUR", 12),
             news_window_hours=_int("NEWS_WINDOW_HOURS", 30),
             event_horizon_days=_int("EVENT_HORIZON_DAYS", 3),
             max_news=_int("MAX_NEWS", 8),

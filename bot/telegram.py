@@ -10,10 +10,11 @@ log = logging.getLogger(__name__)
 
 
 class TelegramError(RuntimeError):
-    def __init__(self, description: str, code: int | None = None):
+    def __init__(self, description: str, code: int | None = None, parameters: dict | None = None):
         super().__init__(f"Telegram API {code}: {description}")
         self.code = code
         self.description = description
+        self.parameters = parameters or {}
 
 
 class Telegram:
@@ -40,7 +41,8 @@ class Telegram:
             if data.get("error_code") == 429 and retry and attempt < 4:
                 time.sleep(int(retry) + 1)
                 continue
-            raise TelegramError(data.get("description", "unknown error"), data.get("error_code"))
+            raise TelegramError(data.get("description", "unknown error"), data.get("error_code"),
+                                data.get("parameters"))
         raise TelegramError("слишком много повторов")
 
     # ---- удобные методы
