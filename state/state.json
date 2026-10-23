@@ -8,22 +8,27 @@
   "https://uitdelft.com/event/cultuurlab-live-status-quo-forever/": "2026-10-23T13:52:05.294313+02:00",
   "https://uitdelft.com/event/droomtijdloop-4/": "2026-10-23T08:21:25.876579+02:00",
   "https://uitdelft.com/event/halloween-tanthof-oost/": "2026-10-23T08:21:25.876579+02:00",
+  "https://uitdelft.com/event/live-muziek-met-new-moondance/": "2026-10-23T17:59:38.570018+02:00",
   "https://uitdelft.com/event/meditatief-ligconcert/": "2026-10-23T13:52:05.294313+02:00",
   "https://uitdelft.com/event/nachtwacht-van-de-kurk-3/": "2026-10-23T13:52:05.294313+02:00",
+  "https://uitdelft.com/event/per-sempre-giovane-op-zondag-in-de-waag/": "2026-10-23T17:59:38.570018+02:00",
   "https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/": "2026-10-22T12:48:07.748509+02:00",
   "https://uitdelft.com/event/status-quo-forever-cultuurlab-live/": "2026-10-22T12:48:07.748509+02:00",
+  "https://uitdelft.com/event/sunday-sounds-anja-verrijp-en-robert-kwakkelstein/": "2026-10-23T17:59:38.570018+02:00",
   "https://uitdelft.com/event/sunday-sounds-anja-verrijp-robert-kwakkelstein/": "2026-10-23T13:52:05.294313+02:00",
   "https://uitdelft.com/event/the-rose-show-comedy-competition-2/": "2026-10-23T08:21:25.876579+02:00",
   "https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/": "2026-10-22T12:48:07.748509+02:00",
   "https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/": "2026-10-22T12:48:07.748509+02:00",
   "https://uitdelft.com/event/willem-van-oranje-de-musical-2/": "2026-10-22T12:48:07.748509+02:00",
+  "https://uitdelft.com/event/willem-van-oranje-de-musical-6/": "2026-10-23T17:59:38.570018+02:00",
   "https://uitdelft.com/event/willem-van-oranje-de-musical-7/": "2026-10-23T13:52:05.294313+02:00",
   "https://uitdelft.com/event/willem-van-oranje-de-musical/": "2026-10-23T08:21:25.876579+02:00",
   "https://uitdelft.com/event/x-live-on-sunday-open-mic-the-trapdoors/": "2026-10-23T13:52:05.294313+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2881859078/jump-olympics-delft": "2026-10-23T08:21:25.876579+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek": "2026-10-22T12:48:07.748509+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles": "2026-10-22T12:48:07.748509+02:00",
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3198423297/the-cosmic-carnival-50-years-of-rumours": "2026-10-23T08:21:25.876579+02:00"
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3198423297/the-cosmic-carnival-50-years-of-rumours": "2026-10-23T08:21:25.876579+02:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief": "2026-10-23T17:59:38.570018+02:00"
  },
  "bootstrapped_sources": [
   "Delft op Zondag",
@@ -367,6 +372,12 @@
    "events": 8,
    "message_id": 15,
    "news": 4
+  },
+  {
+   "date": "2026-10-23",
+   "events": 5,
+   "message_id": 16,
+   "news": 3
   }
  ],
  "known_chats": {
@@ -387,6 +398,7 @@
   "https://delta.tudelft.nl/article/terwijl-penetrante-stank-de-aula-vult-breken-palestina-demonstranten-tentenkamp-af": "2026-10-22T12:21:18.675555+02:00",
   "https://delta.tudelft.nl/article/toe-aan-rust-voor-je-brein-de-zen-box-helpt-je-verder": "2026-10-23T13:52:05.294313+02:00",
   "https://delta.tudelft.nl/article/tu-delft-verwelkomt-meer-eerstejaars-ondanks-landelijke-daling": "2026-10-22T12:48:07.748509+02:00",
+  "https://delta.tudelft.nl/article/waarom-je-nu-je-id-moet-laten-zien-in-de-tu-delft-library": "2026-10-23T17:59:38.570018+02:00",
   "https://delta.tudelft.nl/article/waarom-studentenvakbond-lsvb-zich-verzet-tegen-militarisering": "2026-10-22T12:21:18.675555+02:00",
   "https://www.delft.nl/asielopvang-nootdorpsepadsportring": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/balies-gemeente-dicht": "2026-10-22T12:48:07.748509+02:00",
@@ -424,21 +436,25 @@
   "https://www.delftopzondag.nl/nieuws/algemeen/111423/terugblik-zesde-editie-delft-maakt-ruimte": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/sport/111380/de-derde-helft-bij-full-speed-": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/sport/111383/niels-van-der-steuijt-streeft-naar-nieuwe-finale-in-ahoy": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/brand-in-de-kerkstraat-wat-weten-we-nu/": "2026-10-23T17:59:38.570018+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/brand-in-delftse-binnenstad-trekt-veel-bekijks-verdrietig-om-te-zien/": "2026-10-23T08:21:25.876579+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/crowdfunding-microtheater-delft-afgerond-daar-zijn-we-ongelooflijk-trots-op/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/grote-brand-in-delftse-binnenstad/": "2026-10-22T12:48:07.748509+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/historische-mijlpaal-voor-filmhuis-lumen-100-000ste-bezoeker-van-2026/": "2026-10-23T17:59:38.570018+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/van-delft-naar-singapore-kunstenaar-rene-jacobs-exposeert-in-miljoenenstad/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/delftenaar-opgelicht-via-smsje-bijna-3000-euro-kwijt/": "2026-10-23T13:52:05.294313+02:00",
   "https://www.omroepdelft.nl/delft/delftse-boyan-slat-wint-prijs-in-qatar-voor-opvissen-van-miljoenen-kilos-afval/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/donderdag-opnieuw-staking-streekvervoer-minder-busritten-in-delft/": "2026-10-22T12:48:07.748509+02:00",
+  "https://www.omroepdelft.nl/delft/hof-van-delft/dierenkliniek-hof-van-delft-blijft-toch-open-mensen-vonden-het-superjammer-dat-het-zou-sluiten/": "2026-10-23T17:59:38.570018+02:00",
   "https://www.omroepdelft.nl/delft/recordstijging-van-kosten-voor-dsw-zorgverzekering/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/tu-campus/alternatieve-eendenbek-haalt-met-crowdfunding-ruim-twee-ton-op-ver-boven-onze-verwachting/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/tu-campus/tu-studenten-willemijn-en-marin-staan-in-finale-van-de-hema-ontwerpwedstrijd/": "2026-10-23T08:21:25.876579+02:00",
   "https://www.omroepdelft.nl/delft/twintigjarige-krijgt-bijna-jaar-celstraf-voor-babbeltruc-bij-68-jarige-vrouw-in-delft/": "2026-10-23T08:21:25.876579+02:00",
   "https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/": "2026-10-22T12:48:07.748509+02:00",
-  "https://www.omroepdelft.nl/delft/wippolder/hondenuitlaatdienst-de-roedel-moet-na-veertien-jaar-weg-van-uitlaatveld-in-delft/": "2026-10-23T13:52:05.294313+02:00"
+  "https://www.omroepdelft.nl/delft/wippolder/hondenuitlaatdienst-de-roedel-moet-na-veertien-jaar-weg-van-uitlaatveld-in-delft/": "2026-10-23T13:52:05.294313+02:00",
+  "https://www.omroepdelft.nl/politiek/van-delft-naar-brussel-gemeenteraadslid-spreekt-in-europa-over-banen-van-de-toekomst/": "2026-10-23T17:59:38.570018+02:00"
  },
  "tg_offset": 232833782,
  "version": 1

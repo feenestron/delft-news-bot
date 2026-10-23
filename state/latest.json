@@ -1,0 +1,73 @@
+{
+ "version": 1,
+ "date": "2026-10-23",
+ "title": "Делфт · пятница, 23 октября",
+ "published": "2026-10-23T17:59:38.570018+02:00",
+ "news": [
+  {
+   "title": "Пожар на Kerkstraat: сгорела терраса Café De Ruif, пострадал Microtheater",
+   "summary": "Пожар 22 октября начался на террасе Café De Ruif и перекинулся на само кафе. Никто не пострадал; соседний Microtheater получил повреждения от сажи, спектакли и занятия пока проходят в других местах. Причину выясняет полиция.",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/brand-in-de-kerkstraat-wat-weten-we-nu/",
+   "source": "Omroep Delft"
+  },
+  {
+   "title": "Ветклиника в Hof van Delft не закроется",
+   "summary": "Клинику на Hof van Delftlaan собирались закрыть из-за нехватки персонала, но её выкупают ветеринары Yara van de Pest и Anna Dekker. Со 2 ноября она продолжит работу как самостоятельная практика.",
+   "url": "https://www.omroepdelft.nl/delft/hof-van-delft/dierenkliniek-hof-van-delft-blijft-toch-open-mensen-vonden-het-superjammer-dat-het-zou-sluiten/",
+   "source": "Omroep Delft"
+  },
+  {
+   "title": "Filmhuis Lumen принял 100-тысячного посетителя за 2026 год",
+   "summary": "В прошлом году было 86 000 посетителей. Рост связан с переездом 14 марта в новое здание, где вдвое больше залов.",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/historische-mijlpaal-voor-filmhuis-lumen-100-000ste-bezoeker-van-2026/",
+   "source": "Omroep Delft"
+  }
+ ],
+ "events": [
+  {
+   "title": "Писательская мастерская: место действия и перспектива",
+   "when": "пт 23 окт, 09:30–12:00",
+   "where": "",
+   "price": "€20",
+   "summary": "Мастерская Gean Ockels (Bureau Geanie) о том, как место действия, атмосфера и point of view формируют историю.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief",
+   "date": "2026-10-23"
+  },
+  {
+   "title": "Sunday Sounds: Anja Verrijp и Robert Kwakkelstein",
+   "when": "вс 25 окт",
+   "where": "Koepoortplaats 3",
+   "price": "",
+   "summary": "Музыкальный воскресный концерт из серии Sunday Sounds.",
+   "url": "https://uitdelft.com/event/sunday-sounds-anja-verrijp-en-robert-kwakkelstein/",
+   "date": "2026-10-25"
+  },
+  {
+   "title": "Мюзикл «Willem van Oranje»",
+   "when": "вс 25 окт, 13:30",
+   "where": "Prinsentheater",
+   "price": "€45",
+   "summary": "Мюзикл об Вильгельме Оранском в Prinsentheater.",
+   "url": "https://uitdelft.com/event/willem-van-oranje-de-musical-6/",
+   "date": "2026-10-25"
+  },
+  {
+   "title": "Per Sempre Giovane: воскресный концерт в Waag",
+   "when": "вс 25 окт, 14:00–17:00",
+   "where": "De Waag, Markt 11",
+   "price": "",
+   "summary": "Воскресное выступление шестичленной группы Per Sempre Giovane в центре города.",
+   "url": "https://uitdelft.com/event/per-sempre-giovane-op-zondag-in-de-waag/",
+   "date": "2026-10-25"
+  },
+  {
+   "title": "Живая музыка: New Moondance",
+   "when": "вс 25 окт, 16:00–19:00",
+   "where": "De Koperen Kat, Schieweg 15m",
+   "price": "",
+   "summary": "Воскресный концерт группы New Moondance в баре De Koperen Kat.",
+   "url": "https://uitdelft.com/event/live-muziek-met-new-moondance/",
+   "date": "2026-10-25"
+  }
+ ]
+}
