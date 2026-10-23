@@ -247,15 +247,18 @@ class DigestTests(unittest.TestCase):
         d = digest_from_llm(result, col, TODAY, 8, 8)
         self.assertEqual(len(d.news), 1)
         self.assertEqual(d.news[0].url, "https://www.omroepdelft.nl/delft/brand/")
-        html = render(d)
+        html = "\n".join(render(d))
         self.assertIn("<b>🗞 Делфт · четверг, 22 октября</b>", html)
+        self.assertIn('<b>Крупный пожар в центре</b> — <a href="https://www.omroepdelft.nl/delft/brand/">'
+                      'Omroep Delft</a>\n<i>Эвакуированы 10 домов.</i>', html)
+        self.assertIn('сб 24 окт, 20:15 — <a href="https://e/1">Концерт</a>\n<i>Oude Kerk · €10</i>', html)
         self.assertIn("📰 События", html)
         self.assertIn("📅 Анонсы", html)
         self.assertIn('<a href="https://www.omroepdelft.nl/delft/brand/">Omroep Delft</a>', html)
 
     def test_plain_digest_escapes_html(self):
         d = plain_digest(self.collected(), TODAY, 8, 8)
-        html = render(d)
+        html = "\n".join(render(d))
         self.assertIn("Concert &lt;live&gt;", html)
         self.assertIn("сб 24 окт, 20:15", html)
 
@@ -298,7 +301,10 @@ class DigestTests(unittest.TestCase):
         from bot.digest import Digest, NewsLine
         d = Digest(TODAY, [NewsLine("Заголовок " * 10, "Текст " * 60, "https://x/" + str(i), "Src")
                            for i in range(30)], [])
-        self.assertLessEqual(len(render(d)), 4096)
+        messages = render(d)
+        self.assertGreater(len(messages), 1)  # длинный дайджест делится, пункты не теряются
+        self.assertTrue(all(len(m) <= 4096 for m in messages))
+        self.assertEqual(sum(m.count("https://x/") for m in messages), 30)
 
 
 class FakeTelegram:

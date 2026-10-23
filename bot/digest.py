@@ -254,36 +254,41 @@ def plain_digest(c: Collected, day: date, max_news: int, max_events: int) -> Dig
     return Digest(day, news, events)
 
 
-def render(d: Digest) -> str:
-    """HTML для Telegram (parse_mode=HTML). Укладывается в лимит 4096 символов."""
-    news, events = list(d.news), list(d.events)
-    while True:
-        text = _render(d.day, news, events)
-        if len(text) <= TG_LIMIT or not (news or events):
-            return text
-        # убираем по одному пункту с конца более длинного раздела
-        (news if len(news) >= len(events) else events).pop()
+def render_news(n: NewsLine) -> str:
+    """<b>Заголовок</b> — <a>Источник</a>\n<i>Краткое содержание</i>"""
+    head = f'<b>{escape(n.title)}</b> — <a href="{escape(n.url, quote=True)}">{escape(n.source)}</a>'
+    return f"{head}\n<i>{escape(n.summary)}</i>" if n.summary else head
 
 
-def _render(day: date, news: list[NewsLine], events: list[EventLine]) -> str:
-    parts = [f"<b>🗞 Делфт · {escape(ru_date(day))}</b>"]
-    if news:
-        parts.append("\n<b>📰 События</b>")
-        for n in news:
-            line = f"• <b>{escape(n.title)}</b>"
-            if n.summary:
-                line += f" — {escape(n.summary)}"
-            line += f' <a href="{escape(n.url, quote=True)}">{escape(n.source)}</a>'
-            parts.append(line)
-    if events:
-        parts.append("\n<b>📅 Анонсы</b>")
-        for e in events:
-            line = f"• <b>{escape(e.when)}</b> · {escape(e.title)}" if e.when else f"• {escape(e.title)}"
-            extra = ", ".join(x for x in (e.where, e.price) if x)
-            if extra:
-                line += f" ({escape(extra)})"
-            if e.summary:
-                line += f". {escape(e.summary.rstrip('.'))}."
-            line += f' <a href="{escape(e.url, quote=True)}">→</a>'
-            parts.append(line)
-    return "\n".join(parts)
+def render_event(e: EventLine) -> str:
+    """дата/время — <a>Название</a>\n<i>место · цена. Краткое содержание</i>"""
+    link = f'<a href="{escape(e.url, quote=True)}">{escape(e.title)}</a>'
+    head = f"{escape(e.when)} — {link}" if e.when else link
+    place = " · ".join(x for x in (e.where, e.price) if x)
+    summary = e.summary.strip().rstrip(".")
+    body = ". ".join(x for x in (place, summary) if x)
+    if summary:
+        body += "."
+    return f"{head}\n<i>{escape(body)}</i>" if body else head
+
+
+def render(d: Digest) -> list[str]:
+    """Дайджест в HTML для Telegram; длинный — несколько сообщений по границам пунктов."""
+    blocks = [f"<b>🗞 Делфт · {escape(ru_date(d.day))}</b>"]
+    if d.news:
+        blocks.append("<b>📰 События</b>")
+        blocks.extend(render_news(n) for n in d.news)
+    if d.events:
+        blocks.append("<b>📅 Анонсы</b>")
+        blocks.extend(render_event(e) for e in d.events)
+    messages, current = [], ""
+    for block in blocks:
+        candidate = f"{current}\n\n{block}" if current else block
+        if len(candidate) > TG_LIMIT and current:
+            messages.append(current)
+            current = block
+        else:
+            current = candidate
+    if current:
+        messages.append(current)
+    return messages

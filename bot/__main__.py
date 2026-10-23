@@ -64,17 +64,23 @@ def report(collected, text: str, problems: list[str], now: datetime) -> str:
     return "\n".join(lines) + "\n"
 
 
-def publish(tg: Telegram, chat_id: str, text: str, problems: list[str]) -> dict:
-    post = {"text": text, "parse_mode": "HTML"}
-    try:
-        return tg.send(chat_id, post)
-    except TelegramError as exc:
-        new_id = exc.parameters.get("migrate_to_chat_id")
-        if not new_id:
-            raise
-        # группа стала супергруппой — у неё новый id
-        problems.append(f"группа сменила id на {new_id} — обновите секрет CHANNEL_ID")
-        return tg.send(str(new_id), post)
+def publish(tg: Telegram, chat_id: str, messages: list[str], problems: list[str]) -> int:
+    """Отправляет сообщения дайджеста по порядку; возвращает id первого."""
+    first = None
+    for text in messages:
+        post = {"text": text, "parse_mode": "HTML"}
+        try:
+            sent = tg.send(chat_id, post)
+        except TelegramError as exc:
+            new_id = exc.parameters.get("migrate_to_chat_id")
+            if not new_id:
+                raise
+            # группа стала супергруппой — у неё новый id
+            problems.append(f"группа сменила id на {new_id} — обновите секрет CHANNEL_ID")
+            chat_id = str(new_id)
+            sent = tg.send(chat_id, post)
+        first = first or sent["message_id"]
+    return first
 
 
 def cmd_digest(cfg: Config, args) -> int:
@@ -110,7 +116,8 @@ def cmd_digest(cfg: Config, args) -> int:
         if digest is None:
             digest = plain_digest(collected, now.date(), cfg.max_news, cfg.max_events)
     has_content = bool(digest and (digest.news or digest.events))
-    text = render(digest) if has_content else ""
+    messages = render(digest) if has_content else []
+    text = "\n\n— — —\n\n".join(messages)
 
     write_summary(report(collected, text, problems, now))
     if args.dry_run:
@@ -123,7 +130,7 @@ def cmd_digest(cfg: Config, args) -> int:
     stamp = now.isoformat()
     message_id = None
     if has_content:
-        message_id = publish(tg, cfg.channel_id, text, problems)["message_id"]
+        message_id = publish(tg, cfg.channel_id, messages, problems)
         # Показанными считаются только опубликованные анонсы; новости-кандидаты — все,
         # т. к. отобранное и отброшенное Claude не должно всплывать завтра снова.
         for e in digest.events:
