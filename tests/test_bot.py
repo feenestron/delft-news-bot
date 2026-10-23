@@ -298,6 +298,24 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(len(data["skipped"]), 2)
         self.assertTrue(all("reason" in s for s in data["skipped"]))
 
+    def test_event_levels_top_first_skip_kept(self):
+        from bot.collect import Collected, Event
+        col = Collected()
+        for i, title in enumerate(["Kinderworkshop", "Band in café", "Festival", "Lezing", "Expo"]):
+            col.events.append(Event("Uit Delft", title, f"https://e/{i}", date(2026, 10, 24), None, f"1{i}:00"))
+        result = {"news": [], "events": [
+            {"id": "e0", "level": "skip", "reason": "детское"},
+            {"id": "e1", "level": "skip", "reason": "бар, местная группа"},
+            {"id": "e2", "level": "top", "title": "Фестиваль", "when": "сб 24 окт, 12:00", "date": "2026-10-24"},
+            {"id": "e3", "level": "ok", "title": "Лекция", "when": "сб 24 окт, 13:00", "date": "2026-10-24"}]}
+        d = digest_from_llm(result, col, TODAY, 8, 1)          # лимит 1: берём top, ok не влезает
+        self.assertEqual([e.title for e in d.events], ["Фестиваль"])
+        reasons = {s["title"]: s["reason"] for s in d.skipped_events}
+        self.assertEqual(reasons["Kinderworkshop"], "детское")
+        self.assertEqual(reasons["Band in café"], "бар, местная группа")
+        self.assertEqual(reasons["Lezing"], "не хватило места в выпуске")
+        self.assertEqual(reasons["Expo"], "модель не оценила")
+
     def test_stable_order_is_deterministic(self):
         from bot.digest import stable_order
         a, b = self._news_col(5), self._news_col(5)

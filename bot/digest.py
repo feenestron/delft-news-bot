@@ -62,6 +62,7 @@ class Digest:
     events: list[EventLine]
     maybe: list[NewsLine] = field(default_factory=list)    # сетка ключевых слов: модель не взяла
     skipped: list[dict] = field(default_factory=list)      # не вошедшие новости с причиной
+    skipped_events: list[dict] = field(default_factory=list)  # не вошедшие анонсы с причиной
 
 
 SYSTEM_PROMPT = """\
@@ -92,13 +93,22 @@ SYSTEM_PROMPT = """\
   Внутри уровня — по важности. "must" идут в выпуск все; "interesting" — только лучшие,
   до лимита limits.interesting_max.
 - Мероприятия: только в Делфте и ближайших окрестностях (Delfgauw, Den Hoorn), проходящие
-  в указанный период; события из других городов (Den Haag и т. п.) не включай.
-  Выбирай самое интересное для широкой публики и делай подборку разнообразной:
-  концерты, спектакли, фестивали, ярмарки, лекции, городские праздники, спорт, выставки.
-  Не больше 1–2 длительных выставок и не больше 2 детских мероприятий.
-  Не включай рутину: обычные сеансы кинотеатров (только фестивальные и спецпоказы),
-  регулярные консультации и кружки (Taalhuis, IDO, Digitale Huiskamer, чтения для малышей),
-  ежедневные/еженедельные «ночные» акции баров. Объединяй дубликаты из разных источников.
+  в указанный период. Оцени КАЖДОЕ мероприятие из входных данных и присвой уровень (level):
+  * "top" — стоит внимания: крупные концерты и спектакли в больших залах (Theater de Veste,
+    Nieuwe Kerk, Oude Kerk, Prinsenhof и т. п.), фестивали, ярмарки и рынки, городские праздники,
+    значимые выставки (не больше 1–2 длительных), лекции известных людей, спортивные события
+    городского масштаба, фестивальное кино и спецпоказы; из церковных — только очень важные
+    праздничные службы (Пасха, Рождество).
+  * "ok" — можно, если останется место: остальное интересное взрослым жителям.
+  * "skip" — не брать: всё детское и школьное (детские мастерские, спектакли и занятия,
+    программы для школьников вроде Cultuurbarbaren, каникулярные занятия, семейные утренники);
+    выступления местных групп в барах и кафе, open mic, DJ-вечера в барах; обычные церковные
+    службы и хоровые вечерни; рутина (обычные сеансы кинотеатров, регулярные консультации и
+    кружки — Taalhuis, IDO, Digitale Huiskamer, еженедельные акции баров); события не в
+    Делфте (Den Haag и т. п.); дубликаты из разных источников.
+  Для "top" и "ok" заполни title, when, date, where, price, summary; для "skip" — только reason
+  (одна короткая фраза по-русски: «детское», «бар, местная группа», «не в Делфте», «дубликат»).
+  В выпуск идут все "top" (до лимита limits.events_max), оставшиеся места — лучшие "ok".
 - Ничего не выдумывай: используй только факты из входных данных. Если нет места, цены или
   времени — оставь поле пустым.
 
@@ -112,7 +122,7 @@ SYSTEM_PROMPT = """\
 - Цена: «бесплатно», «€15» и т. п.
 
 Верни результат, вызвав инструмент submit_digest: в news — ВСЕ новости из входных данных
-с уровнями, в events — отобранные мероприятия по дате. id бери ровно из входных данных."""
+с уровнями, в events — ВСЕ мероприятия из входных данных с уровнями. id бери ровно из входных данных."""
 
 TOOL = {
     "name": "submit_digest",
@@ -141,6 +151,8 @@ TOOL = {
                     "type": "object",
                     "properties": {
                         "id": {"type": "string"},
+                        "level": {"type": "string", "enum": ["top", "ok", "skip"]},
+                        "reason": {"type": "string", "description": "для skip: почему не берём, одна короткая фраза"},
                         "title": {"type": "string"},
                         "when": {"type": "string"},
                         "date": {"type": "string", "description": "YYYY-MM-DD, дата начала для сортировки"},
@@ -148,7 +160,7 @@ TOOL = {
                         "price": {"type": "string"},
                         "summary": {"type": "string", "description": "одно короткое предложение: что это за событие (жанр, о чём, для кого); пусто, только если во входных данных совсем нет сведений"},
                     },
-                    "required": ["id", "title", "when", "date"],
+                    "required": ["id", "level"],
                 },
             },
         },
@@ -320,20 +332,39 @@ def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_ev
                                  else "слишком много новостей за день — не отдана модели"))
     news = must + interesting[:cap]
     used = {x.url for x in news}
-    events = []
+    top, ok, skipped_events, rated_e = [], [], [], set()
+
+    def skip_event(e, reason):
+        skipped_events.append({"title": e.title, "url": e.url, "source": e.source, "reason": reason,
+                               "date": e.start.isoformat() if e.start else ""})
+
     for item in result.get("events", []):
-        e = events_by_id.get(str(item.get("id")))
-        if not e or e.url in used:
+        eid = str(item.get("id"))
+        e = events_by_id.get(eid)
+        if not e or eid in rated_e:
+            continue
+        rated_e.add(eid)
+        level = str(item.get("level") or "ok").lower()
+        if level == "skip" or e.url in used:
+            skip_event(e, (item.get("reason") or "").strip() or ("дубликат" if e.url in used else "не подходит"))
             continue
         used.add(e.url)
-        events.append(EventLine(item.get("title", "").strip() or e.title,
-                                item.get("when", "").strip() or _event_when_fallback(e.start, e.end, e.time_text),
-                                (item.get("where") or "").strip(), (item.get("price") or "").strip(),
-                                (item.get("summary") or "").strip(), e.url,
-                                item.get("date") or (e.start.isoformat() if e.start else "")))
+        line = EventLine(item.get("title", "").strip() or e.title,
+                         item.get("when", "").strip() or _event_when_fallback(e.start, e.end, e.time_text),
+                         (item.get("where") or "").strip(), (item.get("price") or "").strip(),
+                         (item.get("summary") or "").strip(), e.url,
+                         item.get("date") or (e.start.isoformat() if e.start else ""))
+        (top if level == "top" else ok).append((line, e))
+    chosen = (top + ok)[:max_events]
+    for line, e in (top + ok)[max_events:]:
+        skip_event(e, "не хватило места в выпуске")
+    for eid, e in events_by_id.items():
+        if eid not in rated_e and e.url not in used:
+            skip_event(e, "модель не оценила")
+    events = [line for line, _ in chosen]
     # по дате, внутри дня — по времени начала («весь день» и без времени — в начале дня)
     events.sort(key=lambda x: (x.sort_key, _start_time(x.when)))
-    return Digest(day, news, events[:max_events], _maybe_lines(skipped), skipped)
+    return Digest(day, news, events, _maybe_lines(skipped), skipped, skipped_events)
 
 
 def plain_digest(c: Collected, day: date, max_news: int, max_events: int) -> Digest:
@@ -360,6 +391,7 @@ def digest_to_dict(d: Digest, published: datetime) -> dict:
                   "level": n.level} for n in d.news],
         "maybe": [{"title": n.title, "url": n.url, "source": n.source} for n in d.maybe],
         "skipped": [{k: v for k, v in s.items() if k != "duplicate"} for s in d.skipped],
+        "skipped_events": d.skipped_events,
         "events": [{"title": e.title, "when": e.when, "where": e.where, "price": e.price,
                     "summary": e.summary, "url": e.url, "date": e.sort_key} for e in d.events],
     }

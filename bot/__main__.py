@@ -76,6 +76,10 @@ def report(collected, text: str, problems: list[str], now: datetime, digest=None
         for s in digest.skipped:
             flag = " ⚠️ ключевое слово" if s.get("flagged") else ""
             lines.append(f"- [{s['source']}] [{s['original']}]({s['url']}) — {s['reason']}{flag}")
+    if digest is not None and digest.skipped_events:
+        lines += ["", f"## Не вошло из анонсов ({len(digest.skipped_events)})", ""]
+        for s in digest.skipped_events:
+            lines.append(f"- [{s['source']}] {s['date']} — [{s['title']}]({s['url']}) — {s['reason']}")
     lines += ["", f"## Кандидаты: новости ({len(collected.news)})", ""]
     for n in collected.news:
         when = n.published.strftime("%d.%m %H:%M") if n.published else "без даты"
