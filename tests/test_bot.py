@@ -257,6 +257,54 @@ class DigestTests(unittest.TestCase):
         self.assertIn("📅 Анонсы", html)
         self.assertIn('<a href="https://www.omroepdelft.nl/delft/brand/">Omroep Delft</a>', html)
 
+    def _news_col(self, n):
+        from bot.collect import Collected, News
+        col = Collected()
+        for i in range(n):
+            col.news.append(News("Omroep Delft", f"Bericht {i}", f"https://n/{i}", "tekst",
+                                 NOW - timedelta(hours=i)))
+        return col
+
+    def test_levels_must_unlimited_interesting_capped(self):
+        col = self._news_col(12)
+        stable = list(col.news)
+        result = {"news": [{"id": f"n{i}", "level": "must", "title": f"Важно {i}", "summary": "s"} for i in range(6)]
+                  + [{"id": f"n{i}", "level": "interesting", "title": f"Интересно {i}", "summary": "s"} for i in range(6, 11)],
+                  "events": []}
+        d = digest_from_llm(result, col, TODAY, 8, 8)
+        self.assertEqual([n.level for n in d.news].count("must"), 6)          # все обязательные
+        self.assertEqual([n.level for n in d.news].count("interesting"), 3)   # min 3, хотя 8-6=2
+        reasons = {s["url"]: s["reason"] for s in d.skipped}
+        self.assertEqual(reasons[stable[9].url], "не хватило места в выпуске")
+        self.assertEqual(reasons[stable[11].url], "модель не оценила")
+        self.assertEqual(len(d.news) + len(d.skipped), 12)                     # ничего не теряется
+
+    def test_keyword_net_adds_maybe_line(self):
+        from bot.collect import Collected, News
+        col = Collected()
+        col.news = [News("Gemeente Delft", "Balies gemeente dicht op 11 november", "https://g/1", "", NOW),
+                    News("Omroep Delft", "Filmhuis viert jubileum", "https://g/2", "", NOW),
+                    News("Delta", "Balies dicht (herhaling)", "https://g/3", "", NOW)]
+        result = {"news": [{"id": "n0", "level": "skip", "title": "Окошки гемеенте закрыты 11 ноября", "reason": "не важно"},
+                           {"id": "n1", "level": "interesting", "title": "Юбилей фильмхауса", "summary": "s"},
+                           {"id": "n2", "level": "skip", "title": "Окошки закрыты", "reason": "дубликат", "duplicate_of": "n0"}],
+                  "events": []}
+        d = digest_from_llm(result, col, TODAY, 8, 8)
+        self.assertEqual([m.url for m in d.maybe], ["https://g/1"])   # дубликат не дублируется
+        html = "\n".join(render(d))
+        self.assertIn("<i>Возможно, важно:</i>", html)
+        self.assertIn("Окошки гемеенте закрыты 11 ноября", html)
+        data = __import__("bot.digest", fromlist=["x"]).digest_to_dict(d, NOW)
+        self.assertEqual(len(data["skipped"]), 2)
+        self.assertTrue(all("reason" in s for s in data["skipped"]))
+
+    def test_stable_order_is_deterministic(self):
+        from bot.digest import stable_order
+        a, b = self._news_col(5), self._news_col(5)
+        b.news.reverse()
+        stable_order(a); stable_order(b)
+        self.assertEqual([n.url for n in a.news], [n.url for n in b.news])
+
     def test_events_sorted_by_time_within_day(self):
         col = self.collected()
         from bot.collect import Event
@@ -301,6 +349,34 @@ class DigestTests(unittest.TestCase):
             d = dg.llm_digest(self.collected(), NOW, TODAY + timedelta(days=3), "k", "m", 8, 8)
         self.assertEqual(calls, ["tool", "auto"])
         self.assertEqual(d.news[0].title, "Пожар")
+
+    def test_claude_retries_without_temperature(self):
+        from unittest import mock
+        from bot import digest as dg
+
+        class R:
+            def __init__(self, code, data):
+                self.status_code, self._data = code, data
+                self.text = __import__("json").dumps(data)
+
+            def json(self):
+                return self._data
+
+        err = R(400, {"type": "error", "error": {"message": "temperature is not supported for this model"}})
+        ok = R(200, {"content": [{"type": "tool_use", "name": "submit_digest",
+                                  "input": {"news": [{"id": "n0", "level": "must", "title": "Пожар", "summary": "x"}],
+                                            "events": []}}]})
+        bodies = []
+
+        def fake_post(url, json=None, **kw):
+            bodies.append(dict(json))
+            return err if len(bodies) == 1 else ok
+
+        with mock.patch.object(dg.requests, "post", side_effect=fake_post):
+            d = dg.llm_digest(self.collected(), NOW, TODAY + timedelta(days=3), "k", "m", 8, 8)
+        self.assertEqual(bodies[0]["temperature"], 0)
+        self.assertNotIn("temperature", bodies[1])
+        self.assertEqual(d.news[0].level, "must")
 
     def test_extract_result_from_text_json(self):
         from bot.digest import extract_result

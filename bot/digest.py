@@ -3,8 +3,9 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date, datetime
 from html import escape
 
@@ -16,6 +17,18 @@ log = logging.getLogger(__name__)
 
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 TG_LIMIT = 4096
+MAX_NEWS_INPUT = 60      # сколько новостей-кандидатов отдаём модели (остальные — в «не вошло»)
+MAX_MAYBE = 5            # максимум строк «Возможно, важно»
+
+# Страховочная сетка: слова, по которым новость может касаться быта жителей. Если модель
+# такую новость не взяла, она всё равно попадает в пост строкой «Возможно, важно».
+IMPORTANT_NL = re.compile(
+    r"\b(dicht|gesloten|sluit|sluiting|storing|storingen|afgesloten|afsluiting|omleiding|omgeleid|"
+    r"stremming|gestremd|staking|staken|staakt|uitval|valt uit|waarschuw\w*|let op|"
+    r"werkzaamheden|wegwerkzaamheden|deadline|uiterlijk|aanvragen|verplicht|boete|"
+    r"tarieven|tariefverhoging|verhoging|belasting|afvalinzameling|inzameling|ophaaldag|"
+    r"evacuatie|ontruim\w*|noodverordening|kookadvies|drinkwater|stroomstoring)\b",
+    re.IGNORECASE)
 WEEKDAYS = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]
 WEEKDAYS_SHORT = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
 MONTHS_GEN = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа",
@@ -28,6 +41,7 @@ class NewsLine:
     summary: str
     url: str
     source: str
+    level: str = "interesting"   # must | interesting | maybe
 
 
 @dataclass
@@ -46,6 +60,8 @@ class Digest:
     day: date
     news: list[NewsLine]
     events: list[EventLine]
+    maybe: list[NewsLine] = field(default_factory=list)    # сетка ключевых слов: модель не взяла
+    skipped: list[dict] = field(default_factory=list)      # не вошедшие новости с причиной
 
 
 SYSTEM_PROMPT = """\
@@ -54,30 +70,27 @@ SYSTEM_PROMPT = """\
 на нидерландском (иногда английском) и готовишь из них дайджест на русском языке.
 
 Правила отбора:
-- Новости: только НОВОСТИ о том, что происходит В ДЕЛФТЕ и важно или полезно его жителям.
-  Берём:
-  * решения и работа гемеенте, услуги для жителей (документы, приём, сайты, парковка,
-    вывоз мусора, жильё, стройки, ремонт и перекрытие улиц, споры жителей с городом);
-  * происшествия и безопасность в городе (пожары, преступления, мошенничество с жителями,
-    предупреждения полиции);
-  * транспорт и то, что прямо бьёт по кошельку или быту жителей (забастовки транспорта,
-    рост цен местной/региональной страховки, коммуналки);
-  * события городской жизни, куда можно пойти или что можно увидеть/купить в Делфте
-    (новая экспозиция в Hortus, успех местного театра, сезонный товар в городских магазинах).
-  Не берём:
-  * то, что происходит НЕ в Делфте, даже с делфтцами или делфтскими организациями
-    (премия делфтцу в Катаре, выставка делфтского художника в Сингапуре, делфтские дизайнеры
-    на Dutch Design Week в Эйндховене, делфтский спортсмен на турнире в Роттердаме);
-  * аналитику, колонки, интервью, мнения, «N вопросов эксперту», научно-популярные статьи
-    (колонка про «парадокс Джевонса», интервью об уязвимости PHP, «Zen Box» от постдока);
-  * внутреннюю жизнь TU Delft и науки без прямого влияния на жителей (число первокурсников,
-    кодекс поведения учёных, стартапы и краудфандинг университетских проектов);
-  * общенациональную политику без конкретного эффекта для Делфта (сокращения в министерстве);
-  * новости клубов и ассоциаций (юбилеи, отчёты о прошедших встречах), рекламу,
-    партнёрские материалы, конкурсы и розыгрыши.
-  Сомневаешься — не бери: лучше 3 нужные новости, чем 8 с балластом. Если подходящих
-  нет совсем, оставь раздел пустым. Несколько материалов об одном и том же — один пункт
-  (с более полной информацией).
+- Новости. Оцени КАЖДУЮ новость из входных данных и присвой уровень (level):
+  * "must" — обязательно в выпуск: то, что влияет на быт жителей Делфта. Закрытия, сбои
+    и изменения в работе гемеенте и городских служб (приём, документы, сайты, вывоз мусора,
+    парковка); перекрытия, ремонт и стройки улиц, изменения маршрутов; забастовки и сбои
+    транспорта; происшествия и предупреждения полиции и пожарных, мошенничество с жителями;
+    сроки и дедлайны для жителей; изменения цен, налогов, тарифов, правил и страховок,
+    которые затрагивают делфтцев. Если сомневаешься между "must" и "interesting" — ставь "must".
+  * "interesting" — городская жизнь Делфта: культура, массовые мероприятия, здоровье,
+    успехи местных мест и людей в Делфте, новые места и сезонное в городе.
+  * "skip" — не брать: то, что происходит НЕ в Делфте (премия делфтцу в Катаре, выставка
+    делфтского художника в Сингапуре, Dutch Design Week в Эйндховене); аналитика, колонки,
+    интервью, мнения, научно-популярные статьи; внутренняя жизнь TU Delft без влияния на
+    жителей; общенациональная политика без конкретного эффекта для Делфта; новости клубов и
+    ассоциаций, реклама, партнёрские материалы, конкурсы и розыгрыши; дубликаты.
+  Для каждой новости верни title на русском. Для "must" и "interesting" — ещё summary,
+  для "skip" — reason: одна короткая фраза по-русски, почему не берём («не в Делфте»,
+  «колонка», «реклама», «дубликат»). Если несколько материалов об одном и том же — один
+  пункт (с более полной информацией) получает уровень, остальные "skip" с duplicate_of = id
+  этого пункта.
+  Внутри уровня — по важности. "must" идут в выпуск все; "interesting" — только лучшие,
+  до лимита limits.interesting_max.
 - Мероприятия: только в Делфте и ближайших окрестностях (Delfgauw, Den Hoorn), проходящие
   в указанный период; события из других городов (Den Haag и т. п.) не включай.
   Выбирай самое интересное для широкой публики и делай подборку разнообразной:
@@ -98,8 +111,8 @@ SYSTEM_PROMPT = """\
 - «when» для мероприятия: в формате «сб 24 окт, 20:15» или «до 1 нояб.» для длительных.
 - Цена: «бесплатно», «€15» и т. п.
 
-Верни результат, вызвав инструмент submit_digest. Порядок новостей — по важности,
-мероприятий — по дате. id бери ровно из входных данных."""
+Верни результат, вызвав инструмент submit_digest: в news — ВСЕ новости из входных данных
+с уровнями, в events — отобранные мероприятия по дате. id бери ровно из входных данных."""
 
 TOOL = {
     "name": "submit_digest",
@@ -113,10 +126,13 @@ TOOL = {
                     "type": "object",
                     "properties": {
                         "id": {"type": "string"},
-                        "title": {"type": "string"},
-                        "summary": {"type": "string"},
+                        "level": {"type": "string", "enum": ["must", "interesting", "skip"]},
+                        "title": {"type": "string", "description": "заголовок на русском"},
+                        "summary": {"type": "string", "description": "для must и interesting: суть в 1–2 предложениях"},
+                        "reason": {"type": "string", "description": "для skip: почему не берём, одна короткая фраза"},
+                        "duplicate_of": {"type": "string", "description": "для дубликата: id основного пункта"},
                     },
-                    "required": ["id", "title", "summary"],
+                    "required": ["id", "level", "title"],
                 },
             },
             "events": {
@@ -155,16 +171,22 @@ def _event_when_fallback(start: date | None, end: date | None, time_text: str) -
     return f"{s}, {time_text}" if time_text and len(time_text) <= 13 else s
 
 
+def stable_order(c: Collected) -> None:
+    """Одинаковый порядок кандидатов при одинаковых данных — предсказуемый отбор."""
+    c.news.sort(key=lambda n: (-(n.published.timestamp()) if n.published else 0, n.source, n.url))
+    c.events.sort(key=lambda e: (e.start.isoformat() if e.start else "9999", e.source, e.url))
+
+
 def build_input(c: Collected, now: datetime, horizon_end: date, max_news: int, max_events: int) -> str:
     payload = {
         "today": now.date().isoformat(),
         "weekday": WEEKDAYS[now.weekday()],
         "events_period": f"{now.date().isoformat()} .. {horizon_end.isoformat()}",
-        "limits": {"news_max": max_news, "events_max": max_events},
+        "limits": {"interesting_max": max_news, "events_max": max_events},
         "news": [
             {"id": f"n{i}", "source": n.source, "title": n.title,
              "published": n.published.isoformat() if n.published else None, "text": n.text}
-            for i, n in enumerate(c.news[:30])
+            for i, n in enumerate(c.news[:MAX_NEWS_INPUT])
         ],
         "events": [
             {"id": f"e{i}", "source": e.source, "title": e.title[:200],
@@ -180,9 +202,11 @@ def build_input(c: Collected, now: datetime, horizon_end: date, max_news: int, m
 
 def llm_digest(c: Collected, now: datetime, horizon_end: date, api_key: str, model: str,
                max_news: int, max_events: int) -> Digest:
+    stable_order(c)
     body = {
         "model": model,
         "max_tokens": 16000,  # с запасом: часть токенов может уйти на «размышление» модели
+        "temperature": 0,     # предсказуемый отбор: одинаковые данные — одинаковый результат
         "system": SYSTEM_PROMPT,
         "tools": [TOOL],
         # Принудительный вызов инструмента ("tool") поддерживается не всеми моделями
@@ -204,6 +228,10 @@ def _call_claude(body: dict, api_key: str) -> list[dict]:
     attempt = 0
     while True:
         r = requests.post(ANTHROPIC_URL, json=body, headers=headers, timeout=300)
+        if r.status_code == 400 and "temperature" in r.text and "temperature" in body:
+            log.info("Модель не принимает temperature — повтор без него")
+            body = {k: v for k, v in body.items() if k != "temperature"}
+            continue
         if r.status_code == 400 and "tool_choice" in r.text and body.get("tool_choice", {}).get("type") != "auto":
             log.info("Модель не поддерживает принудительный tool_choice — повтор с auto")
             body = {**body, "tool_choice": {"type": "auto"}}
@@ -241,18 +269,57 @@ def _start_time(when: str) -> str:
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
 
 
+def _flagged(n) -> bool:
+    return bool(IMPORTANT_NL.search(f"{n.title} {n.text}"))
+
+
+def _skip(n, title: str, reason: str) -> dict:
+    return {"title": title or n.title, "original": n.title, "url": n.url, "source": n.source,
+            "reason": reason, "flagged": _flagged(n)}
+
+
+def _maybe_lines(skipped: list[dict]) -> list[NewsLine]:
+    out = []
+    for s in skipped:
+        if s["flagged"] and not s.get("duplicate"):
+            out.append(NewsLine(s["title"], "", s["url"], s["source"], "maybe"))
+    return out[:MAX_MAYBE]
+
+
 def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_events: int) -> Digest:
-    """Собирает дайджест из ответа модели; ссылки берутся только из наших данных."""
+    """Собирает дайджест из ответа модели; ссылки берутся только из наших данных.
+    must — все; interesting — до лимита; всё отброшенное сохраняется в skipped с причиной."""
     news_by_id = {f"n{i}": n for i, n in enumerate(c.news)}
     events_by_id = {f"e{i}": e for i, e in enumerate(c.events)}
-    news, used = [], set()
+    must, interesting, skipped, used, rated = [], [], [], set(), set()
     for item in result.get("news", []):
-        n = news_by_id.get(str(item.get("id")))
-        if not n or n.url in used:
+        nid = str(item.get("id"))
+        n = news_by_id.get(nid)
+        if not n or nid in rated:
+            continue
+        rated.add(nid)
+        level = str(item.get("level") or "interesting").lower()
+        title = (item.get("title") or "").strip() or n.title
+        if level == "skip" or n.url in used:
+            entry = _skip(n, title, (item.get("reason") or "").strip() or ("дубликат" if n.url in used else "не подходит"))
+            if item.get("duplicate_of") or n.url in used:
+                entry["duplicate"] = True
+            skipped.append(entry)
             continue
         used.add(n.url)
-        news.append(NewsLine(item.get("title", "").strip() or n.title,
-                             item.get("summary", "").strip(), n.url, n.source))
+        line = NewsLine(title, (item.get("summary") or "").strip(), n.url, n.source,
+                        "must" if level == "must" else "interesting")
+        (must if line.level == "must" else interesting).append(line)
+    cap = max(3, max_news - len(must))
+    for line in interesting[cap:]:
+        n = next(x for x in c.news if x.url == line.url)
+        skipped.append(_skip(n, line.title, "не хватило места в выпуске"))
+    for nid, n in news_by_id.items():
+        if nid not in rated and n.url not in used:
+            skipped.append(_skip(n, "", "модель не оценила" if int(nid[1:]) < MAX_NEWS_INPUT
+                                 else "слишком много новостей за день — не отдана модели"))
+    news = must + interesting[:cap]
+    used = {x.url for x in news}
     events = []
     for item in result.get("events", []):
         e = events_by_id.get(str(item.get("id")))
@@ -266,18 +333,20 @@ def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_ev
                                 item.get("date") or (e.start.isoformat() if e.start else "")))
     # по дате, внутри дня — по времени начала («весь день» и без времени — в начале дня)
     events.sort(key=lambda x: (x.sort_key, _start_time(x.when)))
-    return Digest(day, news[:max_news], events[:max_events])
+    return Digest(day, news, events[:max_events], _maybe_lines(skipped), skipped)
 
 
 def plain_digest(c: Collected, day: date, max_news: int, max_events: int) -> Digest:
     """Запасной вариант без LLM: оригинальные заголовки без перевода."""
+    stable_order(c)
     news = [NewsLine(n.title, "", n.url, n.source) for n in c.news[:max_news]]
+    skipped = [_skip(n, "", "без перевода: не хватило места") for n in c.news[max_news:]]
     # разовые события вперёд, длительные (начавшиеся раньше) — в конец
     ordered = sorted(c.events, key=lambda e: (e.start is None or e.start < day, e.start or day))
     events = [EventLine(e.title, _event_when_fallback(e.start, e.end, e.time_text), e.venue,
                         e.price, "", e.url, e.start.isoformat() if e.start else "")
               for e in ordered[:max_events]]
-    return Digest(day, news, events)
+    return Digest(day, news, events, _maybe_lines(skipped), skipped)
 
 
 def digest_to_dict(d: Digest, published: datetime) -> dict:
@@ -287,7 +356,10 @@ def digest_to_dict(d: Digest, published: datetime) -> dict:
         "date": d.day.isoformat(),
         "title": f"Делфт · {ru_date(d.day)}",
         "published": published.isoformat(),
-        "news": [{"title": n.title, "summary": n.summary, "url": n.url, "source": n.source} for n in d.news],
+        "news": [{"title": n.title, "summary": n.summary, "url": n.url, "source": n.source,
+                  "level": n.level} for n in d.news],
+        "maybe": [{"title": n.title, "url": n.url, "source": n.source} for n in d.maybe],
+        "skipped": [{k: v for k, v in s.items() if k != "duplicate"} for s in d.skipped],
         "events": [{"title": e.title, "when": e.when, "where": e.where, "price": e.price,
                     "summary": e.summary, "url": e.url, "date": e.sort_key} for e in d.events],
     }
@@ -314,9 +386,12 @@ def render_event(e: EventLine) -> str:
 def render(d: Digest) -> list[str]:
     """Дайджест в HTML для Telegram; длинный — несколько сообщений по границам пунктов."""
     blocks = [f"<b>🗞 Делфт · {escape(ru_date(d.day))}</b>"]
-    if d.news:
+    if d.news or d.maybe:
         blocks.append("<b>📰 События</b>")
         blocks.extend(render_news(n) for n in d.news)
+    if d.maybe:
+        blocks.append("<i>Возможно, важно:</i>\n" + "\n".join(
+            f'• {escape(n.title)} — <a href="{escape(n.url, quote=True)}">{escape(n.source)}</a>' for n in d.maybe))
     if d.events:
         blocks.append("<b>📅 Анонсы</b>")
         blocks.extend(render_event(e) for e in d.events)

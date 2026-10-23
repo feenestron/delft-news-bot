@@ -63,7 +63,7 @@ def due(cfg: Config, st: dict, now: datetime) -> tuple[bool, str]:
     return True, ""
 
 
-def report(collected, text: str, problems: list[str], now: datetime) -> str:
+def report(collected, text: str, problems: list[str], now: datetime, digest=None) -> str:
     """Отчёт запуска: источники, проблемы, сам пост и все кандидаты."""
     lines = [f"# Дайджест {now:%Y-%m-%d %H:%M}", "", "## Источники", ""]
     lines += [f"- {k}: {v}" for k, v in collected.per_source.items()]
@@ -71,6 +71,11 @@ def report(collected, text: str, problems: list[str], now: datetime) -> str:
         lines += ["", "## Проблемы", ""] + [f"- {p}" for p in problems]
     lines += ["", "## Пост (HTML для Telegram)", ""]
     lines += ["```html", text, "```"] if text else ["_Публиковать нечего._"]
+    if digest is not None and digest.skipped:
+        lines += ["", f"## Не вошло в выпуск ({len(digest.skipped)})", ""]
+        for s in digest.skipped:
+            flag = " ⚠️ ключевое слово" if s.get("flagged") else ""
+            lines.append(f"- [{s['source']}] [{s['original']}]({s['url']}) — {s['reason']}{flag}")
     lines += ["", f"## Кандидаты: новости ({len(collected.news)})", ""]
     for n in collected.news:
         when = n.published.strftime("%d.%m %H:%M") if n.published else "без даты"
@@ -144,15 +149,15 @@ def cmd_digest(cfg: Config, args) -> int:
             problems.append("нет ANTHROPIC_API_KEY — заголовки в оригинале")
         if digest is None:
             digest = plain_digest(collected, now.date(), cfg.max_news, cfg.max_events)
-    has_content = bool(digest and (digest.news or digest.events))
+    has_content = bool(digest and (digest.news or digest.events or digest.maybe))
     messages = render(digest) if has_content else []
     text = "\n\n— — —\n\n".join(messages)
 
-    write_summary(report(collected, text, problems, now))
+    write_summary(report(collected, text, problems, now, digest))
     if args.dry_run:
         os.makedirs("preview", exist_ok=True)
         with open("preview/last_dry_run.md", "w", encoding="utf-8") as f:
-            f.write(report(collected, text, problems, now))
+            f.write(report(collected, text, problems, now, digest))
         return 0
 
     tg = Telegram(cfg.bot_token)
