@@ -169,13 +169,21 @@ def cmd_chats(cfg: Config, args) -> int:
     lines = [f"## Бот @{me.get('username')}", ""]
     if st["known_chats"]:
         lines += ["Группы и каналы, куда добавлен бот (значение для секрета `CHANNEL_ID`):", ""]
-        lines += [f"- `{cid}` — {title}" for cid, title in st["known_chats"].items()]
+        for cid, title in st["known_chats"].items():
+            # GitHub скрывает в логах значения секретов звёздочками, поэтому id,
+            # совпадающий с CHANNEL_ID, отображается как ***. Помечаем такой чат явно.
+            if cfg.channel_id and cfg.channel_id.strip() == cid:
+                lines.append(f"- {title} — ✅ **уже указана в `CHANNEL_ID`**, бот публикует сюда")
+            else:
+                lines.append(f"- `{cid}` — {title}")
+        lines += ["", "_GitHub заменяет на `***` значения секретов: если id показан звёздочками, "
+                  "значит он совпадает с одним из секретов._"]
     else:
         lines.append("Бот пока не видит ни одной группы. Добавьте его в группу (или удалите и "
                      "добавьте снова, если он уже там), напишите в группе любое сообщение "
                      "и запустите этот workflow ещё раз.")
-    if cfg.channel_id:
-        lines += ["", f"Сейчас в `CHANNEL_ID`: `{cfg.channel_id}`"]
+    if cfg.channel_id and cfg.channel_id.strip() not in st["known_chats"]:
+        lines += ["", "⚠️ Значение `CHANNEL_ID` не совпадает ни с одной из групп выше."]
     write_summary("\n".join(lines))
     return 0
 

@@ -447,6 +447,21 @@ class PostingTests(unittest.TestCase):
         self.assertIn("-1009", st["known_chats"])
         self.assertEqual(st["tg_offset"], 8)
 
+    def test_chats_marks_current_channel(self):
+        import os
+        summary = os.path.join(self.tmp.name, "summary.md")
+        os.environ["GITHUB_STEP_SUMMARY"] = summary
+        try:
+            state_mod.save(self.path, {"known_chats": {"-1009": "Delft (supergroup)"}})
+            c = cfg(self.path)
+            c.channel_id = "-1009"
+            self.main.cmd_chats(c, None)
+            text = open(summary, encoding="utf-8").read()
+        finally:
+            del os.environ["GITHUB_STEP_SUMMARY"]
+        self.assertIn("уже указана в `CHANNEL_ID`", text)
+        self.assertNotIn("не совпадает", text)
+
 
 class StateTests(unittest.TestCase):
     def test_roundtrip_and_prune(self):
