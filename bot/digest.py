@@ -111,7 +111,7 @@ TOOL = {
                         "date": {"type": "string", "description": "YYYY-MM-DD, дата начала для сортировки"},
                         "where": {"type": "string"},
                         "price": {"type": "string"},
-                        "summary": {"type": "string", "description": "одно короткое предложение или пусто"},
+                        "summary": {"type": "string", "description": "одно короткое предложение: что это за событие (жанр, о чём, для кого); пусто, только если во входных данных совсем нет сведений"},
                     },
                     "required": ["id", "title", "when", "date"],
                 },
@@ -216,6 +216,12 @@ def extract_result(content: list[dict]) -> dict | None:
     return None
 
 
+def _start_time(when: str) -> str:
+    import re
+    m = re.search(r"\b(\d{1,2}):(\d{2})", when or "")
+    return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
+
+
 def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_events: int) -> Digest:
     """Собирает дайджест из ответа модели; ссылки берутся только из наших данных."""
     news_by_id = {f"n{i}": n for i, n in enumerate(c.news)}
@@ -239,7 +245,8 @@ def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_ev
                                 (item.get("where") or "").strip(), (item.get("price") or "").strip(),
                                 (item.get("summary") or "").strip(), e.url,
                                 item.get("date") or (e.start.isoformat() if e.start else "")))
-    events.sort(key=lambda x: x.sort_key)
+    # по дате, внутри дня — по времени начала («весь день» и без времени — в начале дня)
+    events.sort(key=lambda x: (x.sort_key, _start_time(x.when)))
     return Digest(day, news[:max_news], events[:max_events])
 
 

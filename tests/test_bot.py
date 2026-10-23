@@ -256,6 +256,16 @@ class DigestTests(unittest.TestCase):
         self.assertIn("📅 Анонсы", html)
         self.assertIn('<a href="https://www.omroepdelft.nl/delft/brand/">Omroep Delft</a>', html)
 
+    def test_events_sorted_by_time_within_day(self):
+        col = self.collected()
+        from bot.collect import Event
+        col.events.append(Event("U", "Early", "https://e/2", date(2026, 10, 24)))
+        result = {"news": [], "events": [
+            {"id": "e0", "title": "B", "when": "сб 24 окт, 20:15", "date": "2026-10-24"},
+            {"id": "e1", "title": "A", "when": "сб 24 окт, 9:30", "date": "2026-10-24"}]}
+        d = digest_from_llm(result, col, TODAY, 8, 8)
+        self.assertEqual([e.title for e in d.events], ["A", "B"])
+
     def test_plain_digest_escapes_html(self):
         d = plain_digest(self.collected(), TODAY, 8, 8)
         html = "\n".join(render(d))
