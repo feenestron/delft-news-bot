@@ -70,7 +70,9 @@ def cmd_digest(cfg: Config, args) -> int:
         if st.get("last_draft_date") == today:
             log.info("Черновик на %s уже был, пропускаю", today)
             return 0
-        if not (cfg.draft_hour <= now.hour < cfg.draft_hour + 3):
+        # Расписание GitHub может опаздывать на часы или пропускать запуски,
+        # поэтому черновик готовится при первом запуске в окне DRAFT_HOUR..MODERATION_UNTIL_HOUR.
+        if not (cfg.draft_hour <= now.hour < max(cfg.moderation_until_hour, cfg.draft_hour + 3)):
             log.info("Сейчас %s по местному времени — не время для черновика (DRAFT_HOUR=%s)",
                      now.strftime("%H:%M"), cfg.draft_hour)
             return 0

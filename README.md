@@ -136,3 +136,27 @@ python -m unittest discover -s tests    # тесты
   ошибка перевода — укажите новую модель в переменной `ANTHROPIC_MODEL`.
 * **Смена канала/группы.** Добавьте бота в новый чат, отправьте там `/id@имя_бота`,
   запустите Moderate и обновите секрет `CHANNEL_ID`.
+
+## Надёжный утренний запуск (cron-job.org)
+
+Расписание GitHub Actions работает «по возможности»: запуски опаздывают на час и больше,
+а иногда пропускаются совсем. Встроенное расписание оставлено как резерв, а основной
+триггер — бесплатный внешний планировщик, который каждое утро «толкает» workflow.
+
+1. **Токен GitHub.** github.com → Settings → Developer settings → Personal access tokens →
+   **Fine-grained tokens → Generate new token**:
+   * Repository access → *Only select repositories* → `delft-news-bot`;
+   * Permissions → Repository permissions → **Contents: Read and write**
+     (нужно для события `repository_dispatch`);
+   * Expiration — максимальный срок; поставьте напоминание продлить.
+2. **cron-job.org** → зарегистрироваться → **Create cronjob**:
+   * URL: `https://api.github.com/repos/feenestron/delft-news-bot/dispatches`
+   * Schedule: каждый день в **06:20**, часовой пояс **Europe/Amsterdam**
+     (и, по желанию, второй запуск в 06:50 — повтор ничего не задублирует);
+   * Advanced → Request method **POST**, Headers:
+     * `Authorization: Bearer <токен из шага 1>`
+     * `Accept: application/vnd.github+json`
+     * `Content-Type: application/json`
+   * Request body: `{"event_type": "daily-digest"}`
+3. Нажмите **Test run** — ответ должен быть `204`, а в Actions появится запуск
+   «Daily digest». Если черновик за сегодня уже был, запуск просто завершится.
