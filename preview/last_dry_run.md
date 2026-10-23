@@ -1,4 +1,4 @@
-# Дайджест 2026-10-23 13:40
+# Дайджест 2026-10-23 13:48
 
 ## Источники
 
@@ -16,20 +16,44 @@
 <b>🗞 Делфт · пятница, 23 октября</b>
 
 <b>📰 События</b>
-• <b>Школа выгула собак De Roedel должна покинуть поле на Oudelaan</b> — С 1 января 2027 года гемеенте меняет назначение участка, который служил собакам 14 лет. Владелица начинает петицию в поисках решения. <a href="https://www.omroepdelft.nl/delft/wippolder/hondenuitlaatdienst-de-roedel-moet-na-veertien-jaar-weg-van-uitlaatveld-in-delft/">Omroep Delft</a>
-• <b>Житель Делфта потерял почти 3000 евро из-за SMS-мошенников</b> — Мошенники убедили мужчину перевести деньги на «безопасный счёт». Полиция задержала 18-летнего юношу из Zutphen; выясняется, исполнитель он или «денежный мул». <a href="https://www.omroepdelft.nl/delft/delftenaar-opgelicht-via-smsje-bijna-3000-euro-kwijt/">Omroep Delft</a>
-• <b>Дизайнеры из Делфта на Dutch Design Week в Эйндховене</b> — На крупнейшей в стране выставке дизайна на этой неделе представлены работы делфтских дизайнеров. Delta побывала на выставке. <a href="https://delta.tudelft.nl/article/delfts-design-in-eindhoven-regenwater-een-snijplank-en-een-vogelvlucht">Delta (TU Delft)</a>
-• <b>В TU Delft создали Zen Box — машину для отдыха мозга</b> — Постдок Wilbert Tabone сделал устройство без практической функции, на границе инструмента и искусства, которое помогает погрузиться в момент. <a href="https://delta.tudelft.nl/article/toe-aan-rust-voor-je-brein-de-zen-box-helpt-je-verder">Delta (TU Delft)</a>
+
+<b>Школа выгула собак De Roedel должна покинуть поле на Oudelaan</b> — <a href="https://www.omroepdelft.nl/delft/wippolder/hondenuitlaatdienst-de-roedel-moet-na-veertien-jaar-weg-van-uitlaatveld-in-delft/">Omroep Delft</a>
+<i>С 1 января 2027 года гемеенте меняет назначение участка, который четырнадцать лет служил безопасным местом для собак. Владелица начинает петицию.</i>
+
+<b>Житель Делфта потерял почти €3000 из-за SMS-мошенников</b> — <a href="https://www.omroepdelft.nl/delft/delftenaar-opgelicht-via-smsje-bijna-3000-euro-kwijt/">Omroep Delft</a>
+<i>Мошенники убедили мужчину перевести деньги на «безопасный счёт». Полиция задержала 18-летнего подростка из Zutphen, выясняется, преступник он или «денежный мул».</i>
+
+<b>Дизайнеры из Делфта на Dutch Design Week в Эйндховене</b> — <a href="https://delta.tudelft.nl/article/delfts-design-in-eindhoven-regenwater-een-snijplank-en-een-vogelvlucht">Delta (TU Delft)</a>
+<i>На крупнейшей в стране выставке дизайна выступают и делфтские дизайнеры. Delta рассказывает о проектах с дождевой водой, разделочной доской и видом с высоты птичьего полёта.</i>
+
+<b>Zen Box в TU Delft: «машина» для отдыха мозга</b> — <a href="https://delta.tudelft.nl/article/toe-aan-rust-voor-je-brein-de-zen-box-helpt-je-verder">Delta (TU Delft)</a>
+<i>Постдок Wilbert Tabone создал Zen Box — машину без практической функции, которая помогает погрузиться в момент и находится на границе инструмента и искусства.</i>
 
 <b>📅 Анонсы</b>
-• <b>пт 23 окт, 09:30</b> · Писательский мастер-класс: место действия и перспектива (€20). Мастер-класс Gean Ockels от Bureau Geanie о том, как обстановка и точка зрения формируют рассказ. <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief">→</a>
-• <b>сб 24 окт, 13:30</b> · Мюзикл «Willem van Oranje» (Prinsentheater, €45) <a href="https://uitdelft.com/event/willem-van-oranje-de-musical-7/">→</a>
-• <b>сб 24 окт, 23:00</b> · Nachtwacht van de Kurk (De Kurk – Lokaal Proef Festijn) <a href="https://uitdelft.com/event/nachtwacht-van-de-kurk-3/">→</a>
-• <b>24–25 окт</b> · Delft Zouk Night с воркшопом MafieZouker (Dansschool Wesseling). Вечер танцев зук с мастер-классом. <a href="https://uitdelft.com/event/24-10-delft-zouk-night-met-workshop-mafiezouker/">→</a>
-• <b>24–25 окт</b> · Cultuurlab Live: Status Quo Forever (Brabantse Turfmarkt 9). Выступление трибьют-группы Status Quo Forever. <a href="https://uitdelft.com/event/cultuurlab-live-status-quo-forever/">→</a>
-• <b>вс 25 окт, 14:00</b> · Per Sempre Giovane: воскресенье в De Waag (De Waag, Markt 11) <a href="https://uitdelft.com/event/per-sempre-giovane-op-zondag-in-de-waag/">→</a>
-• <b>вс 25 окт, 15:30</b> · Sunday Sounds: Anja Verrijp и Robert Kwakkelstein (Hampshire Hotel, Koepoortplaats 3) <a href="https://uitdelft.com/event/sunday-sounds-anja-verrijp-robert-kwakkelstein/">→</a>
-• <b>вс 25 окт, 13:30</b> · X Live on Sunday: Open Mic и The Trapdoors (X TU Delft) <a href="https://uitdelft.com/event/x-live-on-sunday-open-mic-the-trapdoors/">→</a>
+
+пт 23 окт, 09:30 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief">Писательский воркшоп: место действия и перспектива</a>
+<i>€20. Воркшоп Gean Ockels из Bureau Geanie о том, как сеттинг, атмосфера и перспектива формируют рассказ.</i>
+
+сб 24 окт, 13:30 — <a href="https://uitdelft.com/event/willem-van-oranje-de-musical-7/">Мюзикл «Willem van Oranje»</a>
+<i>Prinsentheater · €45</i>
+
+сб 24 окт — <a href="https://uitdelft.com/event/24-10-delft-zouk-night-met-workshop-mafiezouker/">Delft Zouk Night с мастер-классом MafieZouker</a>
+<i>Dansschool Wesseling. Вечер танцев зук с мастер-классом.</i>
+
+сб 24 окт — <a href="https://uitdelft.com/event/cultuurlab-live-status-quo-forever/">Cultuurlab Live: Status Quo Forever</a>
+<i>Brabantse Turfmarkt 9. Выступление трибьют-группы Status Quo Forever.</i>
+
+вс 25 окт, 14:00 — <a href="https://uitdelft.com/event/per-sempre-giovane-op-zondag-in-de-waag/">Per Sempre Giovane: воскресенье в Waag</a>
+<i>De Waag, Markt 11. Выступление шестиголосного ансамбля Per Sempre Giovane.</i>
+
+вс 25 окт, 13:30 — <a href="https://uitdelft.com/event/x-live-on-sunday-open-mic-the-trapdoors/">X Live on Sunday: Open Mic и The Trapdoors</a>
+<i>X TU Delft</i>
+
+вс 25 окт, 15:30 — <a href="https://uitdelft.com/event/concert-iso-trio/">Концерт ISO Trio</a>
+<i>Jazzcafé Bebop</i>
+
+вс 25 окт, 15:30 — <a href="https://uitdelft.com/event/sunday-sounds-anja-verrijp-robert-kwakkelstein/">Sunday Sounds: Anja Verrijp и Robert Kwakkelstein</a>
+<i>Hampshire Hotel, Koepoortplaats 3</i>
 ```
 
 ## Кандидаты: новости (4)
