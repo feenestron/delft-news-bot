@@ -1,19 +1,36 @@
 {
  "announced_events": {
+  "https://uitdelft.com/event/25-oktober-choral-evensong-schuilkerk/": "2026-10-23T08:21:25.876579+02:00",
   "https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/": "2026-10-22T12:48:07.748509+02:00",
+  "https://uitdelft.com/event/bebop-unplugged-smooch/": "2026-10-23T08:21:25.876579+02:00",
+  "https://uitdelft.com/event/droomtijdloop-4/": "2026-10-23T08:21:25.876579+02:00",
+  "https://uitdelft.com/event/halloween-tanthof-oost/": "2026-10-23T08:21:25.876579+02:00",
   "https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/": "2026-10-22T12:48:07.748509+02:00",
   "https://uitdelft.com/event/status-quo-forever-cultuurlab-live/": "2026-10-22T12:48:07.748509+02:00",
+  "https://uitdelft.com/event/the-rose-show-comedy-competition-2/": "2026-10-23T08:21:25.876579+02:00",
   "https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/": "2026-10-22T12:48:07.748509+02:00",
   "https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/": "2026-10-22T12:48:07.748509+02:00",
   "https://uitdelft.com/event/willem-van-oranje-de-musical-2/": "2026-10-22T12:48:07.748509+02:00",
+  "https://uitdelft.com/event/willem-van-oranje-de-musical/": "2026-10-23T08:21:25.876579+02:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2881859078/jump-olympics-delft": "2026-10-23T08:21:25.876579+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek": "2026-10-22T12:48:07.748509+02:00",
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles": "2026-10-22T12:48:07.748509+02:00"
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles": "2026-10-22T12:48:07.748509+02:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3198423297/the-cosmic-carnival-50-years-of-rumours": "2026-10-23T08:21:25.876579+02:00"
  },
  "bootstrapped_sources": [
   "Delft op Zondag",
   "Gemeente Delft"
  ],
  "event_cache": {
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/100191951/de-delftse-steptocht": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-23T08:19:37.440637+02:00",
+   "start": "2026-03-03",
+   "text": "Wim Sonneveld zong het al… “Op de step, op de step, ik ben zo blij dat ik hem heb!” Er geven maar weinig vervoersmiddelen zo veel lol als de step! Plezier verzekerd, dus! Niet alleen omdat we naast een korte tour door het charmante centrum van de stad doen, maar vooral de omgeving gaan verkennen.",
+   "title": "De Delftse Steptocht",
+   "venue": ""
+  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1313884287/urban-blue-from-bricks-to-tiles": {
    "date_text": "en wordt gevierd. Wanneer Dagelijks t/m 1 november 2026 09.30 - 17.00 uur Prijzen € 11,50 Studenten € 17,50 Volwassenen € 10,00 Jongere",
    "end": null,
@@ -140,6 +157,15 @@
    "title": "Proef de historie bij Delfts Brouwhuis",
    "venue": "Delfts Brouwhuis"
   },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2881859078/jump-olympics-delft": {
+   "date_text": "rschillende leeftijden! Wanneer Vrijdag 23 oktober 2026 10.00 - 15.30 uur Prijzen € 9,50 In de buurt Kaartelementen overslaan Deel deze",
+   "end": null,
+   "fetched": "2026-10-23T08:19:37.440637+02:00",
+   "start": "2026-10-23",
+   "text": "Spring, klauter en speel tijdens een actieve dag in de herfstvakantie met springkussens, stormbanen en een speelhoek voor kinderen van 2 t/m 12 jaar.",
+   "title": "Springkussen- en speeldag in de herfstvakantie Delft",
+   "venue": ""
+  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek": {
    "date_text": "an een plek! Lees minder Wanneer Zondag 25 oktober 2026 11.00 - 17.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
    "end": null,
@@ -157,6 +183,15 @@
    "text": "Bekijk Der Held vom Bahnhof Friedrichstraße tijdens Deutsches Kino bij Filmhuis Lumen, een tragikomedie van Good Bye, Lenin!-regisseur Wolfgang Becker.",
    "title": "Deutsches Kino: Der Held vom Bahnhof Friedrichstraße",
    "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3198423297/the-cosmic-carnival-50-years-of-rumours": {
+   "date_text": "rijs inclusief drankje] Wanneer Vrijdag 23 oktober 2026 20.15 - 22.25 uur Prijzen Regulier € 32,50 CJP (Cultureel Jongeren Paspoort) €",
+   "end": null,
+   "fetched": "2026-10-23T08:19:37.440637+02:00",
+   "start": "2026-10-23",
+   "text": "The Cosmic Carnival - 50 Years of Rumours vrijdag 23 oktober Contact Theater de Veste Theater de Veste Asvest 1 2611 PK Delft Plan je route naar The Cosmic Carnival - 50 Years of Rumours Route Plan je route naar The Cosmic Carnival - 50 Years of Rumours Bel Bel: 015 - 212 13 12 The Cosmic Carnival - 50 Years of Rumours Website Bezoek de website van The Cosmic Carnival - 50 Years of Rumours Koop tickets Met 50 Years of Rumours vieren we de 50e verjaardag van Fleetwood Mac’s meesterwerk Rumours, e",
+   "title": "The Cosmic Carnival - 50 Years of Rumours",
+   "venue": "Theater de Veste"
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3325431448/kom-in-de-willem-van-oranje-mood-bij-moodz": {
    "date_text": "",
@@ -221,6 +256,15 @@
    "title": "Een avond vol theater, historie & lekker eten bij de Waag",
    "venue": "De Waag"
   },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3783682864/workshop-glasmozaiek": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-23T08:19:37.440637+02:00",
+   "start": "2026-02-25",
+   "text": "Tijdens deze ontspannen workshop ga je aan de slag met jouw eigen windlicht of glasschilderij! We werken met kleine glasstukjes. Toch heb je geen ervaring met glaswerk nodig! De enthousiaste begeleiding leert je graag over het gebruik van een mozaïektang en andere nuttige materialen.",
+   "title": "Workshop Glasmozaïek",
+   "venue": ""
+  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3902129056/uniek-dineren-in-delft-met-willem-van-oranje": {
    "date_text": "",
    "end": null,
@@ -247,6 +291,24 @@
    "text": "Een avond musical begint niet in de zaal, maar aan tafel. Veel bezoekers zoeken bewust naar een restaurant waar ze voor de musical rustig kunnen eten, zonder bang te zijn dat ze moeten haasten of te laat aankomen.",
    "title": "Eten vóór Willem van Oranje de Musical in Delft",
    "venue": "LEEF Restaurant"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/497899699/workshop-hoe-presenteer-je-jezelf-voor-een-nieuwe-baan": {
+   "date_text": "nde stap richting werk. Wanneer Vrijdag 23 oktober 2026 10.00 - 12.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
+   "end": null,
+   "fetched": "2026-10-23T08:19:37.440637+02:00",
+   "start": "2026-10-23",
+   "text": "Statushouders uit Delft en omgeving leren tijdens deze praktische workshop hoe zij hun kwaliteiten, cv en presentatie kunnen inzetten richting werk.",
+   "title": "Workshop voor statushouders: sterk richting werk",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief": {
+   "date_text": "n is ook los te volgen. Wanneer Vrijdag 23 oktober 2026 09.30 - 12.00 uur Prijzen € 20,00 In de buurt Kaartelementen overslaan Deel dez",
+   "end": null,
+   "fetched": "2026-10-23T08:19:37.440637+02:00",
+   "start": "2026-10-23",
+   "text": "Ontdek hoe setting, sfeer en perspectief je verhaal vormgeven tijdens deze schrijfworkshop van Gean Ockels van Bureau Geanie.",
+   "title": "Schrijfworkshop Setting & perspectief",
+   "venue": ""
   }
  },
  "history": [
@@ -284,58 +346,56 @@
    "decided": "2026-10-22T12:48:07.748484+02:00",
    "id": "20261022-b45f",
    "status": "published"
+  },
+  {
+   "channel_message_id": 11,
+   "created": "2026-10-23T08:20:16.212932+02:00",
+   "decided": "2026-10-23T08:21:25.876560+02:00",
+   "id": "20261023-ce70",
+   "status": "published"
   }
  ],
- "last_draft_date": "2026-10-22",
+ "last_draft_date": "2026-10-23",
  "pending": {
-  "channel_message_id": 4,
-  "created": "2026-10-22T12:34:57.075911+02:00",
-  "decided": "2026-10-22T12:48:07.748484+02:00",
+  "channel_message_id": 11,
+  "created": "2026-10-23T08:20:16.212932+02:00",
+  "decided": "2026-10-23T08:21:25.876560+02:00",
   "event_urls": [
-   "https://uitdelft.com/event/willem-van-oranje-de-musical-2/",
-   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles",
-   "https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/",
-   "https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/",
-   "https://uitdelft.com/event/status-quo-forever-cultuurlab-live/",
-   "https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/",
-   "https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/",
-   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek"
+   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2881859078/jump-olympics-delft",
+   "https://uitdelft.com/event/willem-van-oranje-de-musical/",
+   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3198423297/the-cosmic-carnival-50-years-of-rumours",
+   "https://uitdelft.com/event/halloween-tanthof-oost/",
+   "https://uitdelft.com/event/the-rose-show-comedy-competition-2/",
+   "https://uitdelft.com/event/droomtijdloop-4/",
+   "https://uitdelft.com/event/bebop-unplugged-smooch/",
+   "https://uitdelft.com/event/25-oktober-choral-evensong-schuilkerk/"
   ],
-  "id": "20261022-b45f",
+  "id": "20261023-ce70",
   "news_urls": [
-   "https://www.delft.nl/storing-reisdocumenten-verholpen",
-   "https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van",
-   "https://www.delft.nl/balies-gemeente-dicht",
-   "https://www.delft.nl/brand-kerkstraat",
-   "https://delta.tudelft.nl/article/ministerie-van-ocw-moet-bezuinigen-op-personeel",
-   "https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen",
-   "https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/",
-   "https://delta.tudelft.nl/article/jevons-paradox-2",
-   "https://www.omroepdelft.nl/delft/binnenstad/grote-brand-in-delftse-binnenstad/",
-   "https://www.omroepdelft.nl/delft/binnenstad/van-delft-naar-singapore-kunstenaar-rene-jacobs-exposeert-in-miljoenenstad/",
-   "https://www.omroepdelft.nl/delft/delftse-boyan-slat-wint-prijs-in-qatar-voor-opvissen-van-miljoenen-kilos-afval/",
-   "https://www.omroepdelft.nl/delft/tu-campus/alternatieve-eendenbek-haalt-met-crowdfunding-ruim-twee-ton-op-ver-boven-onze-verwachting/",
-   "https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/",
-   "https://www.omroepdelft.nl/delft/recordstijging-van-kosten-voor-dsw-zorgverzekering/",
-   "https://delta.tudelft.nl/article/tu-delft-verwelkomt-meer-eerstejaars-ondanks-landelijke-daling",
-   "https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/",
-   "https://www.omroepdelft.nl/delft/donderdag-opnieuw-staking-streekvervoer-minder-busritten-in-delft/",
-   "https://www.omroepdelft.nl/delft/binnenstad/crowdfunding-microtheater-delft-afgerond-daar-zijn-we-ongelooflijk-trots-op/",
-   "https://delta.tudelft.nl/article/levend-archief-12-duizend-zaden-te-zien-in-hortus-botanicus",
-   "https://delta.tudelft.nl/article/nieuwe-gedragscode-voor-wetenschap-benadrukt-eigenheid-en-autonomie"
+   "https://www.omroepdelft.nl/delft/tu-campus/tu-studenten-willemijn-en-marin-staan-in-finale-van-de-hema-ontwerpwedstrijd/",
+   "https://delta.tudelft.nl/article/13-vidibeurzen-naar-delftse-onderzoekers",
+   "https://delta.tudelft.nl/article/crowdfunding-voor-alternatieve-eendenbek-levert-ruim-twee-ton-op",
+   "https://www.omroepdelft.nl/delft/binnenstad/brand-in-delftse-binnenstad-trekt-veel-bekijks-verdrietig-om-te-zien/",
+   "https://www.delft.nl/inkoopactie-isolatie",
+   "https://www.delft.nl/raadsvergadering-29-oktober",
+   "https://www.delft.nl/delftse-klimaatweek-2026",
+   "https://www.delft.nl/nieuw-tramspoor-papsouwselaan",
+   "https://www.omroepdelft.nl/delft/twintigjarige-krijgt-bijna-jaar-celstraf-voor-babbeltruc-bij-68-jarige-vrouw-in-delft/"
   ],
-  "note": "📝 Черновик дайджеста на 22.10. Проверьте и нажмите кнопку под ним.\nЧтобы поправить — ответьте на черновик исправленным текстом.\n\nНайдено: Omroep Delft (новости): 10, Delft op Zondag (новости): 0, Gemeente Delft (новости): 4, Delta (TU Delft) (новости): 6, Uit Delft (афиша): 47, Delft op Zondag (афиша): 0, In Delft (афиша): 4.",
+  "note": "📝 Черновик дайджеста на 23.10. Проверьте и нажмите кнопку под ним.\nЧтобы поправить — ответьте на черновик исправленным текстом.\n\nНайдено: Omroep Delft (новости): 3, Delft op Zondag (новости): 0, Gemeente Delft (новости): 4, Delta (TU Delft) (новости): 2, Uit Delft (афиша): 27, Delft op Zondag (афиша): 0, In Delft (афиша): 4.",
   "post": {
    "parse_mode": "HTML",
-   "text": "<b>🗞 Делфт · четверг, 22 октября</b>\n\n<b>📰 События</b>\n• <b>Крупный пожар в центре Делфта: эвакуированы не менее десяти домов</b> — Утром в четверг около 06:15 загорелись кафе De Ruif и Microtheater на Kerkstraat. Пожар взят под контроль, пострадавших нет, причина неизвестна. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/grote-brand-in-delftse-binnenstad/\">Omroep Delft</a>\n• <b>Кафе De Ruif после пожара на Kerkstraat полностью разрушено</b> — Владелец смог лишь заглянуть внутрь через окно. Ущерб в соседнем Microtheater, похоже, невелик; около 20 жильцов эвакуировали и приютили в кафе De Engel. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/\">Omroep Delft</a>\n• <b>Забастовка автобусов в четверг отменена</b> — Профсоюзы приостановили все акции на две недели после уступок работодателей. Если соглашения не будет, акции могут возобновиться с 4 ноября. <a href=\"https://www.omroepdelft.nl/delft/donderdag-opnieuw-staking-streekvervoer-minder-busritten-in-delft/\">Omroep Delft</a>\n• <b>Сбой с выдачей проездных документов устранён</b> — Из-за сбоя временно нельзя было заказать или получить паспорта и другие документы. Теперь проблема решена. <a href=\"https://www.delft.nl/storing-reisdocumenten-verholpen\">Gemeente Delft</a>\n• <b>Из-за уязвимости PHP не работали сайты gemeente Delft, TU и DigiD</b> — Были недоступны сайты гемеенте Delft, автобусной компании EBS, а также DigiD и MijnOverheid. Обновление для PHP уже выпущено. <a href=\"https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/\">Omroep Delft</a>\n• <b>Возле Kruithuisweg к студенткам TU приставали: задержан подросток</b> — 17 октября полиция задержала несовершеннолетнего после серии инцидентов. Рядом усилено патрулирование, его причастность проверяют. <a href=\"https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/\">Omroep Delft</a>\n• <b>Краудфандинг на покупку Microtheater почти достиг цели</b> — Не хватило около 3000 из 139 000 евро. Театральная группа De Flits надеется покрыть разницу за счёт облигаций. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/crowdfunding-microtheater-delft-afgerond-daar-zijn-we-ongelooflijk-trots-op/\">Omroep Delft</a>\n\n<b>📅 Анонсы</b>\n• <b>чт 22 окт, 19:30</b> · Мюзикл «Willem van Oranje» (Prinsentheater, €45) <a href=\"https://uitdelft.com/event/willem-van-oranje-de-musical-2/\">→</a>\n• <b>чт 22 окт, 20:35</b> · Deutsches Kino: «Der Held vom Bahnhof Friedrichstraße» (Filmhuis Lumen, €12,70). Трагикомедия режиссёра «Good Bye, Lenin!» Вольфганга Беккера. <a href=\"https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3063049099/filmhuis-lumen-presents-deutsches-kino-der-held-vom-bahnhof-friedrichstrasse-english-subtitles\">→</a>\n• <b>пт 23 окт, 20:15</b> · 50 Years of Rumours: The Cosmic Carnival Concert и Boogie Night Afterparty (Theater De Veste, Asvest 1). Концерт к 50-летию Rumours с афтерпати. <a href=\"https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/\">→</a>\n• <b>пт 23 окт, 20:00</b> · RUIS: Ambient Noise Lounge (De Koornbeurs). Вечер от Delft-ского молодёжного объединения OJV. <a href=\"https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/\">→</a>\n• <b>сб 24 окт, 21:00</b> · Status Quo Forever — концерт в Cultuurlab (Cultuurlab, Brabantse Turfmarkt 9) <a href=\"https://uitdelft.com/event/status-quo-forever-cultuurlab-live/\">→</a>\n• <b>сб 24 окт</b> · Tim Burton’s Universe by Mystery Ensemble (Nieuwe Kerk, Markt 80). Музыка из вселенной Тима Бёртона в Nieuwe Kerk. <a href=\"https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/\">→</a>\n• <b>сб 24 окт</b> · Финал стендап-конкурса The Rose Show Comedy Competition (сезон 3) (The Social Hub Delft) <a href=\"https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/\">→</a>"
+   "text": "<b>🗞 Делфт · пятница, 23 октября</b>\n\n<b>📰 События</b>\n• <b>Крупный пожар на Kerkstraat: пострадали Café de Ruif и Microtheater</b> — Пожар утром 22 октября сильно повредил Café de Ruif, задело и часть Microtheater. Полиция выясняет причину и просит свидетелей откликнуться. <a href=\"https://www.omroepdelft.nl/delft/binnenstad/brand-in-delftse-binnenstad-trekt-veel-bekijks-verdrietig-om-te-zien/\">Omroep Delft</a>\n• <b>С 26 октября HTM ремонтирует трамвайные пути на Papsouwselaan</b> — Работы на трамвайных путях на Papsouwselaan и вокруг них начнутся в понедельник 26 октября и продлятся до 18 декабря. <a href=\"https://www.delft.nl/nieuw-tramspoor-papsouwselaan\">Gemeente Delft</a>\n• <b>29 октября в ратуше обсудят бюджет Делфта на 2027–2030 годы</b> — Комиссия Algemeen рассмотрит Programmabegroting 2027-2030 в четверг 29 октября с 19:30 в stadhuis. <a href=\"https://www.delft.nl/raadsvergadering-29-oktober\">Gemeente Delft</a>\n• <b>Климатическая неделя Делфта пройдёт со 2 по 8 ноября</b> — В рамках Delftse Klimaatweek жителей ждут более 40 мероприятий, посвящённых устойчивому развитию. <a href=\"https://www.delft.nl/delftse-klimaatweek-2026\">Gemeente Delft</a>\n• <b>20-летний мошенник получил 360 дней тюрьмы за обман жительницы Делфта</b> — Суд в Гааге признал его виновным в обмане 68-летней женщины из Делфта 26 января. Часть срока условная: преступление он совершил в период испытательного срока. <a href=\"https://www.omroepdelft.nl/delft/twintigjarige-krijgt-bijna-jaar-celstraf-voor-babbeltruc-bij-68-jarige-vrouw-in-delft/\">Omroep Delft</a>\n• <b>Закупочная акция по утеплению жилья от Energieloket Delft</b> — Этой осенью Energieloket Delft и гемеенте предлагают утеплить дом через совместную закупочную акцию. <a href=\"https://www.delft.nl/inkoopactie-isolatie\">Gemeente Delft</a>\n• <b>Делфтский аналог гинекологического зеркала собрал более €223 тысяч</b> — Проект Lilium из TU Delft — альтернатива speculum — получил поддержку 8421 донора; первоначальная цель в €100 тысяч была достигнута за два дня. <a href=\"https://delta.tudelft.nl/article/crowdfunding-voor-alternatieve-eendenbek-levert-ruim-twee-ton-op\">Delta (TU Delft)</a>\n\n<b>📅 Анонсы</b>\n• <b>пт 23 окт, 10:00</b> · День батутов и игр в осенние каникулы (€9,50). Батуты, полосы препятствий и игровая зона для детей 2–12 лет. <a href=\"https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2881859078/jump-olympics-delft\">→</a>\n• <b>пт 23 окт, 19:30; сб и вс 24–25 окт, 13:30</b> · Willem van Oranje – De Musical (Prinsentheater, €45). Мюзикл о Вильгельме Оранском. <a href=\"https://uitdelft.com/event/willem-van-oranje-de-musical/\">→</a>\n• <b>пт 23 окт, 20:15</b> · The Cosmic Carnival – 50 Years of Rumours (Theater de Veste, Asvest 1, €32,50). Шоу к 50-летию альбома Rumours. <a href=\"https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3198423297/the-cosmic-carnival-50-years-of-rumours\">→</a>\n• <b>сб 24 окт</b> · Хэллоуин в Tanthof Oost (Tanthof Oost). Хэллоуин в районе Tanthof Oost. <a href=\"https://uitdelft.com/event/halloween-tanthof-oost/\">→</a>\n• <b>сб 24 окт</b> · The Rose Show Comedy Competition (The Social Hub Delft). Интерактивный конкурс стендапа. <a href=\"https://uitdelft.com/event/the-rose-show-comedy-competition-2/\">→</a>\n• <b>вс 25 окт</b> · Droomtijdloop (Binnenstad, Wippolder, Delftse Hout). Городское воскресное событие в центре, Wippolder и Delftse Hout. <a href=\"https://uitdelft.com/event/droomtijdloop-4/\">→</a>\n• <b>вс 25 окт, 15:30</b> · Bebop Unplugged: Smooch (Jazzcafé Bebop, Kromstraat 33). Живое выступление группы Smooch. <a href=\"https://uitdelft.com/event/bebop-unplugged-smooch/\">→</a>\n• <b>вс 25 окт</b> · Choral Evensong (Schuilkerk). Хоровая вечерняя служба. <a href=\"https://uitdelft.com/event/25-oktober-choral-evensong-schuilkerk/\">→</a>"
   },
   "preview_ids": [
-   20
+   29
   ],
   "status": "published"
  },
  "seen": {
+  "https://delta.tudelft.nl/article/13-vidibeurzen-naar-delftse-onderzoekers": "2026-10-23T08:21:25.876579+02:00",
   "https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen": "2026-10-22T12:48:07.748509+02:00",
+  "https://delta.tudelft.nl/article/crowdfunding-voor-alternatieve-eendenbek-levert-ruim-twee-ton-op": "2026-10-23T08:21:25.876579+02:00",
   "https://delta.tudelft.nl/article/groepswerk": "2026-10-22T12:21:18.675555+02:00",
   "https://delta.tudelft.nl/article/jevons-paradox-2": "2026-10-22T12:48:07.748509+02:00",
   "https://delta.tudelft.nl/article/levend-archief-12-duizend-zaden-te-zien-in-hortus-botanicus": "2026-10-22T12:48:07.748509+02:00",
@@ -350,9 +410,13 @@
   "https://www.delft.nl/brand-kerkstraat": "2026-10-22T12:48:07.748509+02:00",
   "https://www.delft.nl/dag-van-de-ondernemer": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/deel-uw-loopervaring": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/delftse-klimaatweek-2026": "2026-10-23T08:21:25.876579+02:00",
   "https://www.delft.nl/een-week-vol-cultuur": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/gezond-ontbijten-met-de-burgemeester": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/inkoopactie-isolatie": "2026-10-23T08:21:25.876579+02:00",
+  "https://www.delft.nl/nieuw-tramspoor-papsouwselaan": "2026-10-23T08:21:25.876579+02:00",
   "https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van": "2026-10-22T12:48:07.748509+02:00",
+  "https://www.delft.nl/raadsvergadering-29-oktober": "2026-10-23T08:21:25.876579+02:00",
   "https://www.delft.nl/stadsgesprek-jongeren": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/storing-reisdocumenten-verholpen": "2026-10-22T12:48:07.748509+02:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111041/door-de-lens-van-koos-club-delft-festival": "2026-10-22T12:10:58.149191+02:00",
@@ -377,6 +441,7 @@
   "https://www.delftopzondag.nl/nieuws/algemeen/111423/terugblik-zesde-editie-delft-maakt-ruimte": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/sport/111380/de-derde-helft-bij-full-speed-": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/sport/111383/niels-van-der-steuijt-streeft-naar-nieuwe-finale-in-ahoy": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/brand-in-delftse-binnenstad-trekt-veel-bekijks-verdrietig-om-te-zien/": "2026-10-23T08:21:25.876579+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/crowdfunding-microtheater-delft-afgerond-daar-zijn-we-ongelooflijk-trots-op/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/grote-brand-in-delftse-binnenstad/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/": "2026-10-22T12:48:07.748509+02:00",
@@ -385,9 +450,11 @@
   "https://www.omroepdelft.nl/delft/donderdag-opnieuw-staking-streekvervoer-minder-busritten-in-delft/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/recordstijging-van-kosten-voor-dsw-zorgverzekering/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/tu-campus/alternatieve-eendenbek-haalt-met-crowdfunding-ruim-twee-ton-op-ver-boven-onze-verwachting/": "2026-10-22T12:48:07.748509+02:00",
+  "https://www.omroepdelft.nl/delft/tu-campus/tu-studenten-willemijn-en-marin-staan-in-finale-van-de-hema-ontwerpwedstrijd/": "2026-10-23T08:21:25.876579+02:00",
+  "https://www.omroepdelft.nl/delft/twintigjarige-krijgt-bijna-jaar-celstraf-voor-babbeltruc-bij-68-jarige-vrouw-in-delft/": "2026-10-23T08:21:25.876579+02:00",
   "https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/": "2026-10-22T12:48:07.748509+02:00"
  },
- "tg_offset": 232833776,
+ "tg_offset": 232833777,
  "version": 1
 }
