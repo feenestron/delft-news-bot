@@ -355,7 +355,9 @@
    "status": "published"
   }
  ],
- "known_chats": {},
+ "known_chats": {
+  "-1004340208501": "Delft News group (supergroup)"
+ },
  "last_post_date": "2026-10-23",
  "seen": {
   "https://delta.tudelft.nl/article/13-vidibeurzen-naar-delftse-onderzoekers": "2026-10-23T08:21:25.876579+02:00",
@@ -420,6 +422,6 @@
   "https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/": "2026-10-22T12:48:07.748509+02:00"
  },
- "tg_offset": 232833777,
+ "tg_offset": 232833782,
  "version": 1
 }
