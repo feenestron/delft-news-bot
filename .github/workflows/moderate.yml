@@ -7,6 +7,9 @@ name: Moderate
 on:
   schedule:
     - cron: "47 9-21 * * *"   # раз в час днём и вечером
+  repository_dispatch:
+    # Внешний планировщик (cron-job.org) вызывает этот тип события — см. README.
+    types: [moderate]
   workflow_dispatch:
 
 permissions:

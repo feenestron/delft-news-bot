@@ -160,3 +160,6 @@ python -m unittest discover -s tests    # тесты
    * Request body: `{"event_type": "daily-digest"}`
 3. Нажмите **Test run** — ответ должен быть `204`, а в Actions появится запуск
    «Daily digest». Если черновик за сегодня уже был, запуск просто завершится.
+4. Второй cronjob для обработки кнопок после полудня: тот же URL и заголовки,
+   расписание — каждый час с **12:00 до 23:00** (Europe/Amsterdam),
+   тело `{"event_type": "moderate"}`.
