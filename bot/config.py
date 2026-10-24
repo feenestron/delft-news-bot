@@ -40,7 +40,7 @@ class Config:
             admin_chat_id=int(admin) if admin else None,
             channel_id=_str("CHANNEL_ID") or _str("CHAT_ID"),
             anthropic_key=_str("ANTHROPIC_API_KEY"),
-            model=_str("ANTHROPIC_MODEL", "claude-sonnet-5-5"),
+            model=_str("ANTHROPIC_MODEL", "claude-haiku-5-5"),
             tz=ZoneInfo(_str("TIMEZONE", "Europe/Amsterdam")),
             post_hour=_int("POST_HOUR", _int("DRAFT_HOUR", 6)),
             post_until_hour=_int("POST_UNTIL_HOUR", 12),
