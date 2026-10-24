@@ -1,138 +1,156 @@
-# Дайджест 2026-10-23 18:31
+# Дайджест 2026-10-24 14:30
 
 ## Источники
 
 - Omroep Delft (новости): 10
-- Delft op Zondag (новости): 0
+- Delft op Zondag (новости): 6
 - Gemeente Delft (новости): 8
-- Delta (TU Delft) (новости): 10
-- Uit Delft (афиша): 32
+- Delta (TU Delft) (новости): 8
+- Uit Delft (афиша): 25
 - Delft op Zondag (афиша): 0
-- In Delft (афиша): 5
+- In Delft (афиша): 11
 
 ## Пост (HTML для Telegram)
 
 ```html
-<b>🗞 Делфт · пятница, 23 октября</b>
+<b>🗞 Делфт · суббота, 24 октября</b>
 
 <b>📰 События</b>
 
-<b>Пожар на Kerkstraat: что известно о происшествии</b> — <a href="https://www.omroepdelft.nl/delft/binnenstad/brand-in-de-kerkstraat-wat-weten-we-nu/">Omroep Delft</a>
-<i>В четверг 22 октября загорелся терраса и сам Café De Ruif, рядом пострадал от сажи Microtheater. Пострадавших нет, полиция выясняет причину; спектакли и занятия театра пока проходят в других местах.</i>
+<b>Два протеста на Markt в субботу: асилум-центр</b> — <a href="https://www.omroepdelft.nl/delft/binnenstad/voor-en-tegenstanders-azc-demonstreren-zaterdag-op-delftse-markt/">Omroep Delft</a>
+<i>В субботу, 24 октября, с 14:00 на Markt пройдут две демонстрации: Defend Delft против азилум-центра и контрдемонстрация Delft Solidair. Гемеенте ожидает от нескольких десятков до двухсот человек и делит площадь на два отдельных протестных участка.</i>
 
-<b>Ветклиника в Hof van Delft не закроется</b> — <a href="https://www.omroepdelft.nl/delft/hof-van-delft/dierenkliniek-hof-van-delft-blijft-toch-open-mensen-vonden-het-superjammer-dat-het-zou-sluiten/">Omroep Delft</a>
-<i>Клиника на Hof van Delftlaan продолжит работу: с 2 ноября её самостоятельно возьмут врачи Yara van de Pest и Anna Dekker. Клиентов будут принимать те же специалисты.</i>
+<b>ДТП на tankstation Kruithuisweg: водитель в больнице</b> — <a href="https://www.omroepdelft.nl/delft/tanthof-oost/harde-botsing-op-tankstation-kruithuisweg-mini-verliest-motorblok/">Omroep Delft</a>
+<i>В пятницу 23 октября машина врезалась в опору заправки на Kruithuisweg, водитель доставлен в больницу. Дорога была временно закрыта, сейчас движение восстановлено; причина аварии неизвестна.</i>
 
-<b>Житель Делфта потерял почти €3000 из-за мошенничества по SMS</b> — <a href="https://www.omroepdelft.nl/delft/delftenaar-opgelicht-via-smsje-bijna-3000-euro-kwijt/">Omroep Delft</a>
-<i>Мошенники убедили его перевести деньги на «безопасный счёт». Полиция задержала 18-летнего юношу из Zutphen; банк никогда не просит переводить деньги.</i>
+<b>Крупный пожар на Kerkstraat: поврежден Café De Ruif</b> — <a href="https://www.omroepdelft.nl/delft/binnenstad/brand-in-de-kerkstraat-wat-weten-we-nu/">Omroep Delft</a>
+<i>В четверг 22 октября на Kerkstraat загорелся терраса кафе De Ruif, огонь перекинулся на само кафе. Никто не пострадал, Microtheater получил копоть; полиция выясняет причину, спектакли переносятся.</i>
 
-<b>Собачья служба De Roedel должна покинуть поле на Oudelaan до 1 января 2027</b> — <a href="https://www.omroepdelft.nl/delft/wippolder/hondenuitlaatdienst-de-roedel-moet-na-veertien-jaar-weg-van-uitlaatveld-in-delft/">Omroep Delft</a>
-<i>Община меняет назначение участка, где служба работает 14 лет. Владелица начинает петицию.</i>
+<b>Dierenkliniek Hof van Delft останется открытой</b> — <a href="https://www.omroepdelft.nl/delft/hof-van-delft/dierenkliniek-hof-van-delft-blijft-toch-open-mensen-vonden-het-superjammer-dat-het-zou-sluiten/">Omroep Delft</a>
+<i>Ветеринарная клиника на Hof van Delftlaan не закроется после 1 ноября: её берут на себя врачи Yara van de Pest и Anna Dekker, работа продолжится с 2 ноября.</i>
 
-<b>11 ноября окна гемеенте закроются с 13:00</b> — <a href="https://www.delft.nl/balies-gemeente-dicht">Gemeente Delft</a>
-<i>В среду 11 ноября все окна в публичном зале здания гемеенте закрыты с 13:00. Inloopbalie тоже закроется в 13:00 вместо 14:00.</i>
+<b>TU Delft Library: нужно показывать ID на входе</b> — <a href="https://delta.tudelft.nl/article/waarom-je-nu-je-id-moet-laten-zien-in-de-tu-delft-library">Delta (TU Delft)</a>
+<i>С 15 октября для входа в TU Delft Library нужно показать действующую карту TU Delft, студенческую карту другого вуза или удостоверение личности.</i>
 
-<b>Осенняя закупочная акция по утеплению домов</b> — <a href="https://www.delft.nl/inkoopactie-isolatie">Gemeente Delft</a>
-<i>Energieloket Delft и гемеенте проводят совместную акцию по закупке изоляции для жилья.</i>
+<b>Мошенничество по SMS: делфтец потерял почти 3000 евро</b> — <a href="https://www.omroepdelft.nl/delft/delftenaar-opgelicht-via-smsje-bijna-3000-euro-kwijt/">Omroep Delft</a>
+<i>Житель Делфта перевёл почти 3000 евро мошенникам, которые представились банком. Полиция задержала 18-летнего жителя Zutphen; банк никогда не звонит и не просит переводить деньги на «безопасный счёт».</i>
 
-<b>С 26 октября HTM ремонтирует трамвайные пути на Papsouwselaan</b> — <a href="https://www.delft.nl/nieuw-tramspoor-papsouwselaan">Gemeente Delft</a>
-<i>Работы на трамвайных путях и вокруг них начнутся в понедельник 26 октября и продлятся до 18 декабря.</i>
+<b>Собачий выгульщик De Roedel должен покинуть поле на Oudelaan</b> — <a href="https://www.omroepdelft.nl/delft/wippolder/hondenuitlaatdienst-de-roedel-moet-na-veertien-jaar-weg-van-uitlaatveld-in-delft/">Omroep Delft</a>
+<i>С 1 января 2027 года служба выгула собак De Roedel должна уйти с поля на Oudelaan, которое гемеенте отдаёт под другое использование. Служба запускает петицию.</i>
 
-<b>Сбой с заявками на проездные документы устранён</b> — <a href="https://www.delft.nl/storing-reisdocumenten-verholpen">Gemeente Delft</a>
-<i>Ранее было невозможно подать заявку на паспорт или получить его; теперь неполадка устранена.</i>
+<b>Балии гемеенте закрыты 11 ноября с 13:00</b> — <a href="https://www.delft.nl/balies-gemeente-dicht">Gemeente Delft</a>
+<i>11 ноября все окошки в публичном холле здания гемеенте закроются с 13:00, а инлоопбалие — тоже уже в 13:00 вместо 14:00.</i>
 
-<b>Filmhuis Lumen принял 100-тысячного посетителя за 2026 год</b> — <a href="https://www.omroepdelft.nl/delft/binnenstad/historische-mijlpaal-voor-filmhuis-lumen-100-000ste-bezoeker-van-2026/">Omroep Delft</a>
-<i>В прошлом году кинотеатр посетили 86 000 человек. Рост связан с переездом 14 марта в новое здание с вдвое большим числом залов.</i>
+<b>Работы на трамвайных путях Papsouwselaan до 18 декабря</b> — <a href="https://www.delft.nl/nieuw-tramspoor-papsouwselaan">Gemeente Delft</a>
+<i>С понедельника 26 октября HTM начинает работы на трамвайных путях Papsouwselaan; по расчётам, они продлятся до 18 декабря.</i>
 
-<b>Климатическая неделя Делфта пройдёт со 2 по 8 ноября</b> — <a href="https://www.delft.nl/delftse-klimaatweek-2026">Gemeente Delft</a>
-<i>В рамках Delftse Klimaatweek запланировано более 40 мероприятий на тему устойчивого развития.</i>
+<b>Обсуждение бюджета 2027–2030 в совете 29 октября</b> — <a href="https://www.delft.nl/raadsvergadering-29-oktober">Gemeente Delft</a>
+<i>29 октября в 19:30 в stadhuis комиссия Algemeen обсудит Programmabegroting 2027–2030.</i>
 
-<b>29 октября обсудят бюджет Делфта на 2027–2030 годы</b> — <a href="https://www.delft.nl/raadsvergadering-29-oktober">Gemeente Delft</a>
-<i>Комиссия Algemeen рассмотрит Programmabegroting 2027-2030 в четверг с 19:30 в ратуше.</i>
+<b>Сбой с выдачей проездных документов устранён</b> — <a href="https://www.delft.nl/storing-reisdocumenten-verholpen">Gemeente Delft</a>
+<i>Из-за сбоя временно нельзя было подать заявление на проездные документы или получить их; сейчас сбой устранён.</i>
 
-<b>📅 Анонсы</b>
-
-пт 23 окт, 09:30 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief">Писательский воркшоп «Обстановка и перспектива»</a>
-<i>€20. Воркшоп Gean Ockels о том, как место действия и точка зрения формируют историю.</i>
-
-пт 23 окт, 19:30 — <a href="https://uitdelft.com/event/willem-van-oranje-de-musical/">Willem van Oranje — мюзикл</a>
-<i>Prinsentheater · €45. Мюзикл об Вильгельме Оранском в Prinsentheater.</i>
-
-пт 23 окт, 20:00 — <a href="https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/">Ruis: Ambient Noise Lounge</a>
-<i>De Koornbeurs. Вечер эмбиент- и нойз-музыки в рамках регулярной серии RUIS.</i>
+<b>Жители Afrikabuurt в Tanthof-West о своём районе</b> — <a href="https://www.omroepdelft.nl/delft/effe-buurten-in-de-afrikabuurt-ik-ben-een-tanthoffiel-2/">Omroep Delft</a>
+<i>Жители Afrikabuurt хвалят свой район, но отмечают мусор у контейнеров и плохое состояние брусчатки и тротуаров.</i>
 
 — — —
 
-пт 23 окт, 20:15 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3198423297/the-cosmic-carnival-50-years-of-rumours">The Cosmic Carnival — 50 Years of Rumours</a>
-<i>Theater de Veste. Концерт-трибьют к 50-летию альбома Rumours с афтепати Boogie Night.</i>
+<b>Living Library в DOK 31 октября</b> — <a href="https://www.delftopzondag.nl/nieuws/algemeen/111429/unieke-en-persoonlijke-verhalen-tijdens-de-living-library">Delft op Zondag</a>
+<i>31 октября DOK проводит Living Library: вместо книг посетители «берут в аренду» живых людей и слушают их истории.</i>
 
-сб 24 окт — <a href="https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/">Tim Burton’s Universe by Mystery Ensemble</a>
-<i>Nieuwe Kerk, Markt 80. Концерт с музыкой из фильмов Тима Бёртона в Nieuwe Kerk.</i>
+<b>Filmhuis Lumen принял 100 000-го посетителя в 2026 году</b> — <a href="https://www.omroepdelft.nl/delft/binnenstad/historische-mijlpaal-voor-filmhuis-lumen-100-000ste-bezoeker-van-2026/">Omroep Delft</a>
+<i>Кинотеатр Lumen в пятницу принял 100 000-го посетителя этого года — в прошлом году было 86 000. Успех связывают с переездом в новое здание с вдвое большим числом залов.</i>
 
-сб 24 окт — <a href="https://uitdelft.com/event/24-10-delft-zouk-night-met-workshop-mafiezouker/">Delft Zouk Night с мастер-классом MafieZouker</a>
-<i>Dansschool Wesseling. Танцевальная вечеринка зук с мастер-классом.</i>
-
-сб 24 окт — <a href="https://uitdelft.com/event/halloween-tanthof-oost/">Хэллоуин в Tanthof Oost</a>
-<i>Tanthof Oost. Хэллоуинское мероприятие в районе Tanthof Oost.</i>
+<b>📅 Анонсы</b>
 
 вс 25 окт, 11:00–17:00 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek">Science Day TU Delft 2026</a>
-<i>TU Delft Science Centre · бесплатно. Бесплатный фестиваль науки: мастер-классы, шоу и экскурсии для всех возрастов.</i>
+<i>TU Delft Science Centre · бесплатно. Бесплатный фестиваль науки для всех возрастов: шоу, воркшопы и экскурсии в TU Delft.</i>
+
+сб 24 окт, весь день — <a href="https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/">Tim Burton’s Universe от Mystery Ensemble</a>
+<i>Nieuwe Kerk, Markt 80. Концерт музыки Тима Бёртона в Nieuwe Kerk от ансамбля Mystery Ensemble.</i>
+
+сб 24 окт, 10:00–12:00 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1111601950/mijn-tanthof-straatfotografie-cursus">Фотопрогулка «Leg jouw Tanthof vast»: курс уличной фотографии</a>
+<i>Tanthof (DOK). Двухчастный курс уличной фотографии с Willem de Bie по району Tanthof, с созданием собственного фоторепортажа.</i>
+
+сб 24 окт, 11:00–15:30 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3338589970/botanische-kleur-borduurwerk-met-dora-tih">Мастер-класс по экопринту и вышивке в TU Delft Hortus</a>
+<i>TU Delft Hortus · €85. Творческий текстильный мастер-класс: экопринт на растительных красителях и ручная вышивка под руководством Dora.</i>
+
+сб 24 окт, 12:00–16:00 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3836547440/open-huis-museum-van-marken-2">Open Huis в Museum Van Marken</a>
+<i>Maison Neuf (Museum Van Marken). День открытых дверей в временном центре для посетителей Museum Van Marken с базовой экспозицией о наследии первых социальных жилищ.</i>
+
+сб 24 окт, 15:00–16:00 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/617053452/zang-en-samenzang-mariahulde-in-de-maria-van-jessekerk">Mariahulde: хоровая музыка и процессия с фонариками</a>
+<i>Delft · бесплатно. Вечер хоровой музыки с тремя хорами, соло сопрано Antonia Dunjko, общим пением и световой процессией.</i>
+
+сб 24 окт, 21:00 — <a href="https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4066464680/cultuurlab-live-status-quo-forever">Status Quo Forever в Cultuurlab</a>
+<i>Cultuurlab, Brabantse Turfmarkt 9 · €15. Вечер хитов и редких песен группы Status Quo в стиле классического рока.</i>
+
+пн 27 окт, 20:15–21:30 — <a href="https://uitdelft.com/event/wachtend-op-de-dood-maarten-heijmans-xander-vrienten/">Wachtend op de Dood: Maarten Heijmans &amp; Xander Vrienten</a>
+<i>Theater De Veste, Asvest 1. Спектакль в Theater de Veste с участием Maarten Heijmans и Xander Vrienten.</i>
 ```
 
-## Не вошло в выпуск (17)
+## Не вошло в выпуск (18)
 
-- [Omroep Delft] [Van Delft naar Brussel: gemeenteraadslid spreekt in Europa over banen van de toekomst](https://www.omroepdelft.nl/politiek/van-delft-naar-brussel-gemeenteraadslid-spreekt-in-europa-over-banen-van-de-toekomst/) — выступление в Брюсселе, не в Делфте
-- [Delta (TU Delft)] [Waarom je nu je ID moet laten zien in de TU Delft Library](https://delta.tudelft.nl/article/waarom-je-nu-je-id-moet-laten-zien-in-de-tu-delft-library) — внутренняя жизнь TU Delft
-- [Delta (TU Delft)] [Delfts design in Eindhoven: regenwater, een snijplank en een vogelvlucht](https://delta.tudelft.nl/article/delfts-design-in-eindhoven-regenwater-een-snijplank-en-een-vogelvlucht) — не в Делфте, Эйндховен
-- [Delta (TU Delft)] [Toe aan rust voor je brein? De Zen Box helpt je verder](https://delta.tudelft.nl/article/toe-aan-rust-voor-je-brein-de-zen-box-helpt-je-verder) — научно-популярная статья
-- [Omroep Delft] [TU-studenten Willemijn en Marin staan in finale van de Hema-ontwerpwedstrijd](https://www.omroepdelft.nl/delft/tu-campus/tu-studenten-willemijn-en-marin-staan-in-finale-van-de-hema-ontwerpwedstrijd/) — финал в Эйндховене
-- [Delta (TU Delft)] [13 Vidibeurzen naar Delftse onderzoekers](https://delta.tudelft.nl/article/13-vidibeurzen-naar-delftse-onderzoekers) — внутренняя жизнь TU Delft
-- [Delta (TU Delft)] [Crowdfunding voor alternatieve eendenbek levert ruim twee ton op](https://delta.tudelft.nl/article/crowdfunding-voor-alternatieve-eendenbek-levert-ruim-twee-ton-op) — наука, не влияет на жителей
-- [Omroep Delft] [Brand in Delftse binnenstad trekt veel bekijks: ‘Verdrietig om te zien’](https://www.omroepdelft.nl/delft/binnenstad/brand-in-delftse-binnenstad-trekt-veel-bekijks-verdrietig-om-te-zien/) — дубликат
-- [Gemeente Delft] [Brand Kerkstraat](https://www.delft.nl/brand-kerkstraat) — дубликат
-- [Gemeente Delft] [Ongewenst gedrag? Zeg er iets van!](https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van) — социальная кампания
-- [Omroep Delft] [20-jarige krijgt bijna jaar celstraf voor babbeltruc bij 68-jarige vrouw in Delft](https://www.omroepdelft.nl/delft/twintigjarige-krijgt-bijna-jaar-celstraf-voor-babbeltruc-bij-68-jarige-vrouw-in-delft/) — судебная хроника, нет эффекта для жителей
-- [Delta (TU Delft)] [Ministerie van OCW moet bezuinigen op personeel](https://delta.tudelft.nl/article/ministerie-van-ocw-moet-bezuinigen-op-personeel) — национальная политика
-- [Delta (TU Delft)] [6 vragen over het PHP-lek aan TU cybersecurity onderzoeker Harm Griffioen](https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen) — интервью
-- [Omroep Delft] [Schrik zit er goed in na grote brand in centrum van Delft: ‘Ik kon alleen de deur opendoen’](https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/) — дубликат ⚠️ ключевое слово
-- [Delta (TU Delft)] [Jevons paradox](https://delta.tudelft.nl/article/jevons-paradox-2) — колонка
-- [Delta (TU Delft)] [TU Delft verwelkomt meer eerstejaars ondanks landelijke daling](https://delta.tudelft.nl/article/tu-delft-verwelkomt-meer-eerstejaars-ondanks-landelijke-daling) — внутренняя жизнь TU Delft
-- [Delta (TU Delft)] [Levend archief: 12 duizend zaden te zien in Hortus Botanicus](https://delta.tudelft.nl/article/levend-archief-12-duizend-zaden-te-zien-in-hortus-botanicus) — не хватило места в выпуске
+- [Delft op Zondag] [Wisselvallige start van het seizoen voor Vitesse Delft](https://www.delftopzondag.nl/nieuws/sport/111460/wisselvallige-start-van-het-seizoen-voor-vitesse-delft) — спорт клуба, новость о клубе
+- [Delft op Zondag] [Files, overlast en gevaarlijke situaties rond Nieuwe Plantage](https://www.delftopzondag.nl/nieuws/algemeen/111428/files-overlast-en-gevaarlijke-situaties-rond-nieuwe-plantage) — дубликат неполного материала, нет подробностей — см. дорожные новости
+- [Delft op Zondag] [Delvenaar in Beeld: Joes (23)](https://www.delftopzondag.nl/nieuws/algemeen/111431/delvenaar-in-beeld-joes-23-) — колонка / портрет жителя без городских новостей
+- [Delft op Zondag] [Dubbel Delft 24/10](https://www.delftopzondag.nl/nieuws/algemeen/111453/dubbel-delft-24-10) — ретроспектива, не новость
+- [Delft op Zondag] [Hemd van het Lijf: Marcel Vilain](https://www.delftopzondag.nl/nieuws/algemeen/111457/hemd-van-het-lijf-marcel-vilain) — интервью
+- [Omroep Delft] [Van Delft naar Brussel: gemeenteraadslid spreekt in Europa over banen van de toekomst](https://www.omroepdelft.nl/politiek/van-delft-naar-brussel-gemeenteraadslid-spreekt-in-europa-over-banen-van-de-toekomst/) — политика, не влияет на быт жителей
+- [Delta (TU Delft)] [Delfts design in Eindhoven: regenwater, een snijplank en een vogelvlucht](https://delta.tudelft.nl/article/delfts-design-in-eindhoven-regenwater-een-snijplank-en-een-vogelvlucht) — не в Делфте
+- [Delta (TU Delft)] [Toe aan rust voor je brein? De Zen Box helpt je verder](https://delta.tudelft.nl/article/toe-aan-rust-voor-je-brein-de-zen-box-helpt-je-verder) — научно-популярная статья, не новость о городе
+- [Omroep Delft] [TU-studenten Willemijn en Marin staan in finale van de Hema-ontwerpwedstrijd](https://www.omroepdelft.nl/delft/tu-campus/tu-studenten-willemijn-en-marin-staan-in-finale-van-de-hema-ontwerpwedstrijd/) — не в Делфте (финал в Эйндховене)
+- [Delta (TU Delft)] [13 Vidibeurzen naar Delftse onderzoekers](https://delta.tudelft.nl/article/13-vidibeurzen-naar-delftse-onderzoekers) — внутренняя жизнь университета без влияния на жителей
+- [Delta (TU Delft)] [Crowdfunding voor alternatieve eendenbek levert ruim twee ton op](https://delta.tudelft.nl/article/crowdfunding-voor-alternatieve-eendenbek-levert-ruim-twee-ton-op) — внутренняя жизнь университета, без влияния на жителей
+- [Gemeente Delft] [Brand Kerkstraat](https://www.delft.nl/brand-kerkstraat) — дубликат пункта n11
+- [Gemeente Delft] [Ongewenst gedrag? Zeg er iets van!](https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van) — общая социальная кампания, без конкретного эффекта
+- [Delta (TU Delft)] [Ministerie van OCW moet bezuinigen op personeel](https://delta.tudelft.nl/article/ministerie-van-ocw-moet-bezuinigen-op-personeel) — общенациональная политика без конкретного эффекта для Делфта
+- [Delta (TU Delft)] [6 vragen over het PHP-lek aan TU cybersecurity onderzoeker Harm Griffioen](https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen) — интервью / научпоп
+- [Delta (TU Delft)] [Jevons paradox](https://delta.tudelft.nl/article/jevons-paradox-2) — колонка / мнение
+- [Gemeente Delft] [Delftse Klimaatweek 2026](https://www.delft.nl/delftse-klimaatweek-2026) — не хватило места в выпуске
+- [Gemeente Delft] [Inkoopactie isolatie](https://www.delft.nl/inkoopactie-isolatie) — не хватило места в выпуске
 
-## Не вошло из анонсов (29)
+## Не вошло из анонсов (28)
 
-- [In Delft] 2026-10-23 — [Springkussen- en speeldag in de herfstvakantie Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2881859078/jump-olympics-delft) — детское
-- [In Delft] 2026-10-23 — [Workshop voor statushouders: sterk richting werk](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/497899699/workshop-hoe-presenteer-je-jezelf-voor-een-nieuwe-baan) — рутинный воркшоп для статусхолдеров
-- [Uit Delft] 2026-10-23 — [50 Years of Rumours | The Cosmic Carnival Concert en Boogie Night Afterparty](https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/) — дубликат
-- [Uit Delft] 2026-10-23 — [Cultuurbarbaren: Durven Tekenen!](https://uitdelft.com/event/cultuurbarbaren-durven-tekenen/) — детское
-- [Uit Delft] 2026-10-23 — [Cultuurbarbaren: Spot On DJ! (vak-activiteit)](https://uitdelft.com/event/cultuurbarbaren-spot-on-dj-vak-activiteit-2/) — детское
-- [Uit Delft] 2026-10-23 — [Cultuurbarbaren: Spot On Stip! (vak-activiteit)](https://uitdelft.com/event/cultuurbarbaren-spot-on-stip-vak-activiteit/) — детское
-- [Uit Delft] 2026-10-23 — [Cultuurbarbaren Workshops voor en door Cultuurbarbaren](https://uitdelft.com/event/cultuurbarbaren-workshops-voor-en-door-cultuurbarbaren-2/) — детское
-- [Uit Delft] 2026-10-23 — [Gratis Kunstexpositie Den Haag | Colors of My Heart art – Ron Malestein](https://uitdelft.com/event/gratis-kunstexpositie-den-haag-colors-of-my-heart-art-ron-malestein/) — не в Делфте
-- [Uit Delft] 2026-10-23 — [Informatiepunt Digitale Overheid (IDO)](https://uitdelft.com/event/informatiepunt-digitale-overheid-ido/) — регулярная консультация
-- [Uit Delft] 2026-10-23 — [Nachtwacht van de Kurk](https://uitdelft.com/event/nachtwacht-van-de-kurk-2/) — ночное событие в баре
-- [Uit Delft] 2026-10-23 — [Workshop: Hoe Presenteer Jij Jezelf voor een Nieuwe Baan?](https://uitdelft.com/event/workshop-hoe-presenteer-jij-jezelf-voor-een-nieuwe-baan/) — рутинный воркшоп
-- [Uit Delft] 2026-10-24 — [Cultuurlab Live- Status Quo Forever](https://uitdelft.com/event/cultuurlab-live-status-quo-forever/) — дубликат
-- [Uit Delft] 2026-10-24 — [Nachtwacht van de Kurk](https://uitdelft.com/event/nachtwacht-van-de-kurk-3/) — ночное событие в баре
-- [Uit Delft] 2026-10-24 — [The Rose Show Comedy Competition](https://uitdelft.com/event/the-rose-show-comedy-competition-2/) — дубликат
-- [Uit Delft] 2026-10-24 — [Willem van Oranje – de musical](https://uitdelft.com/event/willem-van-oranje-de-musical-7/) — дубликат
-- [Uit Delft] 2026-10-25 — [🍁🎼Medycyna Dźwięków Strefa Yogi Satnam🎼🍁](https://uitdelft.com/event/%f0%9f%8d%81%f0%9f%8e%bcmedycyna-dzwiekow-strefa-yogi-satnam%f0%9f%8e%bc%f0%9f%8d%81/) — не в Делфте
-- [Uit Delft] 2026-10-25 — [25 oktober | Choral Evensong | Schuilkerk](https://uitdelft.com/event/25-oktober-choral-evensong-schuilkerk/) — обычная церковная служба
-- [Uit Delft] 2026-10-25 — [Bebop Unplugged: Smooch](https://uitdelft.com/event/bebop-unplugged-smooch/) — бар, местная группа
-- [Uit Delft] 2026-10-25 — [Concert | ISO Trio](https://uitdelft.com/event/concert-iso-trio/) — бар, местная группа
-- [Uit Delft] 2026-10-25 — [Live muziek met New Moondance](https://uitdelft.com/event/live-muziek-met-new-moondance/) — бар, местная группа
-- [Uit Delft] 2026-10-25 — [Sunday Sounds- Anja Verrijp en Robert Kwakkelstein](https://uitdelft.com/event/sunday-sounds-anja-verrijp-en-robert-kwakkelstein/) — дубликат
-- [Uit Delft] 2026-10-25 — [Willem van Oranje – de musical](https://uitdelft.com/event/willem-van-oranje-de-musical-6/) — дубликат
-- [Uit Delft] 2026-10-25 — [X Live on Sunday: Open Mic & The Trapdoors](https://uitdelft.com/event/x-live-on-sunday-open-mic-the-trapdoors/) — open mic
+- [In Delft] 2026-10-24 — [Pieter Hulst & Willem Voogd - De Proefkeuken en de WC van tijd (8+)](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1353347117/pieter-hulst-willem-voogd-de-proefkeuken-en-de-wc-van-tijd-8) — детский спектакль (8+), распродан
+- [In Delft] 2026-10-24 — [Droomtijdloop – Nachtelijke hardloopwedstrijd in Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3775571514/klaas-vaak-droomtijdlooo) — дубликат / нестандартное время, неясно
+- [In Delft] 2026-10-24 — [Bhangra Workshop Delft – Ontdek Punjabi dans](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/384901006/free-bhangra-workshop-by-bhangra-evolution-the-hague-3) — танцевальный воркшоп, для всех уровней, мелкое мероприятие
+- [In Delft] 2026-10-24 — [Workshop Eco-printen & Borduren in Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4180807031/workshop-botanische-kleur-borduurwerk-met-dora-tiho-1) — дубликат e2
+- [Uit Delft] 2026-10-24 — [24/10- DELFT ZOUK NIGHT met Workshop MafieZouker](https://uitdelft.com/event/24-10-delft-zouk-night-met-workshop-mafiezouker/) — клубная вечеринка, автоматический список
+- [Uit Delft] 2026-10-24 — [Cultuurlab Live- Status Quo Forever](https://uitdelft.com/event/cultuurlab-live-status-quo-forever/) — дубликат e14
+- [Uit Delft] 2026-10-24 — [Halloween Tanthof Oost](https://uitdelft.com/event/halloween-tanthof-oost/) — вечеринка Halloween в районе, автоматический список
+- [Uit Delft] 2026-10-24 — [Nachtwacht van de Kurk](https://uitdelft.com/event/nachtwacht-van-de-kurk-3/) — ночная вечеринка в клубе
+- [Uit Delft] 2026-10-24 — [The Rose Show Comedy Competition](https://uitdelft.com/event/the-rose-show-comedy-competition-2/) — комедийный конкурс в баре, дубликат e16
+- [Uit Delft] 2026-10-24 — [The Rose Show Comedy Competition – Season 3 Finals!](https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/) — комедийный конкурс в баре, финал
+- [Uit Delft] 2026-10-24 — [Willem van Oranje – de musical](https://uitdelft.com/event/willem-van-oranje-de-musical-7/) — мюзикл для детей и семей, дубликат e30
+- [Uit Delft] 2026-10-25 — [🍁🎼Medycyna Dźwięków Strefa Yogi Satnam🎼🍁](https://uitdelft.com/event/%f0%9f%8d%81%f0%9f%8e%bcmedycyna-dzwiekow-strefa-yogi-satnam%f0%9f%8e%bc%f0%9f%8d%81/) — не в Делфте (Rijswijk)
+- [Uit Delft] 2026-10-25 — [25 oktober | Choral Evensong | Schuilkerk](https://uitdelft.com/event/25-oktober-choral-evensong-schuilkerk/) — обычная церковная вечерня
+- [Uit Delft] 2026-10-25 — [Live muziek met New Moondance](https://uitdelft.com/event/live-muziek-met-new-moondance/) — выступление местной группы в кафе
+- [Uit Delft] 2026-10-25 — [Sunday Sounds- Anja Verrijp en Robert Kwakkelstein](https://uitdelft.com/event/sunday-sounds-anja-verrijp-en-robert-kwakkelstein/) — дубликат e29
+- [Uit Delft] 2026-10-25 — [Willem van Oranje – de musical](https://uitdelft.com/event/willem-van-oranje-de-musical-6/) — мюзикл для детей и семей (Willem van Oranje)
+- [Uit Delft] 2026-10-25 — [X Live on Sunday: Open Mic & The Trapdoors](https://uitdelft.com/event/x-live-on-sunday-open-mic-the-trapdoors/) — open mic в баре
+- [Uit Delft] 2026-10-27 — [Birra Moretti Jamsessie](https://uitdelft.com/event/birra-moretti-jamsessie/) — джем-сессия в баре
+- [Uit Delft] 2026-10-27 — [Birra Moretti Session | hosted by Keller-Lammen Quintet](https://uitdelft.com/event/birra-moretti-session-hosted-by-keller-lammen-quintet/) — джем-сессия в баре
+- [Uit Delft] 2026-10-27 — [Jamsession @ Bebop](https://uitdelft.com/event/jamsession-bebop-4/) — джем-сессия в баре, дубликат
+- [In Delft] 2026-10-24 — [Muziek uit de films van Tim Burton in Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/927097159/tim-burton-s-universe-door-mystery-ensemble) — не хватило места в выпуске
 - [Uit Delft] 2026-10-24 — [Status Quo Forever Cultuurlab Live](https://uitdelft.com/event/status-quo-forever-cultuurlab-live/) — не хватило места в выпуске
-- [Uit Delft] 2026-10-24 — [The Rose Show Comedy Competition – Season 3 Finals!](https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/) — не хватило места в выпуске
+- [Uit Delft] 2026-10-25 — [Bebop Unplugged: Smooch](https://uitdelft.com/event/bebop-unplugged-smooch/) — не хватило места в выпуске
+- [Uit Delft] 2026-10-25 — [Concert | ISO Trio](https://uitdelft.com/event/concert-iso-trio/) — не хватило места в выпуске
 - [Uit Delft] 2026-10-25 — [Droomtijdloop](https://uitdelft.com/event/droomtijdloop-4/) — не хватило места в выпуске
 - [Uit Delft] 2026-10-25 — [Meditatief Ligconcert](https://uitdelft.com/event/meditatief-ligconcert/) — не хватило места в выпуске
 - [Uit Delft] 2026-10-25 — [Per Sempre Giovane op Zondag in de Waag](https://uitdelft.com/event/per-sempre-giovane-op-zondag-in-de-waag/) — не хватило места в выпуске
 - [Uit Delft] 2026-10-25 — [Sunday Sounds | Anja Verrijp & Robert Kwakkelstein](https://uitdelft.com/event/sunday-sounds-anja-verrijp-robert-kwakkelstein/) — не хватило места в выпуске
 
-## Кандидаты: новости (28)
+## Кандидаты: новости (32)
 
+- [Omroep Delft] 24.10 11:00 — [Voor- en tegenstanders azc kondigen demonstraties aan op Delftse Markt](https://www.omroepdelft.nl/delft/binnenstad/voor-en-tegenstanders-azc-demonstreren-zaterdag-op-delftse-markt/)
+- [Delft op Zondag] 24.10 10:00 — [Wisselvallige start van het seizoen voor Vitesse Delft](https://www.delftopzondag.nl/nieuws/sport/111460/wisselvallige-start-van-het-seizoen-voor-vitesse-delft)
+- [Omroep Delft] 24.10 10:00 — [Effe buurten in de Afrikabuurt: ‘Ik ben een Tanthoffiel’](https://www.omroepdelft.nl/delft/effe-buurten-in-de-afrikabuurt-ik-ben-een-tanthoffiel-2/)
+- [Delft op Zondag] 24.10 09:59 — [Files, overlast en gevaarlijke situaties rond Nieuwe Plantage](https://www.delftopzondag.nl/nieuws/algemeen/111428/files-overlast-en-gevaarlijke-situaties-rond-nieuwe-plantage)
+- [Delft op Zondag] 24.10 09:55 — [Unieke en persoonlijke verhalen tijdens de Living Library](https://www.delftopzondag.nl/nieuws/algemeen/111429/unieke-en-persoonlijke-verhalen-tijdens-de-living-library)
+- [Delft op Zondag] 24.10 09:50 — [Delvenaar in Beeld: Joes (23)](https://www.delftopzondag.nl/nieuws/algemeen/111431/delvenaar-in-beeld-joes-23-)
+- [Delft op Zondag] 24.10 09:50 — [Dubbel Delft 24/10](https://www.delftopzondag.nl/nieuws/algemeen/111453/dubbel-delft-24-10)
+- [Delft op Zondag] 24.10 09:44 — [Hemd van het Lijf: Marcel Vilain](https://www.delftopzondag.nl/nieuws/algemeen/111457/hemd-van-het-lijf-marcel-vilain)
+- [Omroep Delft] 23.10 21:20 — [Harde botsing op tankstation Kruithuisweg: Mini verliest motorblok](https://www.omroepdelft.nl/delft/tanthof-oost/harde-botsing-op-tankstation-kruithuisweg-mini-verliest-motorblok/)
 - [Omroep Delft] 23.10 15:59 — [Historische mijlpaal voor Filmhuis Lumen: 100.000ste bezoeker van 2026](https://www.omroepdelft.nl/delft/binnenstad/historische-mijlpaal-voor-filmhuis-lumen-100-000ste-bezoeker-van-2026/)
 - [Omroep Delft] 23.10 15:40 — [Van Delft naar Brussel: gemeenteraadslid spreekt in Europa over banen van de toekomst](https://www.omroepdelft.nl/politiek/van-delft-naar-brussel-gemeenteraadslid-spreekt-in-europa-over-banen-van-de-toekomst/)
 - [Omroep Delft] 23.10 14:59 — [Brand in de Kerkstraat: wat weten we nu?](https://www.omroepdelft.nl/delft/binnenstad/brand-in-de-kerkstraat-wat-weten-we-nu/)
@@ -145,7 +163,6 @@
 - [Omroep Delft] 22.10 16:44 — [TU-studenten Willemijn en Marin staan in finale van de Hema-ontwerpwedstrijd](https://www.omroepdelft.nl/delft/tu-campus/tu-studenten-willemijn-en-marin-staan-in-finale-van-de-hema-ontwerpwedstrijd/)
 - [Delta (TU Delft)] 22.10 15:35 — [13 Vidibeurzen naar Delftse onderzoekers](https://delta.tudelft.nl/article/13-vidibeurzen-naar-delftse-onderzoekers)
 - [Delta (TU Delft)] 22.10 15:31 — [Crowdfunding voor alternatieve eendenbek levert ruim twee ton op](https://delta.tudelft.nl/article/crowdfunding-voor-alternatieve-eendenbek-levert-ruim-twee-ton-op)
-- [Omroep Delft] 22.10 14:44 — [Brand in Delftse binnenstad trekt veel bekijks: ‘Verdrietig om te zien’](https://www.omroepdelft.nl/delft/binnenstad/brand-in-delftse-binnenstad-trekt-veel-bekijks-verdrietig-om-te-zien/)
 - [Gemeente Delft] 22.10 14:00 — [Balies gemeente dicht](https://www.delft.nl/balies-gemeente-dicht)
 - [Gemeente Delft] 22.10 14:00 — [Brand Kerkstraat](https://www.delft.nl/brand-kerkstraat)
 - [Gemeente Delft] 22.10 14:00 — [Delftse Klimaatweek 2026](https://www.delft.nl/delftse-klimaatweek-2026)
@@ -154,31 +171,22 @@
 - [Gemeente Delft] 22.10 14:00 — [Ongewenst gedrag? Zeg er iets van!](https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van)
 - [Gemeente Delft] 22.10 14:00 — [Raadsvergadering 29 oktober](https://www.delft.nl/raadsvergadering-29-oktober)
 - [Gemeente Delft] 22.10 14:00 — [Storing reisdocumenten verholpen](https://www.delft.nl/storing-reisdocumenten-verholpen)
-- [Omroep Delft] 22.10 13:48 — [20-jarige krijgt bijna jaar celstraf voor babbeltruc bij 68-jarige vrouw in Delft](https://www.omroepdelft.nl/delft/twintigjarige-krijgt-bijna-jaar-celstraf-voor-babbeltruc-bij-68-jarige-vrouw-in-delft/)
 - [Delta (TU Delft)] 22.10 11:04 — [Ministerie van OCW moet bezuinigen op personeel](https://delta.tudelft.nl/article/ministerie-van-ocw-moet-bezuinigen-op-personeel)
 - [Delta (TU Delft)] 22.10 11:00 — [6 vragen over het PHP-lek aan TU cybersecurity onderzoeker Harm Griffioen](https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen)
-- [Omroep Delft] 22.10 09:56 — [Schrik zit er goed in na grote brand in centrum van Delft: ‘Ik kon alleen de deur opendoen’](https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/)
 - [Delta (TU Delft)] 22.10 09:00 — [Jevons paradox](https://delta.tudelft.nl/article/jevons-paradox-2)
-- [Delta (TU Delft)] 21.10 14:12 — [TU Delft verwelkomt meer eerstejaars ondanks landelijke daling](https://delta.tudelft.nl/article/tu-delft-verwelkomt-meer-eerstejaars-ondanks-landelijke-daling)
-- [Delta (TU Delft)] 21.10 10:40 — [Levend archief: 12 duizend zaden te zien in Hortus Botanicus](https://delta.tudelft.nl/article/levend-archief-12-duizend-zaden-te-zien-in-hortus-botanicus)
 
-## Кандидаты: события (37)
+## Кандидаты: события (36)
 
-- [In Delft] 2026-10-23 — [Springkussen- en speeldag in de herfstvakantie Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2881859078/jump-olympics-delft) (rschillende leeftijden! Wanneer Vrijdag 23 oktober 2026 10.00 - 15.30 uur Prijzen € 9,50 In de buurt Kaartelementen overslaan Deel deze)
-- [In Delft] 2026-10-23 — [The Cosmic Carnival - 50 Years of Rumours](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3198423297/the-cosmic-carnival-50-years-of-rumours) (rijs inclusief drankje] Wanneer Vrijdag 23 oktober 2026 20.15 - 22.25 uur Prijzen Regulier € 32,50 CJP (Cultureel Jongeren Paspoort) € · Theater de Veste)
-- [In Delft] 2026-10-23 — [Workshop voor statushouders: sterk richting werk](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/497899699/workshop-hoe-presenteer-je-jezelf-voor-een-nieuwe-baan) (nde stap richting werk. Wanneer Vrijdag 23 oktober 2026 10.00 - 12.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze)
-- [In Delft] 2026-10-23 — [Schrijfworkshop Setting & perspectief](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief) (n is ook los te volgen. Wanneer Vrijdag 23 oktober 2026 09.30 - 12.00 uur Prijzen € 20,00 In de buurt Kaartelementen overslaan Deel dez)
-- [Uit Delft] 2026-10-23 — [50 Years of Rumours | The Cosmic Carnival Concert en Boogie Night Afterparty](https://uitdelft.com/event/50-years-of-rumours-the-cosmic-carnival-concert-en-boogie-night-afterparty/) (20:15–22:25 · Theater De Veste, Asvest 1)
-- [Uit Delft] 2026-10-23 — [Cultuurbarbaren: Durven Tekenen!](https://uitdelft.com/event/cultuurbarbaren-durven-tekenen/) (10:00–11:00 · Open Delft)
-- [Uit Delft] 2026-10-23 — [Cultuurbarbaren: Spot On DJ! (vak-activiteit)](https://uitdelft.com/event/cultuurbarbaren-spot-on-dj-vak-activiteit-2/) (10:00–11:00 · Open Delft · €8)
-- [Uit Delft] 2026-10-23 — [Cultuurbarbaren: Spot On Stip! (vak-activiteit)](https://uitdelft.com/event/cultuurbarbaren-spot-on-stip-vak-activiteit/) (10:00–11:00 · Open Delft · €8)
-- [Uit Delft] 2026-10-23 — [Cultuurbarbaren Workshops voor en door Cultuurbarbaren](https://uitdelft.com/event/cultuurbarbaren-workshops-voor-en-door-cultuurbarbaren-2/) (11:00–12:00 · Open Delft · Gratis)
-- [Uit Delft] 2026-10-23 — [Gratis Kunstexpositie Den Haag | Colors of My Heart art – Ron Malestein](https://uitdelft.com/event/gratis-kunstexpositie-den-haag-colors-of-my-heart-art-ron-malestein/) (весь день · Ron Malestein – Betaalbare Kleurrijke Schilderijen)
-- [Uit Delft] 2026-10-23 — [Informatiepunt Digitale Overheid (IDO)](https://uitdelft.com/event/informatiepunt-digitale-overheid-ido/) (10:00–12:00 · Open Delft · Gratis)
-- [Uit Delft] 2026-10-23 — [Nachtwacht van de Kurk](https://uitdelft.com/event/nachtwacht-van-de-kurk-2/) (23:00–23:59 · De Kurk – Lokaal Proef Festijn)
-- [Uit Delft] 2026-10-23 — [Ruis: Ambient Noise Lounge. OJV](https://uitdelft.com/event/ruis-ambient-noise-lounge-ojv/) (20:00–23:59 · De Koornbeurs)
-- [Uit Delft] 2026-10-23 — [Willem van Oranje – De Musical](https://uitdelft.com/event/willem-van-oranje-de-musical/) (19:30–22:00 · Prinsentheater · €45)
-- [Uit Delft] 2026-10-23 — [Workshop: Hoe Presenteer Jij Jezelf voor een Nieuwe Baan?](https://uitdelft.com/event/workshop-hoe-presenteer-jij-jezelf-voor-een-nieuwe-baan/) (10:00–12:00 · Dok Voorhof · Gratis)
+- [In Delft] 2026-10-24 — [Straatfotografie – Leg jouw Tanthof vast](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1111601950/mijn-tanthof-straatfotografie-cursus) (tuurhuis Delft en DOK. Wanneer Zaterdag 24 oktober 2026 10.00 - 12.00 uur In de buurt Kaartelementen overslaan Deel deze pagina Deel de)
+- [In Delft] 2026-10-24 — [Pieter Hulst & Willem Voogd - De Proefkeuken en de WC van tijd (8+)](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1353347117/pieter-hulst-willem-voogd-de-proefkeuken-en-de-wc-van-tijd-8) (ees minder Wanneer Uitverkocht Zaterdag 24 oktober 2026 19.00 - 20.20 uur Prijzen Kinderen € 25,00 Volwassenen € 25,00 In de buurt Kaar · Theater de Veste)
+- [In Delft] 2026-10-24 — [Ecoprint & borduur Workshop in Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3338589970/botanische-kleur-borduurwerk-met-dora-tih) (n ambacht. Lees minder Wanneer Zaterdag 24 oktober 2026 11.00 - 15.30 uur Prijzen € 85,00 In de buurt Kaartelementen overslaan Deel dez)
+- [In Delft] 2026-10-24 — [Droomtijdloop – Nachtelijke hardloopwedstrijd in Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3775571514/klaas-vaak-droomtijdlooo) (ijke hardloopervaring. Wanneer Zaterdag 24 oktober 2026 02.00 - 03.30 uur Prijzen € 25,00 In de buurt Kaartelementen overslaan Deel dez)
+- [In Delft] 2026-10-24 — [OPEN HUIS Museum Van Marken](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3836547440/open-huis-museum-van-marken-2) (op de website vinden. Wanneer Zaterdag 24 oktober 2026 12.00 - 16.00 uur Zaterdag 14 november 2026 12.00 - 16.00 uur Zaterdag 28 novem)
+- [In Delft] 2026-10-24 — [Bhangra Workshop Delft – Ontdek Punjabi dans](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/384901006/free-bhangra-workshop-by-bhangra-evolution-the-hague-3) (yourself! Lees minder Wanneer Zaterdag 24 oktober 2026 15.30 - 16.30 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze)
+- [In Delft] 2026-10-24 — [Cultuurlab Live – Status Quo Forever](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4066464680/cultuurlab-live-status-quo-forever) (arakteristieke geluid. Wanneer Zaterdag 24 oktober 2026 om 21.00 uur Prijzen € 15,00 In de buurt Kaartelementen overslaan Deel deze pag)
+- [In Delft] 2026-10-24 — [Workshop Eco-printen & Borduren in Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4180807031/workshop-botanische-kleur-borduurwerk-met-dora-tiho-1) (atuur en creativiteit. Wanneer Zaterdag 24 oktober 2026 11.00 - 15.30 uur Prijzen € 85,00 In de buurt Kaartelementen overslaan Deel dez)
+- [In Delft] 2026-10-24 — [Mariahulde Delft – Koormuziek en lichtprocessie](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/617053452/zang-en-samenzang-mariahulde-in-de-maria-van-jessekerk) (traditie en bezinning. Wanneer Zaterdag 24 oktober 2026 15.00 - 16.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze)
+- [In Delft] 2026-10-24 — [Muziek uit de films van Tim Burton in Delft](https://www.indelft.nl/nl/uitagenda/uitagenda-delft/927097159/tim-burton-s-universe-door-mystery-ensemble) (m, muziek en fantasie. Wanneer Zaterdag 24 oktober 2026 20.00 - 21.15 uur Prijzen € 25,00 In de buurt Kaartelementen overslaan Deel dez)
 - [Uit Delft] 2026-10-24..2026-10-25 — [24/10- DELFT ZOUK NIGHT met Workshop MafieZouker](https://uitdelft.com/event/24-10-delft-zouk-night-met-workshop-mafiezouker/) (весь день · Dansschool Wesseling)
 - [Uit Delft] 2026-10-24..2026-10-25 — [Cultuurlab Live- Status Quo Forever](https://uitdelft.com/event/cultuurlab-live-status-quo-forever/) (весь день · Brabantse Turfmarkt 9, DELFT)
 - [Uit Delft] 2026-10-24 — [Halloween Tanthof Oost](https://uitdelft.com/event/halloween-tanthof-oost/) (00:00–02:00 · Tanthof Oost)
@@ -201,3 +209,7 @@
 - [Uit Delft] 2026-10-25 — [Sunday Sounds | Anja Verrijp & Robert Kwakkelstein](https://uitdelft.com/event/sunday-sounds-anja-verrijp-robert-kwakkelstein/) (15:30–17:30 · Hampshire Hotel, Koepoortplaats 3)
 - [Uit Delft] 2026-10-25 — [Willem van Oranje – de musical](https://uitdelft.com/event/willem-van-oranje-de-musical-6/) (13:30–15:30 · Prinsentheater · €45)
 - [Uit Delft] 2026-10-25 — [X Live on Sunday: Open Mic & The Trapdoors](https://uitdelft.com/event/x-live-on-sunday-open-mic-the-trapdoors/) (13:30–16:30 · X TU Delft)
+- [Uit Delft] 2026-10-27 — [Birra Moretti Jamsessie](https://uitdelft.com/event/birra-moretti-jamsessie/) (20:30–23:30 · Jazzcafé Bebop · gratis)
+- [Uit Delft] 2026-10-27 — [Birra Moretti Session | hosted by Keller-Lammen Quintet](https://uitdelft.com/event/birra-moretti-session-hosted-by-keller-lammen-quintet/) (20:30–22:30 · Jazzcafé Bebop · free entrance)
+- [Uit Delft] 2026-10-27 — [Jamsession @ Bebop](https://uitdelft.com/event/jamsession-bebop-4/) (весь день · Jazz Café De Bebop)
+- [Uit Delft] 2026-10-27 — [Wachtend op de Dood | Maarten Heijmans & Xander Vrienten](https://uitdelft.com/event/wachtend-op-de-dood-maarten-heijmans-xander-vrienten/) (20:15–21:30 · Theater De Veste, Asvest 1)
