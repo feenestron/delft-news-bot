@@ -1,73 +1,142 @@
 {
  "version": 1,
- "date": "2026-10-23",
- "title": "Делфт · пятница, 23 октября",
- "published": "2026-10-23T17:59:38.570018+02:00",
+ "date": "2026-10-24",
+ "title": "Делфт · суббота, 24 октября",
+ "published": "2026-10-24T07:30:37.893568+02:00",
  "news": [
   {
-   "title": "Пожар на Kerkstraat: сгорела терраса Café De Ruif, пострадал Microtheater",
-   "summary": "Пожар 22 октября начался на террасе Café De Ruif и перекинулся на само кафе. Никто не пострадал; соседний Microtheater получил повреждения от сажи, спектакли и занятия пока проходят в других местах. Причину выясняет полиция.",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/brand-in-de-kerkstraat-wat-weten-we-nu/",
-   "source": "Omroep Delft"
+   "title": "Авария на заправке на Kruithuisweg: у Mini вылетел двигатель",
+   "summary": "В пятницу 23 октября автомобиль врезался в опору заправки, водителя срочно увезли в больницу. Kruithuisweg на время перекрывали из-за обломков и масла, теперь дорога открыта; причина аварии неизвестна.",
+   "url": "https://www.omroepdelft.nl/delft/tanthof-oost/harde-botsing-op-tankstation-kruithuisweg-mini-verliest-motorblok/",
+   "source": "Omroep Delft",
+   "level": "must"
+  }
+ ],
+ "maybe": [],
+ "skipped": [],
+ "skipped_events": [
+  {
+   "title": "Pieter Hulst & Willem Voogd - De Proefkeuken en de WC van tijd (8+)",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1353347117/pieter-hulst-willem-voogd-de-proefkeuken-en-de-wc-van-tijd-8",
+   "source": "In Delft",
+   "reason": "детское, билеты распроданы",
+   "date": "2026-10-24"
   },
   {
-   "title": "Ветклиника в Hof van Delft не закроется",
-   "summary": "Клинику на Hof van Delftlaan собирались закрыть из-за нехватки персонала, но её выкупают ветеринары Yara van de Pest и Anna Dekker. Со 2 ноября она продолжит работу как самостоятельная практика.",
-   "url": "https://www.omroepdelft.nl/delft/hof-van-delft/dierenkliniek-hof-van-delft-blijft-toch-open-mensen-vonden-het-superjammer-dat-het-zou-sluiten/",
-   "source": "Omroep Delft"
+   "title": "Droomtijdloop – Nachtelijke hardloopwedstrijd in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3775571514/klaas-vaak-droomtijdlooo",
+   "source": "In Delft",
+   "reason": "ночной забег уже прошёл",
+   "date": "2026-10-24"
   },
   {
-   "title": "Filmhuis Lumen принял 100-тысячного посетителя за 2026 год",
-   "summary": "В прошлом году было 86 000 посетителей. Рост связан с переездом 14 марта в новое здание, где вдвое больше залов.",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/historische-mijlpaal-voor-filmhuis-lumen-100-000ste-bezoeker-van-2026/",
-   "source": "Omroep Delft"
+   "title": "Workshop Eco-printen & Borduren in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4180807031/workshop-botanische-kleur-borduurwerk-met-dora-tiho-1",
+   "source": "In Delft",
+   "reason": "дубликат",
+   "date": "2026-10-24"
+  },
+  {
+   "title": "🍁🎼Medycyna Dźwięków Strefa Yogi Satnam🎼🍁",
+   "url": "https://uitdelft.com/event/%f0%9f%8d%81%f0%9f%8e%bcmedycyna-dzwiekow-strefa-yogi-satnam%f0%9f%8e%bc%f0%9f%8d%81/",
+   "source": "Uit Delft",
+   "reason": "не в Делфте (Rijswijk)",
+   "date": "2026-10-25"
+  },
+  {
+   "title": "Birra Moretti Jamsessie",
+   "url": "https://uitdelft.com/event/birra-moretti-jamsessie/",
+   "source": "Uit Delft",
+   "reason": "джем-сейшн в баре",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Birra Moretti Session | hosted by Keller-Lammen Quintet",
+   "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-keller-lammen-quintet/",
+   "source": "Uit Delft",
+   "reason": "сейшн в баре",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Jamsession @ Bebop",
+   "url": "https://uitdelft.com/event/jamsession-bebop-4/",
+   "source": "Uit Delft",
+   "reason": "джем в баре, дубликат",
+   "date": "2026-10-27"
   }
  ],
  "events": [
   {
-   "title": "Писательская мастерская: место действия и перспектива",
-   "when": "пт 23 окт, 09:30–12:00",
+   "title": "Уличная фотография: запечатлей свой Tanthof",
+   "when": "сб 24 окт, 10:00",
+   "where": "Tanthof",
+   "price": "",
+   "summary": "Двухчастный курс уличной фотографии с Willem de Bie: участники делают собственный фоторепортаж о районе.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1111601950/mijn-tanthof-straatfotografie-cursus",
+   "date": "2026-10-24"
+  },
+  {
+   "title": "Воркшоп по экопринту и вышивке",
+   "when": "сб 24 окт, 11:00",
+   "where": "TU Delft Hortus",
+   "price": "€85",
+   "summary": "Творческий текстильный мастер-класс: экопринт растениями и натуральными красителями и ручная вышивка.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3338589970/botanische-kleur-borduurwerk-met-dora-tih",
+   "date": "2026-10-24"
+  },
+  {
+   "title": "День открытых дверей Museum Van Marken",
+   "when": "сб 24 окт, 12:00",
+   "where": "Maison Neuf, Museum Van Marken",
+   "price": "",
+   "summary": "Открытый дом во временном визит-центре с экспозицией о наследии первого социального предпринимателя; проходит дважды в месяц.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3836547440/open-huis-museum-van-marken-2",
+   "date": "2026-10-24"
+  },
+  {
+   "title": "Mariahulde: хоровая музыка и шествие со свечами",
+   "when": "сб 24 окт, 15:00",
    "where": "",
-   "price": "€20",
-   "summary": "Мастерская Gean Ockels (Bureau Geanie) о том, как место действия, атмосфера и point of view формируют историю.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief",
-   "date": "2026-10-23"
+   "price": "бесплатно",
+   "summary": "Три хора, сопрано Antonia Dunjko, общее пение и atmospheric шествие со свечами.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/617053452/zang-en-samenzang-mariahulde-in-de-maria-van-jessekerk",
+   "date": "2026-10-24"
   },
   {
-   "title": "Sunday Sounds: Anja Verrijp и Robert Kwakkelstein",
-   "when": "вс 25 окт",
-   "where": "Koepoortplaats 3",
+   "title": "Воркшоп по бхangra — панджабские танцы",
+   "when": "сб 24 окт, 15:30",
+   "where": "",
+   "price": "бесплатно",
+   "summary": "Энергичный танцевальный мастер-класс с Bhangra Evolution The Hague для любого возраста и уровня.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/384901006/free-bhangra-workshop-by-bhangra-evolution-the-hague-3",
+   "date": "2026-10-24"
+  },
+  {
+   "title": "Музыка из фильмов Тима Бёртона",
+   "when": "сб 24 окт, 20:00",
+   "where": "",
+   "price": "€25",
+   "summary": "Концерт музыки из фильмов Бёртона, включая Edward Scissorhands, Batman и Corpse Bride.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/927097159/tim-burton-s-universe-door-mystery-ensemble",
+   "date": "2026-10-24"
+  },
+  {
+   "title": "Cultuurlab Live: Status Quo Forever",
+   "when": "сб 24 окт, 21:00",
+   "where": "",
+   "price": "€15",
+   "summary": "Трибьют-концерт: хиты и редкие песни Status Quo в стиле крепкого рока.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4066464680/cultuurlab-live-status-quo-forever",
+   "date": "2026-10-24"
+  },
+  {
+   "title": "Спектакль «Wachtend op de Dood»: Maarten Heijmans и Xander Vrienten",
+   "when": "вт 27 окт, 20:15",
+   "where": "Theater de Veste, Asvest 1",
    "price": "",
-   "summary": "Музыкальный воскресный концерт из серии Sunday Sounds.",
-   "url": "https://uitdelft.com/event/sunday-sounds-anja-verrijp-en-robert-kwakkelstein/",
-   "date": "2026-10-25"
-  },
-  {
-   "title": "Мюзикл «Willem van Oranje»",
-   "when": "вс 25 окт, 13:30",
-   "where": "Prinsentheater",
-   "price": "€45",
-   "summary": "Мюзикл об Вильгельме Оранском в Prinsentheater.",
-   "url": "https://uitdelft.com/event/willem-van-oranje-de-musical-6/",
-   "date": "2026-10-25"
-  },
-  {
-   "title": "Per Sempre Giovane: воскресный концерт в Waag",
-   "when": "вс 25 окт, 14:00–17:00",
-   "where": "De Waag, Markt 11",
-   "price": "",
-   "summary": "Воскресное выступление шестичленной группы Per Sempre Giovane в центре города.",
-   "url": "https://uitdelft.com/event/per-sempre-giovane-op-zondag-in-de-waag/",
-   "date": "2026-10-25"
-  },
-  {
-   "title": "Живая музыка: New Moondance",
-   "when": "вс 25 окт, 16:00–19:00",
-   "where": "De Koperen Kat, Schieweg 15m",
-   "price": "",
-   "summary": "Воскресный концерт группы New Moondance в баре De Koperen Kat.",
-   "url": "https://uitdelft.com/event/live-muziek-met-new-moondance/",
-   "date": "2026-10-25"
+   "summary": "Театральный вечер с Maarten Heijmans и Xander Vrienten в Theater de Veste.",
+   "url": "https://uitdelft.com/event/wachtend-op-de-dood-maarten-heijmans-xander-vrienten/",
+   "date": "2026-10-27"
   }
  ]
 }
