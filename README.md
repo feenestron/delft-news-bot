@@ -78,7 +78,7 @@ Telegram-бот, который каждое утро собирает мест�
 | `NEWS_WINDOW_HOURS` | `30` | насколько свежими должны быть новости |
 | `EVENT_HORIZON_DAYS` | `3` | на сколько дней вперёд брать анонсы |
 | `MAX_NEWS` / `MAX_EVENTS` | `8` / `8` | максимум пунктов в разделах |
-| `ANTHROPIC_MODEL` | `claude-haiku-5-5` | модель Claude (для более тонкого отбора — `claude-sonnet-5-5`, в ~20 раз дороже) |
+| `ANTHROPIC_MODEL` | `claude-sonnet-5-5` | модель Claude; `claude-haiku-5-5` в ~20 раз дешевле, но хуже переводит и отбирает |
 
 Если меняете `POST_HOUR`, поправьте время в cron-job.org (и резервный cron в
 `.github/workflows/digest.yml`).
