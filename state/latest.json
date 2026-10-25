@@ -1,40 +1,147 @@
 {
  "version": 1,
- "date": "2026-10-24",
- "title": "Делфт · суббота, 24 октября",
- "published": "2026-10-24T07:30:37.893568+02:00",
+ "date": "2026-10-25",
+ "title": "Делфт · воскресенье, 25 октября",
+ "published": "2026-10-25T07:30:40.841071+01:00",
  "news": [
   {
-   "title": "Авария на заправке на Kruithuisweg: у Mini вылетел двигатель",
-   "summary": "В пятницу 23 октября автомобиль врезался в опору заправки, водителя срочно увезли в больницу. Kruithuisweg на время перекрывали из-за обломков и масла, теперь дорога открыта; причина аварии неизвестна.",
-   "url": "https://www.omroepdelft.nl/delft/tanthof-oost/harde-botsing-op-tankstation-kruithuisweg-mini-verliest-motorblok/",
+   "title": "Переход на зимнее время: часы переведены на час назад",
+   "summary": "В ночь на воскресенье в 03:00 часы переведены на час назад. Утром светает на час раньше, вечером темнеет на час раньше.",
+   "url": "https://www.omroepdelft.nl/delft/let-op-de-wintertijd-gaat-weer-in/",
    "source": "Omroep Delft",
    "level": "must"
+  },
+  {
+   "title": "Протесты за и против нового azc на Markt: два задержанных",
+   "summary": "В субботу на Markt прошли протест Defend Delft против нового центра для беженцев на Brasserskade и контрпротест Delft Solidair. Полиция задержала двух человек; центр откроется ориентировочно в конце 2028 года.",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/defend-delft-protesteert-opnieuw-tegen-azc-delft-solidair-organiseert-tegenactie/",
+   "source": "Omroep Delft",
+   "level": "must"
+  },
+  {
+   "title": "Пробки и опасные ситуации у перекрёстка Nieuwe Plantage и Wateringsevest",
+   "summary": "После реконструкции перекрёстка, призванной повысить безопасность пешеходов и велосипедистов, жители жалуются на пробки, неудобства и опасные ситуации.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111428/files-overlast-en-gevaarlijke-situaties-rond-nieuwe-plantage",
+   "source": "Delft op Zondag",
+   "level": "must"
+  },
+  {
+   "title": "Тяжёлая авария на A13 у Делфта: есть пострадавшие",
+   "summary": "В ночь на субботу BMW на большой скорости врезался в другую машину, минимум двое пострадавших в больнице. A13 в сторону Роттердама была полностью закрыта несколько часов.",
+   "url": "https://www.omroepdelft.nl/delft/zwaar-ongeluk-a13-meerdere-gewonden-naar-het-ziekenhuis/",
+   "source": "Omroep Delft",
+   "level": "must"
+  },
+  {
+   "title": "Delfts ArchitectuurCafé: о старых и новых водных структурах Делфта",
+   "summary": "Во вторник 27 октября в Delfts ArchitectuurCafé обсудят, как вода может помочь городу будущего, а также старые и новые водные структуры Делфта.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111444/stedelijk-water-over-de-oude-en-nieuwe-delftse-waterstructuren",
+   "source": "Delft op Zondag",
+   "level": "interesting"
+  },
+  {
+   "title": "Выставка «Lost & Found» в Kadmium",
+   "summary": "14 художников откликаются на перепроизводство, перепотребление, миграцию, насилие и изменение климата.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111443/expositie-lost-found-bij-kadmium",
+   "source": "Delft op Zondag",
+   "level": "interesting"
+  },
+  {
+   "title": "Реквием Форе в Maria van Jessekerk 1 ноября",
+   "summary": "В воскресенье 1 ноября в 15:00 хор Kathedrale koor Utrecht под управлением Sanne Nieuwenhuysen исполнит Реквием Форе.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111442/requiem-van-faure-met-het-kathedrale-koor-utrecht",
+   "source": "Delft op Zondag",
+   "level": "interesting"
+  },
+  {
+   "title": "Cantarella исполнит Stabat Mater Дворжака в Raamstraatkerk",
+   "summary": "В пятницу 30 октября хор Cantarella под управлением Robert van der Vinne исполнит Stabat Mater Антонина Дворжака.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111445/cantarella-stabat-mater-en-dan-de-matthaus",
+   "source": "Delft op Zondag",
+   "level": "interesting"
   }
  ],
  "maybe": [],
- "skipped": [],
+ "skipped": [
+  {
+   "title": "Бесплатная оценка монет, марок и украшений",
+   "original": "Gratis taxatie van uw munten, postzegels, gouden en zilveren sieraden, kunst, antiek etc.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111471/gratis-taxatie-van-uw-munten-postzegels-gouden-en-zilveren-si",
+   "source": "Delft op Zondag",
+   "reason": "реклама",
+   "flagged": false
+  },
+  {
+   "title": "Дорин Вирсма вернулась со спектаклем «Gaandeweg»",
+   "original": "Dorine Wiersma laat gaandeweg zien wat blijft",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111441/dorine-wiersma-laat-gaandeweg-zien-wat-blijft",
+   "source": "Delft op Zondag",
+   "reason": "интервью, место не указано",
+   "flagged": false
+  },
+  {
+   "title": "Анонс демонстраций за и против azc на Markt",
+   "original": "Voor- en tegenstanders azc kondigen demonstraties aan op Delftse Markt",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/voor-en-tegenstanders-azc-demonstreren-zaterdag-op-delftse-markt/",
+   "source": "Omroep Delft",
+   "reason": "дубликат",
+   "flagged": false
+  },
+  {
+   "title": "Неровный старт сезона у Vitesse Delft",
+   "original": "Wisselvallige start van het seizoen voor Vitesse Delft",
+   "url": "https://www.delftopzondag.nl/nieuws/sport/111460/wisselvallige-start-van-het-seizoen-voor-vitesse-delft",
+   "source": "Delft op Zondag",
+   "reason": "новости клуба",
+   "flagged": false
+  },
+  {
+   "title": "Dubbel Delft: исторические снимки",
+   "original": "Dubbel Delft 24/10",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111453/dubbel-delft-24-10",
+   "source": "Delft op Zondag",
+   "reason": "ностальгическая рубрика",
+   "flagged": false
+  },
+  {
+   "title": "Delft van Toen: Paul Roos",
+   "original": "Het Delft van Toen: Paul Roos",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111432/het-delft-van-toen-paul-roos",
+   "source": "Delft op Zondag",
+   "reason": "интервью",
+   "flagged": false
+  },
+  {
+   "title": "Кинофестиваль в новом Lumen с 27 октября по 1 ноября",
+   "original": "Cannes? Venetië? Berlijn? Nee hoor, Delft!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111439/cannes-venetie-berlijn-nee-hoor-delft-",
+   "source": "Delft op Zondag",
+   "reason": "не хватило места в выпуске",
+   "flagged": false
+  },
+  {
+   "title": "Afrikabuurt в Tanthof-West: жители довольны, но просят порядка",
+   "original": "Effe buurten in de Afrikabuurt: ‘Ik ben een Tanthoffiel’",
+   "url": "https://www.omroepdelft.nl/delft/effe-buurten-in-de-afrikabuurt-ik-ben-een-tanthoffiel-2/",
+   "source": "Omroep Delft",
+   "reason": "не хватило места в выпуске",
+   "flagged": false
+  }
+ ],
  "skipped_events": [
   {
-   "title": "Pieter Hulst & Willem Voogd - De Proefkeuken en de WC van tijd (8+)",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1353347117/pieter-hulst-willem-voogd-de-proefkeuken-en-de-wc-van-tijd-8",
+   "title": "Sunday Sounds - Anja Verrijp & Robert Kwakkelstein",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1860228351/sunday-sounds-anja-verrijp-robert-kwakkelstein",
    "source": "In Delft",
-   "reason": "детское, билеты распроданы",
-   "date": "2026-10-24"
+   "reason": "регулярный концерт в отеле",
+   "date": "2026-10-25"
   },
   {
-   "title": "Droomtijdloop – Nachtelijke hardloopwedstrijd in Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3775571514/klaas-vaak-droomtijdlooo",
+   "title": "Choral Evensong in de Oud-Katholieke Kerk Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3583208086/choral-evensong-4",
    "source": "In Delft",
-   "reason": "ночной забег уже прошёл",
-   "date": "2026-10-24"
-  },
-  {
-   "title": "Workshop Eco-printen & Borduren in Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4180807031/workshop-botanische-kleur-borduurwerk-met-dora-tiho-1",
-   "source": "In Delft",
-   "reason": "дубликат",
-   "date": "2026-10-24"
+   "reason": "обычная церковная служба",
+   "date": "2026-10-25"
   },
   {
    "title": "🍁🎼Medycyna Dźwięków Strefa Yogi Satnam🎼🍁",
@@ -47,96 +154,83 @@
    "title": "Birra Moretti Jamsessie",
    "url": "https://uitdelft.com/event/birra-moretti-jamsessie/",
    "source": "Uit Delft",
-   "reason": "джем-сейшн в баре",
+   "reason": "джем-сессия в баре",
    "date": "2026-10-27"
   },
   {
    "title": "Birra Moretti Session | hosted by Keller-Lammen Quintet",
    "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-keller-lammen-quintet/",
    "source": "Uit Delft",
-   "reason": "сейшн в баре",
+   "reason": "джем-сессия в баре",
    "date": "2026-10-27"
   },
   {
    "title": "Jamsession @ Bebop",
    "url": "https://uitdelft.com/event/jamsession-bebop-4/",
    "source": "Uit Delft",
-   "reason": "джем в баре, дубликат",
+   "reason": "дубликат, джем в баре",
    "date": "2026-10-27"
+  },
+  {
+   "title": "Anne & Bas | De Natte Dromen Revue | Try-out",
+   "url": "https://uitdelft.com/event/anne-bas-de-natte-dromen-revue-try-out/",
+   "source": "Uit Delft",
+   "reason": "не в Делфте, данные неясны",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Podium Pannenkoek",
+   "url": "https://uitdelft.com/event/podium-pannenkoek/",
+   "source": "Uit Delft",
+   "reason": "местная сцена, не ясно для кого",
+   "date": "2026-10-28"
   }
  ],
  "events": [
   {
-   "title": "Уличная фотография: запечатлей свой Tanthof",
-   "when": "сб 24 окт, 10:00",
-   "where": "Tanthof",
-   "price": "",
-   "summary": "Двухчастный курс уличной фотографии с Willem de Bie: участники делают собственный фоторепортаж о районе.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1111601950/mijn-tanthof-straatfotografie-cursus",
-   "date": "2026-10-24"
+   "title": "Завтрак и фильм: «Amarga Navidad» в Lumen",
+   "when": "вс 25 окт, 09:30",
+   "where": "Filmhuis Lumen",
+   "price": "€28,50",
+   "summary": "Завтрак в HANNO и предпоказ новой трагикомедии Педро Альмодовара.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1361725068/filmhuis-lumen-x-hanno-present-ontbijt-film-met-amarga-navidad",
+   "date": "2026-10-25"
   },
   {
-   "title": "Воркшоп по экопринту и вышивке",
-   "when": "сб 24 окт, 11:00",
-   "where": "TU Delft Hortus",
-   "price": "€85",
-   "summary": "Творческий текстильный мастер-класс: экопринт растениями и натуральными красителями и ручная вышивка.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3338589970/botanische-kleur-borduurwerk-met-dora-tih",
-   "date": "2026-10-24"
-  },
-  {
-   "title": "День открытых дверей Museum Van Marken",
-   "when": "сб 24 окт, 12:00",
-   "where": "Maison Neuf, Museum Van Marken",
-   "price": "",
-   "summary": "Открытый дом во временном визит-центре с экспозицией о наследии первого социального предпринимателя; проходит дважды в месяц.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3836547440/open-huis-museum-van-marken-2",
-   "date": "2026-10-24"
-  },
-  {
-   "title": "Mariahulde: хоровая музыка и шествие со свечами",
-   "when": "сб 24 окт, 15:00",
-   "where": "",
+   "title": "Прогулка по грибам в Hertenkamp (IVN Delft)",
+   "when": "вс 25 окт, 14:00",
+   "where": "Hertenkamp",
    "price": "бесплатно",
-   "summary": "Три хора, сопрано Antonia Dunjko, общее пение и atmospheric шествие со свечами.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/617053452/zang-en-samenzang-mariahulde-in-de-maria-van-jessekerk",
-   "date": "2026-10-24"
+   "summary": "Экскурсия с IVN Delft в поисках необычных грибов, от гигантских до «пальцев мертвеца».",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1647355872/paddenstoelen-in-het-hertenkamp-deltse-hout",
+   "date": "2026-10-25"
   },
   {
-   "title": "Воркшоп по бхangra — панджабские танцы",
-   "when": "сб 24 окт, 15:30",
-   "where": "",
-   "price": "бесплатно",
-   "summary": "Энергичный танцевальный мастер-класс с Bhangra Evolution The Hague для любого возраста и уровня.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/384901006/free-bhangra-workshop-by-bhangra-evolution-the-hague-3",
-   "date": "2026-10-24"
-  },
-  {
-   "title": "Музыка из фильмов Тима Бёртона",
-   "when": "сб 24 окт, 20:00",
-   "where": "",
-   "price": "€25",
-   "summary": "Концерт музыки из фильмов Бёртона, включая Edward Scissorhands, Batman и Corpse Bride.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/927097159/tim-burton-s-universe-door-mystery-ensemble",
-   "date": "2026-10-24"
-  },
-  {
-   "title": "Cultuurlab Live: Status Quo Forever",
-   "when": "сб 24 окт, 21:00",
-   "where": "",
-   "price": "€15",
-   "summary": "Трибьют-концерт: хиты и редкие песни Status Quo в стиле крепкого рока.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4066464680/cultuurlab-live-status-quo-forever",
-   "date": "2026-10-24"
-  },
-  {
-   "title": "Спектакль «Wachtend op de Dood»: Maarten Heijmans и Xander Vrienten",
-   "when": "вт 27 окт, 20:15",
-   "where": "Theater de Veste, Asvest 1",
+   "title": "Vivre! — Gerard Alderliefste & Friends",
+   "when": "ср 28 окт, 14:30",
+   "where": "Theater De Veste, Asvest 1",
    "price": "",
-   "summary": "Театральный вечер с Maarten Heijmans и Xander Vrienten в Theater de Veste.",
-   "url": "https://uitdelft.com/event/wachtend-op-de-dood-maarten-heijmans-xander-vrienten/",
-   "date": "2026-10-27"
+   "summary": "Дневной концерт Gerard Alderliefste и друзей в Theater De Veste.",
+   "url": "https://uitdelft.com/event/vivre-gerard-alderliefste-friends/",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Willem van Oranje — мюзикл",
+   "when": "ср 28 окт, 19:30",
+   "where": "Prinsentheater",
+   "price": "€45",
+   "summary": "Мюзикл об историческом Виллеме Оранском в Prinsentheater.",
+   "url": "https://uitdelft.com/event/willem-van-oranje-de-musical-5/",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Allerzielen: Реквием Форе в Nieuwe Kerk",
+   "when": "ср 28 окт, 20:00",
+   "where": "Nieuwe Kerk, Markt 80",
+   "price": "",
+   "summary": "Концерт ко Дню всех усопших с Реквиемом Габриэля Форе.",
+   "url": "https://uitdelft.com/event/allerzielen-in-de-nieuwe-kerk-het-requiem-van-faure/",
+   "date": "2026-10-28"
   }
  ]
 }
