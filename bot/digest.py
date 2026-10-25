@@ -80,6 +80,13 @@ SYSTEM_PROMPT = """\
     которые затрагивают делфтцев. Если сомневаешься между "must" и "interesting" — ставь "must".
   * "interesting" — городская жизнь Делфта: культура, массовые мероприятия, здоровье,
     успехи местных мест и людей в Делфте, новые места и сезонное в городе.
+  * "announce" — это НЕ новость, а анонс будущего мероприятия, написанный как статья:
+    концерт, спектакль, выставка, лекция, ярмарка, фестиваль, «приходите…», «в субботу
+    состоится…», «можно посетить до…». Такие материалы никогда не идут в новости. Для них
+    заполни title (название мероприятия, как для анонса), when, date (YYYY-MM-DD начала),
+    where, price, summary — они попадут в раздел анонсов, если проходят в указанный период
+    (events_period); иначе будут отброшены. Если это же мероприятие уже есть в списке
+    мероприятий — ставь "skip" с reason «дубликат анонса».
   * "skip" — не брать: то, что происходит НЕ в Делфте (премия делфтцу в Катаре, выставка
     делфтского художника в Сингапуре, Dutch Design Week в Эйндховене); аналитика, колонки,
     интервью, мнения, научно-популярные статьи; внутренняя жизнь TU Delft без влияния на
@@ -136,8 +143,12 @@ TOOL = {
                     "type": "object",
                     "properties": {
                         "id": {"type": "string"},
-                        "level": {"type": "string", "enum": ["must", "interesting", "skip"]},
+                        "level": {"type": "string", "enum": ["must", "interesting", "announce", "skip"]},
                         "title": {"type": "string", "description": "заголовок на русском"},
+                        "when": {"type": "string", "description": "для announce: «сб 24 окт, 20:15»"},
+                        "date": {"type": "string", "description": "для announce: YYYY-MM-DD начала"},
+                        "where": {"type": "string", "description": "для announce: место"},
+                        "price": {"type": "string", "description": "для announce: цена"},
                         "summary": {"type": "string", "description": "для must и interesting: суть в 1–2 предложениях"},
                         "reason": {"type": "string", "description": "для skip: почему не берём, одна короткая фраза"},
                         "duplicate_of": {"type": "string", "description": "для дубликата: id основного пункта"},
@@ -231,7 +242,7 @@ def llm_digest(c: Collected, now: datetime, horizon_end: date, api_key: str, mod
     result = extract_result(content)
     if result is None:
         raise RuntimeError("Модель не вернула дайджест")
-    return digest_from_llm(result, c, now.date(), max_news, max_events)
+    return digest_from_llm(result, c, now.date(), max_news, max_events, horizon_end)
 
 
 def _call_claude(body: dict, api_key: str) -> list[dict]:
@@ -293,17 +304,19 @@ def _skip(n, title: str, reason: str) -> dict:
 def _maybe_lines(skipped: list[dict]) -> list[NewsLine]:
     out = []
     for s in skipped:
-        if s["flagged"] and not s.get("duplicate"):
+        if s["flagged"] and not s.get("duplicate") and not s.get("announce"):
             out.append(NewsLine(s["title"], "", s["url"], s["source"], "maybe"))
     return out[:MAX_MAYBE]
 
 
-def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_events: int) -> Digest:
+def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_events: int,
+                    horizon_end: date | None = None) -> Digest:
     """Собирает дайджест из ответа модели; ссылки берутся только из наших данных.
     must — все; interesting — до лимита; всё отброшенное сохраняется в skipped с причиной."""
     news_by_id = {f"n{i}": n for i, n in enumerate(c.news)}
     events_by_id = {f"e{i}": e for i, e in enumerate(c.events)}
     must, interesting, skipped, used, rated = [], [], [], set(), set()
+    announces = []   # новости-анонсы мероприятий: идут в раздел анонсов, а не в новости
     for item in result.get("news", []):
         nid = str(item.get("id"))
         n = news_by_id.get(nid)
@@ -317,6 +330,24 @@ def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_ev
             if item.get("duplicate_of") or n.url in used:
                 entry["duplicate"] = True
             skipped.append(entry)
+            continue
+        if level == "announce":
+            try:
+                start = date.fromisoformat(str(item.get("date") or "")[:10])
+            except ValueError:
+                start = None
+            if start and day <= start <= (horizon_end or day):
+                used.add(n.url)
+                announces.append(EventLine(title, (item.get("when") or "").strip(),
+                                           (item.get("where") or "").strip(),
+                                           (item.get("price") or "").strip(),
+                                           (item.get("summary") or "").strip(), n.url,
+                                           start.isoformat()))
+            else:
+                entry = _skip(n, title, "анонс мероприятия не в ближайшие дни" if start
+                              else "анонс мероприятия без даты")
+                entry["announce"] = True
+                skipped.append(entry)
             continue
         used.add(n.url)
         line = NewsLine(title, (item.get("summary") or "").strip(), n.url, n.source,
@@ -355,9 +386,15 @@ def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_ev
                          (item.get("summary") or "").strip(), e.url,
                          item.get("date") or (e.start.isoformat() if e.start else ""))
         (top if level == "top" else ok).append((line, e))
+    ok += [(line, None) for line in announces]
     chosen = (top + ok)[:max_events]
     for line, e in (top + ok)[max_events:]:
-        skip_event(e, "не хватило места в выпуске")
+        if e is None:
+            skipped.append({"title": line.title, "original": line.title, "url": line.url,
+                            "source": "", "reason": "анонс: не хватило места", "flagged": False,
+                            "announce": True})
+        else:
+            skip_event(e, "не хватило места в выпуске")
     for eid, e in events_by_id.items():
         if eid not in rated_e and e.url not in used:
             skip_event(e, "модель не оценила")

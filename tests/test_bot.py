@@ -239,6 +239,28 @@ class DigestTests(unittest.TestCase):
                                   None, "20:15", "Oude Kerk", "€10"))
         return c.out
 
+    def test_event_preview_articles_go_to_announcements(self):
+        col = self.collected()
+        from bot.collect import News
+        col.news.append(News("Delft op Zondag", "Requiem van Fauré", "https://doz/1",
+                             "Op zondag 1 november...", NOW))
+        col.news.append(News("Delft op Zondag", "Stabat Mater", "https://doz/2",
+                             "Vrijdag 23 oktober...", NOW))
+        result = {"news": [
+            {"id": "n0", "level": "must", "title": "Пожар", "summary": "x"},
+            {"id": "n1", "level": "announce", "title": "Реквием Форе", "when": "вс 1 нояб, 15:00",
+             "date": "2026-11-01", "where": "Maria van Jessekerk"},
+            {"id": "n2", "level": "announce", "title": "Stabat Mater", "when": "пт 23 окт, 20:00",
+             "date": "2026-10-23", "where": "Raamstraatkerk"}],
+            "events": [{"id": "e0", "level": "top", "title": "Концерт", "when": "сб 24 окт",
+                        "date": "2026-10-24"}]}
+        d = digest_from_llm(result, col, TODAY, 8, 8, TODAY + timedelta(days=3))
+        self.assertEqual([n.title for n in d.news], ["Пожар"])          # анонсы не в новостях
+        self.assertEqual([e.title for e in d.events], ["Stabat Mater", "Концерт"])
+        far = [x for x in d.skipped if x["url"] == "https://doz/1"][0]
+        self.assertIn("не в ближайшие дни", far["reason"])
+        self.assertEqual(d.maybe, [])
+
     def test_llm_result_uses_only_known_ids(self):
         col = self.collected()
         result = {"news": [{"id": "n0", "title": "Крупный пожар в центре", "summary": "Эвакуированы 10 домов."},
