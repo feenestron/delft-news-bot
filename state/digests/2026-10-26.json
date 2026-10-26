@@ -1,0 +1,181 @@
+{
+ "version": 1,
+ "date": "2026-10-26",
+ "title": "Делфт · понедельник, 26 октября",
+ "published": "2026-10-26T07:30:39.024948+01:00",
+ "news": [
+  {
+   "title": "Трамвай 1 не ходит в Делфте с 26 октября по 21 декабря",
+   "summary": "HTM обновляет рельсы на Papsouwselaan в Voorhof. Между остановками 's-Gravenmade и Abtwoudsepark ходят автобусы; работы обычно идут с 07:00 до 16:00, будут вырубать деревья.",
+   "url": "https://www.omroepdelft.nl/delft/werkzaamheden-aan-de-papsouwselaan-tram-1-rijdt-tijdelijk-niet-in-delft/",
+   "source": "Omroep Delft",
+   "level": "must"
+  },
+  {
+   "title": "Школьники обновили облик туннеля в Делфте",
+   "summary": "Ученики начальной школы оформили туннель для велосипедистов и пешеходов. Почти два месяца им приходилось ездить в объезд, но результат того стоил.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111454/basisschoolleerlingen-geven-tunnel-een-frisse-uitstraling",
+   "source": "Delft op Zondag",
+   "level": "interesting"
+  },
+  {
+   "title": "17 женщин из Делфта готовятся к 5 км на NN Marathon Den Haag",
+   "summary": "Группа Slowrun Haaglanden тренируется в Delftse Hout; забег 1 ноября. Участницам от 40 до 60+ лет.",
+   "url": "https://www.delftopzondag.nl/nieuws/sport/111465/slowrun-haaglanden-helpt-vrouwen-op-weg",
+   "source": "Delft op Zondag",
+   "level": "interesting"
+  },
+  {
+   "title": "Четыре трофея Dutch Grand Prix впервые выставлены в Royal Delft",
+   "summary": "Все четыре трофея победителя Dutch Grand Prix теперь можно увидеть вместе в Royal Delft Museum.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111463/dutch-grand-prix-trofeeen-voor-het-eerst-te-zien-bij-royal-delft",
+   "source": "Delft op Zondag",
+   "level": "interesting"
+  },
+  {
+   "title": "Delft City Shuttle получил новый фирменный дизайн",
+   "summary": "По инициативе Platform Bezoekerseconomie Delft три электрических шаттла оформили в узнаваемом делфтском стиле.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111430/delft-city-shuttle-krijgt-herkenbare-delftse-uitstraling",
+   "source": "Delft op Zondag",
+   "level": "interesting"
+  }
+ ],
+ "maybe": [],
+ "skipped": [
+  {
+   "title": "Tout le Monde: гостеприимство и уют",
+   "original": "Tout le Monde: volop gastvrijheid en gezelligheid",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111425/tout-le-monde-volop-gastvrijheid-en-gezelligheid",
+   "source": "Delft op Zondag",
+   "reason": "реклама, не в Делфте (Pijnacker)",
+   "flagged": false
+  },
+  {
+   "title": "Компьютерные специалисты RoBoWeb",
+   "original": "Ontmoet de allround computerspecialisten van RoBoWeb",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111427/ontmoet-de-allround-computerspecialisten-van-roboweb",
+   "source": "Delft op Zondag",
+   "reason": "реклама, Pijnacker",
+   "flagged": false
+  },
+  {
+   "title": "Crokinole Club Delft победил на турнире в Австрии",
+   "original": "Crokinole Club Delft viert toernooizege in Oostenrijk",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111468/crokinole-club-delft-viert-toernooizege-in-oostenrijk",
+   "source": "Delft op Zondag",
+   "reason": "новости клуба, не в Делфте",
+   "flagged": false
+  },
+  {
+   "title": "Рынок жилья: покупателям легче, арендаторам сложнее",
+   "original": "Kopers kunnen ademhalen, huurders minder",
+   "url": "https://www.delftopzondag.nl/nieuws/wonen/111447/kopers-kunnen-ademhalen-huurders-minder",
+   "source": "Delft op Zondag",
+   "reason": "реклама риелторов, Den Hoorn",
+   "flagged": false
+  },
+  {
+   "title": "DHL проиграл RKDEO на своём поле",
+   "original": "DHL verliest op eigen veld nipt van tweedeklasser RKDEO",
+   "url": "https://www.delftopzondag.nl/nieuws/sport/111466/dhl-verliest-op-eigen-veld-nipt-van-tweedeklasser-rkdeo",
+   "source": "Delft op Zondag",
+   "reason": "новости клуба",
+   "flagged": false
+  },
+  {
+   "title": "Зорг-ферма BuitenGewoon в Oude Leede",
+   "original": "Zorgboerderij BuitenGewoon: Ruim twintig jaar kleinschalige zorg",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111433/zorgboerderij-buitengewoon-ruim-twintig-jaar-kleinschalige-zorg",
+   "source": "Delft op Zondag",
+   "reason": "реклама, партнёрский материал",
+   "flagged": false
+  },
+  {
+   "title": "Intratuin Pijnacker: рождественский мир",
+   "original": "INTRATUIN PIJNACKER: Beren Verwonderland is hier - en het is MAGISCH!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111434/intratuin-pijnacker-beren-verwonderland-is-hier-en-het-is-mag",
+   "source": "Delft op Zondag",
+   "reason": "реклама, не в Делфте",
+   "flagged": false
+  },
+  {
+   "title": "Хэллоуин-день в Winkelpassage De Hoven",
+   "original": "Griezelig gezellige Halloweenmiddag in De Hoven",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111458/griezelig-gezellige-halloweenmiddag-in-de-hoven",
+   "source": "Delft op Zondag",
+   "reason": "анонс мероприятия не в ближайшие дни",
+   "flagged": false,
+   "announce": true
+  }
+ ],
+ "skipped_events": [
+  {
+   "title": "Birra Moretti Session | hosted by Keller-Lammen Quintet",
+   "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-keller-lammen-quintet/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Jamsession @ Bebop",
+   "url": "https://uitdelft.com/event/jamsession-bebop-4/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Podium Pannenkoek",
+   "url": "https://uitdelft.com/event/podium-pannenkoek/",
+   "source": "Uit Delft",
+   "reason": "детское/любительская сцена",
+   "date": "2026-10-28"
+  }
+ ],
+ "events": [
+  {
+   "title": "Национальная неделя настольных игр в Mooie Boules Delft",
+   "when": "до 1 нояб., ежедневно 12:00–23:55",
+   "where": "Mooie Boules Delft",
+   "price": "",
+   "summary": "18 новых настольных игр, от Carcassonne Labyrinth до Party & Co.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3076083784/nationale-spellenweek-bij-mooie-boules",
+   "date": "2026-10-26"
+  },
+  {
+   "title": "Джем-сейшн Birra Moretti в Jazzcafé Bebop",
+   "when": "вт 27 окт, 20:30",
+   "where": "Jazzcafé Bebop",
+   "price": "бесплатно",
+   "summary": "Открытая джазовая джем-сессия с вечера вторника.",
+   "url": "https://uitdelft.com/event/birra-moretti-jamsessie/",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Anne & Bas: De Natte Dromen Revue (try-out)",
+   "when": "ср 28 окт",
+   "where": "Hal015",
+   "price": "до €15,50",
+   "summary": "Пробный показ кабаре-ревю.",
+   "url": "https://uitdelft.com/event/anne-bas-de-natte-dromen-revue-try-out/",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Willem van Oranje — мюзикл",
+   "when": "чт 29 окт, 19:30",
+   "where": "Prinsentheater",
+   "price": "€45",
+   "summary": "Мюзикл об Вильгельме Оранском в Prinsentheater.",
+   "url": "https://uitdelft.com/event/willem-van-oranje-de-musical-4/",
+   "date": "2026-10-29"
+  },
+  {
+   "title": "Dorine Wiersma: Gaandeweg",
+   "when": "чт 29 окт, 20:30",
+   "where": "Hal015",
+   "price": "",
+   "summary": "Вечер в Hal015 с Dorine Wiersma.",
+   "url": "https://uitdelft.com/event/dorine-wiersma-gaandeweg/",
+   "date": "2026-10-29"
+  }
+ ]
+}
