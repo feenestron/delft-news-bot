@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import copy
+import json
 import os
 import unittest
 from datetime import date, datetime, timedelta
@@ -260,6 +261,32 @@ class DigestTests(unittest.TestCase):
         far = [x for x in d.skipped if x["url"] == "https://doz/1"][0]
         self.assertIn("не в ближайшие дни", far["reason"])
         self.assertEqual(d.maybe, [])
+
+    def test_safety_net_respects_deliberate_skips(self):
+        col = self.collected()
+        from bot.collect import News
+        col.news.append(News("Omroep Delft", "Partij doet gooi naar zetels", "https://p/1",
+                             "verkiezingen, let op", NOW))
+        col.news.append(News("Omroep Delft", "Weg afgesloten", "https://p/2", "afgesloten", NOW))
+        result = {"news": [
+            {"id": "n0", "level": "must", "title": "Пожар", "summary": "x"},
+            {"id": "n1", "level": "skip", "title": "Партия", "reason": "политика", "category": "politics"},
+            {"id": "n2", "level": "skip", "title": "Дорога закрыта", "reason": "?", "category": "other"}],
+            "events": []}
+        d = digest_from_llm(result, col, TODAY, 8, 8)
+        self.assertEqual([m.url for m in d.maybe], ["https://p/2"])
+
+    def test_recent_published_from_archive(self):
+        import os
+        import tempfile
+        from bot.__main__ import recent_published
+        with tempfile.TemporaryDirectory() as tmp:
+            os.makedirs(os.path.join(tmp, "digests"))
+            for day, title in (("2026-10-20", "Старое"), ("2026-10-22", "Сегодняшнее")):
+                with open(os.path.join(tmp, "digests", day + ".json"), "w") as f:
+                    json.dump({"date": day, "news": [{"title": title, "summary": "s"}]}, f)
+            got = recent_published(os.path.join(tmp, "state.json"), TODAY)
+        self.assertEqual([x["title"] for x in got], ["Старое"])
 
     def test_llm_result_uses_only_known_ids(self):
         col = self.collected()

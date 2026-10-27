@@ -54,6 +54,25 @@ def save_archive(state_path: str, digest, now: datetime) -> None:
         json.dump(sorted(days[-ARCHIVE_DAYS:], reverse=True), f)
 
 
+def recent_published(state_path: str, today) -> list[dict]:
+    """Новости, опубликованные за последние дни (из архива выпусков), — чтобы не повторяться."""
+    folder = os.path.join(os.path.dirname(state_path) or ".", "digests")
+    out = []
+    if not os.path.isdir(folder):
+        return out
+    for name in sorted(os.listdir(folder)):
+        if not name.endswith(".json") or name == "index.json" or name[:-5] >= today.isoformat():
+            continue
+        try:
+            with open(os.path.join(folder, name), encoding="utf-8") as f:
+                d = json.load(f)
+        except (OSError, ValueError):
+            continue
+        out += [{"date": d.get("date", name[:-5]), "title": n.get("title", ""),
+                 "summary": n.get("summary", "")} for n in d.get("news", [])]
+    return out
+
+
 def due(cfg: Config, st: dict, now: datetime) -> tuple[bool, str]:
     if st.get("last_post_date") == now.date().isoformat():
         return False, "сегодня дайджест уже был"
@@ -144,7 +163,8 @@ def cmd_digest(cfg: Config, args) -> int:
         if cfg.anthropic_key:
             try:
                 digest = llm_digest(collected, now, horizon_end, cfg.anthropic_key, cfg.model,
-                                    cfg.max_news, cfg.max_events)
+                                    cfg.max_news, cfg.max_events,
+                                    recent_published(cfg.state_path, now.date()))
             except Exception as exc:
                 log.exception("Claude не сработал")
                 problems.append(f"перевод не выполнен ({type(exc).__name__}: {str(exc)[:150]}) — "

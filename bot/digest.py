@@ -29,6 +29,11 @@ IMPORTANT_NL = re.compile(
     r"tarieven|tariefverhoging|verhoging|belasting|afvalinzameling|inzameling|ophaaldag|"
     r"evacuatie|ontruim\w*|noodverordening|kookadvies|drinkwater|stroomstoring)\b",
     re.IGNORECASE)
+SKIP_CATEGORIES = ["not_delft", "opinion", "feature", "pr", "tu_internal", "politics", "club",
+                   "ad", "duplicate", "already_published", "other"]
+# Страховочная сетка «Возможно, важно» не отменяет осознанных решений модели:
+# она срабатывает, только если причина отказа не из этих категорий.
+DELIBERATE_SKIPS = set(SKIP_CATEGORIES) - {"other"}
 WEEKDAYS = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]
 WEEKDAYS_SHORT = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
 MONTHS_GEN = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа",
@@ -96,8 +101,18 @@ SYSTEM_PROMPT = """\
     то, что происходит НЕ в Делфте (премия делфтцу в Катаре, выставка
     делфтского художника в Сингапуре, Dutch Design Week в Эйндховене); аналитика, колонки,
     интервью, мнения, научно-популярные статьи; внутренняя жизнь TU Delft без влияния на
+    жителей; партийная политика — коалиции, выборы, списки кандидатов, дебаты, позиции и
+    заявления партий и политиков, если нет решения, которое уже сейчас меняет жизнь
     жителей; общенациональная политика без конкретного эффекта для Делфта; новости клубов и
     ассоциаций, реклама, партнёрские материалы, конкурсы и розыгрыши; дубликаты.
+  Уже опубликованное: в already_published — новости, которые канал выпустил за последние
+  дни. Если новость о той же истории (то же происшествие, та же проблема, тот же протест,
+  то же решение) — "skip" с category "already_published", даже если источник и формулировки
+  другие. Исключение — существенное развитие: новое решение, итог, новые последствия для
+  жителей (например, «гемеенте решила закрыть перекрёсток», а не «жители снова жалуются»).
+  Тогда бери, а в title и summary сделай акцент на новом.
+  Для "skip" укажи category: not_delft, opinion, feature, pr, tu_internal, politics, club,
+  ad, duplicate, already_published или other (other — только если не подходит ни одна).
   Для каждой новости верни title на русском. Для "must" и "interesting" — ещё summary,
   для "skip" — reason: одна короткая фраза по-русски, почему не берём («не в Делфте»,
   «колонка», «реклама», «дубликат»). Если несколько материалов об одном и том же — один
@@ -158,6 +173,8 @@ TOOL = {
                         "summary": {"type": "string", "description": "для must и interesting: суть в 1–2 предложениях"},
                         "reason": {"type": "string", "description": "для skip: почему не берём, одна короткая фраза"},
                         "duplicate_of": {"type": "string", "description": "для дубликата: id основного пункта"},
+                        "category": {"type": "string", "enum": SKIP_CATEGORIES,
+                                     "description": "для skip: категория причины"},
                     },
                     "required": ["id", "level", "title"],
                 },
@@ -206,8 +223,10 @@ def stable_order(c: Collected) -> None:
     c.events.sort(key=lambda e: (e.start.isoformat() if e.start else "9999", e.source, e.url))
 
 
-def build_input(c: Collected, now: datetime, horizon_end: date, max_news: int, max_events: int) -> str:
+def build_input(c: Collected, now: datetime, horizon_end: date, max_news: int, max_events: int,
+                recent: list[dict] | None = None) -> str:
     payload = {
+        "already_published": recent or [],
         "today": now.date().isoformat(),
         "weekday": WEEKDAYS[now.weekday()],
         "events_period": f"{now.date().isoformat()} .. {horizon_end.isoformat()}",
@@ -230,7 +249,7 @@ def build_input(c: Collected, now: datetime, horizon_end: date, max_news: int, m
 
 
 def llm_digest(c: Collected, now: datetime, horizon_end: date, api_key: str, model: str,
-               max_news: int, max_events: int) -> Digest:
+               max_news: int, max_events: int, recent: list[dict] | None = None) -> Digest:
     stable_order(c)
     body = {
         "model": model,
@@ -241,7 +260,7 @@ def llm_digest(c: Collected, now: datetime, horizon_end: date, api_key: str, mod
         # Принудительный вызов инструмента ("tool") поддерживается не всеми моделями
         # (например, с включённым размышлением) — при отказе API повторяем с "auto".
         "tool_choice": {"type": "tool", "name": "submit_digest"},
-        "messages": [{"role": "user", "content": build_input(c, now, horizon_end, max_news, max_events)
+        "messages": [{"role": "user", "content": build_input(c, now, horizon_end, max_news, max_events, recent)
                       + "\n\nОбязательно верни результат вызовом инструмента submit_digest."}],
     }
     content = _call_claude(body, api_key)
@@ -310,7 +329,8 @@ def _skip(n, title: str, reason: str) -> dict:
 def _maybe_lines(skipped: list[dict]) -> list[NewsLine]:
     out = []
     for s in skipped:
-        if s["flagged"] and not s.get("duplicate") and not s.get("announce"):
+        if (s["flagged"] and not s.get("duplicate") and not s.get("announce")
+                and s.get("category") not in DELIBERATE_SKIPS):
             out.append(NewsLine(s["title"], "", s["url"], s["source"], "maybe"))
     return out[:MAX_MAYBE]
 
@@ -333,6 +353,7 @@ def digest_from_llm(result: dict, c: Collected, day: date, max_news: int, max_ev
         title = (item.get("title") or "").strip() or n.title
         if level == "skip" or n.url in used:
             entry = _skip(n, title, (item.get("reason") or "").strip() or ("дубликат" if n.url in used else "не подходит"))
+            entry["category"] = "duplicate" if n.url in used else str(item.get("category") or "other")
             if item.get("duplicate_of") or n.url in used:
                 entry["duplicate"] = True
             skipped.append(entry)
