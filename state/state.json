@@ -24,6 +24,7 @@
   "https://uitdelft.com/event/sunday-sounds-anja-verrijp-robert-kwakkelstein/": "2026-10-23T13:52:05.294313+02:00",
   "https://uitdelft.com/event/the-rose-show-comedy-competition-2/": "2026-10-23T08:21:25.876579+02:00",
   "https://uitdelft.com/event/the-rose-show-comedy-competition-season-3-finals/": "2026-10-22T12:48:07.748509+02:00",
+  "https://uitdelft.com/event/the-zeppelin-affair-led-zeppelin-live-in-wpc-nederland-3/": "2026-10-28T07:30:42.560930+01:00",
   "https://uitdelft.com/event/tim-burtons-universe-by-mystery-ensemble/": "2026-10-22T12:48:07.748509+02:00",
   "https://uitdelft.com/event/vivre-gerard-alderliefste-friends/": "2026-10-25T07:30:40.841071+01:00",
   "https://uitdelft.com/event/vroeg-pieken-30-oktober/": "2026-10-27T07:30:43.075202+01:00",
@@ -37,8 +38,11 @@
   "https://uitdelft.com/event/willem-van-oranje-de-musical/": "2026-10-23T08:21:25.876579+02:00",
   "https://uitdelft.com/event/x-live-on-sunday-open-mic-the-trapdoors/": "2026-10-23T13:52:05.294313+02:00",
   "https://www.delftopzondag.nl/agenda/2026/10/30/het-voetlicht-speelt-trammelant-in-de-blokhut-110978": "2026-10-27T07:30:43.075202+01:00",
+  "https://www.delftopzondag.nl/agenda/2026/10/31/grijsgedraaid-is-terug-de-ultieme-clubervaring-in-delft--110988": "2026-10-28T07:30:42.560930+01:00",
+  "https://www.delftopzondag.nl/agenda/2026/10/31/het-voetlicht-speelt-trammelant-in-de-blokhut-110979": "2026-10-28T07:30:42.560930+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1111601950/mijn-tanthof-straatfotografie-cursus": "2026-10-24T07:30:37.893568+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1361725068/filmhuis-lumen-x-hanno-present-ontbijt-film-met-amarga-navidad": "2026-10-25T07:30:40.841071+01:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1413701722/de-gezondheidszorg-van-toen-museum-de-griffioen": "2026-10-28T07:30:42.560930+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1495022598/maarten-heijmans-xander-vrienten-wachten-op-de-dood": "2026-10-27T07:30:43.075202+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1647355872/paddenstoelen-in-het-hertenkamp-deltse-hout": "2026-10-25T07:30:40.841071+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2042731959/lezing-ai-door-deborah-nas": "2026-10-27T07:30:43.075202+01:00",
@@ -51,9 +55,12 @@
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3836547440/open-huis-museum-van-marken-2": "2026-10-24T07:30:37.893568+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/384901006/free-bhangra-workshop-by-bhangra-evolution-the-hague-3": "2026-10-24T07:30:37.893568+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3867773946/delfts-architectuurcafe-stedelijk-water": "2026-10-27T07:30:43.075202+01:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3998292137/allerzielenconcert-2026": "2026-10-28T07:30:42.560930+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4066464680/cultuurlab-live-status-quo-forever": "2026-10-24T07:30:37.893568+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/591679692/schrijfworkshop-setting-perspectief": "2026-10-23T17:59:38.570018+02:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/598391061/lumen-x-tu-delft-the-robots-are-coming-blade-runner": "2026-10-28T07:30:42.560930+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/617053452/zang-en-samenzang-mariahulde-in-de-maria-van-jessekerk": "2026-10-24T07:30:37.893568+02:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/773524624/gerard-alderliefste-friends-vivre": "2026-10-28T07:30:42.560930+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/927097159/tim-burton-s-universe-door-mystery-ensemble": "2026-10-24T07:30:37.893568+02:00"
  },
  "bootstrapped_sources": [
@@ -66,6 +73,24 @@
    "end": null,
    "fetched": "2026-10-27T07:30:43.075202+01:00",
    "start": "2026-10-30",
+   "text": "Oma Marie wil haar verjaardag gezellig vieren met haar kinderen en nodigt de hele familie uit voor een weekendje in een blokhut midden in het bos. Klinkt gezellig… toch?Nou, niet helemaal.",
+   "title": "Het Voetlicht speelt Trammelant in de blokhut",
+   "venue": ""
+  },
+  "https://www.delftopzondag.nl/agenda/2026/10/31/grijsgedraaid-is-terug-de-ultieme-clubervaring-in-delft--110988": {
+   "date_text": "ULTIEME CLUBERVARING IN DELFT! zaterdag 31 oktober 2026 16:00 tot zondag 1 november 0:00 GRIJSGEDRAAID 31 OKTOBER 2026⚡️ GRIJSGEDRAAID",
+   "end": null,
+   "fetched": "2026-10-28T07:30:42.560930+01:00",
+   "start": "2026-10-31",
+   "text": "GRIJSGEDRAAID 31 OKTOBER 2026⚡️ GRIJSGEDRAAID IS TERUG: DE ULTIEME CLUBERVARING IN DELFT! ⚡️Na een zinderend en volledig uitverkocht debuut op vrijdag 5 juni in HAL015, is het Delftse DJ-collectief..",
+   "title": "GRIJSGEDRAAID IS TERUG: DE ULTIEME CLUBERVARING IN DELFT!",
+   "venue": ""
+  },
+  "https://www.delftopzondag.nl/agenda/2026/10/31/het-voetlicht-speelt-trammelant-in-de-blokhut-110979": {
+   "date_text": "peelt Trammelant in de blokhut zaterdag 31 oktober 2026 20:00 tot 22:30 Oma Marie wil haar verjaardag gezellig vieren met haar kinderen",
+   "end": null,
+   "fetched": "2026-10-28T07:30:42.560930+01:00",
+   "start": "2026-10-31",
    "text": "Oma Marie wil haar verjaardag gezellig vieren met haar kinderen en nodigt de hele familie uit voor een weekendje in een blokhut midden in het bos. Klinkt gezellig… toch?Nou, niet helemaal.",
    "title": "Het Voetlicht speelt Trammelant in de blokhut",
    "venue": ""
@@ -186,6 +211,15 @@
    "text": "Een dag vol geschiedenis, emotie en indrukwekkende verhalen, combineer de kracht van theater met de rust en historie van de Nieuwe Kerk voor een onvergetelijke ervaring. Combineer Willem van Oranje De Musical met een bezoek aan de Nieuwe Kerk! Stap binnen in het verhaal van onze Vader des Vaderland",
    "title": "In het Spoor van Willem van Oranje",
    "venue": "Nieuwe Kerk"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1844916745/matje-kleedje-pannetje": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-28T07:30:42.560930+01:00",
+   "start": "2024-03-12",
+   "text": "Matje, kleedje, pannetje is een ligconcert waar je, met een betoverend handpanspel, kan ontspannen. Tijdens dit concert hoef je niks anders te doen dan liggen en ontspannen! Klanken ontvangen, wegdromen en ontspannen.",
+   "title": "Matje, Kleedje, Pannetje ligconcert in Delft",
+   "venue": ""
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/184907438/ontdek-het-strandbeesten-mortuarium": {
    "date_text": "",
@@ -365,6 +399,24 @@
    "start": "2026-10-23",
    "text": "Spring, klauter en speel tijdens een actieve dag in de herfstvakantie met springkussens, stormbanen en een speelhoek voor kinderen van 2 t/m 12 jaar.",
    "title": "Springkussen- en speeldag in de herfstvakantie Delft",
+   "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2915566546/expat-cinema-el-castigo-1": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-10-28T07:30:42.560930+01:00",
+   "start": "2023-08-01",
+   "text": "Filmliefhebber maar moeite met het verstaan ​​van Nederlandse ondertitels?",
+   "title": "Expat Cinema",
+   "venue": "Filmhuis Lumen"
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2975484713/laat-je-inspireren-door-je-kind-the-robot-edition": {
+   "date_text": "n robot als resultaat. Wanneer Woensdag 28 oktober 2026 15.00 - 16.00 uur Woensdag 18 november 2026 15.00 - 16.00 uur Prijzen Regulier",
+   "end": null,
+   "fetched": "2026-10-28T07:30:42.560930+01:00",
+   "start": "2026-10-28",
+   "text": "Maak samen een unieke robot tijdens de creatieve ouder-kindworkshop bij The Creative Bubble in Delft. Voor kinderen vanaf ongeveer 8 jaar.",
+   "title": "Ouder-kind workshop: maak samen een robot in Delft",
    "venue": ""
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek": {
@@ -583,6 +635,15 @@
    "title": "Johannes Run Club in Delft",
    "venue": "Boutique Hotel Johannes"
   },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3998292137/allerzielenconcert-2026": {
+   "date_text": "naar binnen te nemen. Wanneer Woensdag 28 oktober 2026 20.00 - 21.30 uur Prijzen € 27,50 In de buurt Kaartelementen overslaan Deel dez",
+   "end": null,
+   "fetched": "2026-10-28T07:30:42.560930+01:00",
+   "start": "2026-10-28",
+   "text": "Beleef het Allerzielenconcert in Delft met Fauré's Requiem, muziek van Arvo Pärt en Caroline Shaw en ruimte voor herinnering.",
+   "title": "Allerzielenconcert met Requiem van Fauré",
+   "venue": ""
+  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4011835284/zangkoor-nootgeval": {
    "date_text": "",
    "end": null,
@@ -655,6 +716,15 @@
    "title": "Schrijfworkshop Setting & perspectief",
    "venue": ""
   },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/598391061/lumen-x-tu-delft-the-robots-are-coming-blade-runner": {
+   "date_text": "filosofie. Lees minder Wanneer Woensdag 28 oktober 2026 om 20.10 uur Prijzen € 12,70 In de buurt Kaartelementen overslaan Deel deze pag",
+   "end": null,
+   "fetched": "2026-10-28T07:30:42.560930+01:00",
+   "start": "2026-10-28",
+   "text": "Bekijk Blade Runner bij Lumen en ontdek tijdens een Engelstalig nagesprek met TU Delft de wetenschap achter robots en kunstmatige intelligentie.",
+   "title": "Blade Runner – The Robots Are Coming | Delft",
+   "venue": ""
+  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/606704853/opening-artist-in-the-spotlight": {
    "date_text": "amiek samenkomen. Wanneer Dagelijks t/m 22 november 2026 15.30 - 17.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
    "end": null,
@@ -690,6 +760,15 @@
    "text": "Ontdek hoe kunst en TU Delft-onderzoek samenkomen rond pigmenten uit rioolslib en nieuwe manieren om afvalwater als bron van grondstoffen te bekijken.",
    "title": "Expositie over afvalwater, pigment en hergebruik",
    "venue": ""
+  },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/773524624/gerard-alderliefste-friends-vivre": {
+   "date_text": "r overdag] Lees minder Wanneer Woensdag 28 oktober 2026 14.30 - 16.00 uur Prijzen Regulier € 23,50 CJP (Cultureel Jongeren Paspoort) €",
+   "end": null,
+   "fetched": "2026-10-28T07:30:42.560930+01:00",
+   "start": "2026-10-28",
+   "text": "Gerard Alderliefste & Friends - Vivre! woensdag 28 oktober Contact Theater de Veste Theater de Veste Asvest 1 2611 PK Delft Plan je route naar Gerard Alderliefste & Friends - Vivre! Route Plan je route naar Gerard Alderliefste & Friends - Vivre! Bel Bel: 015 - 212 13 12 Gerard Alderliefste & Friends - Vivre! Website Bezoek de website van Gerard Alderliefste & Friends - Vivre! Koop tickets Gerard Alderliefste en Franse chansons, dat is al jarenlang ‘Une belle histoire’. Met zijn muzikale vrienden",
+   "title": "Gerard Alderliefste & Friends - Vivre!",
+   "venue": "Theater de Veste"
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/927097159/tim-burton-s-universe-door-mystery-ensemble": {
    "date_text": "m, muziek en fantasie. Wanneer Zaterdag 24 oktober 2026 20.00 - 21.15 uur Prijzen € 25,00 In de buurt Kaartelementen overslaan Deel dez",
@@ -788,17 +867,24 @@
    "events": 8,
    "message_id": 21,
    "news": 4
+  },
+  {
+   "date": "2026-10-28",
+   "events": 7,
+   "message_id": 22,
+   "news": 4
   }
  ],
  "known_chats": {
   "-1004340208501": "Delft News group (supergroup)"
  },
- "last_post_date": "2026-10-27",
+ "last_post_date": "2026-10-28",
  "seen": {
   "https://delta.tudelft.nl/article/13-vidibeurzen-naar-delftse-onderzoekers": "2026-10-23T08:21:25.876579+02:00",
   "https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen": "2026-10-22T12:48:07.748509+02:00",
   "https://delta.tudelft.nl/article/crowdfunding-voor-alternatieve-eendenbek-levert-ruim-twee-ton-op": "2026-10-23T08:21:25.876579+02:00",
   "https://delta.tudelft.nl/article/delfts-design-in-eindhoven-regenwater-een-snijplank-en-een-vogelvlucht": "2026-10-23T13:52:05.294313+02:00",
+  "https://delta.tudelft.nl/article/geen-tijd-te-verliezen": "2026-10-28T07:30:42.560930+01:00",
   "https://delta.tudelft.nl/article/groepswerk": "2026-10-22T12:21:18.675555+02:00",
   "https://delta.tudelft.nl/article/jevons-paradox-2": "2026-10-22T12:48:07.748509+02:00",
   "https://delta.tudelft.nl/article/levend-archief-12-duizend-zaden-te-zien-in-hortus-botanicus": "2026-10-22T12:48:07.748509+02:00",
@@ -810,22 +896,28 @@
   "https://delta.tudelft.nl/article/toe-aan-rust-voor-je-brein-de-zen-box-helpt-je-verder": "2026-10-23T13:52:05.294313+02:00",
   "https://delta.tudelft.nl/article/toezicht-op-hoger-onderwijs-moet-beter-vindt-onderwijsminister-letschert": "2026-10-27T07:30:43.075202+01:00",
   "https://delta.tudelft.nl/article/tu-delft-verwelkomt-meer-eerstejaars-ondanks-landelijke-daling": "2026-10-22T12:48:07.748509+02:00",
+  "https://delta.tudelft.nl/article/universiteit-maastricht-schorsing-palestijnse-student-door-ophef": "2026-10-28T07:30:42.560930+01:00",
   "https://delta.tudelft.nl/article/waarom-je-nu-je-id-moet-laten-zien-in-de-tu-delft-library": "2026-10-23T17:59:38.570018+02:00",
   "https://delta.tudelft.nl/article/waarom-studentenvakbond-lsvb-zich-verzet-tegen-militarisering": "2026-10-22T12:21:18.675555+02:00",
+  "https://www.delft.nl/ambitieuze-aanpak-van-vakidioten": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delft.nl/asielopvang-nootdorpsepadsportring": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/balies-gemeente-dicht": "2026-10-22T12:48:07.748509+02:00",
   "https://www.delft.nl/brand-kerkstraat": "2026-10-22T12:48:07.748509+02:00",
   "https://www.delft.nl/dag-van-de-ondernemer": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/deel-uw-loopervaring": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/delftse-klimaatweek-2026": "2026-10-23T08:21:25.876579+02:00",
+  "https://www.delft.nl/een-plek-voor-delftse-skaters": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delft.nl/een-week-vol-cultuur": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/gezond-ontbijten-met-de-burgemeester": "2026-10-22T12:10:58.149191+02:00",
+  "https://www.delft.nl/gratis-uw-gezondheid-meten": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delft.nl/inkoopactie-isolatie": "2026-10-23T08:21:25.876579+02:00",
   "https://www.delft.nl/nieuw-tramspoor-papsouwselaan": "2026-10-23T08:21:25.876579+02:00",
   "https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van": "2026-10-22T12:48:07.748509+02:00",
   "https://www.delft.nl/raadsvergadering-29-oktober": "2026-10-23T08:21:25.876579+02:00",
+  "https://www.delft.nl/schoon-water-dankzij-schimmels": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delft.nl/stadsgesprek-jongeren": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/storing-reisdocumenten-verholpen": "2026-10-22T12:48:07.748509+02:00",
+  "https://www.delft.nl/vertrouwenspersoon-vrijwilligers": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111041/door-de-lens-van-koos-club-delft-festival": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111042/door-de-lens-van-koos-mooi-weer-spelen-in-delft": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111043/door-de-lens-van-koos-swim-to-fight-cancer-delft": "2026-10-22T12:10:58.149191+02:00",
@@ -865,6 +957,7 @@
   "https://www.delftopzondag.nl/nieuws/algemeen/111445/cantarella-stabat-mater-en-dan-de-matthaus": "2026-10-25T07:30:40.841071+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111453/dubbel-delft-24-10": "2026-10-25T07:30:40.841071+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111454/basisschoolleerlingen-geven-tunnel-een-frisse-uitstraling": "2026-10-26T07:30:39.024948+01:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111457/hemd-van-het-lijf-marcel-vilain": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111458/griezelig-gezellige-halloweenmiddag-in-de-hoven": "2026-10-26T07:30:39.024948+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111463/dutch-grand-prix-trofeeen-voor-het-eerst-te-zien-bij-royal-delft": "2026-10-26T07:30:39.024948+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111468/crokinole-club-delft-viert-toernooizege-in-oostenrijk": "2026-10-26T07:30:39.024948+01:00",
@@ -881,7 +974,9 @@
   "https://www.omroepdelft.nl/delft/binnenstad/defend-delft-protesteert-opnieuw-tegen-azc-delft-solidair-organiseert-tegenactie/": "2026-10-25T07:30:40.841071+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/grote-brand-in-delftse-binnenstad/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/historische-mijlpaal-voor-filmhuis-lumen-100-000ste-bezoeker-van-2026/": "2026-10-23T17:59:38.570018+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/midden-in-storm-boelo-sjeesden-hardlopers-door-delft-voor-droomtijdloop-sokken-toch-al-nat/": "2026-10-28T07:30:42.560930+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/omwonenden-bezorgd-over-onveilige-situaties-op-vernieuwde-kruising-nieuwe-plantage-uitlaatgassen-in-woning/": "2026-10-27T07:30:43.075202+01:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/politie-geen-sprake-van-brandstichting-bij-grote-brand-kerkstraat/": "2026-10-28T07:30:42.560930+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/binnenstad/twee-aanhoudingen-na-demonstratie-op-de-markt-tegen-azc/": "2026-10-27T07:30:43.075202+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/van-delft-naar-singapore-kunstenaar-rene-jacobs-exposeert-in-miljoenenstad/": "2026-10-22T12:48:07.748509+02:00",
@@ -890,9 +985,11 @@
   "https://www.omroepdelft.nl/delft/delftse-boyan-slat-wint-prijs-in-qatar-voor-opvissen-van-miljoenen-kilos-afval/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/delftse-dribbels-de-wind-in-de-zeilen/": "2026-10-27T07:30:43.075202+01:00",
   "https://www.omroepdelft.nl/delft/delftse-hout/graaiende-bezoekers-verpesten-het-bij-bloedbank-roze-koeken-voortaan-van-tafel/": "2026-10-27T07:30:43.075202+01:00",
+  "https://www.omroepdelft.nl/delft/delftse-kerken-bezorgd-over-haatdragende-geluiden-richting-vluchtelingen/": "2026-10-28T07:30:42.560930+01:00",
   "https://www.omroepdelft.nl/delft/donderdag-opnieuw-staking-streekvervoer-minder-busritten-in-delft/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/drie-korfballers-van-fortuna-europees-kampioen-met-teamnl/": "2026-10-27T07:30:43.075202+01:00",
   "https://www.omroepdelft.nl/delft/effe-buurten-in-de-afrikabuurt-ik-ben-een-tanthoffiel-2/": "2026-10-25T07:30:40.841071+01:00",
+  "https://www.omroepdelft.nl/delft/file-van-40-kilometer-op-a4-rijkswaterstaat-waarschuwt-voor-zeer-zware-avondspits/": "2026-10-28T07:30:42.560930+01:00",
   "https://www.omroepdelft.nl/delft/hart-voor-delft-doet-samen-met-vijftien-andere-lokale-partijen-een-gooi-naar-zetels-in-provinciale-staten/": "2026-10-27T07:30:43.075202+01:00",
   "https://www.omroepdelft.nl/delft/hof-van-delft/dierenkliniek-hof-van-delft-blijft-toch-open-mensen-vonden-het-superjammer-dat-het-zou-sluiten/": "2026-10-23T17:59:38.570018+02:00",
   "https://www.omroepdelft.nl/delft/let-op-de-wintertijd-gaat-weer-in/": "2026-10-25T07:30:40.841071+01:00",
@@ -901,8 +998,11 @@
   "https://www.omroepdelft.nl/delft/tu-campus/alternatieve-eendenbek-haalt-met-crowdfunding-ruim-twee-ton-op-ver-boven-onze-verwachting/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/tu-campus/ruzies-geluidsoverlast-en-mishandeling-studenten-moeten-zich-voortaan-identificeren-bij-tu-bibliotheek/": "2026-10-27T07:30:43.075202+01:00",
   "https://www.omroepdelft.nl/delft/tu-campus/tu-studenten-willemijn-en-marin-staan-in-finale-van-de-hema-ontwerpwedstrijd/": "2026-10-23T08:21:25.876579+02:00",
+  "https://www.omroepdelft.nl/delft/twintiger-krijgt-drie-jaar-celstraf-voor-meerdere-babbeltrucs-lafhartig/": "2026-10-28T07:30:42.560930+01:00",
   "https://www.omroepdelft.nl/delft/twintigjarige-krijgt-bijna-jaar-celstraf-voor-babbeltruc-bij-68-jarige-vrouw-in-delft/": "2026-10-23T08:21:25.876579+02:00",
+  "https://www.omroepdelft.nl/delft/van-afgedankte-kleding-naar-34-miljard-euro-dit-is-de-rijkste-man-van-delft-volgens-quote-500/": "2026-10-28T07:30:42.560930+01:00",
   "https://www.omroepdelft.nl/delft/veel-websites-gaan-op-zwart-vanwege-risico-op-hacks/": "2026-10-22T12:48:07.748509+02:00",
+  "https://www.omroepdelft.nl/delft/voorhof/blunder-met-brieven-over-betaald-parkeren-bewoners-indische-buurt-krijgen-info-over-voorhof-en-andersom/": "2026-10-28T07:30:42.560930+01:00",
   "https://www.omroepdelft.nl/delft/voorhof/scooterrijder-belandt-in-greppel-na-botsing-met-fatbike-op-prinses-beatrixlaan/": "2026-10-27T07:30:43.075202+01:00",
   "https://www.omroepdelft.nl/delft/voorhof/tu-studente-werd-belaagd-bij-kruithuisweg-eng-dat-het-vaker-was-gebeurd/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/werkzaamheden-aan-de-papsouwselaan-tram-1-rijdt-tijdelijk-niet-in-delft/": "2026-10-26T07:30:39.024948+01:00",

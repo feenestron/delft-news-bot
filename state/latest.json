@@ -1,211 +1,251 @@
 {
  "version": 1,
- "date": "2026-10-27",
- "title": "Делфт · вторник, 27 октября",
- "published": "2026-10-27T07:30:43.075202+01:00",
+ "date": "2026-10-28",
+ "title": "Делфт · среда, 28 октября",
+ "published": "2026-10-28T07:30:42.560930+01:00",
  "news": [
   {
-   "title": "ДТП на Prinses Beatrixlaan: скутер столкнулся с фэтбайком",
-   "summary": "В понедельник 26 октября на Prinses Beatrixlaan в Voorhof скутерист после столкновения с фэтбайком оказался в канаве. Пожарные его вытащили, водителя без спешки увезли в больницу.",
-   "url": "https://www.omroepdelft.nl/delft/voorhof/scooterrijder-belandt-in-greppel-na-botsing-met-fatbike-op-prinses-beatrixlaan/",
+   "title": "Жители Indische Buurt и Voorhof-Oost получили письма о платной парковке не по адресу",
+   "summary": "Гемеенте перепутала письма о планируемой с 2027 года платной парковке: в Indische Buurt пришла информация про Voorhof и наоборот. На этой неделе жителям пришлют правильные письма.",
+   "url": "https://www.omroepdelft.nl/delft/voorhof/blunder-met-brieven-over-betaald-parkeren-bewoners-indische-buurt-krijgen-info-over-voorhof-en-andersom/",
    "source": "Omroep Delft",
    "level": "must"
   },
   {
-   "title": "Жители жалуются на перекрёсток Nieuwe Plantage и Wateringsevest",
-   "summary": "После обновления дороги стало больше транспорта и выхлопов: улицу используют как объезд. Wethouder Frank van Vliet хочет обсудить ситуацию с жителями, конкретных мер пока нет.",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/omwonenden-bezorgd-over-onveilige-situaties-op-vernieuwde-kruising-nieuwe-plantage-uitlaatgassen-in-woning/",
+   "title": "Полиция: пожар на Kerkstraat не был поджогом",
+   "summary": "По итогам расследования полиция исключила поджог при пожаре 22 октября на террасе Café De Ruif. Дело закрыто, точную причину пока не называют.",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/politie-geen-sprake-van-brandstichting-bij-grote-brand-kerkstraat/",
    "source": "Omroep Delft",
-   "level": "must"
+   "level": "interesting"
   },
   {
-   "title": "Два задержания после демонстрации против azc на Markt",
-   "summary": "24 октября Defend Delft провела на Markt демонстрацию против azc, Delft Solidair — контрпротест. Возле вокзала полиция задержала двух человек.",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/twee-aanhoudingen-na-demonstratie-op-de-markt-tegen-azc/",
+   "title": "Три года тюрьмы мошеннику, обманывавшему пожилых в Делфте и других городах",
+   "summary": "Суд Роттердама осудил двадцатилетнего мужчину, который выдавал себя за полицейского или сотрудника банка и выманивал карты и деньги, в том числе у жителей Делфта. Он должен выплатить более €20 000 шести пострадавшим.",
+   "url": "https://www.omroepdelft.nl/delft/twintiger-krijgt-drie-jaar-celstraf-voor-meerdere-babbeltrucs-lafhartig/",
    "source": "Omroep Delft",
-   "level": "must"
+   "level": "interesting"
   },
   {
-   "title": "В библиотеке TU Delft теперь проверяют студенческую карту или удостоверение",
-   "summary": "С 15 октября посетители библиотеки TU Delft должны показывать студенческую карту или документ. Причина — драки, кражи и шум.",
-   "url": "https://www.omroepdelft.nl/delft/tu-campus/ruzies-geluidsoverlast-en-mishandeling-studenten-moeten-zich-voortaan-identificeren-bij-tu-bibliotheek/",
+   "title": "Ночной полумарафон Droomtijdloop прошёл по Делфту несмотря на шторм Boelo",
+   "summary": "Из 1100 записавшихся финишировали 651 человек, победитель пробежал 21 км за 1:12. Следующий забег планируется в 2031 году.",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/midden-in-storm-boelo-sjeesden-hardlopers-door-delft-voor-droomtijdloop-sokken-toch-al-nat/",
    "source": "Omroep Delft",
    "level": "interesting"
   }
  ],
  "maybe": [
   {
-   "title": "Hart voor Delft в коалиции местных партий на выборах в Provinciale Staten",
-   "url": "https://www.omroepdelft.nl/delft/hart-voor-delft-doet-samen-met-vijftien-andere-lokale-partijen-een-gooi-naar-zetels-in-provinciale-staten/",
+   "title": "Пробка в 40 км на A4",
+   "url": "https://www.omroepdelft.nl/delft/file-van-40-kilometer-op-a4-rijkswaterstaat-waarschuwt-voor-zeer-zware-avondspits/",
    "source": "Omroep Delft"
   }
  ],
  "skipped": [
   {
-   "title": "Hart voor Delft в коалиции местных партий на выборах в Provinciale Staten",
-   "original": "Hart voor Delft doet samen met vijftien andere lokale partijen een gooi naar zetels in Provinciale Staten",
-   "url": "https://www.omroepdelft.nl/delft/hart-voor-delft-doet-samen-met-vijftien-andere-lokale-partijen-een-gooi-naar-zetels-in-provinciale-staten/",
+   "title": "Пробка в 40 км на A4",
+   "original": "File van 40 kilometer op A4, Rijkswaterstaat waarschuwt voor ‘zeer zware avondspits’",
+   "url": "https://www.omroepdelft.nl/delft/file-van-40-kilometer-op-a4-rijkswaterstaat-waarschuwt-voor-zeer-zware-avondspits/",
    "source": "Omroep Delft",
-   "reason": "партийная политика, без эффекта для жителей",
-   "flagged": true
+   "reason": "вчерашняя пробка, неактуально",
+   "flagged": true,
+   "category": "other"
   },
   {
-   "title": "Студенческое движение выиграло выборы в Сербии",
-   "original": "Studentenbeweging wint verkiezingen in Servië: waarom deden ze mee?",
-   "url": "https://delta.tudelft.nl/article/studentenbeweging-wint-verkiezingen-in-servie-waarom-deden-ze-mee",
+   "title": "Самый богатый человек Делфта по версии Quote 500",
+   "original": "Van afgedankte kleding naar 3,4 miljard euro: dit is de rijkste man van Delft volgens Quote 500",
+   "url": "https://www.omroepdelft.nl/delft/van-afgedankte-kleding-naar-34-miljard-euro-dit-is-de-rijkste-man-van-delft-volgens-quote-500/",
+   "source": "Omroep Delft",
+   "reason": "рейтинг богатых, не городская новость",
+   "flagged": false,
+   "category": "feature"
+  },
+  {
+   "title": "Церкви Делфта обеспокоены «враждебными высказываниями» о беженцах",
+   "original": "Delftse kerken bezorgd over ‘haatdragende geluiden’ richting vluchtelingen",
+   "url": "https://www.omroepdelft.nl/delft/delftse-kerken-bezorgd-over-haatdragende-geluiden-richting-vluchtelingen/",
+   "source": "Omroep Delft",
+   "reason": "заявление организации, тема azc уже освещалась",
+   "flagged": false,
+   "category": "politics"
+  },
+  {
+   "title": "Университет Маастрихта: отстранение палестинского студента",
+   "original": "Universiteit Maastricht: schorsing Palestijnse student door ‘ophef’",
+   "url": "https://delta.tudelft.nl/article/universiteit-maastricht-schorsing-palestijnse-student-door-ophef",
    "source": "Delta (TU Delft)",
    "reason": "не в Делфте",
-   "flagged": false
+   "flagged": false,
+   "category": "not_delft"
   },
   {
-   "title": "В донорском центре Delft убрали сладости со столов",
-   "original": "Graaiende bezoekers verpesten het bij bloedbank, roze koeken voortaan van tafel",
-   "url": "https://www.omroepdelft.nl/delft/delftse-hout/graaiende-bezoekers-verpesten-het-bij-bloedbank-roze-koeken-voortaan-van-tafel/",
-   "source": "Omroep Delft",
-   "reason": "бытовая мелочь, не новость",
-   "flagged": false
+   "title": "Парикмахерская Gezellig Geknipt",
+   "original": "Ambitieuze aanpak van 'vakidioten'",
+   "url": "https://www.delft.nl/ambitieuze-aanpak-van-vakidioten",
+   "source": "Gemeente Delft",
+   "reason": "реклама, портрет предпринимателя",
+   "flagged": false,
+   "category": "pr"
   },
   {
-   "title": "Delftse Dribbels: результаты местных футбольных клубов",
-   "original": "Delftse Dribbels: de wind in de zeilen",
-   "url": "https://www.omroepdelft.nl/delft/delftse-dribbels-de-wind-in-de-zeilen/",
-   "source": "Omroep Delft",
-   "reason": "спортивные клубы",
-   "flagged": false
+   "title": "Место для делфтских скейтеров",
+   "original": "Een plek voor Delftse skaters",
+   "url": "https://www.delft.nl/een-plek-voor-delftse-skaters",
+   "source": "Gemeente Delft",
+   "reason": "очерк о людях",
+   "flagged": false,
+   "category": "feature"
   },
   {
-   "title": "Три корфболиста Fortuna — чемпионы Европы",
-   "original": "Drie korfballers van Fortuna Europees kampioen met TeamNL",
-   "url": "https://www.omroepdelft.nl/delft/drie-korfballers-van-fortuna-europees-kampioen-met-teamnl/",
-   "source": "Omroep Delft",
-   "reason": "новости спортивного клуба",
-   "flagged": false
+   "title": "Бесплатная проверка здоровья сердца: Hartcheckpunt Delft",
+   "original": "Gratis uw gezondheid meten",
+   "url": "https://www.delft.nl/gratis-uw-gezondheid-meten",
+   "source": "Gemeente Delft",
+   "reason": "анонс мероприятия не в ближайшие дни",
+   "flagged": false,
+   "announce": true
   },
   {
-   "title": "Министр хочет усилить надзор за высшим образованием",
-   "original": "Toezicht op hoger onderwijs moet beter, vindt onderwijsminister Letschert",
-   "url": "https://delta.tudelft.nl/article/toezicht-op-hoger-onderwijs-moet-beter-vindt-onderwijsminister-letschert",
+   "title": "Чистая вода с помощью грибов: MycoFarming",
+   "original": "Schoon water dankzij schimmels",
+   "url": "https://www.delft.nl/schoon-water-dankzij-schimmels",
+   "source": "Gemeente Delft",
+   "reason": "интервью с компанией",
+   "flagged": false,
+   "category": "pr"
+  },
+  {
+   "title": "Доверенное лицо для волонтёров",
+   "original": "Vertrouwenspersoon vrijwilligers",
+   "url": "https://www.delft.nl/vertrouwenspersoon-vrijwilligers",
+   "source": "Gemeente Delft",
+   "reason": "справочная информация, не новость",
+   "flagged": false,
+   "category": "other"
+  },
+  {
+   "title": "Нет времени терять",
+   "original": "Geen tijd te verliezen",
+   "url": "https://delta.tudelft.nl/article/geen-tijd-te-verliezen",
    "source": "Delta (TU Delft)",
-   "reason": "общенациональная политика",
-   "flagged": false
+   "reason": "колонка",
+   "flagged": false,
+   "category": "opinion"
   }
  ],
  "skipped_events": [
   {
-   "title": "Djembéworkshop – Ontdek ritme en samenspel",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/576815830/djembe-avond-van-losse-slagen-naar-een-ritme",
+   "title": "Ouder-kind workshop: maak samen een robot in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2975484713/laat-je-inspireren-door-je-kind-the-robot-edition",
    "source": "In Delft",
-   "reason": "мастер-класс, не главное",
-   "date": "2026-10-27"
-  },
-  {
-   "title": "Birra Moretti Session | hosted by Keller-Lammen Quintet",
-   "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-keller-lammen-quintet/",
-   "source": "Uit Delft",
-   "reason": "бар, местная группа",
-   "date": "2026-10-27"
-  },
-  {
-   "title": "Jamsession @ Bebop",
-   "url": "https://uitdelft.com/event/jamsession-bebop-4/",
-   "source": "Uit Delft",
-   "reason": "бар, джем-сейшн",
-   "date": "2026-10-27"
+   "reason": "детское",
+   "date": "2026-10-28"
   },
   {
    "title": "Podium Pannenkoek",
    "url": "https://uitdelft.com/event/podium-pannenkoek/",
    "source": "Uit Delft",
-   "reason": "детское/местная мелочь",
+   "reason": "мало сведений, похоже на местную сцену",
    "date": "2026-10-28"
   },
   {
    "title": "Adem en ontspanning",
    "url": "https://uitdelft.com/event/adem-en-ontspanning/",
    "source": "Uit Delft",
-   "reason": "рутинное занятие",
+   "reason": "рутинное занятие в студии",
    "date": "2026-10-30"
   },
   {
    "title": "Vroeg Pieken Steck Delft",
    "url": "https://uitdelft.com/event/vroeg-pieken-steck-delft-2/",
    "source": "Uit Delft",
+   "reason": "бар, клубный вечер",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "Vroeg Pieken // STECK // Delft",
+   "url": "https://uitdelft.com/event/vroeg-pieken-steck-delft/",
+   "source": "Uit Delft",
    "reason": "дубликат",
    "date": "2026-10-30"
+  },
+  {
+   "title": "2026 Delft MaMa Annual Halloween Party",
+   "url": "https://uitdelft.com/event/2026-delft-mama-annual-halloween-party/",
+   "source": "Uit Delft",
+   "reason": "детское",
+   "date": "2026-10-31"
+  },
+  {
+   "title": "Halloween Tanthof Oost",
+   "url": "https://uitdelft.com/event/halloween-tanthof-oost-2/",
+   "source": "Uit Delft",
+   "reason": "детский Хэллоуин в районе",
+   "date": "2026-10-31"
   }
  ],
  "events": [
   {
-   "title": "Лекция «Первая технология, которая отвечает» — об ИИ",
-   "when": "вт 27 окт, 19:30",
-   "where": "",
-   "price": "бесплатно",
-   "summary": "Лекция о том, почему люди выстраивают личные отношения с ИИ и что это значит для нашего отношения к технологиям.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2042731959/lezing-ai-door-deborah-nas",
-   "date": "2026-10-27"
-  },
-  {
-   "title": "Delfts ArchitectuurCafé — вода в городе",
-   "when": "вт 27 окт, 20:00",
-   "where": "",
-   "price": "бесплатно",
-   "summary": "Вечер об исторических и новых водных структурах и их роли в развитии Делфта.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3867773946/delfts-architectuurcafe-stedelijk-water",
-   "date": "2026-10-27"
-  },
-  {
-   "title": "Maarten Heijmans & Xander Vrienten — Wachtend op de dood",
-   "when": "вт 27 окт, 20:15",
+   "title": "Gerard Alderliefste & Friends — Vivre!",
+   "when": "ср 28 окт, 14:30",
    "where": "Theater de Veste",
+   "price": "€23,50",
+   "summary": "Дневной музыкальный концерт Gerard Alderliefste и друзей в Theater de Veste.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/773524624/gerard-alderliefste-friends-vivre",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Концерт на День всех усопших: Реквием Форе",
+   "when": "ср 28 окт, 20:00",
+   "where": "",
    "price": "€27,50",
-   "summary": "Театральный спектакль с известными артистами Maarten Heijmans и Xander Vrienten в Theater de Veste.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1495022598/maarten-heijmans-xander-vrienten-wachten-op-de-dood",
-   "date": "2026-10-27"
+   "summary": "Реквием Форе, музыка Арво Пярта и Кэролайн Шоу и пространство для памяти.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3998292137/allerzielenconcert-2026",
+   "date": "2026-10-28"
   },
   {
-   "title": "Cinema Delfia: Snatch",
-   "when": "пт 30 окт",
-   "where": "Hal015",
-   "price": "бесплатно",
-   "summary": "Показ культового фильма Snatch в рамках киноклуба Cinema Delfia.",
-   "url": "https://uitdelft.com/event/cinema-delfia-snatch/",
-   "date": "2026-10-30"
+   "title": "Фильм «Бегущий по лезвию» с обсуждением о роботах и ИИ",
+   "when": "ср 28 окт, 20:10",
+   "where": "Filmhuis Lumen",
+   "price": "€12,70",
+   "summary": "Показ Blade Runner и англоязычная беседа с учёными TU Delft о науке о роботах и искусственном интеллекте.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/598391061/lumen-x-tu-delft-the-robots-are-coming-blade-runner",
+   "date": "2026-10-28"
   },
   {
-   "title": "Ежемесячный паб-квиз в Cultuurlab",
-   "when": "пт 30 окт",
-   "where": "Cultuurlab",
+   "title": "The Zeppelin Affair — Led Zeppelin live",
+   "when": "сб 31 окт",
+   "where": "WPC Nederland 3",
    "price": "",
-   "summary": "Ежемесячная викторина в Cultuurlab.",
-   "url": "https://uitdelft.com/event/maandelijkse-pubquiz-cultuurlab-2/",
-   "date": "2026-10-30"
+   "summary": "Трибьют-концерт Led Zeppelin.",
+   "url": "https://uitdelft.com/event/the-zeppelin-affair-led-zeppelin-live-in-wpc-nederland-3/",
+   "date": "2026-10-31"
   },
   {
-   "title": "Willem van Oranje — мюзикл",
-   "when": "пт 30 окт, 19:30",
-   "where": "Prinsentheater",
-   "price": "€45",
-   "summary": "Мюзикл о Вильгельме Оранском в Prinsentheater.",
-   "url": "https://uitdelft.com/event/willem-van-oranje-de-musical-3/",
-   "date": "2026-10-30"
+   "title": "История здравоохранения Делфта",
+   "when": "сб 31 окт, 10:00–17:00",
+   "where": "Museum De Griffioen",
+   "price": "€5",
+   "summary": "Исторические медицинские инструменты, старая аптека и работа делфтских врачей и исследователей.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1413701722/de-gezondheidszorg-van-toen-museum-de-griffioen",
+   "date": "2026-10-31"
   },
   {
-   "title": "Спектакль Trammelant in de blokhut (Het Voetlicht)",
-   "when": "пт 30 окт, 20:00",
+   "title": "Grijsgedraaid: клубный вечер делфтского DJ-коллектива",
+   "when": "сб 31 окт, 16:00",
    "where": "",
    "price": "",
-   "summary": "Комедия любительского театра о семейном выходном в лесной хижине, который идёт не по плану.",
-   "url": "https://www.delftopzondag.nl/agenda/2026/10/30/het-voetlicht-speelt-trammelant-in-de-blokhut-110978",
-   "date": "2026-10-30"
+   "summary": "Возвращение делфтского DJ-коллектива после аншлагового дебюта в HAL015.",
+   "url": "https://www.delftopzondag.nl/agenda/2026/10/31/grijsgedraaid-is-terug-de-ultieme-clubervaring-in-delft--110988",
+   "date": "2026-10-31"
   },
   {
-   "title": "Vroeg Pieken в Steck",
-   "when": "пт 30 окт, 20:00",
-   "where": "Steck",
+   "title": "Спектакль Het Voetlicht «Trammelant» в блокхуте",
+   "when": "сб 31 окт, 20:00",
+   "where": "",
    "price": "",
-   "summary": "Вечер в клубе Steck с вечерней программой.",
-   "url": "https://uitdelft.com/event/vroeg-pieken-30-oktober/",
-   "date": "2026-10-30"
+   "summary": "Комедия: Oma Marie зовёт семью на день рождения в лесной домик, но всё идёт не так.",
+   "url": "https://www.delftopzondag.nl/agenda/2026/10/31/het-voetlicht-speelt-trammelant-in-de-blokhut-110979",
+   "date": "2026-10-31"
   }
  ]
 }
