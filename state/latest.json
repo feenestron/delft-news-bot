@@ -1,259 +1,176 @@
 {
  "version": 1,
- "date": "2026-11-01",
- "title": "Делфт · воскресенье, 1 ноября",
- "published": "2026-11-01T07:30:40.489962+01:00",
+ "date": "2026-11-02",
+ "title": "Делфт · понедельник, 2 ноября",
+ "published": "2026-11-02T07:30:46.043320+01:00",
  "news": [],
  "maybe": [],
  "skipped": [
   {
-   "title": "Прогулка по Krekengebied и Abtswoudse Bos с гидом Staatsbosbeheer",
-   "original": "Nieuwe data: Ga mee op een reis door de tijd in het Krekengebied en Abtswoudse Bos",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111527/nieuwe-data-ga-mee-op-een-reis-door-de-tijd-in-het-krekengebi",
+   "title": "Розыгрыш билетов в Groot Kerstcircus Den Haag",
+   "original": "Win deze week kaarten voor het Groot Kerstcircus Den Haag!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111510/win-deze-week-kaarten-voor-het-groot-kerstcircus-den-haag-",
    "source": "Delft op Zondag",
-   "reason": "анонс мероприятия без даты",
+   "reason": "конкурс, не в Делфте",
    "flagged": false,
-   "announce": true
+   "category": "ad"
   },
   {
-   "title": "Насекомые в камыше",
-   "original": "Insecten in het riet",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111526/insecten-in-het-riet",
+   "title": "Cultuurbarbaren 2026: итоги детского фестиваля",
+   "original": "Cultuurbarbaren 2026 zette kinderen in de spotlight",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111509/cultuurbarbaren-2026-zette-kinderen-in-de-spotlight",
    "source": "Delft op Zondag",
-   "reason": "научно-популярная заметка",
+   "reason": "детский фестиваль, репортаж",
    "flagged": false,
    "category": "feature"
   },
   {
-   "title": "De Koperen Kat: события в ноябре",
-   "original": "De Koperen Kat",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111525/de-koperen-kat",
+   "title": "Где можно выгуливать собак без поводка в Abtswoudse Bos",
+   "original": "Waar mag je hond eigenlijk los in het Abtswoudse Bos?",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111483/waar-mag-je-hond-eigenlijk-los-in-het-abtswoudse-bos-",
    "source": "Delft op Zondag",
-   "reason": "реклама заведения",
+   "reason": "познавательный материал",
+   "flagged": false,
+   "category": "feature"
+  },
+  {
+   "title": "Рождественский отдел GroenRijk 't Haantje",
+   "original": "Een kerstwereld vol kleur en warmte bij GroenRijk ‘t Haantje",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111489/een-kerstwereld-vol-kleur-en-warmte-bij-groenrijk-t-haantje",
+   "source": "Delft op Zondag",
+   "reason": "реклама, Rijswijk",
+   "flagged": false,
+   "category": "ad"
+  },
+  {
+   "title": "Fys'Optima Delft: движение в холодное время",
+   "original": "Vertrouwd in beweging komen bij Fys’Optima Delft",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111481/vertrouwd-in-beweging-komen-bij-fysoptima-delft",
+   "source": "Delft op Zondag",
+   "reason": "реклама",
+   "flagged": false,
+   "category": "ad"
+  },
+  {
+   "title": "Storebox Delft предлагает место для хранения",
+   "original": "Storebox Delft biedt ruimte!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111482/storebox-delft-biedt-ruimte-",
+   "source": "Delft op Zondag",
+   "reason": "реклама",
+   "flagged": false,
+   "category": "ad"
+  },
+  {
+   "title": "Мероприятия Delftse Klimaatweek",
+   "original": "Activiteiten Delftse Klimaatweek",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111518/activiteiten-delftse-klimaatweek",
+   "source": "Delft op Zondag",
+   "reason": "анонс, дубликат мероприятий Klimaatweek",
+   "flagged": false,
+   "category": "duplicate"
+  },
+  {
+   "title": "Фестиваль робототехники, искусства и технологий в The Social Hub Delft",
+   "original": "Van Wenen naar Delft: bijzonder festival strijkt neer in Nederland",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111521/van-wenen-naar-delft-bijzonder-festival-strijkt-neer-in-nederland",
+   "source": "Delft op Zondag",
+   "reason": "анонс мероприятия не в ближайшие дни",
+   "flagged": false,
+   "announce": true
+  },
+  {
+   "title": "Van Loenen Horlogerie переходит на реставрацию часов",
+   "original": "Van Loenen Horlogerie op de Markt start een nieuw hoofdstuk",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111498/van-loenen-horlogerie-op-de-markt-start-een-nieuw-hoofdstuk",
+   "source": "Delft op Zondag",
+   "reason": "пиар магазина",
    "flagged": false,
    "category": "pr"
-  },
-  {
-   "title": "Ужин, живая музыка и немного Рождества в Hampshire Hotel",
-   "original": "Lekker eten, livemuziek en een vleugje kerst!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111524/lekker-eten-livemuziek-en-een-vleugje-kerst-",
-   "source": "Delft op Zondag",
-   "reason": "реклама",
-   "flagged": false,
-   "category": "ad"
-  },
-  {
-   "title": "Бесплатная оценка монет, марок, украшений и антиквариата",
-   "original": "Gratis taxatie van uw munten, postzegels, gouden en zilveren sieraden, kunst, antiek etc.",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111523/gratis-taxatie-van-uw-munten-postzegels-gouden-en-zilveren-si",
-   "source": "Delft op Zondag",
-   "reason": "реклама",
-   "flagged": false,
-   "category": "ad"
-  },
-  {
-   "title": "Парикмахерская HeadQuarter",
-   "original": "Kapsalon HeadQuarter: veel meer dan alleen knippen!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111519/kapsalon-headquarter-veel-meer-dan-alleen-knippen-",
-   "source": "Delft op Zondag",
-   "reason": "реклама",
-   "flagged": false,
-   "category": "ad"
-  },
-  {
-   "title": "Как Catharijneconvent в Утрехте избавляется от лишнего",
-   "original": "‘Hoe ontzamelt het Catharijneconvent in Utrecht’",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111532/hoe-ontzamelt-het-catharijneconvent-in-utrecht",
-   "source": "Delft op Zondag",
-   "reason": "не в Делфте, очерк",
-   "flagged": false,
-   "category": "not_delft"
-  },
-  {
-   "title": "Детский сад Hoeve Ackerdijk",
-   "original": "Kinderopvang Hoeve Ackerdijk",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111503/kinderopvang-hoeve-ackerdijk",
-   "source": "Delft op Zondag",
-   "reason": "реклама",
-   "flagged": false,
-   "category": "ad"
-  },
-  {
-   "title": "BSO в Делфте",
-   "original": "Samen op avontuur bij de bso in Delft!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111501/samen-op-avontuur-bij-de-bso-in-delft-",
-   "source": "Delft op Zondag",
-   "reason": "реклама",
-   "flagged": false,
-   "category": "ad"
-  },
-  {
-   "title": "Voetjebal Delft ищет тренеров",
-   "original": "Trainers/Trainster gezocht bij Voetjebal Delft!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111500/trainers-trainster-gezocht-bij-voetjebal-delft-",
-   "source": "Delft op Zondag",
-   "reason": "объявление клуба",
-   "flagged": false,
-   "category": "club"
-  },
-  {
-   "title": "Les Enfants: обучение в природе",
-   "original": "Spelenderwijs leren in de natuur bij Les Enfants",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111499/spelenderwijs-leren-in-de-natuur-bij-les-enfants",
-   "source": "Delft op Zondag",
-   "reason": "реклама",
-   "flagged": false,
-   "category": "ad"
-  },
-  {
-   "title": "Тренер Wippolder надеется на перелом в сезоне",
-   "original": "Robin den Dulk hoopt op kantelpunt voor Wippolder",
-   "url": "https://www.delftopzondag.nl/nieuws/sport/111490/robin-den-dulk-hoopt-op-kantelpunt-voor-wippolder",
-   "source": "Delft op Zondag",
-   "reason": "спортивный клуб",
-   "flagged": false,
-   "category": "club"
   }
  ],
  "skipped_events": [
   {
-   "title": "Paddenstoelen zie je nooit genoeg",
-   "url": "https://www.delftopzondag.nl/agenda/2026/11/1/paddenstoelen-zie-je-nooit-genoeg-111478",
-   "source": "Delft op Zondag",
-   "reason": "не в Делфте (Rijswijk)",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Workshop Engelen, dichterbij dan je denkt",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2765900803/interactieve-lezing-over-engelen",
+   "title": "Klimaatweek Delft 2026 - De Oude Delftse Waterloop",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/204252727/klimaatweek-delft-2026-de-oude-delftse-waterloop",
    "source": "In Delft",
-   "reason": "эзотерический воркшоп",
-   "date": "2026-11-01"
+   "reason": "мелкое событие Klimaatweek",
+   "date": "2026-11-02"
   },
   {
-   "title": "Gratis spelletjesmiddag bij Mooie Boules Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2956235857/buurt-boules",
+   "title": "Klimaatweek Delft 2026 - Groene oase landgoed Buitenleeft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2626927526/klimaatweek-delft-2026-groene-oase-landgoed-buitenleeft",
    "source": "In Delft",
-   "reason": "регулярная игровая встреча",
-   "date": "2026-11-01"
+   "reason": "мелкое событие Klimaatweek",
+   "date": "2026-11-02"
   },
   {
-   "title": "Workshop vogeltjes schilderen met Acrylic Gouache",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2956838309/vogeltjes-schilderen-met-acrylic-gouache",
+   "title": "Typical Tropical – Salsa, Bachata en Kizomba Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3131304111/proeflessen-salsa-bachata-en-kizomba",
    "source": "In Delft",
-   "reason": "платный мастер-класс по рисованию",
-   "date": "2026-11-01"
+   "reason": "танцевальный вечер, рутина",
+   "date": "2026-11-02"
   },
   {
-   "title": "Ouder-kindworkshop Herfstyoga in Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3703742096/ouder-en-kind-yoga-workshop",
+   "title": "Allerzielen Delft – Herdenking in de Oud-Katholieke Kerk",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3450132537/het-allerzielen-viering",
    "source": "In Delft",
-   "reason": "детское",
-   "date": "2026-11-01"
+   "reason": "обычная церковная служба",
+   "date": "2026-11-02"
   },
   {
-   "title": "Feelgood filmmiddag in DOK Tanthof Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/79063538/film-bij-cultuurhuis",
+   "title": "Klimaatweek Delft 2026 - Rondleiding Nieuw Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3952380720/klimaatweek-delft-2026-klimaatontbijt-1",
    "source": "In Delft",
-   "reason": "рутина, ежемесячный кинопоказ",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Diwali 2026",
-   "url": "https://uitdelft.com/event/diwali-2026/",
-   "source": "Uit Delft",
-   "reason": "не в Делфте (Rijswijk)",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Filmmiddag bij Tanthof",
-   "url": "https://uitdelft.com/event/filmmiddag-bij-tanthof/",
-   "source": "Uit Delft",
-   "reason": "дубликат",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Live muziek met Copper & Pine",
-   "url": "https://uitdelft.com/event/live-muziek-met-copper-pine/",
-   "source": "Uit Delft",
-   "reason": "бар, местный дуэт",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Mind-Trick! op zondag in de Waag",
-   "url": "https://uitdelft.com/event/mind-trick-op-zondag-in-de-waag/",
-   "source": "Uit Delft",
-   "reason": "выступление в баре",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Ouder & Kind Yoga – Herfst workshop",
-   "url": "https://uitdelft.com/event/ouder-kind-yoga-herfst-workshop/",
-   "source": "Uit Delft",
-   "reason": "дубликат, детское",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Stadsexploratiespel in Delft",
-   "url": "https://uitdelft.com/event/stadsexploratiespel-in-delft-2/",
-   "source": "Uit Delft",
-   "reason": "рутина, игра для туристов",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Unplugged | M’Bassy | Gratis entree – Free entrance",
-   "url": "https://uitdelft.com/event/unplugged-mbassy-gratis-entree-free-entrance/",
-   "source": "Uit Delft",
-   "reason": "бар, местный музыкант",
-   "date": "2026-11-01"
+   "reason": "мелкое событие Klimaatweek",
+   "date": "2026-11-02"
   },
   {
    "title": "Digitale Huiskamer",
    "url": "https://uitdelft.com/event/digitale-huiskamer/",
    "source": "Uit Delft",
-   "reason": "рутина",
+   "reason": "регулярные консультации",
    "date": "2026-11-02"
   },
   {
    "title": "Informatiepunt Digitale Overheid (IDO)",
    "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-2/",
    "source": "Uit Delft",
-   "reason": "рутина",
+   "reason": "регулярные консультации",
    "date": "2026-11-02"
   },
   {
    "title": "Birra Moretti Session | hosted by Isaac Turner",
    "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-isaac-turner/",
    "source": "Uit Delft",
-   "reason": "бар, сессия",
+   "reason": "бар, джем-сессия",
    "date": "2026-11-03"
   },
   {
    "title": "Gratis digitaal oefenen met Klik & Tik",
    "url": "https://uitdelft.com/event/gratis-digitaal-oefenen-met-klik-tik/",
    "source": "Uit Delft",
-   "reason": "рутина",
+   "reason": "регулярные занятия",
    "date": "2026-11-03"
   },
   {
    "title": "IDO + Taalhuis",
    "url": "https://uitdelft.com/event/ido-taalhuis/",
    "source": "Uit Delft",
-   "reason": "рутина",
+   "reason": "регулярные консультации",
    "date": "2026-11-03"
   },
   {
    "title": "Jamsession @ Bebop",
    "url": "https://uitdelft.com/event/jamsession-bebop-5/",
    "source": "Uit Delft",
-   "reason": "джем-сейшн в баре",
+   "reason": "бар, джем-сессия",
    "date": "2026-11-03"
   },
   {
    "title": "Moretti Jamsessie",
    "url": "https://uitdelft.com/event/moretti-jamsessie/",
    "source": "Uit Delft",
-   "reason": "дубликат, бар",
+   "reason": "бар, джем-сессия",
    "date": "2026-11-03"
   },
   {
@@ -267,7 +184,7 @@
    "title": "Taalcafé",
    "url": "https://uitdelft.com/event/taalcafe/",
    "source": "Uit Delft",
-   "reason": "рутина",
+   "reason": "регулярный кружок",
    "date": "2026-11-03"
   },
   {
@@ -290,80 +207,106 @@
    "source": "Uit Delft",
    "reason": "open stage в отеле",
    "date": "2026-11-04"
+  },
+  {
+   "title": "dreamstate sound journey - Theta Session",
+   "url": "https://www.delftopzondag.nl/agenda/2026/11/5/dreamstate-sound-journey-theta-session-111167",
+   "source": "Delft op Zondag",
+   "reason": "дубликат",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "60e editie cameretten festival – de try-outs",
+   "url": "https://uitdelft.com/event/60e-editie-cameretten-festival-de-try-outs-2/",
+   "source": "Uit Delft",
+   "reason": "не в Делфте (Hal015, Den Haag)",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Popronde 2026",
+   "url": "https://uitdelft.com/event/popronde-2026/",
+   "source": "Uit Delft",
+   "reason": "дубликат Popronde",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Popronde | Inoyson & Send Me Flowers",
+   "url": "https://uitdelft.com/event/popronde-inoyson-send-me-flowers/",
+   "source": "Uit Delft",
+   "reason": "дубликат Popronde",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Popronde | Wendy Moore & Brian Murphy",
+   "url": "https://uitdelft.com/event/popronde-wendy-moore-brian-murphy/",
+   "source": "Uit Delft",
+   "reason": "дубликат Popronde",
+   "date": "2026-11-05"
   }
  ],
  "events": [
   {
-   "title": "Jan Hendrik van de Laar – Historiestukken",
-   "when": "до 2 мая 2027",
-   "where": "",
-   "price": "€12",
-   "summary": "Выставка исторических работ и жанровых сцен Jan Hendrik van de Laar и его связи с фотографом Erwin Olaf; работает чт–вс 13:00–17:00.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1259357976/sentiment-in-verf-gevangen-kunstschilder-jan-hendrik-van-de-laar",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Rondje Arsenaal – историческая прогулка",
-   "when": "вс 1 нояб, 11:00",
-   "where": "Arsenaal",
+   "title": "Klimaatweek Delft: «Onze Verborgen Impact in beeld»",
+   "when": "2–6 нояб.",
+   "where": "Делфт",
    "price": "",
-   "summary": "Прогулка по истории Arsenaal с Kelly's City Tours, включая напиток в Hotel Arsenaal; проходит и в следующие воскресенья.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/512047506/rondje-arsenaal",
-   "date": "2026-11-01"
+   "summary": "Выставка о скрытом влиянии человека на климат в рамках Недели климата.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3352567018/klimaatweek-delft-2026-onze-verborgen-impact-in-beeld",
+   "date": "2026-11-02"
   },
   {
-   "title": "Lichtjes voor Delft – вечер памяти в Nieuwe Kerk",
-   "when": "вс 1 нояб, 14:30",
-   "where": "Nieuwe Kerk",
+   "title": "Shopping Night и конкурс витрин в центре Делфта",
+   "when": "",
+   "where": "Центр Делфта",
+   "price": "",
+   "summary": "Delft Marketing приглашает предпринимателей центра принять участие в Shopping Night и конкурсе витрин в рамках кампании Koop & Geniet Lokaal.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111514/doe-mee-aan-de-shopping-night-en-etalagewedstrijd-in-delft-",
+   "date": "2026-11-02"
+  },
+  {
+   "title": "Klimaatweek Delft: Klimaatontbijt",
+   "when": "пн 2 нояб, 08:30",
+   "where": "Делфт",
+   "price": "",
+   "summary": "Климатический завтрак в рамках Недели климата: идеи об устойчивом Делфте.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1922947722/klimaatweek-delft-2026-klimaatontbijt",
+   "date": "2026-11-02"
+  },
+  {
+   "title": "Requiem Duruflé — концерт на Allerzielen",
+   "when": "пн 2 нояб, 20:00",
+   "where": "Oude Kerk",
    "price": "бесплатно",
-   "summary": "Встреча памяти: можно зажечь свечу и назвать имя или поделиться воспоминанием о близких.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/155549921/lichtjes-voor-delft-herdenkingsbijeenkomst-op-1-november",
-   "date": "2026-11-01"
+   "summary": "Реквием Дюрюфле: хоровая и органная музыка в Oude Kerk.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2386174979/requiem-van-durufle-in-de-oude-kerk",
+   "date": "2026-11-02"
   },
   {
-   "title": "Реквием Форе – концерт ко Дню всех усопших",
-   "when": "вс 1 нояб, 15:00",
-   "where": "Maria van Jessekerk",
-   "price": "€10",
-   "summary": "Kathedrale Koor Utrecht исполняет Реквием Форе, орган — Petra Veenswijk.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3645198751/requiemconcert-met-kathedrale-koor-utrecht-op-zondagmiddag-1-november-in-de-maria-van-jessekerk-te-delft",
-   "date": "2026-11-01"
-  },
-  {
-   "title": "Trio Cor Nuiten XL zingt Cohen & Co",
-   "when": "вс 1 нояб, 15:00",
-   "where": "Hal015",
+   "title": "Micha Wertheim — Micha Wertheim voor iedereen",
+   "when": "пн 2 нояб, 20:15",
+   "where": "Theater de Veste",
    "price": "",
-   "summary": "Трио исполняет нидерландские переложения песен Leonard Cohen, Johnny Cash, Paul Simon и других.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3211164470/trio-cor-nuiten-xl-zingt-cohen-co",
-   "date": "2026-11-01"
+   "summary": "Шоу известного нидерландского комика Micha Wertheim.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1236353388/micha-wertheim-micha-wertheim-voor-iedereen",
+   "date": "2026-11-02"
   },
   {
-   "title": "Groover Jazz Sunday",
-   "when": "вс 1 нояб, 15:00",
-   "where": "Delfts Brouwhuis",
+   "title": "Popronde Delft",
+   "when": "чт 5 нояб, с 16:00",
+   "where": "Разные площадки Делфта",
    "price": "",
-   "summary": "Воскресная джазовая встреча в городской пивоварне.",
-   "url": "https://uitdelft.com/event/groover-jazz-sunday/",
-   "date": "2026-11-01"
+   "summary": "Передвижной музыкальный фестиваль: концерты молодых артистов на разных площадках города.",
+   "url": "https://uitdelft.com/event/popronde-delft/",
+   "date": "2026-11-05"
   },
   {
-   "title": "Лекция в Kerk aan het Noordeinde",
-   "when": "вт 3 нояб, 20:00",
-   "where": "Kerk aan het Noordeinde",
-   "price": "",
-   "summary": "Вечерняя лекция в церкви; тема во входных данных не указана.",
-   "url": "https://uitdelft.com/event/3-november-lezing-kerk-aan-het-noordeinde/",
-   "date": "2026-11-03"
-  },
-  {
-   "title": "Spinvis & Saartje van Camp – дуэт",
-   "when": "ср 4 нояб, 20:30",
-   "where": "Hal015",
-   "price": "",
-   "summary": "Концерт известного нидерландского музыканта Spinvis в дуэте с Saartje van Camp.",
-   "url": "https://uitdelft.com/event/spinvis-saartje-van-camp-duo/",
-   "date": "2026-11-04"
+   "title": "dreamstate sound journey — Theta Session",
+   "when": "чт 5 нояб, 19:30",
+   "where": "Julianalaan",
+   "price": "€55",
+   "summary": "Сеанс глубокой релаксации с живой электронной музыкой.",
+   "url": "https://uitdelft.com/event/dreamstate-sound-journey-theta-session-2/",
+   "date": "2026-11-05"
   }
  ]
 }
