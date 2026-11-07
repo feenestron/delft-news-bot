@@ -1,0 +1,25 @@
+name: Diagnose sources
+on:
+  workflow_dispatch:
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check AD
+        run: |
+          UA="DelftNewsDigestBot/1.0 (+https://github.com/feenestron/delft-news-bot)"
+          for u in https://www.ad.nl/robots.txt https://www.ad.nl/delft/rss.xml https://www.ad.nl/delft/ ; do
+            echo "===== $u"
+            curl -sS -A "$UA" -o /tmp/p -w "HTTP %{http_code} size %{size_download} type %{content_type} final %{url_effective}\n" -L "$u" || true
+            case "$u" in
+              *robots.txt) cat /tmp/p ;;
+              *rss.xml) grep -o "<lastBuildDate>[^<]*" /tmp/p; grep -c "<item>" /tmp/p; grep -oE "<title>[^<]*|<link>[^<]*|<pubDate>[^<]*" /tmp/p | head -30 ;;
+              *) grep -oE 'href="https://www\.ad\.nl/delft/[^"]+"' /tmp/p | sort -u | head -25; echo "premium markers:"; grep -oiE 'premium|ad-plus|plus-label|paywall' /tmp/p | sort | uniq -c ;;
+            esac
+          done
+          echo "===== sample articles"
+          for a in $(grep -oE 'https://www\.ad\.nl/delft/[a-z0-9-]+~[a-z0-9]+/?' /tmp/p | sort -u | head -6); do
+            curl -sS -A "$UA" -o /tmp/a -w "$a HTTP %{http_code} size %{size_download}\n" -L "$a" || true
+            grep -oE '"isAccessibleForFree":\s*"?[a-zA-Z]+"?' /tmp/a | head -1
+            grep -oE '<meta property="og:description" content="[^"]{0,160}' /tmp/a | head -1
+          done
