@@ -1,20 +1,20 @@
 {
  "version": 1,
- "date": "2026-11-08",
- "title": "Делфт · воскресенье, 8 ноября",
- "published": "2026-11-08T07:30:45.399664+01:00",
+ "date": "2026-11-09",
+ "title": "Делфт · понедельник, 9 ноября",
+ "published": "2026-11-09T07:30:47.026482+01:00",
  "news": [
   {
-   "title": "Пожар в магазине одежды в De Hoven Passage: дым и затопление",
-   "summary": "В ночь на 7 ноября загорелся магазин одежды в торговом центре De Hoven Passage. Пожарные вскрыли рольставни, спринклеры почти потушили огонь, но в центре много дыма и воды; пострадавших нет, причина и ущерб неизвестны.",
-   "url": "https://www.omroepdelft.nl/delft/voorhof/brand-bij-kledingwinkel-in-de-hoven-passage-veel-rook-en-wateroverlast/",
+   "title": "Полиция обыскала Debussyflat в Buitenhof после фейерверка",
+   "summary": "В субботу 7 ноября из дома бросили фейерверк вниз; полиция обыскала здание и проверила людей, задержаний нет. С июля в районе усилен надзор.",
+   "url": "https://www.omroepdelft.nl/delft/buitenhof/politie-doorzoekt-debussyflat-na-vuurwerkincident/",
    "source": "Omroep Delft",
    "level": "must"
   },
   {
-   "title": "Warmtenet Delft: к теплосети подключат около 1040 домов в Poptahof",
-   "summary": "Сеть Warmtenet Delft расширяется: к устойчивому теплоснабжению подключат примерно 1040 жилищ в районе Poptahof.",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111555/belangrijke-volgende-stap-naar-duurzame-warmte",
+   "title": "Delfland: проект бюджета на 2027 год выложен для ознакомления",
+   "summary": "Hoogheemraadschap van Delfland опубликовало проект бюджета на 2027 год с многолетним прогнозом; с ним можно ознакомиться.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111554/delfland-concept-begroting-met-meerjarenraming-ter-inzage",
    "source": "Delft op Zondag",
    "level": "interesting"
   }
@@ -22,183 +22,88 @@
  "maybe": [],
  "skipped": [
   {
-   "title": "Reno: электротехника",
-   "original": "Reno: helemaal thuis in elektrotechniek!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111574/reno-helemaal-thuis-in-elektrotechniek-",
+   "title": "Midden-Delfland организует коллективную акцию по утеплению",
+   "original": "Gemeente Midden-Delfland organiseert collectieve isolatieactie",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111576/gemeente-midden-delfland-organiseert-collectieve-isolatieactie",
    "source": "Delft op Zondag",
-   "reason": "реклама",
+   "reason": "не в Делфте, Midden-Delfland",
    "flagged": false,
-   "category": "ad"
+   "category": "not_delft"
   },
   {
-   "title": "Adriaansen Onderhoud ищет специалистов",
-   "original": "Adriaansen Onderhoud zoekt vakmensen!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111573/adriaansen-onderhoud-zoekt-vakmensen-",
+   "title": "TU Delft окрасится в оранжевый к началу Orange the World",
+   "original": "TU kleurt oranje voor de start van Orange the World",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111578/tu-kleurt-oranje-voor-de-start-van-orange-the-world",
    "source": "Delft op Zondag",
-   "reason": "реклама, вакансия",
+   "reason": "акция TU Delft, на быт не влияет",
    "flagged": false,
-   "category": "ad"
+   "category": "tu_internal"
   },
   {
-   "title": "Совместная продажа дома после развода",
-   "original": "Uit elkaar, maar samen je huis verkopen? Dan is vertrouwen belangrijk",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111603/uit-elkaar-maar-samen-je-huis-verkopen-dan-is-vertrouwen-bela",
+   "title": "Ваш талант может изменить многое: волонтёрство в Midden-Delfland",
+   "original": "Jouw talent kan het verschil maken!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111558/jouw-talent-kan-het-verschil-maken-",
    "source": "Delft op Zondag",
-   "reason": "рекламный материал",
+   "reason": "не в Делфте, призыв к волонтёрам",
    "flagged": false,
-   "category": "ad"
+   "category": "not_delft"
   },
   {
-   "title": "Болезнь, стойкость и новое начало",
-   "original": "Ziekte, veerkracht en opnieuw beginnen",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111601/ziekte-veerkracht-en-opnieuw-beginnen",
-   "source": "Delft op Zondag",
-   "reason": "очерк",
-   "flagged": false,
-   "category": "feature"
-  },
-  {
-   "title": "Обеденный концерт «Klassiek met een knipoog»",
-   "original": "Klassiek met een knipoog tijdens Lunchpauzeconcert",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111600/klassiek-met-een-knipoog-tijdens-lunchpauzeconcert",
+   "title": "Лекция Абела Стрефланда о колониальном прошлом TU Delft",
+   "original": "Lezing door Abel Streefland over koloniale verleden van de TU Delft",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111559/lezing-door-abel-streefland-over-koloniale-verleden-van-de-tu",
    "source": "Delft op Zondag",
    "reason": "анонс мероприятия не в ближайшие дни",
    "flagged": false,
    "announce": true
   },
   {
-   "title": "День премьер в Filmhuis Lumen",
-   "original": "Donderdag premièredag bij Filmhuis Lumen",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111594/donderdag-premieredag-bij-filmhuis-lumen",
+   "title": "Stichting Thuisgekookt ищет домашних поваров в Делфте",
+   "original": "Stichting Thuisgekookt zoekt thuiskoks in Delft",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111556/stichting-thuisgekookt-zoekt-thuiskoks-in-delft",
+   "source": "Delft op Zondag",
+   "reason": "история о человеке, призыв к волонтёрам",
+   "flagged": false,
+   "category": "feature"
+  },
+  {
+   "title": "Мастер-классы для родителей и детей: безопасно в интернете",
+   "original": "Workshops voor ouders en kinderen: slim en veilig online",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111582/workshops-voor-ouders-en-kinderen-slim-en-veilig-online",
    "source": "Delft op Zondag",
    "reason": "анонс мероприятия не в ближайшие дни",
    "flagged": false,
    "announce": true
   },
   {
-   "title": "Спектакль «Een Groter Verhaal»",
-   "original": "Dé voorstelling van het jaar: Een Groter Verhaal",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111592/de-voorstelling-van-het-jaar-een-groter-verhaal",
+   "title": "Rotary Club, Van Haren и Voedselbank объединились",
+   "original": "Rotary Club, Van Haren en Voedselbank slaan handen ineen",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111584/rotary-club-van-haren-en-voedselbank-slaan-handen-ineen",
+   "source": "Delft op Zondag",
+   "reason": "благотворительный пресс-релиз",
+   "flagged": false,
+   "category": "pr"
+  },
+  {
+   "title": "Delft Solar Team нацелен на новый мировой титул",
+   "original": "Delft Solar Team op jacht naar nieuwe wereldtitel",
+   "url": "https://www.delftopzondag.nl/nieuws/sport/111564/delft-solar-team-op-jacht-naar-nieuwe-wereldtitel",
+   "source": "Delft op Zondag",
+   "reason": "студенческая команда, TU",
+   "flagged": false,
+   "category": "club"
+  },
+  {
+   "title": "Kunstontmoetingen – Herfst aan de Gracht ’26",
+   "original": "Kunstontmoetingen – Herfst aan de Gracht ’26",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111590/kunstontmoetingen-herfst-aan-de-gracht-26",
    "source": "Delft op Zondag",
    "reason": "анонс мероприятия не в ближайшие дни",
    "flagged": false,
    "announce": true
-  },
-  {
-   "title": "Opel Mokka в Zeeuw & Zeeuw Kia Delft",
-   "original": "Een juweel van een Opel Mokka bij Zeeuw & Zeeuw Kia Delft",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111550/een-juweel-van-een-opel-mokka-bij-zeeuw-zeeuw-kia-delft",
-   "source": "Delft op Zondag",
-   "reason": "реклама",
-   "flagged": false,
-   "category": "ad"
-  },
-  {
-   "title": "Mini Cooper в Harteveld",
-   "original": "Een stijlvolle Mini Cooper bij Harteveld",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111551/een-stijlvolle-mini-cooper-bij-harteveld",
-   "source": "Delft op Zondag",
-   "reason": "реклама, не в Делфте",
-   "flagged": false,
-   "category": "ad"
-  },
-  {
-   "title": "Westafette: волонтёр Miranda Voogt из Buitenhof",
-   "original": "Westafette: vrijwilliger Miranda Voogt steekt graag zelf de handen uit de mouwen",
-   "url": "https://www.omroepdelft.nl/delft/buitenhof/westafette-vrijwilliger-miranda-voogt-steekt-graag-zelf-de-handen-uit-de-mouwen/",
-   "source": "Omroep Delft",
-   "reason": "портрет, очерк",
-   "flagged": false,
-   "category": "feature"
-  },
-  {
-   "title": "Het Delft van Toen: Dennis Snijders",
-   "original": "Het Delft van Toen: Dennis Snijders",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111583/het-delft-van-toen-dennis-snijders",
-   "source": "Delft op Zondag",
-   "reason": "очерк о человеке",
-   "flagged": false,
-   "category": "feature"
   }
  ],
  "skipped_events": [
-  {
-   "title": "Het Voetlicht speelt Trammelant in de blokhut",
-   "url": "https://www.delftopzondag.nl/agenda/2026/11/8/het-voetlicht-speelt-trammelant-in-de-blokhut-110982",
-   "source": "Delft op Zondag",
-   "reason": "семейный спектакль",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "Klein Amsterdam Producties - Sam & Julia op avontuur (3+)",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1074203975/klein-amsterdam-producties-sam-julia-op-avontuur-3",
-   "source": "In Delft",
-   "reason": "детское, распродано",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "Gotrain Big Boy's – Livemuziek bij De Koperen Kat",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1831421413/leven-in-de-brouwerij-12",
-   "source": "In Delft",
-   "reason": "бар, местная группа",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "Sunday Sounds - Tuesday Afternoon",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1905495032/sunday-sounds-tuesday-afternoon",
-   "source": "In Delft",
-   "reason": "отель, местная группа",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "Tuesday Afternoon – Covers uit de jaren 60 tot 90",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4273879381/sunday-sounds-57",
-   "source": "In Delft",
-   "reason": "отель, местная группа",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "Concert | Los Contact",
-   "url": "https://uitdelft.com/event/concert-los-contact/",
-   "source": "Uit Delft",
-   "reason": "дубликат",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "De Keuken, Kandelaar of de Kolonel",
-   "url": "https://uitdelft.com/event/de-keuken-kandelaar-of-de-kolonel-2/",
-   "source": "Uit Delft",
-   "reason": "Microtheater закрыт после пожара, спектакли отменены",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "De Keuken, Kandelaar of de Kolonel",
-   "url": "https://uitdelft.com/event/de-keuken-kandelaar-of-de-kolonel/",
-   "source": "Uit Delft",
-   "reason": "дубликат",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "Live Muziek met Gotrain Big Boy’s",
-   "url": "https://uitdelft.com/event/live-muziek-met-gotrain-big-boys/",
-   "source": "Uit Delft",
-   "reason": "дубликат",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "Sunday Sounds | Tuesday Afternoon",
-   "url": "https://uitdelft.com/event/sunday-sounds-tuesday-afternoon/",
-   "source": "Uit Delft",
-   "reason": "дубликат",
-   "date": "2026-11-08"
-  },
-  {
-   "title": "Sweet Sour Grooves",
-   "url": "https://uitdelft.com/event/sweet-sour-grooves/",
-   "source": "Uit Delft",
-   "reason": "бар, местная группа",
-   "date": "2026-11-08"
-  },
   {
    "title": "Alzheimercafé – maandelijkse ontmoeting voor mensen met dementie",
    "url": "https://uitdelft.com/event/alzheimercafe-maandelijkse-ontmoeting-voor-mensen-met-dementie/",
@@ -210,22 +115,15 @@
    "title": "Informatiepunt Digitale Overheid (IDO)",
    "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-2/",
    "source": "Uit Delft",
-   "reason": "рутинная консультация",
+   "reason": "регулярная консультация",
    "date": "2026-11-09"
   },
   {
    "title": "Spellenavond in Open",
    "url": "https://uitdelft.com/event/spellenavond-in-open/",
    "source": "Uit Delft",
-   "reason": "регулярный клубный вечер",
+   "reason": "кружок в кафе",
    "date": "2026-11-09"
-  },
-  {
-   "title": "Birra Moretti Jamsessie",
-   "url": "https://uitdelft.com/event/birra-moretti-jamsessie-2/",
-   "source": "Uit Delft",
-   "reason": "джем-сессия в баре",
-   "date": "2026-11-10"
   },
   {
    "title": "Birra Moretti Session | hosted by Groover",
@@ -238,7 +136,7 @@
    "title": "Digitale Huiskamer",
    "url": "https://uitdelft.com/event/digitale-huiskamer/",
    "source": "Uit Delft",
-   "reason": "рутинная консультация",
+   "reason": "регулярная консультация",
    "date": "2026-11-10"
   },
   {
@@ -252,7 +150,7 @@
    "title": "Klik & Tik: Digitaal Oefenen",
    "url": "https://uitdelft.com/event/klik-tik-digitaal-oefenen/",
    "source": "Uit Delft",
-   "reason": "рутинное занятие",
+   "reason": "регулярное занятие",
    "date": "2026-11-10"
   },
   {
@@ -273,55 +171,55 @@
    "title": "Vrouwencirkel – Ruimte maken voor jezelf",
    "url": "https://uitdelft.com/event/vrouwencirkel-ruimte-maken-voor-jezelf/",
    "source": "Uit Delft",
-   "reason": "малое занятие в студии",
+   "reason": "небольшой кружок, нет подробностей",
    "date": "2026-11-11"
   }
  ],
  "events": [
   {
-   "title": "Выставка Arie Schippers: Golgotha",
-   "when": "до 17 янв. 2027",
-   "where": "Oude Kerk Delft",
+   "title": "Выставка «Midterms» в Galerie ART Jacobs",
+   "when": "с 9 нояб",
+   "where": "Galerie ART Jacobs",
    "price": "",
-   "summary": "Шесть больших полотен из серии Golgotha художника и скульптора Arie Schippers и сопутствующие рисунки.",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111597/arie-schippers-golgotha",
-   "date": "2026-11-08"
+   "summary": "Рене Якобс показывает новые работы, вдохновлённые промежуточными выборами в США.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111557/midterms-in-galerie-art-jacobs",
+   "date": "2026-11-09"
   },
   {
-   "title": "Поиск окаменелостей в центре Делфта с IVN",
-   "when": "вс 8 нояб, 14:00",
-   "where": "центр Делфта",
-   "price": "бесплатно",
-   "summary": "Экскурсия с природными гидами IVN в поисках следов доисторической морской жизни в камнях старого города.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/49753605/fossielen-midden-in-de-stad",
-   "date": "2026-11-08"
+   "title": "Рождественский мастер-класс по росписи в Royal Delft",
+   "when": "ежедневно до 29 дек., 14:00–16:30",
+   "where": "Royal Delft",
+   "price": "€69,50",
+   "summary": "Роспись собственного рождественского шара или колокольчика с превращением чёрной краски в делфтский синий после обжига.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3146738497/kerst-schilderworkshop",
+   "date": "2026-11-09"
   },
   {
-   "title": "Blue Autumn Jamboree: The Bluegrass Bandits",
-   "when": "вс 8 нояб, 14:30",
-   "where": "Hal015",
-   "price": "",
-   "summary": "Концерт первой в Нидерландах полностью женской блюграсс-группы The Bluegrass Bandits, в программе также хонки-тонк-пианино.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1327427394/blue-autumn-jamboree",
-   "date": "2026-11-08"
+   "title": "Книга и фильм: «Трамвай «Желание»»",
+   "when": "пн 9 нояб, 20:25",
+   "where": "Filmhuis Lumen",
+   "price": "€15,50",
+   "summary": "Показ A Streetcar Named Desire со вступлением Герлинды Хейвеген об отношении литературы и кино.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/94038556/filmhuis-lumen-presents-boek-film-a-streetcar-named-desire",
+   "date": "2026-11-09"
   },
   {
-   "title": "Bebop Unplugged: Los Contact",
-   "when": "вс 8 нояб, 15:30",
+   "title": "Джем-сессия Birra Moretti в Jazzcafé Bebop",
+   "when": "вт 10 нояб, 20:30",
    "where": "Jazzcafé Bebop, Kromstraat 33",
-   "price": "",
-   "summary": "Воскресный джазовый концерт группы Los Contact в Jazzcafé Bebop.",
-   "url": "https://uitdelft.com/event/bebop-unplugged-los-contact/",
-   "date": "2026-11-08"
+   "price": "бесплатно",
+   "summary": "Открытая джазовая джем-сессия в джаз-кафе.",
+   "url": "https://uitdelft.com/event/birra-moretti-jamsessie-2/",
+   "date": "2026-11-10"
   },
   {
-   "title": "Poetry Playground: MOVE & CONNECT with nature",
-   "when": "ср 11 нояб",
-   "where": "Cultuurlab",
-   "price": "",
-   "summary": "Встреча по поэзии, движению и связи с природой в Cultuurlab.",
-   "url": "https://uitdelft.com/event/poetry-playground-move-connect-with-nature/",
-   "date": "2026-11-11"
+   "title": "Выставка о сточных водах, пигментах и повторном использовании",
+   "when": "до 12 нояб.",
+   "where": "",
+   "price": "бесплатно",
+   "summary": "Искусство и исследования TU Delft: пигменты из канализационного ила и взгляд на сточные воды как источник сырья.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/744338121/wastewater-color-transforming-sewage-into-art",
+   "date": "2026-11-12"
   }
  ]
 }
