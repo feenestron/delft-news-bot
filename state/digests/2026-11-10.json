@@ -1,0 +1,200 @@
+{
+ "version": 1,
+ "date": "2026-11-10",
+ "title": "Делфт · вторник, 10 ноября",
+ "published": "2026-11-10T07:30:43.264112+01:00",
+ "news": [
+  {
+   "title": "Выходные в Делфте: пьяный водитель на A13 и перевернувшийся фургон",
+   "summary": "7 ноября на A13 между Делфтом и Роттердамом перевернулся фургон, оба находившихся в нём были пьяны; водитель задержан. Пожар автомобиля в Гааге — не в Делфте.",
+   "url": "https://www.omroepdelft.nl/delft/buitenhof/dronken-bestuurder-op-de-a13-en-een-geparkeerde-auto-in-de-vlammen-dit-gebeurde-afgelopen-weekend-in-en-rondom-delft/",
+   "source": "Omroep Delft",
+   "level": "interesting"
+  }
+ ],
+ "maybe": [],
+ "skipped": [
+  {
+   "title": "Делфтец пробежал марафон в Гааге босиком ради благотворительности",
+   "original": "Jossa rent marathon op blote voeten: ‘Ik kon dagenlang niet lopen’",
+   "url": "https://www.omroepdelft.nl/delft/jossa-rent-marathon-op-blote-voeten-ik-kon-dagenlang-niet-lopen/",
+   "source": "Omroep Delft",
+   "reason": "история о человеке",
+   "flagged": false,
+   "category": "feature"
+  },
+  {
+   "title": "Theodor van der Lans подписывает свой роман в Boekhandel Kempers",
+   "original": "Theodor van der Lans signeert zijn psychologische roman bij Boekhandel Kempers",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111605/theodor-van-der-lans-signeert-zijn-psychologische-roman-bij-b",
+   "source": "Delft op Zondag",
+   "reason": "анонс/реклама книги",
+   "flagged": false,
+   "category": "pr"
+  },
+  {
+   "title": "Часы Huszár на Hooikade показывают два разных времени",
+   "original": "Aan de Hooikade kan je tijdreizen: je fietst voorbij Huszár en opeens is het een uur later",
+   "url": "https://www.omroepdelft.nl/delft/schieoevers/aan-de-hooikade-kan-je-tijdreizen-je-fietst-voorbij-huszar-en-opeens-is-het-een-uur-later/",
+   "source": "Omroep Delft",
+   "reason": "курьёз, не новость",
+   "flagged": false,
+   "category": "feature"
+  },
+  {
+   "title": "1130 домов в Voorhof-Oost подключат к Warmtenet Delft",
+   "original": "1.130 woningen in Voorhof-Oost krijgen aansluiting op Warmtenet Delft",
+   "url": "https://www.omroepdelft.nl/delft/voorhof/1-130-woningen-in-voorhof-oost-krijgen-aansluiting-op-warmtenet-delft/",
+   "source": "Omroep Delft",
+   "reason": "та же тема, что уже публиковалась про подключение к Warmtenet; не принципиально новое",
+   "flagged": false,
+   "category": "already_published"
+  },
+  {
+   "title": "TU Delft внизу рейтинга Keuzegids среди технических университетов",
+   "original": "TU Delft zwakste technische universiteit van Nederland, ook hogescholen bungelen onderaan Keuzegids",
+   "url": "https://www.omroepdelft.nl/delft/tu-campus/tu-delft-zwakste-technische-universiteit-van-nederland-ook-hogescholen-bungelen-onderaan-keuzegids/",
+   "source": "Omroep Delft",
+   "reason": "рейтинг, без влияния на жителей",
+   "flagged": false,
+   "category": "tu_internal"
+  },
+  {
+   "title": "Постдок TU о протесте против дата-центра Microsoft",
+   "original": "TU-postdoc bij protest tegen Microsoft-datacenter: ‘We moeten inspraak regelen’",
+   "url": "https://delta.tudelft.nl/article/tu-postdoc-bij-protest-tegen-microsoft-datacenter-we-moeten-inspraak-regelen",
+   "source": "Delta (TU Delft)",
+   "reason": "интервью, протест в Амстердаме",
+   "flagged": false,
+   "category": "not_delft"
+  },
+  {
+   "title": "Результаты матчей делфтских футбольных клубов",
+   "original": "Delftse Dribbels: Vitesse Delft deelt tik uit aan DHC",
+   "url": "https://www.omroepdelft.nl/sport/delftse-dribbels-vitesse-delft-deelt-tik-uit-aan-dhc/",
+   "source": "Omroep Delft",
+   "reason": "спортивные клубы",
+   "flagged": false,
+   "category": "club"
+  }
+ ],
+ "skipped_events": [
+  {
+   "title": "Birra Moretti Session | hosted by Groover",
+   "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-groover-2/",
+   "source": "Uit Delft",
+   "reason": "бар, местная сессия",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Digitale Huiskamer",
+   "url": "https://uitdelft.com/event/digitale-huiskamer/",
+   "source": "Uit Delft",
+   "reason": "регулярная консультация",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Jamsession @ Bebop",
+   "url": "https://uitdelft.com/event/jamsession-bebop-6/",
+   "source": "Uit Delft",
+   "reason": "джем в баре",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Klik & Tik: Digitaal Oefenen",
+   "url": "https://uitdelft.com/event/klik-tik-digitaal-oefenen/",
+   "source": "Uit Delft",
+   "reason": "регулярное занятие",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Peutervoorlezen+",
+   "url": "https://uitdelft.com/event/peutervoorlezen-2/",
+   "source": "Uit Delft",
+   "reason": "детское",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Musical- & Popkoor Delft | Blue Vocals Pop & Jazzkoor",
+   "url": "https://uitdelft.com/event/musical-popkoor-delft-blue-vocals-pop-jazzkoor/",
+   "source": "Uit Delft",
+   "reason": "репетиция хора",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Vrouwencirkel – Ruimte maken voor jezelf",
+   "url": "https://uitdelft.com/event/vrouwencirkel-ruimte-maken-voor-jezelf/",
+   "source": "Uit Delft",
+   "reason": "небольшой кружок, мало сведений",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Jeroen van Veen in Delft",
+   "url": "https://uitdelft.com/event/jeroen-van-veen-in-delft-2/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Jeroen van Veen – Pianorecital in de Nieuwe Kerk",
+   "url": "https://uitdelft.com/event/jeroen-van-veen-in-delft/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Ligconcert® Sessions – een avond vol muziek, licht en verwondering",
+   "url": "https://uitdelft.com/event/ligconcert-sessions-een-avond-vol-muziek-licht-en-verwondering/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-13"
+  }
+ ],
+ "events": [
+  {
+   "title": "Лекция Vermeerlezing: Рик Баумен о Хане ван Мегерене",
+   "when": "вт 10 нояб, 19:45",
+   "where": "Delft",
+   "price": "€5",
+   "summary": "Лекция о Хане ван Мегерене, мастере подделок Вермеера: его жизнь, фальшивки и влияние на мир искусства.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2329246818/vermeerlezing-rik-bouman",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Zero Dance Theatre & Amsterdams Andalusisch Orkest — Ghosts",
+   "when": "вт 10 нояб, 20:15",
+   "where": "Theater de Veste",
+   "price": "€27,50",
+   "summary": "Танцевальный спектакль с живым оркестром андалусской музыки и элементами фламенко.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3501723862/zero-dance-theatre-amsterdams-andaluisch-orkest-aao-ghosts",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Мастер-класс по дизайну свечей",
+   "when": "пт 13 нояб",
+   "where": "The Social Hub Delft",
+   "price": "",
+   "summary": "Воркшоп по изготовлению свечей.",
+   "url": "https://uitdelft.com/event/candle-designing-workshop/",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Ligconcert® Sessions в Nieuwe Kerk",
+   "when": "пт 13 нояб, 19:30",
+   "where": "Nieuwe Kerk, Markt 80",
+   "price": "€19,95",
+   "summary": "Живая фортепианная музыка Jeroen van Veen и световые проекции в Nieuwe Kerk; можно слушать лёжа.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3806994065/ligconcert-r-sessions-een-avond-vol-muziek-licht-en-verwondering",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Sabrina Starke — Weather the Storm",
+   "when": "пт 13 нояб, 20:30",
+   "where": "Hal015, Schieweg 15b",
+   "price": "",
+   "summary": "Концерт нидерландской соул-певицы Sabrina Starke.",
+   "url": "https://uitdelft.com/event/sabrina-starke-weather-the-storm/",
+   "date": "2026-11-13"
+  }
+ ]
+}
