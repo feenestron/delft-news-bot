@@ -1,0 +1,236 @@
+{
+ "version": 1,
+ "date": "2026-11-11",
+ "title": "Делфт · среда, 11 ноября",
+ "published": "2026-11-11T07:30:49.801678+01:00",
+ "news": [
+  {
+   "title": "Stadskantoor сегодня закрывается в 13:00",
+   "summary": "Stadskantoor 11 ноября закрыт с 13:00 из-за командного мероприятия сотрудников, inloopbalie тоже закроется на час раньше. Срочные вопросы — по телефону 14015 до 17:00, записи перенесены; со 12 ноября с 08:30 всё работает как обычно.",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/stadskantoor-woensdag-eerder-dicht-vanwege-teammiddag/",
+   "source": "Omroep Delft",
+   "level": "must"
+  },
+  {
+   "title": "Полиция ищет мужчину, снимавшего деньги украденными картами на Martinus Nijhofflaan",
+   "summary": "21 июля около 20:40 он использовал у двух банкоматов карты, украденные мошенником, представившимся сотрудником банка, у пары из Oudenbosch. Полиция просит свидетелей сообщить.",
+   "url": "https://www.omroepdelft.nl/delft/voorhof/politie-op-zoek-naar-man-die-met-gestolen-bankpassen-pint-bij-geldautomaten-in-delft/",
+   "source": "Omroep Delft",
+   "level": "must"
+  },
+  {
+   "title": "Готов проект обновления Glazen zaal в музее Prinsenhof",
+   "summary": "Благодаря пожертвованию в €8 млн зал станет современной площадкой для мероприятий и свадеб, двор озеленят. Музей на реконструкции с начала 2025 года и откроется в конце 2027 или начале 2028.",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/ontwerp-glazen-zaal-af-plan-museum-prinsenhof-eindelijk-compleet/",
+   "source": "Omroep Delft",
+   "level": "interesting"
+  },
+  {
+   "title": "Гемеенте возобновляет проект Bouwdepot для уязвимой молодёжи",
+   "summary": "Пятнадцать человек 18–27 лет без стабильного жилья получат ежемесячный доход на год. Новый раунд стартует в четвёртом квартале 2026 года.",
+   "url": "https://www.omroepdelft.nl/delft/delft-wil-verder-met-project-om-kwetsbare-jongeren-te-helpen-bouwen-aan-hun-toekomst-door-maandelijks-inkomen/",
+   "source": "Omroep Delft",
+   "level": "interesting"
+  }
+ ],
+ "maybe": [
+  {
+   "title": "Код жёлтый из-за тумана 10 ноября",
+   "url": "https://www.omroepdelft.nl/delft/code-geel-knmi-waarschuwt-voor-dichte-mist/",
+   "source": "Omroep Delft"
+  }
+ ],
+ "skipped": [
+  {
+   "title": "Делфтская гастрономия бьёт тревогу из-за регуляций и долгих процедур",
+   "original": "Delftse horeca luidt de noodklok: regeldruk, lange procedures en slechte communicatie met gemeente",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/delftse-horeca-luidt-de-noodklok-regeldruk-lange-procedures-en-slechte-communicatie-met-gemeente/",
+   "source": "Omroep Delft",
+   "reason": "позиция отраслевой ассоциации, решения пока нет",
+   "flagged": false,
+   "category": "politics"
+  },
+  {
+   "title": "Делфт — самая молодая гемеенте Южной Голландии",
+   "original": "Delft is jongste gemeente van Zuid-Holland: hoogste aandeel 0 tot 25-jarigen van de provincie",
+   "url": "https://www.omroepdelft.nl/delft/delft-is-jongste-gemeente-van-zuid-holland-hoogste-aandeel-0-tot-25-jarigen-van-de-provincie/",
+   "source": "Omroep Delft",
+   "reason": "статистика, не событие",
+   "flagged": false,
+   "category": "feature"
+  },
+  {
+   "title": "Студенты и учёные смогут предлагать идеи Минобороны",
+   "original": "Student of wetenschapper kan straks idee pitchen bij Defensie",
+   "url": "https://delta.tudelft.nl/article/student-of-wetenschapper-kan-straks-idee-pitchen-bij-defensie",
+   "source": "Delta (TU Delft)",
+   "reason": "внутренняя жизнь TU Delft",
+   "flagged": false,
+   "category": "tu_internal"
+  },
+  {
+   "title": "Код жёлтый из-за тумана 10 ноября",
+   "original": "Code geel: KNMI waarschuwt voor dichte mist",
+   "url": "https://www.omroepdelft.nl/delft/code-geel-knmi-waarschuwt-voor-dichte-mist/",
+   "source": "Omroep Delft",
+   "reason": "предупреждение уже истекло",
+   "flagged": true,
+   "category": "other"
+  },
+  {
+   "title": "Теневые учёные",
+   "original": "Schaduwwetenschappers",
+   "url": "https://delta.tudelft.nl/article/schaduwwetenschappers",
+   "source": "Delta (TU Delft)",
+   "reason": "колонка/интервью TU Delft",
+   "flagged": false,
+   "category": "opinion"
+  }
+ ],
+ "skipped_events": [
+  {
+   "title": "Vrouwencirkel Delft – Tijd voor jezelf",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/143125206/vrouwencirkel-ruimte-maken-voor-jezelf",
+   "source": "In Delft",
+   "reason": "частный воркшоп/кружок",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Workshop Gedroogde Bloemen en Planten in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3227410654/creatief-met-gedroogde-planten-en-bloemen",
+   "source": "In Delft",
+   "reason": "воркшоп",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Rondleiding: Student Life on Campus",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3350607929/rondleiding-student-life-on-campus",
+   "source": "In Delft",
+   "reason": "регулярная экскурсия",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Musical- & Popkoor Delft | Blue Vocals Pop & Jazzkoor",
+   "url": "https://uitdelft.com/event/musical-popkoor-delft-blue-vocals-pop-jazzkoor/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Vrouwencirkel – Ruimte maken voor jezelf",
+   "url": "https://uitdelft.com/event/vrouwencirkel-ruimte-maken-voor-jezelf/",
+   "source": "Uit Delft",
+   "reason": "частный кружок",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Jeroen van Veen in Delft",
+   "url": "https://uitdelft.com/event/jeroen-van-veen-in-delft-2/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Delftse duurzame voedselcollectief bijeenkomst",
+   "url": "https://www.delftopzondag.nl/agenda/2026/11/14/delftse-duurzame-voedselcollectief-bijeenkomst-111473",
+   "source": "Delft op Zondag",
+   "reason": "встреча местной инициативы",
+   "date": "2026-11-14"
+  },
+  {
+   "title": "Hollandse Borrel bij Café de Oude Jan in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/654439924/hollandse-borrel-1",
+   "source": "In Delft",
+   "reason": "дубликат",
+   "date": "2026-11-14"
+  },
+  {
+   "title": "Hollandse Borrel",
+   "url": "https://uitdelft.com/event/hollandse-borrel/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-14"
+  },
+  {
+   "title": "Top 2000 Dienst | Hofkerk",
+   "url": "https://uitdelft.com/event/top-2000-dienst-hofkerk/",
+   "source": "Uit Delft",
+   "reason": "церковная служба",
+   "date": "2026-11-14"
+  }
+ ],
+ "events": [
+  {
+   "title": "Терминатор 2 с обсуждением с TU Delft",
+   "when": "ср 11 ноя, 20:15",
+   "where": "Lumen",
+   "price": "€12,70",
+   "summary": "Показ фильма «Терминатор 2» и беседа с TU Delft о фантастике, роботах и ИИ.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1131229424/lumen-x-tu-delft-the-robots-are-coming-terminator-2",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Rob Kemps — Laat me niet alleen",
+   "when": "ср 11 ноя, 20:15",
+   "where": "Theater de Veste",
+   "price": "",
+   "summary": "Шоу известного комика Rob Kemps в Theater de Veste.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/922762705/rob-kemps-laat-me-niet-alleen",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Последний хоровой вечер: Musical- & Popkoor Delft и Blue Vocals",
+   "when": "ср 11 ноя, 20:30",
+   "where": "Hal015, Schieweg 15b",
+   "price": "",
+   "summary": "Совместный вечер двух делфтских любительских хоров: поп, мюзикл и джаз.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2966629500/pop-musical-koor-delft-blue-vocals-pop-jazzkoor",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Фортепианный концерт Jeroen van Veen",
+   "when": "пт 13 ноя",
+   "where": "Nieuwe Kerk, Markt 80",
+   "price": "",
+   "summary": "Пианист Jeroen van Veen выступает в Nieuwe Kerk.",
+   "url": "https://uitdelft.com/event/jeroen-van-veen-in-delft/",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Ligconcert Sessions: вечер музыки, света и удивления",
+   "when": "пт 13 ноя, 19:00–23:00",
+   "where": "Nieuwe Kerk, Markt 80",
+   "price": "",
+   "summary": "Вечер музыки и света в Nieuwe Kerk, слушать можно лёжа.",
+   "url": "https://uitdelft.com/event/ligconcert-sessions-een-avond-vol-muziek-licht-en-verwondering/",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Cultuurlab Live: Bonavox — трибьют U2",
+   "when": "сб 14 ноя",
+   "where": "Brabantse Turfmarkt 9",
+   "price": "",
+   "summary": "Концерт трибьют-группы U2.",
+   "url": "https://uitdelft.com/event/cultuurlab-live-bonavox-a-tribute-to-u2/",
+   "date": "2026-11-14"
+  },
+  {
+   "title": "Hollandse Borrel с Hein & Ken",
+   "when": "сб 14 ноя, 16:00–20:00",
+   "where": "Café de Oude Jan, Heilige Geestkerkhof 4",
+   "price": "бесплатно",
+   "summary": "Голландские хиты и закуски в традиционном делфтском кафе.",
+   "url": "https://uitdelft.com/event/hollandse-borrel-met-hein-ken/",
+   "date": "2026-11-14"
+  },
+  {
+   "title": "Импровизационный театр Withlof: Caleidoscoop",
+   "when": "сб 14 ноя, 20:30",
+   "where": "Lutherse Kerk, Noordeinde 4",
+   "price": "",
+   "summary": "Импровизационный спектакль со сценами и играми по подсказкам публики.",
+   "url": "https://www.delftopzondag.nl/agenda/2026/11/14/withlof-speelt-caleidoscoop-improvisatietheater-111374",
+   "date": "2026-11-14"
+  }
+ ]
+}
