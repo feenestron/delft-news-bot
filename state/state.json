@@ -15,10 +15,13 @@
   "https://uitdelft.com/event/birra-moretti-jamsessie-2/": "2026-11-09T07:30:47.026482+01:00",
   "https://uitdelft.com/event/birra-moretti-jamsessie/": "2026-10-26T07:30:39.024948+01:00",
   "https://uitdelft.com/event/blue-autumn-jamboree/": "2026-11-06T07:30:46.773786+01:00",
+  "https://uitdelft.com/event/blue-suede-shoes-lindy-jam/": "2026-11-13T07:30:45.307031+01:00",
   "https://uitdelft.com/event/boek-film-met-dok-pas-korting/": "2026-11-07T07:30:44.339680+01:00",
+  "https://uitdelft.com/event/bonavox-a-tribute-to-u2/": "2026-11-13T07:30:45.307031+01:00",
   "https://uitdelft.com/event/candle-designing-workshop/": "2026-11-10T07:30:43.264112+01:00",
   "https://uitdelft.com/event/cinema-delfia-snatch/": "2026-10-27T07:30:43.075202+01:00",
   "https://uitdelft.com/event/club-kid-openingsfilm-deff-delft-film-fest/": "2026-10-29T07:30:44.573452+01:00",
+  "https://uitdelft.com/event/concert-accordeonensemble-opus-2/": "2026-11-13T07:30:45.307031+01:00",
   "https://uitdelft.com/event/concert-iso-trio/": "2026-10-23T13:52:05.294313+02:00",
   "https://uitdelft.com/event/culture-club-dance-night/": "2026-11-05T07:30:46.040780+01:00",
   "https://uitdelft.com/event/cultuurlab-live-bonavox-a-tribute-to-u2/": "2026-11-11T07:30:49.801678+01:00",
@@ -40,6 +43,7 @@
   "https://uitdelft.com/event/live-muziek-met-new-moondance/": "2026-10-23T17:59:38.570018+02:00",
   "https://uitdelft.com/event/maandelijkse-pubquiz-cultuurlab-2/": "2026-10-27T07:30:43.075202+01:00",
   "https://uitdelft.com/event/meditatief-ligconcert/": "2026-10-23T13:52:05.294313+02:00",
+  "https://uitdelft.com/event/metalcafe-88-angles-morts-howlett-fosvor/": "2026-11-13T07:30:45.307031+01:00",
   "https://uitdelft.com/event/mijn-lieve-achterdocht/": "2026-10-29T07:30:44.573452+01:00",
   "https://uitdelft.com/event/movies-that-matter-molly-vs-the-machines-nagesprek-engels-gesproken-geen-ondertiteling/": "2026-11-12T07:30:41.519802+01:00",
   "https://uitdelft.com/event/nachtwacht-van-de-kurk-3/": "2026-10-23T13:52:05.294313+02:00",
@@ -118,12 +122,14 @@
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2066454177/wildplukken-en-eetbare-planten-4": "2026-10-30T07:30:40.841940+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2329246818/vermeerlezing-rik-bouman": "2026-11-10T07:30:43.264112+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2386174979/requiem-van-durufle-in-de-oude-kerk": "2026-11-02T07:30:46.043320+01:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/243593655/dinnershow-met-de-tunes-bij-van-der-valk-hotel-delft-a4": "2026-11-13T07:30:45.307031+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2531491701/concert-strijkorkest-de-haagse-beek": "2026-11-07T07:30:44.339680+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2694441275/mijn-persoonlijk-duurzaam-jaarverslag": "2026-11-12T07:30:41.519802+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2698175577/bo-tarenskeen-esther-scheldwacht-i-het-nationale-theater-soekarno": "2026-11-05T07:30:46.040780+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/274641312/klimaatweek-delft-2026-gratis-boompjes-plant-mee": "2026-11-06T07:30:46.773786+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2770216500/halloween-filmavond-nosferatu-phantom-der-nacht": "2026-10-31T07:30:41.484397+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2814320704/theatercollege-boekestijn-de-wijk-eindejaars-26": "2026-11-03T07:30:43.513635+01:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2848464189/wijnen-voor-de-feestdagen-vive-la-france": "2026-11-13T07:30:45.307031+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2881859078/jump-olympics-delft": "2026-10-23T08:21:25.876579+02:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2966629500/pop-musical-koor-delft-blue-vocals-pop-jazzkoor": "2026-11-11T07:30:49.801678+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3044560141/science-day-tu-delft-beleef-de-wereld-van-wetenschap-en-techniek": "2026-10-22T12:48:07.748509+02:00",
@@ -141,8 +147,10 @@
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3501723862/zero-dance-theatre-amsterdams-andaluisch-orkest-aao-ghosts": "2026-11-10T07:30:43.264112+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/351665473/jubileumconcert-focalicious-dit-zijn-wij": "2026-11-07T07:30:44.339680+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/35243996/van-istanbul-naar-marrakech": "2026-10-31T07:30:41.484397+01:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3545802877/kasper-van-der-laan-ruim": "2026-11-13T07:30:45.307031+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3560270948/gravity-other-myths-the-mirror": "2026-11-12T07:30:41.519802+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3569346936/the-awkward-in-de-lutherse-kerk": "2026-11-05T07:30:46.040780+01:00",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3591880440/sabrina-starke-weather-the-storm": "2026-11-13T07:30:45.307031+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3621115087/pieter-derks-ja-leuk": "2026-10-30T07:30:40.841940+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3645198751/requiemconcert-met-kathedrale-koor-utrecht-op-zondagmiddag-1-november-in-de-maria-van-jessekerk-te-delft": "2026-11-01T07:30:40.489962+01:00",
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3806994065/ligconcert-r-sessions-een-avond-vol-muziek-licht-en-verwondering": "2026-11-10T07:30:43.264112+01:00",
@@ -205,24 +213,6 @@
    "title": "Concert Accordeonensemble Opus 2",
    "venue": ""
   },
-  "https://www.delftopzondag.nl/agenda/2026/11/5/dreamstate-sound-journey-theta-session-111167": {
-   "date_text": "sound journey - Theta Session donderdag 5 november 2026 19:30 tot 22:00 Theta Session is een mental wellness. Frequentie als toegangspo",
-   "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-05",
-   "text": "Theta Session is een mental wellness. Frequentie als toegangspoort naar het onderbewustzijn. Theta Session is een mental wellness ervaring. Een diepe ontspanningsreis waarin live elektronische klank..",
-   "title": "dreamstate sound journey - Theta Session",
-   "venue": ""
-  },
-  "https://www.delftopzondag.nl/agenda/2026/11/6/het-voetlicht-speelt-trammelant-in-de-blokhut-110980": {
-   "date_text": "speelt Trammelant in de blokhut vrijdag 6 november 2026 20:00 tot 20:30 Oma Marie wil haar verjaardag gezellig vieren met haar kinderen",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-11-06",
-   "text": "Oma Marie wil haar verjaardag gezellig vieren met haar kinderen en nodigt de hele familie uit voor een weekendje in een blokhut midden in het bos. Klinkt gezellig… toch?Nou, niet helemaal.",
-   "title": "Het Voetlicht speelt Trammelant in de blokhut",
-   "venue": ""
-  },
   "https://www.delftopzondag.nl/agenda/2026/11/7/concert-delfts-symphonie-orkest-de-roep-van-de-hoorn-111152": {
    "date_text": "e Orkest: de Roep van de Hoorn zaterdag 7 november 2026 20:15 tot 22:15 Op zaterdag 7 november en zondag 8 november speelt het Delfts S",
    "end": null,
@@ -277,6 +267,15 @@
    "title": "Het Voetlicht speelt Trammelant in de blokhut",
    "venue": ""
   },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/100191951/de-delftse-steptocht": {
+   "date_text": "",
+   "end": null,
+   "fetched": "2026-11-13T07:30:45.307031+01:00",
+   "start": "2026-03-03",
+   "text": "Wim Sonneveld zong het al… “Op de step, op de step, ik ben zo blij dat ik hem heb!” Er geven maar weinig vervoersmiddelen zo veel lol als de step! Plezier verzekerd, dus! Niet alleen omdat we naast een korte tour door het charmante centrum van de stad doen, maar vooral de omgeving gaan verkennen.",
+   "title": "De Delftse Steptocht",
+   "venue": ""
+  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1022414755/repair-cafe-1": {
    "date_text": "",
    "end": null,
@@ -313,15 +312,6 @@
    "title": "Terminator 2 – The Robots Are Coming | Delft",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1236353388/micha-wertheim-micha-wertheim-voor-iedereen": {
-   "date_text": "] [reprise] Lees minder Wanneer Maandag 2 november 2026 20.15 - 22.15 uur Donderdag 11 maart 2027 20.15 - 22.15 uur Prijzen Regulier €",
-   "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Micha Wertheim - Micha Wertheim voor iedereen 2 november, 11 maart 2027 Contact Theater de Veste Theater de Veste Asvest 1 2611 PK Delft Plan je route naar Micha Wertheim - Micha Wertheim voor iedereen Route Plan je route naar Micha Wertheim - Micha Wertheim voor iedereen Bel Bel: 015 - 212 13 12 Micha Wertheim - Micha Wertheim voor iedereen Website Bezoek de website van Micha Wertheim - Micha Wertheim voor iedereen Koop tickets Iedereen zal het naar zijn zin hebben, iedereen zal lachen, iederee",
-   "title": "Micha Wertheim - Micha Wertheim voor iedereen",
-   "venue": "Theater de Veste"
-  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/127797459/klimaatweek-2026-ontwerp-een-drijvende-stad": {
    "date_text": "ren van 7 tot 12 jaar. Wanneer Woensdag 4 november 2026 14.30 - 16.00 uur In de buurt Kaartelementen overslaan Deel deze pagina Deel de",
    "end": null,
@@ -357,15 +347,6 @@
    "text": "The Bluegrass Bandits Maak kennis met The Bluegrass Bandits, de allereerste 100% vrouwelijke bluegrassband van Nederland! Deze getalenteerde muzikanten blazen een frisse wind door de bluegrasswereld met hun combinatie van virtuositeit, meerstemmige zang en een…",
    "title": "Blue Autumn Jamboree",
    "venue": "Hal015"
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1373327559/escaperoute-het-geheim-van-de-beeldenstorm": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2024-07-17",
-   "text": "Ontdek de Oude en Nieuwe Kerk met een interactieve escaperoute vol puzzels, codes en aanwijzingen rond het verhaal van de beeldenstorm.",
-   "title": "Escaperoute Het geheim van de beeldenstorm Delft",
-   "venue": ""
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/143125206/vrouwencirkel-ruimte-maken-voor-jezelf": {
    "date_text": "en wat jij nodig hebt. Wanneer Woensdag 11 november 2026 19.00 - 21.00 uur Prijzen € 24,95 In de buurt Kaartelementen overslaan Deel dez",
@@ -493,33 +474,6 @@
    "title": "Sunday Sounds - Tuesday Afternoon",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1906086426/willem-van-oranje-all-in-arrangement-bij-ludique": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-01-21",
-   "text": "Begin of eindig uw theateravond in ontspannen sfeer, met verrassende gerechten en zorgvuldig geselecteerde wijnen. Speciaal voor musicalbezoekers stellen wij arrangementen samen die perfect aansluiten op de voorstelling. Kies voor een zorgvuldig afgestemd menu dat qua timing én sfeer aansluit.",
-   "title": "Willem van Oranje all-in arrangement bij Ludique",
-   "venue": "Ludique"
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1922947722/klimaatweek-delft-2026-klimaatontbijt": {
-   "date_text": "niseert deze activiteit Wanneer Maandag 2 november 2026 08.30 - 10.00 uur In de buurt Kaartelementen overslaan Deel deze pagina Deel de",
-   "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Ontdek het Klimaatontbijt tijdens de Delftse Klimaatweek 2026. Laat je inspireren door duurzame ideeën en ontdek hoe we samen werken aan een leefbaar Delft,",
-   "title": "Klimaatweek Delft 2026 - Klimaatontbijt",
-   "venue": ""
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1929379417/de-leukste-stadswandeling-van-delft": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-03-03",
-   "text": "De stadswandelingen van Do DELFT zijn informatief, soms ook praktisch, maar altijd ontspannen en gezellig! Niet alleen historische feitjes, maar ook mooie anekdotes en de nodige humor. We struinen door de klinkerstraatjes, langs de grachten en over vorstelijke pleinen. Benieuwd waarom?",
-   "title": "De leukste stadswandeling van Delft",
-   "venue": ""
-  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2028079035/natuurtekenen-in-de-natuurschuur-vrijdag": {
    "date_text": "r om collages te maken. Wanneer Vrijdag 6 november 2026 10.00 - 12.00 uur Vrijdag 4 december 2026 10.00 - 12.00 uur Prijzen € 5,00 In d",
    "end": null,
@@ -527,15 +481,6 @@
    "start": "2026-11-06",
    "text": "laat je inspireren door de natuur tijdens deze ontspannen tekenochtend in de Natuurschuur. Neem de tijd om zelfstandig aan de slag te gaan, nieuwe ideeën op te doen en je creativiteit de vrije loop te laten",
    "title": "Natuurtekenen in de Natuurschuur",
-   "venue": ""
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/204252727/klimaatweek-delft-2026-de-oude-delftse-waterloop": {
-   "date_text": "niseert deze activiteit Wanneer Maandag 2 november 2026 16.00 - 17.30 uur Dinsdag 3 november 2026 16.00 - 17.30 uur In de buurt Kaartel",
-   "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Ontdek De Oude Delftse Waterloop tijdens de Delftse Klimaatweek 2026. Laat je inspireren door duurzame ideeën en ontdek hoe we samen werken aan een leefbaar Delft.",
-   "title": "Klimaatweek Delft 2026 - De Oude Delftse Waterloop",
    "venue": ""
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2078494507/doe-de-podwalk-het-delft-van-vermeer": {
@@ -547,24 +492,6 @@
    "title": "Podcast Het Delft van Vermeer",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2107916490/oog-in-oog-met-willem-van-oranje-rondleiding-kerken": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-02-09",
-   "text": "Laat honderden jaren aan geschiedenis aan je voorbij gaan tijdens rondleidingen in de Oude en Nieuwe Kerk. Bezichtig de kerken zelfstandig met behulp van onze brochures, of reserveer vooraf een persoonlijke rondleiding! Tijdens een rondleiding maak je kennis met de vele en gevarieerde verhalen.",
-   "title": "Oog in oog met Willem van Oranje - Rondleiding kerken",
-   "venue": "De Oude en Nieuwe Kerk van Delft"
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/212051172/bezoek-het-lekkerste-winkeltje-van-delft": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2025-02-06",
-   "text": "Voor echte zoetekauwen: Winkeltje Kouwenhoven - het leukste en oudste winkeltje van de stad - maakt deel uit van Museum Prinsenhof Delft. Je vindt hier Oudhollandse snoepjes.",
-   "title": "Bezoek het lekkerste winkeltje van Delft",
-   "venue": "Winkeltje Kouwenhoven"
-  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2179204718/willem-van-oranje-beleef-proefpakket": {
    "date_text": "",
    "end": null,
@@ -573,15 +500,6 @@
    "text": "Kom in de Oranje sferen met een heerlijk beleef- & proefpakket, de perfecte manier om je voor te bereiden op de musical Willem van Oranje. Proost op Oranje met twee flesjes Princebier, een bijpassend glas en Willem van Oranje Princebierkaas.",
    "title": "Willem van Oranje beleef- & proefpakket",
    "venue": "Stadsbrouwerij De Koperen Kat"
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2257175159/willem-van-oranje-schilderworkshop": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-01-21",
-   "text": "Willem van Oranje staat opnieuw in de schijnwerpers met de gelijknamige musical. Een mooi moment om zijn bijzondere band met Delft verder te ontdekken! Bij Royal Delft Museum doe je dat niet alleen door de verhalen in het museum, maar ook op een creatieve manier. Tijdens onze schilderworkshops!",
-   "title": "Willem van Oranje Schilderworkshop",
-   "venue": "Royal Delft Museum"
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2271529447/verhalenbankjes-op-het-vesteplein": {
    "date_text": "kken. Lees minder Wanneer Dagelijks t/m 31 december 2026 In de buurt Kaartelementen overslaan Deel deze pagina Deel deze pagina op Faceb",
@@ -610,13 +528,13 @@
    "title": "Vermeerlezing Rik Bouman",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2386174979/requiem-van-durufle-in-de-oude-kerk": {
-   "date_text": "d in Delft. Lees minder Wanneer Maandag 2 november 2026 20.00 - 21.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/243593655/dinnershow-met-de-tunes-bij-van-der-valk-hotel-delft-a4": {
+   "date_text": "rlijk eten! Lees minder Wanneer Vrijdag 13 november 2026 18.00 - 22.00 uur Zaterdag 14 november 2026 18.00 - 22.00 uur Prijzen € 94,50 I",
    "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Beleef het Requiem van Duruflé in de Oude Kerk Delft. Geniet van indrukwekkende koor- en orgelmuziek tijdens een bijzonder Allerzielenconcert.",
-   "title": "Requiem van Duruflé – Allerzielenconcert Delft",
+   "fetched": "2026-11-13T07:30:45.307031+01:00",
+   "start": "2026-11-13",
+   "text": "Geniet van een avond vol muziek, humor en cabaret tijdens de dinnershow van De Tunes, inclusief een uitgebreid driegangendiner.",
+   "title": "Dinnershow met De Tunes in Delft",
    "venue": ""
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2531491701/concert-strijkorkest-de-haagse-beek": {
@@ -646,24 +564,6 @@
    "title": "Willem van Oranje wandeling",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2585554381/onbeperkt-tafelen-voor-een-vaste-prijs-bij-heinde": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-02-09",
-   "text": "Het ideale concept voor wie gezellig wil eten voordat ze naar Willem van Oranje – De Musical gaan, of juist lekker lang wil blijven tafelen. Geen tijdsdruk, geen haast, alleen onbezorgd genieten! Bestel onbeperkt heerlijke gerechtjes én drankjes voor een vaste prijs.",
-   "title": "Onbeperkt tafelen voor een vaste prijs bij Heinde",
-   "venue": "Heinde Delft"
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2626927526/klimaatweek-delft-2026-groene-oase-landgoed-buitenleeft": {
-   "date_text": "an je tuin tot je bord. Wanneer Maandag 2 november 2026 15.00 - 16.00 uur In de buurt Kaartelementen overslaan Deel deze pagina Deel de",
-   "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Ontdek Groene oase landgoed Buitenleeft tijdens de Delftse Klimaatweek 2026. Laat je inspireren door duurzame ideeën en ontdek hoe we samen werken aan een leefbaar Delft.",
-   "title": "Klimaatweek Delft 2026 - Groene oase landgoed Buitenleeft",
-   "venue": ""
-  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2657059043/behind-the-scenes-fabriekstour-royal-delft": {
    "date_text": "tour: 11:30 uur Wanneer Elke zondag t/m 30 november 2026 om 10.00 uur om 11.30 uur Prijzen € 10,00 In de buurt Kaartelementen overslaan",
    "end": null,
@@ -672,15 +572,6 @@
    "text": "Ontdek de verhalen achter het ambacht en ga achter de schermen in de historische fabriek van Royal Delft. Tijdens deze exclusieve tour krijg je toegang tot plekken die normaal niet toegankelijk zijn voor publiek en ervaar je het ambacht van dichtbij.",
    "title": "Behind the Scenes Fabriekstour Royal Delft",
    "venue": ""
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2677207862/willem-van-oranje-delftse-hapjesboom-bij-het-boterhuis": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-01-21",
-   "text": "Tijdens je bezoek aan Willem van Oranje - De Musical mag een gezellige culinaire stop niet ontbreken. Midden in het hart van Delft vind je Het Boterhuis, een van de meest veelzijdige horecagelegenheden van de stad. Hier proef je de stad letterlijk met een unieke ervaring: de Delftse Hapjesboom.",
-   "title": "Willem van Oranje - Delftse Hapjesboom bij Het Boterhuis",
-   "venue": "Het Boterhuis"
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2694441275/mijn-persoonlijk-duurzaam-jaarverslag": {
    "date_text": "toekomst! Lees minder Wanneer Donderdag 12 november 2026 13.00 - 15.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
@@ -718,23 +609,14 @@
    "title": "Movies that Matter: Molly vs The Machines",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2814320704/theatercollege-boekestijn-de-wijk-eindejaars-26": {
-   "date_text": "rijs inclusief drankje] Wanneer Dinsdag 3 november 2026 20.15 - 22.15 uur Prijzen Regulier € 31,00 CJP (Cultureel Jongeren Paspoort) €",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2848464189/wijnen-voor-de-feestdagen-vive-la-france": {
+   "date_text": "feer van de feestdagen! Wanneer Vrijdag 13 november 2026 19.30 - 22.30 uur Prijzen € 45,00 In de buurt Kaartelementen overslaan Deel dez",
    "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-11-03",
-   "text": "Boekestijn & De Wijk - Boekestijn & De Wijk Live: Een wereld zonder spelregels. dinsdag 3 november Contact Theater de Veste Theater de Veste Asvest 1 2611 PK Delft Plan je route naar Boekestijn & De Wijk - Boekestijn & De Wijk Live: Een wereld zonder spelregels. Route Plan je route naar Boekestijn & De Wijk - Boekestijn & De Wijk Live: Een wereld zonder spelregels. Bel Bel: 015 - 212 13 12 Boekestijn & De Wijk - Boekestijn & De Wijk Live: Een wereld zonder spelregels. Website Bezoek de website v",
-   "title": "Boekestijn & De Wijk - Boekestijn & De Wijk Live: Een wereld zonder spelregels.",
-   "venue": "Theater de Veste"
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2821328719/proef-de-historie-bij-delfts-brouwhuis": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-01-28",
-   "text": "n een unieke, 700 jaar oude kelder - ooit een Delftse brouwerij - geniet je van ambachtelijke bieren van Delftse Brouwers en goed eten in een prachtige historische setting. Tijdens archeologisch onderzoek zijn hier zelfs scherven van een middeleeuwse bierpul gevonden. Een perfecte plek.",
-   "title": "Proef de historie bij Delfts Brouwhuis",
-   "venue": "Delfts Brouwhuis"
+   "fetched": "2026-11-13T07:30:45.307031+01:00",
+   "start": "2026-11-13",
+   "text": "Ontdek feestelijke Franse wijnen tijdens een wijnproeverij. Van Champagne tot tafelwijnen die perfect passen bij wild, kaas en het kerstdiner.",
+   "title": "Franse wijnproeverij – Wijnen voor de feestdagen",
+   "venue": ""
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2915566546/expat-cinema-el-castigo-1": {
    "date_text": "",
@@ -781,15 +663,6 @@
    "title": "Delftse Waterloop – Excursie langs het water in Delft",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3131304111/proeflessen-salsa-bachata-en-kizomba": {
-   "date_text": "samen dansen kan zijn! Wanneer Maandag 2 november 2026 19.00 - 22.00 uur Prijzen € 8,50 In de buurt Kaartelementen overslaan Deel deze",
-   "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Ontdek Salsa, Dominicaanse Bachata en Kizomba Fusion bij Typical Tropical in Cultuurlab Delft. Probeer een dansles of volg een complete cursus.",
-   "title": "Typical Tropical – Salsa, Bachata en Kizomba Delft",
-   "venue": ""
-  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3146738497/kerst-schilderworkshop": {
    "date_text": "de feestdagen. Wanneer Dagelijks vanaf 9 november 2026 t/m 29 december 2026 14.00 - 16.30 uur Prijzen € 69,50 In de buurt Kaartelementen overslaan Deel dez",
    "end": "2026-12-29",
@@ -817,15 +690,6 @@
    "title": "Techniekstudio: Maken met Plastics",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3325431448/kom-in-de-willem-van-oranje-mood-bij-moodz": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-01-28",
-   "text": "Maak je bezoek aan de voorstelling van Willem van Oranje - De Musical compleet met een heerlijk 3- of 4-gangen diner bij Moodz! Moodz serveert eten vanuit de hele wereld. Ze halen de lekkerste gerechten uit verschillende landen en streken, zo leer je niet alleen nieuwe gerechten kennen.",
-   "title": "Kom in de Willem van Oranje-mood bij Moodz",
-   "venue": "MOODZ eten & drinken"
-  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3350607929/rondleiding-student-life-on-campus": {
    "date_text": "Lees minder Wanneer Elke woensdag vanaf 11 november 2026 t/m 16 november 2026 14.30 - 16.30 uur 25 november: Engelse rondleiding Prijzen € 7,50 In de buurt K",
    "end": "2026-11-16",
@@ -833,24 +697,6 @@
    "start": "2026-11-11",
    "text": "Benieuwd hoe het studentenleven op de TU Delft er écht uitziet? Tijdens de Student Life on Campus Tour wandel je in ongeveer 50 minuten over de campus en ontdek je waar studenten studeren, sporten, ontspannen en samenkomen. Je bezoekt iconische plekken zoals de Universiteitsbibliotheek en Echo.",
    "title": "Rondleiding: Student Life on Campus",
-   "venue": ""
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3352567018/klimaatweek-delft-2026-onze-verborgen-impact-in-beeld": {
-   "date_text": "g, woensdag, donderdag en vrijdag vanaf 2 november 2026 t/m 6 november 2026 Elke zaterdag 09.00 - 17.00 uur In de buurt Kaartelementen overslaan Deel deze",
-   "end": "2026-11-06",
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Ontdek Onze Verborgen Impact in beeld tijdens de Delftse Klimaatweek 2026. Laat je inspireren door duurzame ideeën en ontdek hoe we samen werken aan een leefbaar Delft.",
-   "title": "Klimaatweek Delft 2026 - Onze Verborgen Impact in beeld",
-   "venue": ""
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3450132537/het-allerzielen-viering": {
-   "date_text": "e ons dierbaar blijven. Wanneer Maandag 2 november 2026 20.00 - 21.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
-   "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Herdenk overleden dierbaren tijdens Allerzielen in de Oud-Katholieke Kerk in Delft. Een ingetogen viering met kaarsen, stilte en bezinning.",
-   "title": "Allerzielen Delft – Herdenking in de Oud-Katholieke Kerk",
    "venue": ""
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3487279521/warenmarkt-markt-brabantse-turfmarkt": {
@@ -889,6 +735,15 @@
    "title": "Het Willem van Oranje Theater Menu",
    "venue": "San Marco Pizzeria Ristorante"
   },
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3545802877/kasper-van-der-laan-ruim": {
+   "date_text": "Lees minder Wanneer Uitverkocht Vrijdag 13 november 2026 20.15 - 21.45 uur Uitverkocht Zaterdag 14 november 2026 20.15 - 21.45 uur Prijz",
+   "end": null,
+   "fetched": "2026-11-13T07:30:45.307031+01:00",
+   "start": "2026-11-13",
+   "text": "Kasper van der Laan - Ruim Uitverkocht t/m 14 november Contact Theater de Veste Theater de Veste Asvest 1 2611 PK Delft Plan je route naar Kasper van der Laan - Ruim Route Plan je route naar Kasper van der Laan - Ruim Bel Bel: 015 - 212 13 12 Kasper van der Laan - Ruim Website Bezoek de website van Kasper van der Laan - Ruim Koop tickets Let op! Deze activiteit is uitverkocht. Als je hem nu ziet, zou je het niet zeggen: Kasper bleef vroeger graag op de achtergrond. Die tijd is voorbij. Hij heeft",
+   "title": "Kasper van der Laan - Ruim",
+   "venue": "Theater de Veste"
+  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3560270948/gravity-other-myths-the-mirror": {
    "date_text": "rora Nova Lees minder Wanneer Donderdag 12 november 2026 om 20.15 uur Prijzen Regulier € 34,50 CJP (Cultureel Jongeren Paspoort) € 32,50",
    "end": null,
@@ -916,23 +771,14 @@
    "title": "The Awkward – Popronde Delft in de Lutherse Kerk",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3579706122/vos-en-haanen-kunstzusters-in-oosterbeek": {
-   "date_text": "0 uur De tentoonstelling is te zien van 10 maart t/m 4 oktober 2026. Prijzen Regulier € 12,00 Kinderen Gratis tot 18 jaar MJK (Museumjaarkaart) Gra",
-   "end": "2026-10-04",
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-03-10",
-   "text": "Adriana Haanen (1814-1895) en Maria Vos (1824-1906) zijn twee getalenteerde kunstenaressen in de negentiende eeuw, een eeuw waarin het voor vrouwen niet eenvoudig is om kunstenaar te zijn. De tentoonstelling in Museum Paul Tetar van Elven geeft Vos en Haanen, de aandacht die ze verdienen.",
-   "title": "VOS en HAANEN - Kunstzusters in Oosterbeek",
-   "venue": "Museum Paul Tétar van Elven"
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3617511853/klimaatweek-delft-2026-klimaatweek-in-het-taalcafe-delft": {
-   "date_text": "aan duurzame projecten! Wanneer Dinsdag 3 november 2026 20.00 - 21.30 uur In de buurt Kaartelementen overslaan Deel deze pagina Deel de",
+  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3591880440/sabrina-starke-weather-the-storm": {
+   "date_text": "stem opnieuw te vinden Wanneer Vrijdag 13 november 2026 20.30 - 20.30 uur In de buurt Kaartelementen overslaan Deel deze pagina Deel de",
    "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-11-03",
-   "text": "Ontdek de Delftse Klimaatweek 2026 met inspirerende activiteiten over duurzaamheid, innovatie, circulariteit en vergroening in Delft.",
-   "title": "Klimaatweek Delft 2026 - Klimaatweek in het Taalcafé Delft",
-   "venue": "DOK in OPEN"
+   "fetched": "2026-11-13T07:30:45.307031+01:00",
+   "start": "2026-11-13",
+   "text": "Sabrina neemt het publiek mee op een persoonlijke en emotionele reis door de stormen van het leven. Na een periode van ziekte en onzekerheid, waarin zowel haar toekomst als de hele wereld op zijn kop…",
+   "title": "Sabrina Starke | Weather the Storm",
+   "venue": "Hal015"
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3707827367/thee-en-textiel": {
    "date_text": "oor Buitenhof. Wanneer Elke dinsdag t/m 8 december 2026 19.00 - 21.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
@@ -942,15 +788,6 @@
    "text": "Maak met bewoners van Buitenhof een kleurrijk textielkunstwerk en vertaal jouw bijzondere horizon naar stof tijdens Thee en Textiel.",
    "title": "Thee en Textiel – Horizonnen verbinden in Buitenhof",
    "venue": ""
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3744284633/een-avond-vol-theater-historie-lekker-eten-bij-de-waag": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-01-28",
-   "text": "De Waag gelooft dat de echte magie van dineren, schuilt in warmte, oprechtheid en gedeelde momenten. In dit prachtige historische pand, gelegen in Hartje Delft, combineert erfgoedcharme met verfijnd comfort; fluwele zitmeubelen, houten vloeren, dieprode en gouden accenten, gallerijachtige kunst",
-   "title": "Een avond vol theater, historie & lekker eten bij de Waag",
-   "venue": "De Waag"
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3760596436/klimaatweek-delft-2026-dierensalade-maken": {
    "date_text": "4 tot en met 12 jaar. Wanneer Woensdag 4 november 2026 14.30 - 16.00 uur In de buurt Kaartelementen overslaan Deel deze pagina Deel de",
@@ -979,15 +816,6 @@
    "title": "Workshop Glasmozaïek",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3806994065/ligconcert-r-sessions-een-avond-vol-muziek-licht-en-verwondering": {
-   "date_text": "imte elkaar versterken. Wanneer Vrijdag 13 november 2026 19.30 - 23.30 uur Prijzen € 19,95 In de buurt Kaartelementen overslaan Deel dez",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-11-13",
-   "text": "Beleef Ligconcert® Sessions in de Nieuwe Kerk Delft met live pianomuziek van Jeroen van Veen en indrukwekkende lichtprojecties.",
-   "title": "Ligconcert® Sessions in de Nieuwe Kerk Delft",
-   "venue": ""
-  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3876065804/intocht-sinterklaas": {
    "date_text": "ken van de cadeautjes. Wanneer Zaterdag 21 november 2026 om 12.15 uur In de buurt Kaartelementen overslaan Deel deze pagina Deel deze pa",
    "end": null,
@@ -997,15 +825,6 @@
    "title": "Intocht Sinterklaas in Delft",
    "venue": ""
   },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3886352404/roboexotica": {
-   "date_text": "nisme elkaar ontmoeten. Wanneer Vrijdag 6 november 2026 Zaterdag 7 november 2026 In de buurt Kaartelementen overslaan Deel deze pagina",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-11-06",
-   "text": "Ontdek Roboexotica in Delft: een bijzondere mix van robotica, kunst, cocktails, mode en experimentele technologie.",
-   "title": "Roboexotica Festival voor cocktailrobots in Delft",
-   "venue": "The Social Hub Delft ****"
-  },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3899816845/open-studio": {
    "date_text": "",
    "end": null,
@@ -1013,24 +832,6 @@
    "start": "2026-01-14",
    "text": "Elke week komen muzikanten samen om muziek te maken, te oefenen en nieuwe ideeën te ontwikkelen. Iedereen is welkom, van beginner tot (semi-)professional, van 12 tot 112 jaar en uit alle muziekstijlen! Speel samen en ontwikkel je skills. Open Studio Delft is geen vaste band of les,.",
    "title": "Open Studio",
-   "venue": ""
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3902129056/uniek-dineren-in-delft-met-willem-van-oranje": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-01-21",
-   "text": "Combineer jouw bezoek aan de musical met een diner bij LEF Restaurant & Bar in Delft! LEF is hét leukste eetcafé van Delft; levendig, gastvrij en met een heel knus terras aan het Doelenplein, vlak achter het beroemde “Straatje van Vermeer”. Van lunch tot diner, studenten tot toeristen.",
-   "title": "Uniek dineren in Delft met Willem van Oranje",
-   "venue": "LEF"
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3952380720/klimaatweek-delft-2026-klimaatontbijt-1": {
-   "date_text": "niseert deze activiteit Wanneer Maandag 2 november 2026 11.00 - 12.15 uur Dinsdag 3 november 2026 12.00 - 13.15 uur In de buurt Kaartel",
-   "end": null,
-   "fetched": "2026-11-02T07:30:46.043320+01:00",
-   "start": "2026-11-02",
-   "text": "Ontdek de Rondleiding Nieuw Delft tijdens de Delftse Klimaatweek 2026. Laat je inspireren door duurzame ideeën en ontdek hoe we samen werken aan een leefbaar Delft.",
-   "title": "Klimaatweek Delft 2026 - Rondleiding Nieuw Delft",
    "venue": ""
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3980076318/delftdesign-excursie-oude-en-nieuwe-waterloop-1": {
@@ -1068,15 +869,6 @@
    "text": "Geniet van een gezellige avond met diner, dj en Gerrit Schneijder tijdens de Moodz Meezing Dinnershow in Delft.",
    "title": "Moodz Meezing Dinnershow met Gerrit Schneijder",
    "venue": ""
-  },
-  "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4142085880/historisch-genieten-bij-belvedere": {
-   "date_text": "",
-   "end": null,
-   "fetched": "2026-11-03T07:30:43.513635+01:00",
-   "start": "2026-01-21",
-   "text": "Ons monumentale pand bevindt zich op een steenworp afstand van het beroemde praalgraf van Willem van Oranje in de Nieuwe kerk. Geniet voorafgaand aan de voorstelling van de musical 'Willem van Oranje' van een smaakvol twee- of driegangendiner, terwijl het rijke verleden van Delft voelbaar aanwezig.",
-   "title": "Historisch genieten bij Belvédère",
-   "venue": "Belgisch Bier Café Belvédère"
   },
   "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4181529749/kom-langs-de-gheren-tijdens-het-landelijk-atelierweekend": {
    "date_text": "iet nodig! Lees minder Wanneer Zaterdag 7 november 2026 10.00 - 17.00 uur Prijzen Gratis In de buurt Kaartelementen overslaan Deel deze",
@@ -1460,12 +1252,18 @@
    "events": 8,
    "message_id": 39,
    "news": 2
+  },
+  {
+   "date": "2026-11-13",
+   "events": 8,
+   "message_id": 40,
+   "news": 5
   }
  ],
  "known_chats": {
   "-1004340208501": "Delft News group (supergroup)"
  },
- "last_post_date": "2026-11-12",
+ "last_post_date": "2026-11-13",
  "seen": {
   "https://delta.tudelft.nl/article/13-vidibeurzen-naar-delftse-onderzoekers": "2026-10-23T08:21:25.876579+02:00",
   "https://delta.tudelft.nl/article/6-vragen-over-het-php-lek-aan-tu-cybersecurity-onderzoeker-harm-griffioen": "2026-10-22T12:48:07.748509+02:00",
@@ -1479,6 +1277,7 @@
   "https://delta.tudelft.nl/article/groepswerk": "2026-10-22T12:21:18.675555+02:00",
   "https://delta.tudelft.nl/article/hardt-hyperloop-maakt-doorstart": "2026-11-07T07:30:44.339680+01:00",
   "https://delta.tudelft.nl/article/jevons-paradox-2": "2026-10-22T12:48:07.748509+02:00",
+  "https://delta.tudelft.nl/article/kanjer": "2026-11-13T07:30:45.307031+01:00",
   "https://delta.tudelft.nl/article/keurmeester-nvao-kijkt-niet-meer-naar-bijzondere-kenmerken-van-opleidingen": "2026-10-30T07:30:40.841940+01:00",
   "https://delta.tudelft.nl/article/keuzegids-tu-delft-hekkensluiter-technische-universiteiten": "2026-11-06T07:30:46.773786+01:00",
   "https://delta.tudelft.nl/article/klacht-over-hogeschoolblad-sam-onterecht-oordeelt-raad-voor-de-journalistiek": "2026-11-12T07:30:41.519802+01:00",
@@ -1506,6 +1305,7 @@
   "https://delta.tudelft.nl/article/toe-aan-rust-voor-je-brein-de-zen-box-helpt-je-verder": "2026-10-23T13:52:05.294313+02:00",
   "https://delta.tudelft.nl/article/toezicht-op-hoger-onderwijs-moet-beter-vindt-onderwijsminister-letschert": "2026-10-27T07:30:43.075202+01:00",
   "https://delta.tudelft.nl/article/tu-delft-verwelkomt-meer-eerstejaars-ondanks-landelijke-daling": "2026-10-22T12:48:07.748509+02:00",
+  "https://delta.tudelft.nl/article/tu-onderzoekt-mogelijk-privacy-incident-door-problemen-met-gedeelde-mailboxen": "2026-11-13T07:30:45.307031+01:00",
   "https://delta.tudelft.nl/article/tu-postdoc-bij-protest-tegen-microsoft-datacenter-we-moeten-inspraak-regelen": "2026-11-10T07:30:43.264112+01:00",
   "https://delta.tudelft.nl/article/tu-student-wint-hema-ontwerpwedstrijd": "2026-10-29T07:30:44.573452+01:00",
   "https://delta.tudelft.nl/article/tu-vervroegt-medewerkersmonitor-na-kritiek-arbeidsinspectie": "2026-11-05T07:30:46.040780+01:00",
@@ -1518,6 +1318,7 @@
   "https://delta.tudelft.nl/article/wie-krijgt-het-luik-het-snelst-open-eerstejaars-werktuigbouwkunde-testen-elkaars-ontwerp": "2026-10-29T07:30:44.573452+01:00",
   "https://delta.tudelft.nl/article/zo-werkt-de-wereld-nu-eenmaal": "2026-11-04T07:30:41.096386+01:00",
   "https://www.delft.nl/actie-voor-de-voedselbank": "2026-10-30T07:30:40.841940+01:00",
+  "https://www.delft.nl/afsprakenformulier-vrijdag-tijdelijk-offline": "2026-11-13T07:30:45.307031+01:00",
   "https://www.delft.nl/ambitieuze-aanpak-van-vakidioten": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delft.nl/asielopvang-nootdorpsepadsportring": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/balies-gemeente-dicht": "2026-10-22T12:48:07.748509+02:00",
@@ -1532,6 +1333,7 @@
   "https://www.delft.nl/gezond-ontbijten-met-de-burgemeester": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/gratis-uw-gezondheid-meten": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delft.nl/hulp-bij-geldzorgen": "2026-11-12T07:30:41.519802+01:00",
+  "https://www.delft.nl/informatiebijeenkomst-asielopvang": "2026-11-13T07:30:45.307031+01:00",
   "https://www.delft.nl/inkoopactie-isolatie": "2026-10-23T08:21:25.876579+02:00",
   "https://www.delft.nl/nieuw-tramspoor-papsouwselaan": "2026-10-23T08:21:25.876579+02:00",
   "https://www.delft.nl/ongewenst-gedrag-zeg-er-iets-van": "2026-10-22T12:48:07.748509+02:00",
@@ -1545,6 +1347,7 @@
   "https://www.delft.nl/stadsgesprek-jongeren": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delft.nl/storing-reisdocumenten-verholpen": "2026-10-22T12:48:07.748509+02:00",
   "https://www.delft.nl/stuur-uw-gedicht-voor-lichtjesavond": "2026-11-05T07:30:46.040780+01:00",
+  "https://www.delft.nl/vernieuwde-glazen-zaal-prinsenhof": "2026-11-13T07:30:45.307031+01:00",
   "https://www.delft.nl/vertrouwenspersoon-vrijwilligers": "2026-10-28T07:30:42.560930+01:00",
   "https://www.delft.nl/werken-aan-een-veilig-station": "2026-11-12T07:30:41.519802+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111041/door-de-lens-van-koos-club-delft-festival": "2026-10-22T12:10:58.149191+02:00",
@@ -1658,6 +1461,7 @@
   "https://www.delftopzondag.nl/nieuws/algemeen/111602/zorgeloosbeveiligd-experts-voor-uw-beveiliging": "2026-11-07T07:30:44.339680+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111603/uit-elkaar-maar-samen-je-huis-verkopen-dan-is-vertrouwen-bela": "2026-11-08T07:30:45.399664+01:00",
   "https://www.delftopzondag.nl/nieuws/algemeen/111605/theodor-van-der-lans-signeert-zijn-psychologische-roman-bij-b": "2026-11-10T07:30:43.264112+01:00",
+  "https://www.delftopzondag.nl/nieuws/algemeen/111608/gratis-vitaliteitsdag-in-delft-ontdek-hoe-fit-u-bent-": "2026-11-13T07:30:45.307031+01:00",
   "https://www.delftopzondag.nl/nieuws/sport/111380/de-derde-helft-bij-full-speed-": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/sport/111383/niels-van-der-steuijt-streeft-naar-nieuwe-finale-in-ahoy": "2026-10-22T12:10:58.149191+02:00",
   "https://www.delftopzondag.nl/nieuws/sport/111460/wisselvallige-start-van-het-seizoen-voor-vitesse-delft": "2026-10-25T07:30:40.841071+01:00",
@@ -1687,6 +1491,7 @@
   "https://www.omroepdelft.nl/delft/binnenstad/politie-geen-sprake-van-brandstichting-bij-grote-brand-kerkstraat/": "2026-10-28T07:30:42.560930+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/schade-microtheater-na-brand-groter-dan-gedacht-dicht-tot-maart-2027/": "2026-11-06T07:30:46.773786+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/schrik-zit-er-goed-in-na-grote-brand-in-centrum-van-delft-ik-kon-alleen-de-deur-opendoen/": "2026-10-22T12:48:07.748509+02:00",
+  "https://www.omroepdelft.nl/delft/binnenstad/sintvoorieder1-actie-weer-van-start-ook-in-delft-inleverpunten/": "2026-11-13T07:30:45.307031+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/stadskantoor-woensdag-eerder-dicht-vanwege-teammiddag/": "2026-11-11T07:30:49.801678+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/tot-eind-van-het-jaar-werkzaamheden-op-oude-delft/": "2026-10-30T07:30:40.841940+01:00",
   "https://www.omroepdelft.nl/delft/binnenstad/twee-aanhoudingen-na-demonstratie-op-de-markt-tegen-azc/": "2026-10-27T07:30:43.075202+01:00",
@@ -1726,13 +1531,17 @@
   "https://www.omroepdelft.nl/delft/in-delft-opgericht-hardt-hyperloop-maakt-doorstart-na-amerikaanse-miljoeneninvestering/": "2026-11-06T07:30:46.773786+01:00",
   "https://www.omroepdelft.nl/delft/jonas-reist-vanuit-duitsland-naar-college-in-delft-motivatie-weg-na-25-uur-stilzitten/": "2026-10-29T07:30:44.573452+01:00",
   "https://www.omroepdelft.nl/delft/jossa-rent-marathon-op-blote-voeten-ik-kon-dagenlang-niet-lopen/": "2026-11-10T07:30:43.264112+01:00",
+  "https://www.omroepdelft.nl/delft/kerken-starten-richting-de-kerstdagen-inzameling-voor-voedselbank-een-lange-samenwerking/": "2026-11-13T07:30:45.307031+01:00",
   "https://www.omroepdelft.nl/delft/let-op-de-wintertijd-gaat-weer-in/": "2026-10-25T07:30:40.841071+01:00",
   "https://www.omroepdelft.nl/delft/man-68-krijgt-vijf-weken-cel-voor-aanranding-twee-vrouwelijke-boas/": "2026-10-31T07:30:41.484397+01:00",
   "https://www.omroepdelft.nl/delft/man-veroordeeld-tot-drie-jaar-cel-voor-drugshandel-met-70-kilo-cocaine-in-delft/": "2026-11-06T07:30:46.773786+01:00",
+  "https://www.omroepdelft.nl/delft/politie-waarschuwt-na-bankhelpdeskfraude-in-delft-blijf-gezond-wantrouwend/": "2026-11-13T07:30:45.307031+01:00",
   "https://www.omroepdelft.nl/delft/recordstijging-van-kosten-voor-dsw-zorgverzekering/": "2026-10-22T12:48:07.748509+02:00",
   "https://www.omroepdelft.nl/delft/rik-23-bedenkt-pillenpopper-biedt-stukje-zelfstandigheid/": "2026-11-06T07:30:46.773786+01:00",
+  "https://www.omroepdelft.nl/delft/ruiven/delft-neemt-23-jonge-asielzoekers-over-van-pijnacker-nootdorp-in-ruil-voor-23-reguliere-opvangplekken/": "2026-11-13T07:30:45.307031+01:00",
   "https://www.omroepdelft.nl/delft/schieoevers/aan-de-hooikade-kan-je-tijdreizen-je-fietst-voorbij-huszar-en-opeens-is-het-een-uur-later/": "2026-11-10T07:30:43.264112+01:00",
   "https://www.omroepdelft.nl/delft/schieoevers/faillissement-voor-bedrijf-dat-duurzame-windenergie-met-vliegers-maakt/": "2026-10-30T07:30:40.841940+01:00",
+  "https://www.omroepdelft.nl/delft/schieoevers/koning-opent-nieuw-hoofdkantoor-van-robin-radar-systems-in-delft/": "2026-11-13T07:30:45.307031+01:00",
   "https://www.omroepdelft.nl/delft/schieoevers/koning-willem-alexander-binnenkort-in-delft-voor-opening-hoofdkantoor-radarbedrijf/": "2026-10-29T07:30:44.573452+01:00",
   "https://www.omroepdelft.nl/delft/tanthof-oost/harde-botsing-op-tankstation-kruithuisweg-mini-verliest-motorblok/": "2026-10-24T07:30:37.893568+02:00",
   "https://www.omroepdelft.nl/delft/tanthof-west/korte-stroomstoring-in-tanthof-west-meer-dan-duizend-getroffen-huishoudens/": "2026-11-12T07:30:41.519802+01:00",
@@ -1769,6 +1578,7 @@
   "https://www.omroepdelft.nl/delft/wippolder/verenigingen-verdwijnen-dus-opent-jeu-de-boulescafe-de-deuren-voor-buurtbewoners/": "2026-10-29T07:30:44.573452+01:00",
   "https://www.omroepdelft.nl/delft/zwaar-ongeluk-a13-meerdere-gewonden-naar-het-ziekenhuis/": "2026-10-25T07:30:40.841071+01:00",
   "https://www.omroepdelft.nl/politiek/algemene-beschouwingen-komen-eraan-hier-gaan-de-lokale-partijen-het-over-hebben/": "2026-11-12T07:30:41.519802+01:00",
+  "https://www.omroepdelft.nl/politiek/begroting-verdeelt-delftse-politiek-nauwelijks-samen-naar-de-kroeg/": "2026-11-13T07:30:45.307031+01:00",
   "https://www.omroepdelft.nl/politiek/een-oppositieblok-is-ver-te-zoeken-tijdens-debat-gemeenteraad-over-begroting/": "2026-10-31T07:30:41.484397+01:00",
   "https://www.omroepdelft.nl/politiek/van-delft-naar-brussel-gemeenteraadslid-spreekt-in-europa-over-banen-van-de-toekomst/": "2026-10-23T17:59:38.570018+02:00",
   "https://www.omroepdelft.nl/regio/er-komt-een-treinstation-in-rijswijkbuiten-reizigers-kunnen-naar-schatting-vanaf-2035-opstappen/": "2026-11-12T07:30:41.519802+01:00",
