@@ -1,208 +1,163 @@
 {
  "version": 1,
- "date": "2026-11-14",
- "title": "Делфт · суббота, 14 ноября",
- "published": "2026-11-14T07:30:44.612182+01:00",
- "news": [
-  {
-   "title": "Сбой Microsoft: в гемеенте Делфта дольше ждать у стойки записи",
-   "summary": "Из-за мирового сбоя Outlook люди не могут писать по почте и чаще приходят в stadskantoor, поэтому у afsprakenbalie гемеенте возможны более долгие ожидания.",
-   "url": "https://www.omroepdelft.nl/delft/ook-in-delft-problemen-door-wereldwijde-storing-microsoft/",
-   "source": "Omroep Delft",
-   "level": "must"
-  },
-  {
-   "title": "Ограбление на Oostsingel: полиция ищет свидетелей",
-   "summary": "12 ноября около 17:50 произошло ограбление, двое подозреваемых скрылись на fatbike в сторону Insulindestraat и Madoerastraat. Свидетелей просят звонить на 0900-8844.",
-   "url": "https://www.omroepdelft.nl/delft/vrijenban/politie-zoekt-getuigen-beroving-oostsingel-twee-verdachten/",
-   "source": "Omroep Delft",
-   "level": "must"
-  },
-  {
-   "title": "Цены на жильё в Делфте упали на 0,8% — шестое место по снижению в стране",
-   "summary": "По данным CBS и Kadaster, в третьем квартале 2026 цены на купленное жильё в Делфте снизились на 0,8%, тогда как по стране выросли в среднем на 3,4%.",
-   "url": "https://www.omroepdelft.nl/wonen/prijzen-koopwoningen-in-delft-gedaald-zesde-grootste-daling-van-nederland/",
-   "source": "Omroep Delft",
-   "level": "interesting"
-  }
- ],
+ "date": "2026-11-15",
+ "title": "Делфт · воскресенье, 15 ноября",
+ "published": "2026-11-15T07:30:42.361713+01:00",
+ "news": [],
  "maybe": [],
  "skipped": [
   {
-   "title": "Синтерклас приедет в Делфт: торжественный въезд",
-   "original": "De Sint komt weer naar Delft!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111624/de-sint-komt-weer-naar-delft-",
+   "title": "Фестиваль песен о Синтерклаасе в schuilkerk на Bagijnhof",
+   "original": "Sinterklaas-zangfestijn voor jong en oud",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111626/sinterklaas-zangfestijn-voor-jong-en-oud",
    "source": "Delft op Zondag",
    "reason": "анонс мероприятия не в ближайшие дни",
    "flagged": false,
    "announce": true
   },
   {
-   "title": "Умные замки в студенческих домах: у DUWO в Делфте нет планов",
-   "original": "Gedoe met ‘slimme’ sloten in studentenhuizen Utrecht en Twente: geen plannen voor sleutelapp DUWO",
-   "url": "https://delta.tudelft.nl/article/gedoe-met-slimme-sloten-in-studentenhuizen-utrecht-en-twente-geen-plannen-voor-sleutelapp-duwo",
-   "source": "Delta (TU Delft)",
-   "reason": "студенческая тема, нет события в Делфте",
+   "title": "Delft Verlicht: воспоминания об ушедших близких в центре Делфта",
+   "original": "ErfrechtMeesters zet dierbaren in het licht tijdens Delft Verlicht",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111621/erfrechtmeesters-zet-dierbaren-in-het-licht-tijdens-delft-ver",
+   "source": "Delft op Zondag",
+   "reason": "анонс мероприятия не в ближайшие дни",
    "flagged": false,
-   "category": "tu_internal"
+   "announce": true
   },
   {
-   "title": "Как защититься от наводнений: Flood Proof Holland на Неделе климата",
-   "original": "Hoe houden we onze voeten droog? Een kijkje bij Flood Proof Holland",
-   "url": "https://delta.tudelft.nl/article/hoe-houden-we-onze-voeten-droog-een-kijkje-bij-flood-proof-holland",
-   "source": "Delta (TU Delft)",
-   "reason": "репортаж-очерк",
-   "flagged": false,
-   "category": "feature"
-  },
-  {
-   "title": "Больше половины мужчин пропускают неуместные замечания: мнения жителей Делфта",
-   "original": "Meer dan de helft van de mannen laat een grensoverschrijdende opmerking gaan: dit vinden Delftenaren ervan",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/meer-dan-de-helft-van-de-mannen-laat-een-grensoverschrijdende-opmerking-gaan-dit-zeggen-delftenaren/",
-   "source": "Omroep Delft",
-   "reason": "опрос, не новость города",
+   "title": "Соня и Анко поженились",
+   "original": "Sonja en Anco zijn getrouwd!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111623/sonja-en-anco-zijn-getrouwd-",
+   "source": "Delft op Zondag",
+   "reason": "частная новость",
    "flagged": false,
    "category": "feature"
   },
   {
-   "title": "Кабмин: повышение basisbeurs не должно уйти родителям",
-   "original": "Verhoging van basisbeurs mag niet in de zak van ouders verdwijnen, vindt kabinet",
-   "url": "https://delta.tudelft.nl/article/verhoging-van-basisbeurs-mag-niet-in-de-zak-van-ouders-verdwijnen-vindt-kabinet",
-   "source": "Delta (TU Delft)",
-   "reason": "национальная политика",
-   "flagged": true,
-   "category": "politics"
+   "title": "«O Kerstnacht…» — семейные концерты камерного хора Tourdion",
+   "original": "O Kerstnacht… van Kamerkoor Tourdion",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111627/o-kerstnacht-van-kamerkoor-tourdion",
+   "source": "Delft op Zondag",
+   "reason": "анонс мероприятия не в ближайшие дни",
+   "flagged": false,
+   "announce": true
   },
   {
-   "title": "Автобусы больше не ходят по Schoemakerstraat",
-   "original": "Geen bussen meer langs de Schoemakerstraat, hoe komt dat?",
-   "url": "https://www.omroepdelft.nl/delft/wippolder/geen-bussen-meer-langs-de-schoemakerstraat-hoe-komt-dat/",
+   "title": "Стоматологическая практика в Den Hoorn принимает новых пациентов",
+   "original": "Wij nemen nieuwe patiënten aan",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111629/wij-nemen-nieuwe-patienten-aan",
+   "source": "Delft op Zondag",
+   "reason": "реклама",
+   "flagged": false,
+   "category": "ad"
+  },
+  {
+   "title": "Праздники с сыроварней Boerenwijsheid",
+   "original": "Vier de feestdagen met Boerenwijsheid!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111628/vier-de-feestdagen-met-boerenwijsheid-",
+   "source": "Delft op Zondag",
+   "reason": "реклама",
+   "flagged": false,
+   "category": "ad"
+  },
+  {
+   "title": "De Vries Koeltechniek: качество и сервис",
+   "original": "Kwaliteit en service bij De Vries Koeltechniek",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111631/kwaliteit-en-service-bij-de-vries-koeltechniek",
+   "source": "Delft op Zondag",
+   "reason": "реклама",
+   "flagged": false,
+   "category": "ad"
+  },
+  {
+   "title": "’t Kickertje: детский досуг в регионе Делфта",
+   "original": "’t Kickertje: opvang voor iedereen in regio Delft",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111630/t-kickertje-opvang-voor-iedereen-in-regio-delft",
+   "source": "Delft op Zondag",
+   "reason": "реклама",
+   "flagged": false,
+   "category": "ad"
+  },
+  {
+   "title": "Nieuw Kamerkoor Delft: концерт «The Sound of Movie»",
+   "original": "Het Nieuw Kamerkoor Delft zingt: ‘The Sound of Movie’",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111662/het-nieuw-kamerkoor-delft-zingt-the-sound-of-movie",
+   "source": "Delft op Zondag",
+   "reason": "анонс мероприятия не в ближайшие дни",
+   "flagged": false,
+   "announce": true
+  },
+  {
+   "title": "Активисты протестовали против продажи фуа-гра у Hanos",
+   "original": "Activisten demonstreren tegen verkoop foie gras bij Hanos in Delft",
+   "url": "https://www.omroepdelft.nl/delft/delftse-hout/activisten-demonstreren-tegen-verkoop-foie-gras-bij-hanos-in-delft/",
    "source": "Omroep Delft",
-   "reason": "объяснение давнего изменения, тема трамвая 19 уже была",
-   "flagged": true,
-   "category": "already_published"
+   "reason": "небольшая акция без последствий",
+   "flagged": false,
+   "category": "other"
   },
   {
-   "title": "Задержки у стойки гемеенте из-за сбоя",
-   "original": "Vertraging bij de balie door storing",
-   "url": "https://www.delft.nl/vertraging-bij-de-balie-door-storing",
-   "source": "Gemeente Delft",
-   "reason": "дубликат",
-   "flagged": true,
+   "title": "Пехтольд получил первый экземпляр фотокниги Dubbel Delft",
+   "original": "Pechtold krijgt eerste exemplaar van nieuw boek",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111620/pechtold-krijgt-eerste-exemplaar-van-nieuw-boek",
+   "source": "Delft op Zondag",
+   "reason": "пиар, церемония",
+   "flagged": false,
+   "category": "pr"
+  },
+  {
+   "title": "Агенда: Синтерклаас, настольные игры, экскурсия в Arsenaal",
+   "original": "Agenda: Sinterklaas, bordspellenavond en rondje arsenaal",
+   "url": "https://www.omroepdelft.nl/agenda/agenda-sinterklaas-bordspellenavond-en-rondje-arsenaal/",
+   "source": "Omroep Delft",
+   "reason": "афиша, дубликат анонсов",
+   "flagged": false,
    "category": "duplicate"
+  },
+  {
+   "title": "Напряжение вокруг приёма беженцев: фанаты DHC нашли украденные велосипеды",
+   "original": "Spanning rondom opvang bereikt nieuw hoogtepunt",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111648/spanning-rondom-opvang-bereikt-nieuw-hoogtepunt",
+   "source": "Delft op Zondag",
+   "reason": "очерк, нет решения",
+   "flagged": false,
+   "category": "other"
   }
  ],
  "skipped_events": [
   {
-   "title": "Écht of Nep?! – Workshop Mediawijsheid voor Kids",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1935651005/echt-of-nep-workshop-voor-kids-1",
+   "title": "Sunday Sounds - Nardizz",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/110410606/sunday-sounds-nardizz",
    "source": "In Delft",
-   "reason": "детское",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Top 2000-dienst over vriendschap in Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1964963658/top2000-kerkdienst-1",
-   "source": "In Delft",
-   "reason": "церковная служба",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Techniekstudio TU Delft Science Centre",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2411119769/techniekstudio-delft-programmeren-van-robots",
-   "source": "In Delft",
-   "reason": "детское",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Gingerbread Club – Kerstworkshop voor Kinderen",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3931562247/gingerbread-club",
-   "source": "In Delft",
-   "reason": "детское",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Hollandse Borrel bij Café de Oude Jan in Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/654439924/hollandse-borrel-1",
-   "source": "In Delft",
-   "reason": "бар",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Mediawijs Opvoeden – Voorlichting voor Ouders",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/72908843/jeugd-en-media-hoe-ga-je-ermee-om",
-   "source": "In Delft",
-   "reason": "лекция для родителей, мелкое",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Techniekstudio: Denken als Robots",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/785751308/techniekstudio-denken-als-robots-1",
-   "source": "In Delft",
-   "reason": "детское",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Kleuradvies & Modeshow bij ReShare Store Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/997450339/zomer-of-winter",
-   "source": "In Delft",
-   "reason": "магазинная акция",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "14 november | Top 2000 dienst | Hofkerk",
-   "url": "https://uitdelft.com/event/14-november-top-2000-dienst-hofkerk/",
-   "source": "Uit Delft",
    "reason": "дубликат",
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   {
-   "title": "CoderDojo Dok Voorhof",
-   "url": "https://uitdelft.com/event/coderdojo-dok-voorhof/",
-   "source": "Uit Delft",
-   "reason": "детское",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Écht of nep?! – workshop voor kids",
-   "url": "https://uitdelft.com/event/echt-of-nep-workshop-voor-kids/",
-   "source": "Uit Delft",
-   "reason": "детское",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Hollandse Borrel",
-   "url": "https://uitdelft.com/event/hollandse-borrel/",
-   "source": "Uit Delft",
-   "reason": "бар",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Metal Café",
-   "url": "https://uitdelft.com/event/metal-cafe/",
-   "source": "Uit Delft",
-   "reason": "бар, местные группы",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Top 2000 Dienst | Hofkerk",
-   "url": "https://uitdelft.com/event/top-2000-dienst-hofkerk/",
-   "source": "Uit Delft",
+   "title": "Nieuwe Klanken voor Accordeon in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1662788622/concert-accordeonensemble-opus-2",
+   "source": "In Delft",
    "reason": "дубликат",
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   {
-   "title": "Voorlichting jeugd en media: hoe ga je ermee om?",
-   "url": "https://uitdelft.com/event/voorlichting-jeugd-en-media-hoe-ga-je-ermee-om/",
-   "source": "Uit Delft",
-   "reason": "лекция для родителей, мелкое",
-   "date": "2026-11-14"
+   "title": "Moodz Meezing Sunday Brunch in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1818340046/sunday-brunch",
+   "source": "In Delft",
+   "reason": "бранч с DJ, развлекательное",
+   "date": "2026-11-15"
   },
   {
-   "title": "15 november | Muzikale vesper | Lutherse kerk",
-   "url": "https://uitdelft.com/event/15-november-muzikale-vesper-lutherse-kerk/",
-   "source": "Uit Delft",
-   "reason": "церковная вечерня",
+   "title": "Workshop mandje weven van lisdodde in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1970969487/mandje-weven-met-lisdodde",
+   "source": "In Delft",
+   "reason": "мастер-класс",
+   "date": "2026-11-15"
+  },
+  {
+   "title": "Yayoi Kusama – Creatieve Kunstworkshop",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/233753600/yayoi-kusama",
+   "source": "In Delft",
+   "reason": "мастер-класс",
    "date": "2026-11-15"
   },
   {
@@ -216,7 +171,7 @@
    "title": "Koko Cherry",
    "url": "https://uitdelft.com/event/koko-cherry/",
    "source": "Uit Delft",
-   "reason": "бар, местная группа",
+   "reason": "бар, местный музыкант",
    "date": "2026-11-15"
   },
   {
@@ -230,19 +185,12 @@
    "title": "Lutherse Muziekvesper | Lutherse Kerk",
    "url": "https://uitdelft.com/event/lutherse-muziekvesper-lutherse-kerk/",
    "source": "Uit Delft",
-   "reason": "церковная вечерня",
+   "reason": "дубликат",
    "date": "2026-11-15"
   },
   {
    "title": "Sunday Sounds | Nardizz",
    "url": "https://uitdelft.com/event/sunday-sounds-nardizz/",
-   "source": "Uit Delft",
-   "reason": "отель, местная группа",
-   "date": "2026-11-15"
-  },
-  {
-   "title": "Unplugged | Eric Ineke | Gratis entree – Free entrance",
-   "url": "https://uitdelft.com/event/unplugged-eric-ineke-gratis-entree-free-entrance/",
    "source": "Uit Delft",
    "reason": "дубликат",
    "date": "2026-11-15"
@@ -251,21 +199,21 @@
    "title": "Global Entrepreneurship Week Delft Skills #1 – Idea!",
    "url": "https://uitdelft.com/event/global-entrepreneurship-week-delft-skills-1-idea/",
    "source": "Uit Delft",
-   "reason": "профессиональное событие TU Delft",
+   "reason": "внутреннее событие TU Delft",
    "date": "2026-11-16"
   },
   {
    "title": "Informatiepunt Digitale Overheid (IDO)",
    "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-2/",
    "source": "Uit Delft",
-   "reason": "рутинная консультация",
+   "reason": "регулярная консультация",
    "date": "2026-11-16"
   },
   {
    "title": "Knipkring Delft: ontdek de kunst van het papierknippen",
    "url": "https://uitdelft.com/event/knipkring-delft-ontdek-de-kunst-van-het-papierknippen/",
    "source": "Uit Delft",
-   "reason": "регулярный кружок",
+   "reason": "кружок",
    "date": "2026-11-16"
   },
   {
@@ -274,13 +222,6 @@
    "source": "Uit Delft",
    "reason": "детское",
    "date": "2026-11-16"
-  },
-  {
-   "title": "Birra Moretti Session | hosted by Panos Gourdoupis Quartet",
-   "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-panos-gourdoupis-quartet/",
-   "source": "Uit Delft",
-   "reason": "бар, джем-сейшн",
-   "date": "2026-11-17"
   },
   {
    "title": "Birra Moretti Session",
@@ -293,35 +234,35 @@
    "title": "Creatief Atelier",
    "url": "https://uitdelft.com/event/creatief-atelier/",
    "source": "Uit Delft",
-   "reason": "регулярный кружок",
+   "reason": "кружок",
    "date": "2026-11-17"
   },
   {
    "title": "Digitaal oefenen",
    "url": "https://uitdelft.com/event/digitaal-oefenen/",
    "source": "Uit Delft",
-   "reason": "рутинное занятие",
+   "reason": "регулярное занятие",
    "date": "2026-11-17"
   },
   {
    "title": "Global Entrepreneurship Week 2026 Skills #2 – Deep Tech!",
    "url": "https://uitdelft.com/event/global-entrepreneurship-week-2026-skills-2-deep-tech/",
    "source": "Uit Delft",
-   "reason": "профессиональное событие TU Delft",
+   "reason": "внутреннее событие TU Delft",
    "date": "2026-11-17"
   },
   {
    "title": "IDO + Taalhuis",
    "url": "https://uitdelft.com/event/ido-taalhuis/",
    "source": "Uit Delft",
-   "reason": "рутинная консультация",
+   "reason": "регулярная консультация",
    "date": "2026-11-17"
   },
   {
    "title": "Jamsession @ Bebop",
    "url": "https://uitdelft.com/event/jamsession-bebop-7/",
    "source": "Uit Delft",
-   "reason": "бар, джем-сейшн",
+   "reason": "джем-сессия в баре",
    "date": "2026-11-17"
   },
   {
@@ -339,85 +280,99 @@
    "date": "2026-11-17"
   },
   {
-   "title": "Lunchpauzeconcert De Vak",
-   "url": "https://uitdelft.com/event/lunchpauzeconcert-de-vak/",
+   "title": "FREE TRYOUT BACHATA",
+   "url": "https://uitdelft.com/event/free-tryout-bachata/",
+   "source": "Uit Delft",
+   "reason": "пробное занятие по танцам",
+   "date": "2026-11-18"
+  },
+  {
+   "title": "Paint and Meditate",
+   "url": "https://uitdelft.com/event/paint-and-meditate/",
+   "source": "Uit Delft",
+   "reason": "мастер-класс",
+   "date": "2026-11-18"
+  },
+  {
+   "title": "R.I.P Bits & Pieces | Jan Boiten, Jan van Eerd, Hans Dagelet en Laurens de Boer",
+   "url": "https://uitdelft.com/event/r-i-p-bits-pieces-jan-boiten-jan-van-eerd-hans-dagelet-en-laurens-de-boer/",
    "source": "Uit Delft",
    "reason": "не хватило места в выпуске",
-   "date": "2026-11-17"
+   "date": "2026-11-18"
   }
  ],
  "events": [
   {
-   "title": "Buurtpantry Delft: совместные устойчивые закупки",
-   "when": "сб 14 нояб, 14:00",
-   "where": "Делфт",
-   "price": "бесплатно",
-   "summary": "Презентация планов районной кладовой, где соседи вместе покупают био-продукты и делят расходы.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/807859370/delftse-duurzame-voedselcollectief-bijeenkomst",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Джазовый концерт Sunday Delight",
-   "when": "сб 14 нояб, 16:00",
-   "where": "Woudtse Kerk",
-   "price": "€15",
-   "summary": "Джазовые классики и джазовая поп-музыка, сбор идёт на оздоровление и устойчивость церкви.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1189326347/jazzconcert-in-de-woudtse-kerk",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Carrousel du Monde: осенняя вечеринка с мировой музыкой",
-   "when": "сб 14 нояб, 20:30",
-   "where": "Hal015",
-   "price": "",
-   "summary": "Афро, бразильская музыка, кумбия, кудуро и электроника; за вертушками Yan Sun, Onno Paloma и The Souls.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2702216814/carrousel-du-monde-autumn-party-with-global-dance-music",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Withlof — Caleidoscoop: импровизационный театр",
-   "when": "сб 14 нояб, 20:30",
-   "where": "Делфт",
-   "price": "€10",
-   "summary": "Импровизационный спектакль с неожиданными сценами и идеями из зала.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3402177568/withlof-speelt-caleidoscoop-improvisatietheater",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Bonavox — трибьют U2 к 50-летию группы",
-   "when": "сб 14 нояб, 21:00",
-   "where": "Cultuurlab",
-   "price": "€15",
-   "summary": "Энергичный трибьют ирландской рок-группе с главными хитами.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3553766753/u2-tribute-by-bonavox",
-   "date": "2026-11-14"
-  },
-  {
-   "title": "Delftse Korenmiddag: пятый хоровой день",
-   "when": "вс 15 нояб",
-   "where": "Hal015",
-   "price": "",
-   "summary": "Пятое издание хорового дня с выступлениями хоров Делфта.",
-   "url": "https://uitdelft.com/event/delftse-korenmiddag-vijfde-editie/",
+   "title": "Воскресный утренний концерт: Jurre Koopmans, лауреат Concours Cello Biënnale",
+   "when": "вс 15 ноя, 11:30",
+   "where": "Theater de Veste",
+   "price": "€23,50",
+   "summary": "Виолончелист Jurre Koopmans, лауреат конкурса Cello Biënnale, выступает на воскресном утреннем концерте.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3123277235/laureaat-concours-cello-biennale-zondagochtendconcert",
    "date": "2026-11-15"
   },
   {
-   "title": "Джаз-концерт Eric Ineke",
-   "when": "вс 15 нояб, 15:00",
+   "title": "Delftse Korenmiddag — пятое издание",
+   "when": "вс 15 ноя, с 13:00",
+   "where": "Hal015",
+   "price": "",
+   "summary": "Фестиваль хоров: выступают All Voices, Delcanto, Tourdion, Binnenstadskoor, Vocalzz и другие.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/783792607/delftse-korenmiddag-vijfde-editie",
+   "date": "2026-11-15"
+  },
+  {
+   "title": "Экскурсия и дегустация вина в музее De Griffioen",
+   "when": "вс 15 ноя, 15:00",
+   "where": "Medisch-Farmaceutisch Museum 'De Griffioen'",
+   "price": "€33 (только дегустация €24)",
+   "summary": "Экскурсия по музею и дегустация восьми испанских вин с виноделом Onno Misset.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1591561552/rondleiding-wijnproeverij-museum-de-griffioen",
+   "date": "2026-11-15"
+  },
+  {
+   "title": "Unplugged: Eric Ineke",
+   "when": "вс 15 ноя, 15:00",
    "where": "Jazzcafé Bebop",
    "price": "бесплатно",
-   "summary": "Воскресный акустический джаз с известным барабанщиком Eric Ineke, вход свободный.",
-   "url": "https://uitdelft.com/event/eric-ineke/",
+   "summary": "Джазовый концерт барабанщика Eric Ineke с бесплатным входом.",
+   "url": "https://uitdelft.com/event/unplugged-eric-ineke-gratis-entree-free-entrance/",
    "date": "2026-11-15"
   },
   {
-   "title": "Концерт аккордеонного ансамбля Opus 2",
-   "when": "вс 15 нояб, 15:30",
-   "where": "Schuilkerk Bagijnhof",
-   "price": "",
-   "summary": "Ансамбль Opus 2 открывает концертную серию «Nieuwe Klanken voor Accordeon».",
-   "url": "https://www.delftopzondag.nl/agenda/2026/11/15/concert-accordeonensemble-opus-2-111224",
+   "title": "Nieuwe Klanken voor Accordeon – Opus 2",
+   "when": "вс 15 ноя, 15:30",
+   "where": "Делфт",
+   "price": "€20",
+   "summary": "Ансамбль Opus 2 исполняет четыре новые композиции для аккордеона с сопрано, скрипкой и ударными.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1375872941/nieuwe-klanken-voor-accordeon",
    "date": "2026-11-15"
+  },
+  {
+   "title": "Музыкальная вечерня",
+   "when": "вс 15 ноя, 16:00",
+   "where": "Lutherse kerk, Noordeinde 4",
+   "price": "",
+   "summary": "Музыкальная вечерня в Lutherse kerk.",
+   "url": "https://uitdelft.com/event/15-november-muzikale-vesper-lutherse-kerk/",
+   "date": "2026-11-15"
+  },
+  {
+   "title": "Обеденный концерт De Vak",
+   "when": "вт 17 ноя, 12:15",
+   "where": "Open Delft, Vesteplein 100",
+   "price": "",
+   "summary": "Концерт в обеденный перерыв в Open Delft.",
+   "url": "https://uitdelft.com/event/lunchpauzeconcert-de-vak/",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "Birra Moretti Session: Panos Gourdoupis Quartet",
+   "when": "вт 17 ноя, 20:30",
+   "where": "Jazzcafé Bebop",
+   "price": "бесплатно",
+   "summary": "Джазовая сессия с квартетом Panos Gourdoupis.",
+   "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-panos-gourdoupis-quartet/",
+   "date": "2026-11-17"
   }
  ]
 }
