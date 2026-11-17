@@ -1,189 +1,133 @@
 {
  "version": 1,
- "date": "2026-11-16",
- "title": "Делфт · понедельник, 16 ноября",
- "published": "2026-11-16T07:30:43.598701+01:00",
- "news": [],
+ "date": "2026-11-17",
+ "title": "Делфт · вторник, 17 ноября",
+ "published": "2026-11-17T07:30:47.988070+01:00",
+ "news": [
+  {
+   "title": "Выходные в Делфте: ДТП на Reinier de Graafweg, оружие в центре, пожар машины",
+   "summary": "Водитель врезался в фонарь на Reinier de Graafweg и задержан за вождение в нетрезвом виде. В центре полиция выезжала по сообщению о сделке с наркотиками и оружии, на парковке у Bieslandsepad сгорела машина.",
+   "url": "https://www.omroepdelft.nl/delft/delftse-hout/opnieuw-een-autobrand-en-vuurwapen-bij-drugsdeal-dit-gebeurde-afgelopen-weekend-in-delft/",
+   "source": "Omroep Delft",
+   "level": "must"
+  },
+  {
+   "title": "Что изменит для делфтцев бюджет гемеенте на 2027 год",
+   "summary": "После принятия бюджета 12 ноября власти расскажут о конкретных планах: больше boa, быстрое строительство жилья, но и более высокие местные сборы.",
+   "url": "https://www.omroepdelft.nl/politiek/meer-boas-snel-nieuwe-woningen-maar-ook-hogere-lasten-dit-ga-je-merken-van-de-gemeentebegroting/",
+   "source": "Omroep Delft",
+   "level": "interesting"
+  }
+ ],
  "maybe": [],
  "skipped": [
   {
-   "title": "Westafette: Delia Titre соединяет людей словами и красками",
-   "original": "Westafette: Delia Titre brengt mensen samen met woorden èn kleuren!",
-   "url": "https://www.omroepdelft.nl/delft/tanthof-west/westafette-delia-titre-brengt-mensen-samen-met-woorden-en-kleuren/",
+   "title": "66-летний Hans тринадцать лет ходит босиком",
+   "original": "Hans (66) gaat al ruim 13 jaar op blote voeten door het leven: ‘Het voelt vrij’",
+   "url": "https://www.omroepdelft.nl/delft/hans-66-gaat-al-ruim-13-jaar-op-blote-voeten-door-het-leven-het-voelt-vrij/",
    "source": "Omroep Delft",
    "reason": "очерк о человеке",
    "flagged": false,
    "category": "feature"
   },
   {
-   "title": "Open Call Groot Spraak x OPEN для писателей и художников",
-   "original": "Schrijver of kunstenaar? Meld je aan voor Groot Spraak x OPEN!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111622/schrijver-of-kunstenaar-meld-je-aan-voor-groot-spraak-x-open-",
-   "source": "Delft op Zondag",
-   "reason": "призыв к участию, не новость",
+   "title": "KPMG проверил соглашение между TU Delft и полицией",
+   "original": "KPMG onderzocht convenant tussen TU en politie. Wat weten we nu? En wat niet?",
+   "url": "https://delta.tudelft.nl/article/kpmg-onderzocht-convenant-tussen-tu-en-politie-wat-weten-we-nu-en-wat-niet",
+   "source": "Delta (TU Delft)",
+   "reason": "внутренняя жизнь TU Delft",
    "flagged": false,
-   "category": "other"
+   "category": "tu_internal"
   },
   {
-   "title": "Rotary Santa Run — рождественский забег по центру Делфта",
-   "original": "De 8e editie van de sfeervolle Rotary Santa Run komt eraan!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111617/de-8e-editie-van-de-sfeervolle-rotary-santa-run-komt-eraan-",
-   "source": "Delft op Zondag",
-   "reason": "анонс мероприятия не в ближайшие дни",
+   "title": "Новое приложение Kittenwijs помогает ухаживать за котятами",
+   "original": "Nieuwe app Kittenwijs helpt bij de verzorging van jonge katten: ‘Het hebben van een kitten wordt onderschat’",
+   "url": "https://www.omroepdelft.nl/regio/nieuwe-app-kittenwijs-helpt-bij-de-verzorging-van-jonge-katten-het-hebben-van-een-kitten-wordt-onderschat/",
+   "source": "Omroep Delft",
+   "reason": "пиар приложения",
    "flagged": false,
-   "announce": true
+   "category": "pr"
   },
   {
-   "title": "De Tafel van Delft: готовы ли мы к роботам?",
-   "original": "De Tafel van Delft: zijn we klaar voor de robots?",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111647/de-tafel-van-delft-zijn-we-klaar-voor-de-robots-",
-   "source": "Delft op Zondag",
-   "reason": "обсуждение, мнение",
-   "flagged": false,
-   "category": "opinion"
-  },
-  {
-   "title": "Judoclub Team Gouwe Sports обживает новое здание на Mozartlaan",
-   "original": "Team Gouwe Sports steeds meer thuis aan de Mozartlaan",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111609/team-gouwe-sports-steeds-meer-thuis-aan-de-mozartlaan",
-   "source": "Delft op Zondag",
-   "reason": "новость спортивного клуба",
+   "title": "Член совета Jolanda Gaal станет городской принцессой карнавала в Kabbelgat",
+   "original": "Gemeenteraadslid Jolanda Gaal is tijdens carnaval stadsprinses in Kabbelgat",
+   "url": "https://www.omroepdelft.nl/delft/gemeenteraadslid-jolanda-gaal-is-tijdens-carnaval-stadsprinses-in-kabbelgat/",
+   "source": "Omroep Delft",
+   "reason": "карнавальные клубные новости",
    "flagged": false,
    "category": "club"
   },
   {
-   "title": "Vertelmiddag в Dorpskerk в Pijnacker",
-   "original": "Vertelmiddag in de Dorpskerk Pijnacker",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111639/vertelmiddag-in-de-dorpskerk-pijnacker",
-   "source": "Delft op Zondag",
-   "reason": "не в Делфте",
+   "title": "Исследователи TU Delft получили грант ERC",
+   "original": "‘Teamspelers’ uit Delft, Utrecht en Wageningen krijgen miljoenen van ERC",
+   "url": "https://delta.tudelft.nl/article/teamspelers-uit-delft-utrecht-en-wageningen-krijgen-miljoenen-van-erc",
+   "source": "Delta (TU Delft)",
+   "reason": "внутренняя жизнь TU Delft",
    "flagged": false,
-   "category": "not_delft"
+   "category": "tu_internal"
   },
   {
-   "title": "Библиотека Den Hoorn — пункт сбора подарков для Синтерклааса",
-   "original": "De Bibliotheek Den Hoorn inzamelpunt Sintvoorieder1",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111646/de-bibliotheek-den-hoorn-inzamelpunt-sintvoorieder1",
-   "source": "Delft op Zondag",
-   "reason": "подготовка к празднику, не новость",
+   "title": "Делфтские футбольные клубы: результаты выходных",
+   "original": "Delftse Dribbels: SEP verspeelt voorsprong én koppositie",
+   "url": "https://www.omroepdelft.nl/sport/delftse-dribbels-sep-verspeelt-voorsprong-en-koppositie/",
+   "source": "Omroep Delft",
+   "reason": "новости спортклубов",
    "flagged": false,
-   "category": "other"
+   "category": "club"
   },
   {
-   "title": "Король посетил Robin Radar Systems",
-   "original": "Koning Willem-Alexander op bezoek bij Robin Radar Systems",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111633/koning-willem-alexander-op-bezoek-bij-robin-radar-systems",
+   "title": "Розыгрыш билетов на The Music of Harry Potter",
+   "original": "Win kaarten voor The Music of Harry Potter!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111663/win-kaarten-voor-the-music-of-harry-potter-",
    "source": "Delft op Zondag",
-   "reason": "дубликат, уже опубликовано",
-   "flagged": false,
-   "category": "already_published"
-  },
-  {
-   "title": "Курс Martijn Leonard о футбольных предпочтениях",
-   "original": "Martijn Leonard geeft interessante cursus over voetbalvoorkeuren",
-   "url": "https://www.delftopzondag.nl/nieuws/sport/111615/martijn-leonard-geeft-interessante-cursus-over-voetbalvoorkeuren",
-   "source": "Delft op Zondag",
-   "reason": "не в Делфте",
-   "flagged": false,
-   "category": "not_delft"
-  },
-  {
-   "title": "Синтерклаас приедет в Midden-Delfland",
-   "original": "Sinterklaas komt ook naar Midden-Delfland!",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111625/sinterklaas-komt-ook-naar-midden-delfland-",
-   "source": "Delft op Zondag",
-   "reason": "не в Делфте",
-   "flagged": false,
-   "category": "not_delft"
-  },
-  {
-   "title": "Китайская кухня на Рождество в China Garden",
-   "original": "Lekker Chinees eten met kerst bij China Garden",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111644/lekker-chinees-eten-met-kerst-bij-china-garden",
-   "source": "Delft op Zondag",
-   "reason": "реклама",
+   "reason": "розыгрыш, не в Делфте",
    "flagged": false,
    "category": "ad"
   },
   {
-   "title": "Рождественские ёлки в Intratuin Pijnacker",
-   "original": "Kerstbomen bij Intratuin Pijnacker: iedere werkdag open tot 21.00 uur",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111641/kerstbomen-bij-intratuin-pijnacker-iedere-werkdag-open-tot-21",
-   "source": "Delft op Zondag",
-   "reason": "реклама, не в Делфте",
+   "title": "«Таксины» языка: ИИ и тексты студентов",
+   "original": "Detoxen van taaltoxen?",
+   "url": "https://delta.tudelft.nl/article/detoxen-van-taaltoxen",
+   "source": "Delta (TU Delft)",
+   "reason": "колонка TU Delft",
    "flagged": false,
-   "category": "ad"
+   "category": "opinion"
   }
  ],
  "skipped_events": [
   {
-   "title": "Global Entrepreneurship Week Delft Skills #1 – Idea!",
-   "url": "https://uitdelft.com/event/global-entrepreneurship-week-delft-skills-1-idea/",
-   "source": "Uit Delft",
-   "reason": "студенческая программа TU Delft",
-   "date": "2026-11-16"
-  },
-  {
-   "title": "Informatiepunt Digitale Overheid (IDO)",
-   "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-2/",
-   "source": "Uit Delft",
-   "reason": "регулярная консультация",
-   "date": "2026-11-16"
-  },
-  {
-   "title": "Knipkring Delft: ontdek de kunst van het papierknippen",
-   "url": "https://uitdelft.com/event/knipkring-delft-ontdek-de-kunst-van-het-papierknippen/",
-   "source": "Uit Delft",
-   "reason": "кружок, рутина",
-   "date": "2026-11-16"
-  },
-  {
-   "title": "Peutervoorlezen met de Boekstart Coach Tanthof",
-   "url": "https://uitdelft.com/event/peutervoorlezen-met-de-boekstart-coach-tanthof/",
-   "source": "Uit Delft",
-   "reason": "детское",
-   "date": "2026-11-16"
-  },
-  {
    "title": "Birra Moretti Session",
    "url": "https://uitdelft.com/event/birra-moretti-session/",
    "source": "Uit Delft",
-   "reason": "бар, музыкальный вечер",
+   "reason": "бар, джем-сессия",
    "date": "2026-11-17"
   },
   {
    "title": "Creatief Atelier",
    "url": "https://uitdelft.com/event/creatief-atelier/",
    "source": "Uit Delft",
-   "reason": "регулярный кружок",
+   "reason": "рутинный кружок",
    "date": "2026-11-17"
   },
   {
    "title": "Digitaal oefenen",
    "url": "https://uitdelft.com/event/digitaal-oefenen/",
    "source": "Uit Delft",
-   "reason": "регулярные занятия",
-   "date": "2026-11-17"
-  },
-  {
-   "title": "Global Entrepreneurship Week 2026 Skills #2 – Deep Tech!",
-   "url": "https://uitdelft.com/event/global-entrepreneurship-week-2026-skills-2-deep-tech/",
-   "source": "Uit Delft",
-   "reason": "студенческая программа TU Delft",
+   "reason": "рутинные занятия",
    "date": "2026-11-17"
   },
   {
    "title": "IDO + Taalhuis",
    "url": "https://uitdelft.com/event/ido-taalhuis/",
    "source": "Uit Delft",
-   "reason": "регулярная консультация",
+   "reason": "рутина, консультации",
    "date": "2026-11-17"
   },
   {
    "title": "Jamsession @ Bebop",
    "url": "https://uitdelft.com/event/jamsession-bebop-7/",
    "source": "Uit Delft",
-   "reason": "бар, джем-сейшн",
+   "reason": "бар, джем-сессия",
    "date": "2026-11-17"
   },
   {
@@ -197,94 +141,131 @@
    "title": "FREE TRYOUT BACHATA",
    "url": "https://uitdelft.com/event/free-tryout-bachata/",
    "source": "Uit Delft",
-   "reason": "бесплатная пробная тренировка, рутина",
+   "reason": "пробное занятие, мелкое",
    "date": "2026-11-18"
   },
   {
    "title": "Paint and Meditate",
    "url": "https://uitdelft.com/event/paint-and-meditate/",
    "source": "Uit Delft",
-   "reason": "небольшой мастер-класс",
+   "reason": "мелкий воркшоп",
    "date": "2026-11-18"
   },
   {
    "title": "Global Entrepreneurship Week Delft 2026 Skills #4 – Communities",
    "url": "https://uitdelft.com/event/global-entrepreneurship-week-delft-2026-skills-4-communities/",
    "source": "Uit Delft",
-   "reason": "студенческая программа TU Delft",
+   "reason": "дубликат серии GEW",
    "date": "2026-11-19"
   },
   {
    "title": "Writing Huddle | The Hidden Life of Objects",
    "url": "https://uitdelft.com/event/writing-huddle-the-hidden-life-of-objects/",
    "source": "Uit Delft",
-   "reason": "небольшой воркшоп",
+   "reason": "мелкий воркшоп",
    "date": "2026-11-19"
+  },
+  {
+   "title": "Global Entrepreneurship Week Delft 2026 Skills #6- Play",
+   "url": "https://uitdelft.com/event/global-entrepreneurship-week-delft-2026-skills-6-play/",
+   "source": "Uit Delft",
+   "reason": "дубликат серии GEW",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "Latin in the City – Cultuurlab",
+   "url": "https://uitdelft.com/event/latin-in-the-city-cultuurlab/",
+   "source": "Uit Delft",
+   "reason": "дубликат Latin in the City",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "Loodsfeest Proteus Eretes",
+   "url": "https://uitdelft.com/event/loodsfeest-proteus-eretes/",
+   "source": "Uit Delft",
+   "reason": "студенческий клуб",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "Latin in the City",
+   "url": "https://uitdelft.com/event/latin-in-the-city-2/",
+   "source": "Uit Delft",
+   "reason": "не хватило места в выпуске",
+   "date": "2026-11-20"
   }
  ],
  "events": [
   {
-   "title": "Симпозиум VvTP 2026 – Reaching for the Stars",
-   "when": "пн 16 нояб, 19:00–21:30",
-   "where": "Delft",
-   "price": "€2",
-   "summary": "Лекции о будущем космонавтики: Artemis II, ESA и геополитика в космосе.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2240318183/natuurkunde-symposium-reaching-for-the-stars",
-   "date": "2026-11-16"
-  },
-  {
-   "title": "Паб-квиз De Pubquizmaster",
-   "when": "пн 16 нояб, 20:30",
-   "where": "Theater de Veste",
+   "title": "Global Entrepreneurship Week: Skills #2 – Deep Tech",
+   "when": "вт 17 ноя",
+   "where": "TU Delft, Faculty of Technology, Policy and Management – Arena",
    "price": "",
-   "summary": "Паб-квиз в Theater de Veste.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1629013697/de-pubquizmaster-pubquiz",
-   "date": "2026-11-16"
-  },
-  {
-   "title": "Обеденный концерт",
-   "when": "вт 17 нояб, 12:15–13:00",
-   "where": "Open Delft",
-   "price": "",
-   "summary": "Короткий концерт в обеденный перерыв.",
-   "url": "https://uitdelft.com/event/lunchpauzeconcert/",
+   "summary": "День недели предпринимательства, посвящённый deep tech.",
+   "url": "https://uitdelft.com/event/global-entrepreneurship-week-2026-skills-2-deep-tech/",
    "date": "2026-11-17"
   },
   {
-   "title": "R.I.P Bits & Pieces: Jan Boiten, Jan van Eerd, Hans Dagelet, Laurens de Boer",
-   "when": "ср 18 нояб, 20:30–22:30",
+   "title": "Boomstad Delft — лекция о городском лесе Делфта",
+   "when": "вт 17 ноя, 20:00",
+   "where": "Delfts ArchitectuurCafé",
+   "price": "бесплатно",
+   "summary": "Saskia de Wit рассказывает о городском лесе и роли деревьев в будущем Делфта.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3632741288/delfts-architectuurcafe-2",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "Van Hasselt Lecture: Free Speech and Experimentality",
+   "when": "вт 17 ноя, 20:30",
+   "where": "TU Delft",
+   "price": "бесплатно",
+   "summary": "Философ Robert Simpson о свободе слова, экспериментировании и общественных нормах.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/389248441/van-hasselt-lecture-can-free-speech-go-too-far-robert-simpson",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "Двойная кабаре-программа: Maaike Dirkje Hop и Farida Laan",
+   "when": "пт 20 ноя",
    "where": "Hal015",
-   "price": "",
-   "summary": "Вечер с участием четырёх артистов в Hal015.",
-   "url": "https://uitdelft.com/event/r-i-p-bits-pieces-jan-boiten-jan-van-eerd-hans-dagelet-en-laurens-de-boer/",
-   "date": "2026-11-18"
+   "price": "€0–15",
+   "summary": "Кабаре-вечер двух артисток.",
+   "url": "https://uitdelft.com/event/dubbel-cabaretprogramma-maaike-dirkje-hop-en-farida-laan/",
+   "date": "2026-11-20"
   },
   {
-   "title": "Bomans Klinkt: Remco Melles, Yke Viersen, Martijn Smits",
-   "when": "чт 19 нояб",
-   "where": "Hal015",
-   "price": "€0–16,50",
-   "summary": "Дневной театральный формат Theater Overdag по мотивам Bomans.",
-   "url": "https://uitdelft.com/event/bomans-klinkt-remco-melles-yke-viersen-martijn-smits-theater-overdag/",
-   "date": "2026-11-19"
+   "title": "Female Entrepreneurship Day",
+   "when": "пт 20 ноя",
+   "where": "The Social Hub Delft",
+   "price": "",
+   "summary": "День женского предпринимательства.",
+   "url": "https://uitdelft.com/event/female-entrepreneurship-day/",
+   "date": "2026-11-20"
   },
   {
-   "title": "Лекция «Dissonanten in het Concertgebouw»",
-   "when": "чт 19 нояб",
-   "where": "Synagoge Delft",
-   "price": "",
-   "summary": "Лекция о диссонансах в Concertgebouw в синагоге Делфта.",
-   "url": "https://uitdelft.com/event/lezing-dissonanten-in-het-concertgebouw-synagoge-delft/",
-   "date": "2026-11-19"
+   "title": "Willem van Oranje — мюзикл",
+   "when": "пт 20 ноя, 19:30",
+   "where": "Prinsentheater",
+   "price": "€45",
+   "summary": "Мюзикл об Вильгельме Оранском.",
+   "url": "https://uitdelft.com/event/willem-van-oranje-de-musical-8/",
+   "date": "2026-11-20"
   },
   {
-   "title": "Dansen met de Dood — Tresonanz",
-   "when": "чт 19 нояб, 20:15",
-   "where": "Theater de Veste",
+   "title": "Comedy Night с Berend Koen",
+   "when": "пт 20 ноя, 19:30",
+   "where": "Taste! Delft, Roland Holstlaan 751",
+   "price": "€20",
+   "summary": "Вечер стендапа с комиком Berend Koen.",
+   "url": "https://uitdelft.com/event/comedy-night-met-berend-koen/",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "Dansen met de Dood | Tresonanz",
+   "when": "пт 20 ноя, 20:15",
+   "where": "Theater de Veste, Vesteplein 1",
    "price": "",
-   "summary": "Вечернее представление Tresonanz в Theater de Veste.",
-   "url": "https://uitdelft.com/event/dansen-met-de-dood-tresonanz/",
-   "date": "2026-11-19"
+   "summary": "Вечер Tresonanz в главном театре города.",
+   "url": "https://uitdelft.com/event/dansen-met-de-dood-tresonanz-2/",
+   "date": "2026-11-20"
   }
  ]
 }
