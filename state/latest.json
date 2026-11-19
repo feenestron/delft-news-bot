@@ -1,126 +1,256 @@
 {
  "version": 1,
- "date": "2026-11-18",
- "title": "Делфт · среда, 18 ноября",
- "published": "2026-11-18T07:30:44.460473+01:00",
- "news": [
-  {
-   "title": "Гемеенте хочет разрешить второй новогодний костёр на Brasserskade",
-   "summary": "Бургомистр Pechtold предлагает второе место для vreugdevuur в Делфте на Brasserskade; сейчас оно одно. Безопасность проверяют, официальное решение будет в начале декабря.",
-   "url": "https://www.omroepdelft.nl/delft/delftse-hout/de-fik-erin-gemeente-wil-tweede-vreugdevuur-in-delft-bij-jaarwisseling/",
-   "source": "Omroep Delft",
-   "level": "interesting"
-  }
- ],
+ "date": "2026-11-19",
+ "title": "Делфт · четверг, 19 ноября",
+ "published": "2026-11-19T07:30:44.110092+01:00",
+ "news": [],
  "maybe": [],
  "skipped": [
   {
-   "title": "Wethouder хочет поговорить с жителями Debussyflat о проблемах с безопасностью",
-   "original": "Wethouder wil in gesprek over aanhoudende overlast Debussyflat",
-   "url": "https://www.omroepdelft.nl/delft/buitenhof/wethouder-wil-in-gesprek-over-aanhoudende-overlast-debussyflat/",
+   "title": "SP опасается, что жителям станет сложнее выступать в совете",
+   "original": "Gemeenteraad vertellen wat je vindt van plannen: SP vreest dat het moeilijker wordt",
+   "url": "https://www.omroepdelft.nl/politiek/gemeenteraad-vertellen-wat-je-vindt-van-plannen-sp-vreest-dat-het-moeilijker-wordt/",
    "source": "Omroep Delft",
-   "reason": "разговор о планах, решения пока нет",
-   "flagged": false,
-   "category": "other"
-  },
-  {
-   "title": "Varend Corso 2027 получит тему «Праздник мира»",
-   "original": "Varend Corso maakt nieuw thema 2027 bekend: Wereldfeest",
-   "url": "https://www.omroepdelft.nl/delft/varend-corso-maakt-nieuw-thema-2027-bekend-wereldfeest/",
-   "source": "Omroep Delft",
-   "reason": "не в Делфте, Westland",
-   "flagged": false,
-   "category": "not_delft"
-  },
-  {
-   "title": "D’serve собрал 2500 участников в Делфте",
-   "original": "D’serve trekt 2.500 deelnemers met duurzame acties in Delft",
-   "url": "https://www.omroepdelft.nl/delft/dserve-trekt-2-500-deelnemers-met-duurzame-acties-in-delft/",
-   "source": "Omroep Delft",
-   "reason": "итоги инициативы, пиар",
-   "flagged": false,
-   "category": "pr"
-  },
-  {
-   "title": "В STIP меняются два члена совета",
-   "original": "STIP krijgt nieuwe gezichten: twee raadsleden dragen het stokje over",
-   "url": "https://www.omroepdelft.nl/politiek/stip-krijgt-nieuwe-gezichten-twee-raadsleden-dragen-het-stokje-over/",
-   "source": "Omroep Delft",
-   "reason": "партийная кадровая новость",
+   "reason": "позиция партии, решения пока нет",
    "flagged": false,
    "category": "politics"
   },
   {
-   "title": "В TU Delft знали о рисках с общими почтовыми ящиками",
-   "original": "TU voorzag mailboxproblemen, maar waarschuwde medewerkers niet",
-   "url": "https://delta.tudelft.nl/article/tu-voorzag-mailboxproblemen-maar-waarschuwde-medewerkers-niet",
+   "title": "Студенты TU Delft ждут выхода GTA VI",
+   "original": "Geen college, maar GTA VI: ‘Ik wacht al sinds de basisschool op deze game’",
+   "url": "https://delta.tudelft.nl/article/geen-college-maar-gta-vi-ik-wacht-al-sinds-de-basisschool-op-deze-game",
    "source": "Delta (TU Delft)",
-   "reason": "внутренняя жизнь TU Delft",
-   "flagged": true,
-   "category": "tu_internal"
-  },
-  {
-   "title": "Новая команда устойчивости TU Delft: климатически нейтральный кампус к 2030 не выйдет",
-   "original": "Nieuw duurzaamheidsteam, nieuwe koers? ‘Een klimaatneutrale campus in 2030 gaat niet lukken’",
-   "url": "https://delta.tudelft.nl/article/nieuw-duurzaamheidsteam-nieuwe-koers-een-klimaatneutrale-campus-in-2030-gaat-niet-lukken",
-   "source": "Delta (TU Delft)",
-   "reason": "интервью, внутренняя тема TU",
+   "reason": "очерк о студентах, не новость",
    "flagged": false,
-   "category": "tu_internal"
+   "category": "feature"
   },
   {
-   "title": "StadsPrinsenbal в De Schaapskooi: новая stadsprinses Jolanda Gaal",
-   "original": "Door de lens van Koos: StadsPrinsenbal in De Schaapskooi",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111664/door-de-lens-van-koos-stadsprinsenbal-in-de-schaapskooi",
-   "source": "Delft op Zondag",
-   "reason": "фотоподпись, клубное событие",
+   "title": "Два депутата STIP уходят, их сменяют студенты TU Delft",
+   "original": "Raadsleden (STIP) stoppen: ‘Wordt veel gedaan voor de stad waar mensen niets van weten’",
+   "url": "https://www.omroepdelft.nl/delft/raadsleden-stip-stoppen-wordt-veel-gedaan-voor-de-stad-waar-mensen-niets-van-weten/",
+   "source": "Omroep Delft",
+   "reason": "кадровые перемены в партии",
    "flagged": false,
-   "category": "club"
+   "category": "politics"
   },
   {
-   "title": "Идеальные планы",
-   "original": "Perfecte plannen",
-   "url": "https://delta.tudelft.nl/article/perfecte-plannen",
+   "title": "Председатель правления TU Delft об ИИ и роли университета",
+   "original": "CvB-voorzitter: ‘Als AI kennis overdraagt en onderzoek doet, wat is dan het bestaansrecht van een universiteit?’",
+   "url": "https://delta.tudelft.nl/article/cvb-voorzitter-als-ai-kennis-overdraagt-en-onderzoek-doet-wat-is-dan-het-bestaansrecht-van-een-universiteit",
    "source": "Delta (TU Delft)",
-   "reason": "колонка",
+   "reason": "интервью",
    "flagged": false,
    "category": "opinion"
+  },
+  {
+   "title": "Жители Rijswijk вышли на марш за сохранение центра для беженцев",
+   "original": "Rijswijkers demonstreren voor behoud van asielzoekerscentrum Lange Kleiweg",
+   "url": "https://www.omroepdelft.nl/regio/rijswijkers-demonstreren-voor-behoud-van-asielzoekerscentrum-lange-kleiweg/",
+   "source": "Omroep Delft",
+   "reason": "не в Делфте",
+   "flagged": true,
+   "category": "not_delft"
+  },
+  {
+   "title": "Диссертация: наказания за плагиат несправедливы",
+   "original": "Straffen bij plagiaat zijn niet eerlijk, blijkt uit Gronings proefschrift",
+   "url": "https://delta.tudelft.nl/article/straffen-bij-wetenschapsfraude-zijn-niet-eerlijk-blijkt-uit-nieuw-proefschrift",
+   "source": "Delta (TU Delft)",
+   "reason": "научная тема, Гронинген",
+   "flagged": false,
+   "category": "tu_internal"
+  },
+  {
+   "title": "Делфтцы берут отгулы ради GTA 6",
+   "original": "Vrij nemen voor GTA 6: ‘Naar Italië of twee weken gamen, vind ik niet heel verschillend’",
+   "url": "https://www.omroepdelft.nl/cultuur/vrij-nemen-voor-gta-6-naar-italie-of-twee-weken-gamen-vind-ik-niet-heel-verschillend/",
+   "source": "Omroep Delft",
+   "reason": "лёгкий очерк",
+   "flagged": false,
+   "category": "feature"
   }
  ],
  "skipped_events": [
   {
-   "title": "Ouder-kind workshop: maak samen een robot in Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2975484713/laat-je-inspireren-door-je-kind-the-robot-edition",
+   "title": "Theaterlezen",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1903897143/theaterlezen",
    "source": "In Delft",
-   "reason": "детское",
-   "date": "2026-11-18"
+   "reason": "регулярный кружок",
+   "date": "2026-11-19"
   },
   {
-   "title": "FREE TRYOUT BACHATA",
-   "url": "https://uitdelft.com/event/free-tryout-bachata/",
+   "title": "19 november | Koffie-inloop | Vierhovenkerk",
+   "url": "https://uitdelft.com/event/19-november-koffie-inloop-vierhovenkerk/",
    "source": "Uit Delft",
-   "reason": "рутина, мало сведений",
-   "date": "2026-11-18"
+   "reason": "церковная кофе-встреча",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Club Kid",
+   "url": "https://uitdelft.com/event/club-kid/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Fatherland",
+   "url": "https://uitdelft.com/event/fatherland/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Foret Ivre",
+   "url": "https://uitdelft.com/event/foret-ivre/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Good Bye Lenin! || Deutsches Kino (+English Subtitles)",
+   "url": "https://uitdelft.com/event/good-bye-lenin-deutsches-kino-english-subtitles/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Ida || Focus on: Pawel Pawlikowski",
+   "url": "https://uitdelft.com/event/ida-focus-on-pawel-pawlikowski/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Laatbloeier",
+   "url": "https://uitdelft.com/event/laatbloeier/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Peutervoorlezen+",
+   "url": "https://uitdelft.com/event/peutervoorlezen/",
+   "source": "Uit Delft",
+   "reason": "детское",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Queen at Sea",
+   "url": "https://uitdelft.com/event/queen-at-sea/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Spinoza",
+   "url": "https://uitdelft.com/event/spinoza/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Spreekuur Jongeren Informatie Punt (JIP)",
+   "url": "https://uitdelft.com/event/spreekuur-jongeren-informatie-punt-jip/",
+   "source": "Uit Delft",
+   "reason": "регулярная консультация",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Taalhuis",
+   "url": "https://uitdelft.com/event/taalhuis/",
+   "source": "Uit Delft",
+   "reason": "регулярные занятия Taalhuis",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "The Cycle of Love",
+   "url": "https://uitdelft.com/event/the-cycle-of-love/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "The Only Living Pickpocket in New York",
+   "url": "https://uitdelft.com/event/the-only-living-pickpocket-in-new-york/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Theaterlezen",
+   "url": "https://uitdelft.com/event/theaterlezen/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Time and Water",
+   "url": "https://uitdelft.com/event/time-and-water/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Wild Horse Nine",
+   "url": "https://uitdelft.com/event/wild-horse-nine/",
+   "source": "Uit Delft",
+   "reason": "обычный сеанс кино",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Boekenclub Voorhof",
+   "url": "https://uitdelft.com/event/boekenclub-voorhof/",
+   "source": "Uit Delft",
+   "reason": "регулярный кружок",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "De Tafel van Delft",
+   "url": "https://uitdelft.com/event/de-tafel-van-delft/",
+   "source": "Uit Delft",
+   "reason": "мало сведений, местная встреча",
+   "date": "2026-11-20"
   },
   {
    "title": "Global Entrepreneurship Week Delft 2026 Skills #6- Play",
    "url": "https://uitdelft.com/event/global-entrepreneurship-week-delft-2026-skills-6-play/",
    "source": "Uit Delft",
-   "reason": "дубликат серии, мелкое событие TU",
+   "reason": "внутреннее событие TU Delft",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "Informatiepunt Digitale Overheid (IDO)",
+   "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido/",
+   "source": "Uit Delft",
+   "reason": "регулярная консультация",
    "date": "2026-11-20"
   },
   {
    "title": "Latin in the City – Cultuurlab",
    "url": "https://uitdelft.com/event/latin-in-the-city-cultuurlab/",
    "source": "Uit Delft",
-   "reason": "дубликат Latin in the City",
+   "reason": "мало сведений",
    "date": "2026-11-20"
   },
   {
    "title": "Loodsfeest Proteus Eretes",
    "url": "https://uitdelft.com/event/loodsfeest-proteus-eretes/",
    "source": "Uit Delft",
-   "reason": "праздник студенческой гребной ассоциации",
+   "reason": "клуб гребцов",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "Open Stage X Delft Jazz",
+   "url": "https://uitdelft.com/event/open-stage-x-delft-jazz/",
+   "source": "Uit Delft",
+   "reason": "open stage",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "Taalhuis",
+   "url": "https://uitdelft.com/event/taalhuis-2/",
+   "source": "Uit Delft",
+   "reason": "регулярные занятия Taalhuis",
    "date": "2026-11-20"
   },
   {
@@ -131,84 +261,147 @@
    "date": "2026-11-21"
   },
   {
-   "title": "Sinterklaasintocht Delft",
-   "url": "https://uitdelft.com/event/sinterklaasintocht-delft/",
+   "title": "CoderDojo DOK Tanthof",
+   "url": "https://uitdelft.com/event/coderdojo-dok-tanthof/",
    "source": "Uit Delft",
-   "reason": "дубликат интохта Синтерклааса",
+   "reason": "детское",
    "date": "2026-11-21"
+  },
+  {
+   "title": "Dansen met de Dood | Tresonanz",
+   "url": "https://uitdelft.com/event/dansen-met-de-dood-tresonanz-3/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-21"
+  },
+  {
+   "title": "Free Bhangra Workshop – by Bhangra Evolution The Hague",
+   "url": "https://uitdelft.com/event/free-bhangra-workshop-by-bhangra-evolution-the-hague/",
+   "source": "Uit Delft",
+   "reason": "мало сведений",
+   "date": "2026-11-21"
+  },
+  {
+   "title": "Indie Band Night",
+   "url": "https://uitdelft.com/event/indie-band-night/",
+   "source": "Uit Delft",
+   "reason": "местные группы",
+   "date": "2026-11-21"
+  },
+  {
+   "title": "INVITE | THE Party | Sir Winston Party Centrum | 21 November",
+   "url": "https://uitdelft.com/event/invite-the-party-sir-winston-party-centrum-21-november/",
+   "source": "Uit Delft",
+   "reason": "вечеринка в клубе",
+   "date": "2026-11-21"
+  },
+  {
+   "title": "Kinto speelt Sinterklaas en de pinnige Piet",
+   "url": "https://www.delftopzondag.nl/agenda/2026/11/22/kinto-speelt-sinterklaas-en-de-pinnige-piet-111475",
+   "source": "Delft op Zondag",
+   "reason": "детское",
+   "date": "2026-11-22"
+  },
+  {
+   "title": "Deutsches Kino: Good Bye, Lenin! bij Lumen Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/798702129/filmhuis-lumen-presents-deutsches-kino-good-bye-lenin",
+   "source": "In Delft",
+   "reason": "не хватило места в выпуске",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "21/11: Delft LATIN Night met workshop Salsa",
+   "url": "https://uitdelft.com/event/21-11-delft-latin-night-met-workshop-salsa/",
+   "source": "Uit Delft",
+   "reason": "не хватило места в выпуске",
+   "date": "2026-11-21"
+  },
+  {
+   "title": "Tango Café November 2026 – Workshops and Live Music",
+   "url": "https://uitdelft.com/event/tango-cafe-november-2026-workshops-and-live-music/",
+   "source": "Uit Delft",
+   "reason": "не хватило места в выпуске",
+   "date": "2026-11-21"
+  },
+  {
+   "title": "Expositie Inge Oey-Go en Yolanda Spaans in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/606704853/opening-artist-in-the-spotlight",
+   "source": "In Delft",
+   "reason": "не хватило места в выпуске",
+   "date": "2026-11-22"
   }
  ],
  "events": [
   {
-   "title": "Paint and Meditate",
-   "when": "ср 18 нояб",
-   "where": "The Social Hub Delft",
+   "title": "Robots in Business: The Robots Are Here",
+   "when": "чт 19 нояб, 13:00–19:00",
+   "where": "RoboHouse, Molengraaffsingel 29",
    "price": "",
-   "summary": "Занятие по рисованию и медитации.",
-   "url": "https://uitdelft.com/event/paint-and-meditate/",
-   "date": "2026-11-18"
+   "summary": "Как робототехника применяется в бизнесе уже сейчас, на кампусе TU Delft.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2093799332/robots-in-business-the-robots-are-here",
+   "date": "2026-11-19"
   },
   {
-   "title": "Dolf Jansen — Oudejaars 2026: Schaamteloos",
-   "when": "ср 18 нояб, 20:15",
-   "where": "Theater de Veste",
-   "price": "от €27,50",
-   "summary": "Новогодняя кабаре-программа известного комика Dolf Jansen.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1295793630/dolf-jansen-oudejaars-2026-schaamteloos",
-   "date": "2026-11-18"
-  },
-  {
-   "title": "BITS & PIECES — мультимедийный реквием",
-   "when": "ср 18 нояб, 20:30",
+   "title": "Bomans",
+   "when": "чт 19 нояб, 14:30",
    "where": "Hal015",
    "price": "",
-   "summary": "Мультимедийный реквием, где соединяются литература, музыка, кино и танец.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1064573901/bits-pieces-jan-boiten-jan-van-eerd-hans-dagelet-en-laurens-de-boer",
-   "date": "2026-11-18"
-  },
-  {
-   "title": "Global Entrepreneurship Week Delft: Skills #4 – Communities",
-   "when": "чт 19 нояб",
-   "where": "TU Delft, Faculty of TPM – Arena",
-   "price": "",
-   "summary": "Событие Недели предпринимательства о сообществах.",
-   "url": "https://uitdelft.com/event/global-entrepreneurship-week-delft-2026-skills-4-communities/",
+   "summary": "Дневная программа о писателе Godfried Bomans и его юморе.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1504741705/bomans",
    "date": "2026-11-19"
   },
   {
-   "title": "Writing Huddle: The Hidden Life of Objects",
-   "when": "чт 19 нояб",
-   "where": "TU Delft Library",
-   "price": "",
-   "summary": "Творческая писательская мастерская в библиотеке TU Delft.",
-   "url": "https://uitdelft.com/event/writing-huddle-the-hidden-life-of-objects/",
+   "title": "Blauw Comedy Lab: Tim Hartog и Tobi Kooiman",
+   "when": "чт 19 нояб, 20:00",
+   "where": "",
+   "price": "€20",
+   "summary": "Стендап-вечер с четырьмя комиками, среди них Tim Hartog и Tobi Kooiman.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3524859554/blauw-comedy-lab-2",
    "date": "2026-11-19"
   },
   {
-   "title": "Latin in the City",
-   "when": "пт 20 нояб",
-   "where": "Brabantse Turfmarkt 9",
+   "title": "TreSonanz — «Танец со смертью»",
+   "when": "чт 19 нояб, 20:15 (до 21 нояб.)",
+   "where": "Theater de Veste",
    "price": "",
-   "summary": "Четыре диджея играют сальсу и другую латиноамериканскую музыку.",
-   "url": "https://uitdelft.com/event/latin-in-the-city-2/",
+   "summary": "Постановка TreSonanz «Dansen met de dood» в Theater de Veste, показы 19–21 ноября.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1149923829/tresonanz-dansen-met-de-dood",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Bureau Vergezicht / Theater Rotterdam — Een groter verhaal",
+   "when": "чт 19 нояб, 20:15",
+   "where": "Theater de Veste",
+   "price": "€27,50",
+   "summary": "Театральный спектакль в Theater de Veste.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/864895331/bureau-vergezicht-i-theater-rotterdam-een-groter-verhaal",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Donnie Darko — 25 лет фильму",
+   "when": "чт 19 нояб, 21:40",
+   "where": "Filmhuis Lumen",
+   "price": "",
+   "summary": "Спецпоказ культового фильма к 25-летию.",
+   "url": "https://uitdelft.com/event/donnie-darko-25th-anniversary/",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Sara Kroos — Prikkelarme Kermis",
+   "when": "пт 20 нояб, 20:15",
+   "where": "Theater de Veste",
+   "price": "€29,50",
+   "summary": "Выступление Sara Kroos в Theater de Veste.",
+   "url": "https://uitdelft.com/event/prikkelarme-kermis-sara-kroos/",
    "date": "2026-11-20"
   },
   {
-   "title": "StationToStation — The Serious Moonlight Tour",
-   "when": "сб 21 нояб",
-   "where": "Hal015",
-   "price": "€0–20",
-   "summary": "Концерт трибьют-программы с песнями Дэвида Боуи.",
-   "url": "https://uitdelft.com/event/stationtostation-the-serious-moonlight-tour/",
-   "date": "2026-11-21"
-  },
-  {
-   "title": "Приезд Синтерклааса в Делфт",
+   "title": "Прибытие Синтерклааса в Делфт",
    "when": "сб 21 нояб, 12:15",
-   "where": "Oostsingel у Tweemolentjeskade, затем по центру к Markt",
-   "price": "бесплатно",
-   "summary": "Городской праздник: Синтерклаас с пытами прибывает на лодке, затем проезжает по центру до Markt.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3876065804/intocht-sinterklaas",
+   "where": "Oostsingel (Tweemolentjeskade), затем по центру до Markt",
+   "price": "",
+   "summary": "Городской праздник: встреча Синтерклааса и объезд центра до Markt.",
+   "url": "https://uitdelft.com/event/sinterklaasintocht-delft/",
    "date": "2026-11-21"
   }
  ]
