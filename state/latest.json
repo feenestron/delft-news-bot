@@ -1,211 +1,146 @@
 {
  "version": 1,
- "date": "2026-11-22",
- "title": "Делфт · воскресенье, 22 ноября",
- "published": "2026-11-22T07:30:43.475761+01:00",
+ "date": "2026-11-23",
+ "title": "Делфт · понедельник, 23 ноября",
+ "published": "2026-11-23T07:30:41.605643+01:00",
  "news": [
   {
-   "title": "Жители Debussyflat в Buitenhof жалуются на угрозы и наркоторговлю",
-   "summary": "Жители дома в Buitenhof сообщают об угрозах, запугивании, вандализме и связанных с наркотиками проблемах и опасаются за безопасность.",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111707/bewoners-debussyflat-voelen-zich-onveilig",
-   "source": "Delft op Zondag",
-   "level": "interesting"
+   "title": "Забастовка: 23 и 24 ноября автобусы в Делфте не ходят или ходят частично",
+   "summary": "FNV и CNV объявили общенациональную забастовку в региональном транспорте. Автобусы EBS могут ходить в ограниченном числе, автобусы RET не ходят, метро и трамваи работают.",
+   "url": "https://www.omroepdelft.nl/delft/landelijke-staking-streekvervoer-ligt-weer-stil/",
+   "source": "Omroep Delft",
+   "level": "must"
   },
   {
-   "title": "В Buitenhof в январе откроется социальный ресторан Tante Hap",
-   "summary": "Ресторан откроется в бывшей спортивной столовой Buitenhof, примерно на 50 мест; там будут работать местные кулинары. Столовой по субботам сможет пользоваться и клуб Excelsior.",
-   "url": "https://www.omroepdelft.nl/delft/buitenhof/westafette-chef-kok-christiaan-kroes-zet-tante-hap-op/",
-   "source": "Omroep Delft",
+   "title": "В Делфте запустили местную подарочную карту Delftse Florijn",
+   "summary": "20 ноября, в День предпринимателя, официально представлена Delftse Florijn — локальный подарочный сертификат. Первые экземпляры символически потратил wethouder Van Velzen.",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111691/delft-heeft-een-eigen-lokale-cadeaubon-de-delftse-florijn",
+   "source": "Delft op Zondag",
    "level": "interesting"
   }
  ],
  "maybe": [],
  "skipped": [
   {
-   "title": "Nova Sonantia исполнит итальянское барокко",
-   "original": "Nova Sonantia vertolkt magische barokmuziek",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111706/nova-sonantia-vertolkt-magische-barokmuziek",
+   "title": "Детский сад Jeremina в Delfgauw",
+   "original": "Bij Jeremina mogen kinderen zijn wie ze zijn",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111669/bij-jeremina-mogen-kinderen-zijn-wie-ze-zijn",
    "source": "Delft op Zondag",
-   "reason": "анонс мероприятия не в ближайшие дни",
-   "flagged": false,
-   "announce": true
-  },
-  {
-   "title": "Скрытый дом Madame de Berry",
-   "original": "Het Verborgen Huis van Madame de Berry",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111705/het-verborgen-huis-van-madame-de-berry",
-   "source": "Delft op Zondag",
-   "reason": "реклама места / очерк",
+   "reason": "реклама/очерк",
    "flagged": false,
    "category": "feature"
   },
   {
-   "title": "Прибытие Синтерклааса в Делфт 2026",
-   "original": "Zie ginds komt de stoomboot: Sinterklaasintocht Delft 2026",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/zie-ginds-komt-de-stoomboot-sinterklaasintocht-delft-2026/",
-   "source": "Omroep Delft",
-   "reason": "прошедшее праздничное событие, репортаж",
+   "title": "Banyuls — малоизвестный родственник портвейна",
+   "original": "Banyuls, het onbekende zusje van Port",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111670/banyuls-het-onbekende-zusje-van-port",
+   "source": "Delft op Zondag",
+   "reason": "реклама магазина",
+   "flagged": false,
+   "category": "ad"
+  },
+  {
+   "title": "Программа коллегии Midden-Delfland на 2026–2030",
+   "original": "‘We willen behouden wat goed is en verbeteren waar dat kan’",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111687/we-willen-behouden-wat-goed-is-en-verbeteren-waar-dat-kan",
+   "source": "Delft op Zondag",
+   "reason": "не в Делфте",
+   "flagged": false,
+   "category": "not_delft"
+  },
+  {
+   "title": "Смена членов совета от STIP",
+   "original": "Wisseling van raadsleden bij STIP",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111685/wisseling-van-raadsleden-bij-stip",
+   "source": "Delft op Zondag",
+   "reason": "партийная политика",
+   "flagged": false,
+   "category": "politics"
+  },
+  {
+   "title": "Художник подарил книгу wethouder Van Velzen",
+   "original": "Kunstschilder overhandigt boek aan wethouder Van Velzen",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111682/kunstschilder-overhandigt-boek-aan-wethouder-van-velzen",
+   "source": "Delft op Zondag",
+   "reason": "светская хроника",
    "flagged": false,
    "category": "feature"
   },
   {
-   "title": "DHL и DVC изучают возможность сотрудничества",
-   "original": "Positieve signalen over samenwerking tussen DHL en DVC",
-   "url": "https://www.delftopzondag.nl/nieuws/sport/111690/positieve-signalen-over-samenwerking-tussen-dhl-en-dvc",
+   "title": "Истории Buitenhof, Voorhof и Tanthof станут песнями",
+   "original": "Verhalen uit Buitenhof, Voorhof en Tanthof worden liedjes",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111678/verhalen-uit-buitenhof-voorhof-en-tanthof-worden-liedjes",
    "source": "Delft op Zondag",
-   "reason": "новости футбольных клубов",
-   "flagged": false,
-   "category": "club"
-  },
-  {
-   "title": "Мужская команда Hudito одержала четвёртую победу подряд",
-   "original": "Heren van Hudito boeken vierde overwinning op rij",
-   "url": "https://www.delftopzondag.nl/nieuws/sport/111688/heren-van-hudito-boeken-vierde-overwinning-op-rij",
-   "source": "Delft op Zondag",
-   "reason": "спортивный клуб",
-   "flagged": false,
-   "category": "club"
-  },
-  {
-   "title": "Выше сборы, много планов: бюджет Делфта на 2027",
-   "original": "Hogere lasten, veel plannen, concrete invulling volgt",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111671/hogere-lasten-veel-plannen-concrete-invulling-volgt",
-   "source": "Delft op Zondag",
-   "reason": "уже публиковали бюджет",
-   "flagged": false,
-   "category": "already_published"
-  },
-  {
-   "title": "Jules Maring во втором футбольном возрасте в SEP",
-   "original": "Jules Maring geniet van zijn tweede voetballeven bij SEP",
-   "url": "https://www.delftopzondag.nl/nieuws/sport/111674/jules-maring-geniet-van-zijn-tweede-voetballeven-bij-sep",
-   "source": "Delft op Zondag",
-   "reason": "спортивный клуб",
-   "flagged": false,
-   "category": "club"
-  },
-  {
-   "title": "Hemd van het Lijf: Tamara Obreskova",
-   "original": "Hemd van het Lijf: Tamara Obreskova",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111689/hemd-van-het-lijf-tamara-obreskova",
-   "source": "Delft op Zondag",
-   "reason": "интервью",
+   "reason": "очерк о человеке",
    "flagged": false,
    "category": "feature"
   },
   {
-   "title": "Dubbel Delft 21/11",
-   "original": "Dubbel Delft 21/11",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111686/dubbel-delft-21-11",
+   "title": "Delft поощряет устойчивое поведение программой D’serve",
+   "original": "Delft beloont duurzaam gedrag en inspireert andere steden",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111680/delft-beloont-duurzaam-gedrag-en-inspireert-andere-steden",
    "source": "Delft op Zondag",
-   "reason": "рубрика со старыми фото",
+   "reason": "пиар/итоги программы",
    "flagged": false,
-   "category": "feature"
+   "category": "pr"
   },
   {
-   "title": "Delft van Toen: Beestenmarkt",
-   "original": "Het Delft van Toen: Peter de Vreede",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111677/het-delft-van-toen-peter-de-vreede",
+   "title": "Motorhuis Delft: BYD",
+   "original": "Motorhuis Delft: dé plek om BYD te ontdekken!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111675/motorhuis-delft-de-plek-om-byd-te-ontdekken-",
    "source": "Delft op Zondag",
-   "reason": "историческая колонка",
+   "reason": "реклама",
    "flagged": false,
-   "category": "feature"
+   "category": "ad"
   },
   {
-   "title": "Delvenaar in Beeld: Simon (59)",
-   "original": "Delvenaar in Beeld: Simon (59)",
-   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111672/delvenaar-in-beeld-simon-59-",
+   "title": "Бизнес-парк SILO Delft",
+   "original": "Bedrijvenpark SILO Delft: kwalitatief en toekomstgericht",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111695/bedrijvenpark-silo-delft-kwalitatief-en-toekomstgericht",
    "source": "Delft op Zondag",
-   "reason": "портрет жителя",
+   "reason": "реклама/пиар",
    "flagged": false,
-   "category": "feature"
+   "category": "pr"
   },
   {
-   "title": "Full Speed продлил контракт с тренером Leroy Vaes",
-   "original": "Full Speed onderstreept ambitie met langer verblijf Leroy Vaes",
-   "url": "https://www.delftopzondag.nl/nieuws/sport/111684/full-speed-onderstreept-ambitie-met-langer-verblijf-leroy-vaes",
+   "title": "Обновление кухни у Keukenspuiter",
+   "original": "Geef je keuken een metamorfose zonder het hoge prijskaartje!",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111683/geef-je-keuken-een-metamorfose-zonder-het-hoge-prijskaartje-",
    "source": "Delft op Zondag",
-   "reason": "спортивный клуб",
+   "reason": "реклама, Zoetermeer",
    "flagged": false,
-   "category": "club"
+   "category": "ad"
+  },
+  {
+   "title": "Сезонные продукты в Ekoplaza Delft",
+   "original": "Proef de pure kracht van het seizoen bij Ekoplaza Delft",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111673/proef-de-pure-kracht-van-het-seizoen-bij-ekoplaza-delft",
+   "source": "Delft op Zondag",
+   "reason": "реклама",
+   "flagged": false,
+   "category": "ad"
   }
  ],
  "skipped_events": [
   {
-   "title": "Kinto speelt Sinterklaas en de pinnige Piet",
-   "url": "https://www.delftopzondag.nl/agenda/2026/11/22/kinto-speelt-sinterklaas-en-de-pinnige-piet-111475",
-   "source": "Delft op Zondag",
-   "reason": "детское",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Theater Artemis, Het Zuidelijk Toneel & hetpaleis - Nu is het nog rustig (8+)",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1246886343/theater-artemis-het-zuidelijk-toneel-hetpaleis-nu-is-het-nog-rustig-8",
+   "title": "Expositie Nathalie Kropmans",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3771255821/een-bijzondere-fototentoonstelling-van-nathalie-kropmans",
    "source": "In Delft",
-   "reason": "детский спектакль (8+)",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Techniekstudio: Experimenteren met Kunst",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1506979226/techniekstudio-experimenteren-met-kunst",
-   "source": "In Delft",
-   "reason": "детское",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Sunday Sounds - 7ish",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2677926612/sunday-sounds-63",
-   "source": "In Delft",
-   "reason": "дубликат",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Techniekstudio: Maken met Plastics",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3235642400/techniekstudio-maken-met-plastics",
-   "source": "In Delft",
-   "reason": "детское",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "22 november | Vriendendienst | Immanuelkerk",
-   "url": "https://uitdelft.com/event/22-november-vriendendienst-immanuelkerk/",
-   "source": "Uit Delft",
-   "reason": "обычная церковная служба",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Ignition op Zondag in de Waag",
-   "url": "https://uitdelft.com/event/ignition-op-zondag-in-de-waag/",
-   "source": "Uit Delft",
-   "reason": "рутина",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Live muziek met Memory Train",
-   "url": "https://uitdelft.com/event/live-muziek-met-memory-train/",
-   "source": "Uit Delft",
-   "reason": "бар, местная группа",
-   "date": "2026-11-22"
+   "reason": "последний день, короткая выставка",
+   "date": "2026-11-23"
   },
   {
    "title": "Informatiepunt Digitale Overheid (IDO)",
    "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-2/",
    "source": "Uit Delft",
-   "reason": "рутинная консультация",
+   "reason": "рутина (IDO)",
    "date": "2026-11-23"
-  },
-  {
-   "title": "Birra Moretti Session",
-   "url": "https://uitdelft.com/event/birra-moretti-session/",
-   "source": "Uit Delft",
-   "reason": "бар, джем-сейшн",
-   "date": "2026-11-24"
   },
   {
    "title": "Creatief Atelier",
    "url": "https://uitdelft.com/event/creatief-atelier/",
    "source": "Uit Delft",
-   "reason": "рутина, кружок",
+   "reason": "регулярный кружок",
    "date": "2026-11-24"
   },
   {
@@ -219,14 +154,14 @@
    "title": "IDO + Taalhuis",
    "url": "https://uitdelft.com/event/ido-taalhuis/",
    "source": "Uit Delft",
-   "reason": "рутина",
+   "reason": "рутина (IDO)",
    "date": "2026-11-24"
   },
   {
    "title": "Jamsession @ Bebop",
    "url": "https://uitdelft.com/event/jamsession-bebop-8/",
    "source": "Uit Delft",
-   "reason": "бар, джем-сейшн",
+   "reason": "дубликат, бар",
    "date": "2026-11-24"
   },
   {
@@ -254,7 +189,7 @@
    "title": "25 november | Leeskring Mystiek | Vierhovenkerk",
    "url": "https://uitdelft.com/event/25-november-leeskring-mystiek-vierhovenkerk/",
    "source": "Uit Delft",
-   "reason": "церковное, кружок",
+   "reason": "церковный кружок",
    "date": "2026-11-25"
   },
   {
@@ -275,80 +210,46 @@
    "title": "Informatiepunt Digitale Overheid (IDO)",
    "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-3/",
    "source": "Uit Delft",
-   "reason": "рутина",
-   "date": "2026-11-25"
-  },
-  {
-   "title": "Podium Pannenkoek",
-   "url": "https://uitdelft.com/event/podium-pannenkoek/",
-   "source": "Uit Delft",
-   "reason": "местная сцена, мелкое",
+   "reason": "рутина (IDO)",
    "date": "2026-11-25"
   }
  ],
  "events": [
   {
-   "title": "The Magnificent Duo — Suhail Sufi & Myscmme Bosu",
-   "when": "вс 22 нояб",
-   "where": "Event Plaza",
-   "price": "",
-   "summary": "Выступление дуэта Suhail Sufi и Myscmme Bosu.",
-   "url": "https://uitdelft.com/event/the-magnificent-duo-suhail-sufi-myscmme-bosu/",
-   "date": "2026-11-22"
+   "title": "Studium Generale TU Delft — Философия и…",
+   "when": "пн 23 нояб, 20:30",
+   "where": "Theater de Veste",
+   "price": "€15 (CJP €7,50)",
+   "summary": "Начало цикла философских лекций Studium Generale TU Delft в Theater de Veste.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3452560648/studium-generale-tu-delft-filosofie-en-beginnen",
+   "date": "2026-11-23"
   },
   {
-   "title": "Jazz on Sunday: бранч с живым джазом",
-   "when": "вс 22 нояб, 12:00",
-   "where": "",
-   "price": "€54,50",
-   "summary": "Большой бранч с живым джазом Naomi Tournier и Julian on Sax.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3913079984/jazz-on-sunday-brunch-bij-van-der-valk-hotel-delft-a4",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Воркшоп Bullet Journal 2027",
-   "when": "вс 22 нояб, 13:00",
-   "where": "",
-   "price": "€45",
-   "summary": "Мастер-класс по созданию персонального bullet journal на 2027 год.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2618900154/start-jouw-bullet-journal-voor-2027",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Лекция об Elise van Calcar (Annette Faber)",
-   "when": "вс 22 нояб, 13:30",
-   "where": "",
-   "price": "€15",
-   "summary": "Лекция о религиозных взглядах, спиритизме и работе Elise van Calcar в сфере образования и прав женщин.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1255288111/lezing-over-elise-van-calcar",
-   "date": "2026-11-22"
-  },
-  {
-   "title": "Sunday Sounds: 7ish",
-   "when": "вс 22 нояб, 15:30",
-   "where": "Hampshire Hotel",
+   "title": "Birra Moretti Session",
+   "when": "вт 24 нояб, 20:30",
+   "where": "Jazzcafé Bebop",
    "price": "бесплатно",
-   "summary": "Бесплатный воскресный концерт живой музыки в отеле.",
-   "url": "https://uitdelft.com/event/sunday-sounds-7ish/",
-   "date": "2026-11-22"
+   "summary": "Вечерняя музыкальная сессия в джаз-кафе Bebop.",
+   "url": "https://uitdelft.com/event/birra-moretti-session/",
+   "date": "2026-11-24"
   },
   {
-   "title": "Plates & Palettes",
-   "when": "ср 25 нояб",
-   "where": "The Social Hub Delft",
+   "title": "Podium Pannenkoek",
+   "when": "ср 25 нояб, 18:00",
+   "where": "Cultuurhuis (Stunt)",
    "price": "",
-   "summary": "Мероприятие в The Social Hub Delft.",
-   "url": "https://uitdelft.com/event/plates-palettes/",
+   "summary": "Вечер открытой сцены в Cultuurhuis.",
+   "url": "https://uitdelft.com/event/podium-pannenkoek/",
    "date": "2026-11-25"
   },
   {
-   "title": "WIZE Congres: «Wonen in de Zilveren Eeuw»",
-   "when": "ср 25 нояб",
-   "where": "TU Delft Faculteit Bouwkunde",
+   "title": "Makers Winterfair",
+   "when": "чт 26 нояб, весь день",
+   "where": "Hal015",
    "price": "",
-   "summary": "Первый конгресс WIZE о жилье и уходе за пожилыми.",
-   "url": "https://uitdelft.com/event/wonen-in-de-zilveren-eeuw/",
-   "date": "2026-11-25"
+   "summary": "Зимняя ярмарка местных мастеров в Hal015.",
+   "url": "https://uitdelft.com/event/makers-winterfair/",
+   "date": "2026-11-26"
   }
  ]
 }
