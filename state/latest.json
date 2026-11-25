@@ -1,34 +1,20 @@
 {
  "version": 1,
- "date": "2026-11-24",
- "title": "Делфт · вторник, 24 ноября",
- "published": "2026-11-24T07:30:41.613309+01:00",
+ "date": "2026-11-25",
+ "title": "Делфт · среда, 25 ноября",
+ "published": "2026-11-25T07:30:44.805451+01:00",
  "news": [
   {
-   "title": "Пожар в dakkapel дома на Buitenwatersloot",
-   "summary": "23 ноября загорелась мансардная надстройка дома на Buitenwatersloot, пожарным пришлось частично разобрать её. Никто не пострадал; возможная причина — работы в доме в тот же день.",
-   "url": "https://www.omroepdelft.nl/delft/voordijkshoorn/brand-in-dakkapel-van-woning-aan-buitenwatersloot/",
+   "title": "Пропавший Roy (41) найден мёртвым в воде у Fabrieksstraat в Voorhof",
+   "summary": "24 ноября полиция нашла тело пропавшего с 15 ноября делфтца Roy в воде у Fabrieksstraat. По данным полиции, преступления нет.",
+   "url": "https://www.omroepdelft.nl/delft/voorhof/lichaam-vermiste-roy-41-gevonden-in-water-voorhof/",
    "source": "Omroep Delft",
    "level": "must"
   },
   {
-   "title": "Выходные в Делфте и окрестностях: горевший контейнер повредил две машины, тело в воде у Jaagpad",
-   "summary": "В Делфте горевший мусорный контейнер повредил две машины. 21 ноября у Jaagpad в воде нашли тело, по данным полиции, преступления нет. Также полиция провела обыск у мотоклуба в Rijswijk.",
-   "url": "https://www.omroepdelft.nl/delft/voorhof/112-weekendoverzicht-motorclub-doorzocht-in-rijswijk-en-autobrand-in-delft/",
-   "source": "Omroep Delft",
-   "level": "must"
-  },
-  {
-   "title": "Полиция ищет пропавшего делфтца Roy (41), последний раз его видели на вокзале",
-   "summary": "41-летний Roy пропал в ночь на 15 ноября, его последний раз видели на станции Delft. Полиция считает случай срочным; на нём были белая рубашка, синие джинсы и чёрные ботинки с белой подошвой. Информацию можно сообщить по 0900 8844, при встрече — звонить 112.",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/roy-41-al-ruim-een-week-vermist-familie-en-politie-maken-zich-grote-zorgen/",
-   "source": "Omroep Delft",
-   "level": "must"
-  },
-  {
-   "title": "У бывшей gemeentewerf De Staal вырубили 67 деревьев под новое жильё",
-   "summary": "Гемеенте сняла 67 деревьев ради строительства домов, за каждое обещают посадить новое. Совет жителей Oostblok жалуется, что их предупредили слишком поздно.",
-   "url": "https://www.omroepdelft.nl/delft/vrijenban/opeens-zijn-de-bomen-weg-bij-de-staal-buurvrouw-was-helemaal-overstuur/",
+   "title": "Pechtold хочет сократить видеонаблюдение на Kromstraat и Peperstraat",
+   "summary": "Камеры можно оставить, но смотреть записи в реальном времени только в часы ночной жизни, например в субботу после 22:00. Камеры там с июля 2025 года; скоро обещают данные об инцидентах.",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/burgemeester-pechtold-cameras-in-krom-en-peperstraat-mogen-blijven-maar-niet-hele-week-nodig/",
    "source": "Omroep Delft",
    "level": "interesting"
   }
@@ -36,90 +22,84 @@
  "maybe": [],
  "skipped": [
   {
-   "title": "Дети рассказали wethouder о мечтах про зелёный Делфт",
-   "original": "Kinderen delen dromen over groener Delft met wethouder",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/kinderen-delen-dromen-over-groener-delft-met-wethouder/",
+   "title": "Тело найдено в воде у Fabrieksstraat",
+   "original": "Overleden persoon aangetroffen in water bij Fabrieksstraat",
+   "url": "https://www.omroepdelft.nl/delft/voorhof/overleden-persoon-aangetroffen-in-water-bij-fabrieksstraat/",
    "source": "Omroep Delft",
-   "reason": "очерк, детский проект",
+   "reason": "дубликат",
+   "flagged": false,
+   "category": "duplicate"
+  },
+  {
+   "title": "Orange the World в Делфте: кампания против насилия",
+   "original": "Orange the World in Delft: mannen en jongens in actie tegen geweld",
+   "url": "https://www.omroepdelft.nl/delft/orange-the-world-in-delft-mannen-en-jongens-in-actie-tegen-geweld/",
+   "source": "Omroep Delft",
+   "reason": "анонс кампании, событие есть в мероприятиях",
+   "flagged": false,
+   "category": "other"
+  },
+  {
+   "title": "Margot пишет «Делфтскую Библию»",
+   "original": "Margot schrijft Delftse Bijbel: ‘Ik hoop dat mensen er lol aan beleven’",
+   "url": "https://www.omroepdelft.nl/delft/margot-schrijft-delftse-bijbel-ik-hoop-dat-mensen-er-lol-aan-beleven/",
+   "source": "Omroep Delft",
+   "reason": "очерк о книге",
    "flagged": false,
    "category": "feature"
   },
   {
-   "title": "Лейденский университет отказался от сотрудничества с китайским вузом",
-   "original": "Universiteit Leiden ziet af van omstreden samenwerking met Chinese universiteit",
-   "url": "https://delta.tudelft.nl/article/universiteit-leiden-ziet-af-van-omstreden-samenwerking-met-chinese-universiteit",
-   "source": "Delta (TU Delft)",
+   "title": "Становится ли Делфт безопаснее?",
+   "original": "Wordt het veiliger in Delft of juist niet?",
+   "url": "https://www.omroepdelft.nl/politiek/wordt-het-veiliger-in-delft-of-juist-niet/",
+   "source": "Omroep Delft",
+   "reason": "политические дебаты",
+   "flagged": false,
+   "category": "politics"
+  },
+  {
+   "title": "Дефицит осадков в регионе Delfland ещё не восполнен",
+   "original": "Neerslagtekort regio Delfland nog niet opgelost: ‘Droogte is niet voorbij’",
+   "url": "https://www.omroepdelft.nl/regio/neerslagtekort-regio-delfland-nog-niet-opgelost-droogte-is-niet-voorbij/",
+   "source": "Omroep Delft",
+   "reason": "аналитика, нет решения",
+   "flagged": false,
+   "category": "feature"
+  },
+  {
+   "title": "Делфтца (31) задержали за взрыв в Hilversum",
+   "original": "Man (31) uit Delft aangehouden voor explosie in Hilversum",
+   "url": "https://www.omroepdelft.nl/delft/man-31-uit-delft-aangehouden-voor-explosie-in-hilversum/",
+   "source": "Omroep Delft",
+   "reason": "происшествие не в Делфте",
+   "flagged": true,
+   "category": "not_delft"
+  },
+  {
+   "title": "Взрыв в Den Haag был слышен в Делфте",
+   "original": "Zware explosie in Den Haag tot in Delft te horen: gevel woonwagen weggeblazen",
+   "url": "https://www.omroepdelft.nl/regio/zware-explosie-in-den-haag-tot-in-delft-te-horen-gevel-woonwagen-weggeblazen/",
+   "source": "Omroep Delft",
    "reason": "не в Делфте",
    "flagged": false,
    "category": "not_delft"
   },
   {
-   "title": "Почти половина жителей Делфта замечала подозрительные ситуации в районе",
-   "original": "Bijna helft van inwoners Delft signaleert verdachte situaties in hun buurt",
-   "url": "https://www.omroepdelft.nl/delft/bijna-helft-van-inwoners-delft-signaleert-verdachte-situaties-in-hun-buurt/",
-   "source": "Omroep Delft",
-   "reason": "статистика CBS, не событие",
+   "title": "ChatGPThesis",
+   "original": "ChatGPThesis",
+   "url": "https://delta.tudelft.nl/article/chatgpthesis",
+   "source": "Delta (TU Delft)",
+   "reason": "колонка",
    "flagged": false,
-   "category": "other"
-  },
-  {
-   "title": "Delftse Dribbels: итоги матчей любительских клубов",
-   "original": "Delftse Dribbels: Ariston’80 winnaar in spectaculaire derby tegen DHL",
-   "url": "https://www.omroepdelft.nl/sport/delftse-dribbels-ariston80-winnaar-in-spectaculaire-derby-tegen-dhl/",
-   "source": "Omroep Delft",
-   "reason": "новости спортивных клубов",
-   "flagged": false,
-   "category": "club"
+   "category": "opinion"
   }
  ],
  "skipped_events": [
   {
-   "title": "Creatief Atelier",
-   "url": "https://uitdelft.com/event/creatief-atelier/",
-   "source": "Uit Delft",
-   "reason": "регулярная мастерская",
-   "date": "2026-11-24"
-  },
-  {
-   "title": "Digitaal Oefenen",
-   "url": "https://uitdelft.com/event/digitaal-oefenen/",
-   "source": "Uit Delft",
-   "reason": "рутина, регулярные занятия",
-   "date": "2026-11-24"
-  },
-  {
-   "title": "IDO + Taalhuis",
-   "url": "https://uitdelft.com/event/ido-taalhuis/",
-   "source": "Uit Delft",
-   "reason": "рутина, консультация",
-   "date": "2026-11-24"
-  },
-  {
-   "title": "Jamsession @ Bebop",
-   "url": "https://uitdelft.com/event/jamsession-bebop-8/",
-   "source": "Uit Delft",
-   "reason": "джем-сейшн в баре",
-   "date": "2026-11-24"
-  },
-  {
-   "title": "Peutervoorlezen+",
-   "url": "https://uitdelft.com/event/peutervoorlezen-2/",
-   "source": "Uit Delft",
-   "reason": "детское",
-   "date": "2026-11-24"
-  },
-  {
-   "title": "Taalcafé",
-   "url": "https://uitdelft.com/event/taalcafe/",
-   "source": "Uit Delft",
-   "reason": "регулярный языковой клуб",
-   "date": "2026-11-24"
-  },
-  {
    "title": "25 november | Happie in de Hofkerk",
    "url": "https://uitdelft.com/event/25-november-happie-in-de-hofkerk/",
    "source": "Uit Delft",
-   "reason": "церковное, обычное",
+   "reason": "церковное мероприятие",
    "date": "2026-11-25"
   },
   {
@@ -140,81 +120,148 @@
    "title": "IDO + Taalhuis",
    "url": "https://uitdelft.com/event/ido-taalhuis-2/",
    "source": "Uit Delft",
-   "reason": "рутина, консультация",
+   "reason": "рутинная консультация",
    "date": "2026-11-25"
   },
   {
    "title": "Informatiepunt Digitale Overheid (IDO)",
    "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-3/",
    "source": "Uit Delft",
-   "reason": "рутина, консультация",
+   "reason": "рутинная консультация",
    "date": "2026-11-25"
   },
   {
    "title": "Adem en Ontspanning",
    "url": "https://uitdelft.com/event/adem-en-ontspanning/",
    "source": "Uit Delft",
-   "reason": "регулярное занятие студии",
+   "reason": "рутина, студия",
    "date": "2026-11-27"
   },
   {
    "title": "Informatiepunt Digitale Overheid (IDO)",
    "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-4/",
    "source": "Uit Delft",
-   "reason": "рутина, консультация",
+   "reason": "рутинная консультация",
+   "date": "2026-11-27"
+  },
+  {
+   "title": "Let Techno Unite – Vinyls & Codes",
+   "url": "https://uitdelft.com/event/let-techno-unite-vinyls-codes/",
+   "source": "Uit Delft",
+   "reason": "не в Делфте (Beesd)",
    "date": "2026-11-27"
   },
   {
    "title": "Pubquiz Cultuurlab",
    "url": "https://uitdelft.com/event/pubquiz-cultuurlab/",
    "source": "Uit Delft",
-   "reason": "паб-квиз в баре",
+   "reason": "паб-квиз, рутина",
    "date": "2026-11-27"
   },
   {
    "title": "Techno Koffie Presents: Game Over",
    "url": "https://uitdelft.com/event/techno-koffie-presents-game-over/",
    "source": "Uit Delft",
-   "reason": "DJ-вечеринка",
+   "reason": "DJ-вечер",
    "date": "2026-11-27"
+  },
+  {
+   "title": "Gratis kinderkleding",
+   "url": "https://www.delftopzondag.nl/agenda/2026/11/28/gratis-kinderkleding-111666",
+   "source": "Delft op Zondag",
+   "reason": "детское",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Kinto speelt Sinterklaas en de pinnige Piet",
+   "url": "https://www.delftopzondag.nl/agenda/2026/11/28/kinto-speelt-sinterklaas-en-de-pinnige-piet-111476",
+   "source": "Delft op Zondag",
+   "reason": "детское",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Robots programmeren in Minecraft",
+   "url": "https://www.delftopzondag.nl/agenda/2026/11/28/robots-programmeren-in-minecraft-111665",
+   "source": "Delft op Zondag",
+   "reason": "детское",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Dutch Prog Night VII- Hurryland + Artemis + Anatidaephobia",
+   "url": "https://uitdelft.com/event/dutch-prog-night-vii-hurryland-artemis-anatidaephobia/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "OHM Herfst Festival",
+   "url": "https://uitdelft.com/event/ohm-herfst-festival/",
+   "source": "Uit Delft",
+   "reason": "дубликат",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Tennessee Bob",
+   "url": "https://uitdelft.com/event/tennessee-bob/",
+   "source": "Uit Delft",
+   "reason": "не в Делфте",
+   "date": "2026-11-28"
   }
  ],
  "events": [
   {
-   "title": "SKY Happiness Retreat: дыхание и медитация",
-   "when": "24–26 нояб., 18:30",
-   "where": "",
-   "price": "€95",
-   "summary": "Трёхвечерний ретрит с дыхательными техниками и медитацией.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2479020218/sky-happiness-retreat",
-   "date": "2026-11-24"
-  },
-  {
-   "title": "Современные иконы: лекция и творческий мастер-класс",
-   "when": "вт 24 нояб., 19:00",
-   "where": "",
-   "price": "€14,50",
-   "summary": "Лекция о том, как современные художники работают с вековыми традициями, и мастер-класс по созданию собственной иконы.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3337735920/lezing-workshop-moderne-iconografie",
-   "date": "2026-11-24"
-  },
-  {
-   "title": "De Comedy Club: стендап-вечер с Alina Sharipova, Diederik Zuurmond, Stephen Bell и др.",
-   "when": "вт 24 нояб., 20:30",
+   "title": "Открытие Orange The World Delft",
+   "when": "ср 25 нояб, 17:45",
    "where": "Theater de Veste",
-   "price": "€22,50 (билеты распроданы)",
-   "summary": "Стендап-вечер с ведущей Alina Sharipova и комиками Diederik Zuurmond, Stephen Bell, Finn Visser и Vincent Geers.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2757728491/diverse-comedians-de-comedy-club",
-   "date": "2026-11-24"
+   "price": "",
+   "summary": "Открытие кампании против насилия в отношении женщин с участием городских партнёров.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2725503533/diverse-partners-opening-orange-the-world-delft",
+   "date": "2026-11-25"
   },
   {
-   "title": "Terug naar Toen: закрытие сезона",
-   "when": "пт 27 нояб., 20:00",
-   "where": "Steck",
+   "title": "Girls in Woods — I am Andrew",
+   "when": "ср 25 нояб, 20:15",
+   "where": "Theater de Veste",
+   "price": "€22,50",
+   "summary": "Театральный спектакль в Theater de Veste, около 75 минут.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/976948552/girls-in-woods-i-am-andrew",
+   "date": "2026-11-25"
+  },
+  {
+   "title": "Sint in de Stad: приезд Синтерклааса",
+   "when": "сб 28 нояб",
+   "where": "Diverse locaties",
    "price": "",
-   "summary": "Вечер-закрытие в Steck Delft; подробности во входных данных не указаны.",
-   "url": "https://uitdelft.com/event/terug-naar-toen/",
-   "date": "2026-11-27"
+   "summary": "Традиционный въезд Синтерклааса в город, мероприятия в разных местах.",
+   "url": "https://uitdelft.com/event/sint-in-de-stad/",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Delft Zouk Night с воркшопом Bojana & Lucas",
+   "when": "сб 28 нояб",
+   "where": "Dansschool Wesseling",
+   "price": "",
+   "summary": "Танцевальный вечер зука с воркшопом.",
+   "url": "https://uitdelft.com/event/28-11-delft-zouk-night-met-workshop-bojana-lucas/",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "OHM Festival",
+   "when": "сб 28 нояб, 14:00–23:00",
+   "where": "Lijm & Cultuur",
+   "price": "",
+   "summary": "Осенний фестиваль в Lijm & Cultuur на целый день.",
+   "url": "https://uitdelft.com/event/ohm-festival/",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Dutch Prog Night VII: Artemis, Hurryland",
+   "when": "сб 28 нояб, 20:00",
+   "where": "Cultuurlab",
+   "price": "",
+   "summary": "Вечер прогрессив-рока с группами Artemis, Hurryland и другими.",
+   "url": "https://uitdelft.com/event/artemis-hurryland-t-b-a-dutch-prog-night-vii/",
+   "date": "2026-11-28"
   }
  ]
 }
