@@ -1,27 +1,34 @@
 {
  "version": 1,
- "date": "2026-11-27",
- "title": "Делфт · пятница, 27 ноября",
- "published": "2026-11-27T07:30:47.090275+01:00",
+ "date": "2026-11-28",
+ "title": "Делфт · суббота, 28 ноября",
+ "published": "2026-11-28T07:30:41.288834+01:00",
  "news": [
   {
-   "title": "AV-Delft: скидка на медстраховку для малоимущих сохранится в 2027 году",
-   "summary": "Гемеенте и в 2027 году поддержит делфтцев с низким доходом и высокими расходами на лечение: скидка на ежемесячный взнос и на расширенный пакет через AV-Delft.",
-   "url": "https://www.delft.nl/av-delft-korting-op-uw-zorgverzekering",
-   "source": "Gemeente Delft",
+   "title": "Пожар в доме на Sumatrastraat в Vrijenban: эвакуированы два соседних дома",
+   "summary": "27 ноября около 14:00 в спальне загорелся дом, много дыма; никого не было дома, пострадавших нет. Два соседних дома эвакуировали. В следующем году Stedelink планирует снести 97 домов на этой улице.",
+   "url": "https://www.omroepdelft.nl/delft/vrijenban/woningbrand-aan-sumatrastraat-in-vrijenban/",
+   "source": "Omroep Delft",
    "level": "must"
   },
   {
-   "title": "30 ноября окна в гемеенте закроются с 15:00",
-   "summary": "В понедельник 30 ноября все окна в зале гемеентехауса закрываются в 15:00. Inloopbalie, как всегда, закрывается в 14:00.",
-   "url": "https://www.delft.nl/balies-gemeente-dicht-0",
-   "source": "Gemeente Delft",
+   "title": "Пожар подземного мусорного контейнера на Caspar Fagelstraat в Hof van Delft",
+   "summary": "27 ноября пожарные потушили горевший контейнер для остаточных отходов, затопив его водой. Слышен был хлопок; причина пока неизвестна.",
+   "url": "https://www.omroepdelft.nl/delft/hof-van-delft/brandweer-blust-containerbrand-hof-van-delft/",
+   "source": "Omroep Delft",
    "level": "must"
   },
   {
-   "title": "В Делфте за чертой бедности живёт 3,7% жителей — больше среднего по стране",
-   "summary": "По предварительным данным CBS, в 2025 году за чертой бедности жили 4072 делфтца при среднем по стране 3%. Порог для одиноких — €1640 в месяц.",
-   "url": "https://www.omroepdelft.nl/delft/37-procent-van-inwoners-delft-leeft-onder-armoedegrens-hoger-dan-landelijk-gemiddelde/",
+   "title": "Госсекретарь Palmen приехала в Делфт обсудить урегулирование toeslagenaffaire",
+   "summary": "Более 500 делфтцев были несправедливо обвинены в мошенничестве. Все пострадавшие уже получили компенсацию, но некоторым положена доплата; wethouder Oppatja поможет сделать сайт MijnHerstel известнее в Делфте.",
+   "url": "https://www.omroepdelft.nl/politiek/staatssecretaris-die-toeslagenaffaire-moet-afhandelen-bezoekt-delft-jouw-verhaal-telt/",
+   "source": "Omroep Delft",
+   "level": "interesting"
+  },
+  {
+   "title": "В Делфте перестраивают пути под трамваи TINA, но в Гааге их сняли с линий из-за неполадок",
+   "summary": "HTM временно убрала новые трамваи TINA из расписания: проблемы с тормозами, дверями и ПО. В Делфте пути и остановки уже переделывают, трамваи должны начать ходить в 2027 году.",
+   "url": "https://www.omroepdelft.nl/verkeer/delft-wordt-verbouwd-voor-nieuwe-tina-trams-maar-die-staan-stil-door-storingen/",
    "source": "Omroep Delft",
    "level": "interesting"
   }
@@ -29,160 +36,61 @@
  "maybe": [],
  "skipped": [
   {
-   "title": "Открытый студенческий ужин в Delftsche Studenten Bond",
-   "original": "Dineren voor een prikkie bij vereniging Delftsche Studenten Bond: ‘Iedereen mag aanschuiven’",
-   "url": "https://www.omroepdelft.nl/delft/binnenstad/dineren-voor-een-prikkie-bij-vereniging-delftsche-studenten-bond-iedereen-mag-aanschuiven/",
-   "source": "Omroep Delft",
-   "reason": "очерк о студенческой ассоциации",
-   "flagged": false,
-   "category": "feature"
-  },
-  {
-   "title": "Фермер требует деньги с режиссёра Херцога за крыс для «Носферату»",
-   "original": "Boer zegt nog geld tegoed te hebben van wereldberoemde regisseur na ruzie: ‘Leek wel een overval’",
-   "url": "https://www.omroepdelft.nl/regio/boer-zegt-nog-geld-tegoed-te-hebben-van-wereldberoemde-regisseur-na-ruzie-leek-wel-een-overval/",
-   "source": "Omroep Delft",
-   "reason": "история о человеке, не городская новость",
-   "flagged": false,
-   "category": "feature"
-  },
-  {
-   "title": "Член делфтского совета Van Koppen покинула FvD после скандала",
-   "original": "Delftse FvD’er Kayleigh van Koppen verlaat partij na ophef om neonazistische banden",
-   "url": "https://www.omroepdelft.nl/delft/delftse-fvder-kayleigh-van-koppen-verlaat-partij-na-ophef-om-neonazistische-banden/",
-   "source": "Omroep Delft",
-   "reason": "партийная политика",
-   "flagged": false,
-   "category": "politics"
-  },
-  {
-   "title": "Интервью о совести сотрудников TU и израильском сотрудничестве",
-   "original": "Interview met oud-promovendus roept vraag op hoe TU moet omgaan met gewetensbezwaren",
-   "url": "https://delta.tudelft.nl/article/interview-met-oud-promovendus-roept-vraag-op-hoe-tu-moet-omgaan-met-gewetensbezwaren",
+   "title": "Прокуратура требует 80 часов работ для полицейского, чья собака укусила студента",
+   "original": "OM eist 80 uur werkstraf voor agent die politiehond een student liet bijten",
+   "url": "https://delta.tudelft.nl/article/om-eist-80-uur-werkstraf-voor-agent-die-politiehond-een-student-liet-bijten",
    "source": "Delta (TU Delft)",
-   "reason": "внутренняя жизнь TU, интервью",
+   "reason": "не в Делфте",
    "flagged": false,
-   "category": "tu_internal"
+   "category": "not_delft"
   },
   {
-   "title": "Студенты TU выиграли главный приз конкурса iGEM",
-   "original": "TU-studenten winnen hoofdprijs in iGEM-competitie voor synthetische biologie",
-   "url": "https://delta.tudelft.nl/article/tu-studenten-winnen-hoofdprijs-in-igem-competitie-voor-synthetische-biologie",
+   "title": "Green Friday в магазине My Little Green Dress на Nieuwstraat",
+   "original": "Geen Black Friday, maar Green Friday: Delftse ondernemer strijdt tegen fast fashion",
+   "url": "https://www.omroepdelft.nl/delft/binnenstad/geen-black-friday-maar-green-friday-delftse-ondernemer-strijdt-tegen-fast-fashion/",
+   "source": "Omroep Delft",
+   "reason": "реклама магазина",
+   "flagged": false,
+   "category": "pr"
+  },
+  {
+   "title": "Leiden Ranking и open access в TU Delft",
+   "original": "Geeft de Leiden Ranking een vertekend beeld van open access aan de TU?",
+   "url": "https://delta.tudelft.nl/article/geeft-de-leiden-ranking-een-vertekend-beeld-van-open-access-aan-de-tu",
    "source": "Delta (TU Delft)",
    "reason": "внутренняя жизнь TU Delft",
    "flagged": false,
    "category": "tu_internal"
   },
   {
-   "title": "Помощь с DigiD в библиотеке DOK",
-   "original": "Hulp bij digitale zaken",
-   "url": "https://www.delft.nl/hulp-bij-digitale-zaken",
-   "source": "Gemeente Delft",
-   "reason": "рутинная консультация",
-   "flagged": false,
-   "category": "other"
-  },
-  {
-   "title": "Lichtjesavond — начало рождественского сезона в Делфте",
-   "original": "Winterse lichtjes in de stad",
-   "url": "https://www.delft.nl/winterse-lichtjes-de-stad",
-   "source": "Gemeente Delft",
-   "reason": "анонс мероприятия не в ближайшие дни",
-   "flagged": false,
-   "announce": true
-  },
-  {
-   "title": "Двадцатилетний осуждён за вооружённый грабёж телефонов",
-   "original": "Twintiger veroordeeld voor gewelddadige beroving van twee telefoons in Delft",
-   "url": "https://www.omroepdelft.nl/delft/twintiger-veroordeeld-voor-gewelddadige-beroving-van-twee-telefoons-in-delft/",
-   "source": "Omroep Delft",
-   "reason": "судебная хроника, не влияет на быт",
-   "flagged": false,
-   "category": "other"
-  },
-  {
-   "title": "Делфт и Роттердам подписали соглашение Campus Rotterdam",
-   "original": "Onderwijsinstellingen tekenen convenant voor meer samenwerking tussen Delft en Rotterdam",
-   "url": "https://delta.tudelft.nl/article/onderwijsinstellingen-tekenen-convenant-voor-meer-samenwerking-tussen-delft-en-rotterdam",
+   "title": "Фабрика над Valkenburgse Meer угрожает windsurf-клубу Plankenkoorts",
+   "original": "Dieetpillenfabriek zet Delfts windsurfplezier op de tocht",
+   "url": "https://delta.tudelft.nl/article/dieetpillenfabriek-zet-delfts-windsurfplezier-op-de-tocht",
    "source": "Delta (TU Delft)",
-   "reason": "дубликат уже опубликованного",
+   "reason": "не в Делфте, клуб",
    "flagged": false,
-   "category": "already_published"
+   "category": "not_delft"
   },
   {
-   "title": "Колонка Grand Theft Academia",
-   "original": "Grand Theft Academia",
-   "url": "https://delta.tudelft.nl/article/grand-theft-academia-2",
+   "title": "Колонка «Waag te vragen»",
+   "original": "Waag te vragen",
+   "url": "https://delta.tudelft.nl/article/waag-te-vragen",
    "source": "Delta (TU Delft)",
    "reason": "колонка",
    "flagged": false,
    "category": "opinion"
+  },
+  {
+   "title": "Открытие Pop-up Art Delft в Uit De Kunst",
+   "original": "Открытие Pop-up Art Delft в Uit De Kunst",
+   "url": "https://www.delftopzondag.nl/nieuws/algemeen/111818/opening-pop-up-art-delft-in-uit-de-kunst",
+   "source": "",
+   "reason": "анонс: не хватило места",
+   "flagged": false,
+   "announce": true
   }
  ],
  "skipped_events": [
-  {
-   "title": "Black Friday Massage bij MVG Sport Delft",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2717170232/black-friyay-bij-mvg-sport-een-ontspannen-alternatief",
-   "source": "In Delft",
-   "reason": "реклама массажа",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Rustig het Weekend In – Yoga en Ontspanning",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/650354627/adem-en-ontspanning",
-   "source": "In Delft",
-   "reason": "регулярное занятие йогой",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Adem en Ontspanning",
-   "url": "https://uitdelft.com/event/adem-en-ontspanning/",
-   "source": "Uit Delft",
-   "reason": "рутинное занятие",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Informatiepunt Digitale Overheid (IDO)",
-   "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-4/",
-   "source": "Uit Delft",
-   "reason": "регулярная консультация",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Let Techno Unite – Vinyls & Codes",
-   "url": "https://uitdelft.com/event/let-techno-unite-vinyls-codes/",
-   "source": "Uit Delft",
-   "reason": "не в Делфте (Beesd)",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Pop-up Leesclub inclusief Lunch: Het Diner",
-   "url": "https://uitdelft.com/event/pop-up-leesclub-inclusief-lunch-het-diner/",
-   "source": "Uit Delft",
-   "reason": "небольшой кружок",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Taalhuis",
-   "url": "https://uitdelft.com/event/taalhuis-2/",
-   "source": "Uit Delft",
-   "reason": "регулярная консультация",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Techno Koffie Presents: Game Over",
-   "url": "https://uitdelft.com/event/techno-koffie-presents-game-over/",
-   "source": "Uit Delft",
-   "reason": "DJ-вечер в молодёжном клубе",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Voorstelling Zienderogen: Hoe is het om opeens een beperking te krijgen",
-   "url": "https://uitdelft.com/event/voorstelling-zienderogen-hoe-is-het-om-opeens-een-beperking-te-krijgen/",
-   "source": "Uit Delft",
-   "reason": "небольшая постановка в библиотеке",
-   "date": "2026-11-27"
-  },
   {
    "title": "Gratis kinderkleding",
    "url": "https://www.delftopzondag.nl/agenda/2026/11/28/gratis-kinderkleding-111666",
@@ -205,6 +113,69 @@
    "date": "2026-11-28"
   },
   {
+   "title": "Workshop Oesters & Delfts Blauw in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1084995592/workshop-delfts-blauwe-oesters-maken-1",
+   "source": "In Delft",
+   "reason": "рядовой платный мастер-класс",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Workshop Glasschilderen – Lood en Spelen Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1263638517/workshop-glasschilderen-in-delft-glass-painting-workshop",
+   "source": "In Delft",
+   "reason": "рядовой платный мастер-класс",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Keramiek Schilderen bij GLAZE ATELJEE",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1553018502/glaze-ateljee",
+   "source": "In Delft",
+   "reason": "рядовой платный мастер-класс",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Workshop Glas in Lood – Maak je Eigen Kunstwerk",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2008841541/workshop-glas-in-lood-12",
+   "source": "In Delft",
+   "reason": "рядовой платный мастер-класс",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Techniekstudio TU Delft Science Centre",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2411119769/techniekstudio-delft-programmeren-van-robots",
+   "source": "In Delft",
+   "reason": "детское",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Tennessee Bob",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2924163325/tennessee-bob",
+   "source": "In Delft",
+   "reason": "дубликат",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Workshop Gedroogde Bloemen en Planten in Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3227410654/creatief-met-gedroogde-planten-en-bloemen",
+   "source": "In Delft",
+   "reason": "рядовой платный мастер-класс",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Workshop Papieren Bloemen – Kerstster Maken Delft",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/4081963078/poinsettia-van-crepepapier",
+   "source": "In Delft",
+   "reason": "рядовой платный мастер-класс",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Techniekstudio: Denken als Robots",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/785751308/techniekstudio-denken-als-robots-1",
+   "source": "In Delft",
+   "reason": "детское",
+   "date": "2026-11-28"
+  },
+  {
    "title": "CoderDojo in Open November",
    "url": "https://uitdelft.com/event/coderdojo-in-open-november/",
    "source": "Uit Delft",
@@ -222,14 +193,7 @@
    "title": "Punk Bandnight",
    "url": "https://uitdelft.com/event/punk-bandnight/",
    "source": "Uit Delft",
-   "reason": "бар, местные группы",
-   "date": "2026-11-28"
-  },
-  {
-   "title": "Tennessee Bob",
-   "url": "https://uitdelft.com/event/tennessee-bob/",
-   "source": "Uit Delft",
-   "reason": "дубликат",
+   "reason": "местные группы, студенческий клуб",
    "date": "2026-11-28"
   },
   {
@@ -282,85 +246,134 @@
    "date": "2026-11-30"
   },
   {
-   "title": "Bebop Unplugged: Ron Walter & Wouter Kiers Trio",
-   "url": "https://uitdelft.com/event/bebop-unplugged-ron-walter-wouter-kiers-trio/",
+   "title": "Birra Moretti Session | hosted by Groover",
+   "url": "https://uitdelft.com/event/birra-moretti-session-hosted-by-groover-3/",
    "source": "Uit Delft",
-   "reason": "не хватило места в выпуске",
-   "date": "2026-11-29"
+   "reason": "бар, сессия местных групп",
+   "date": "2026-12-01"
+  },
+  {
+   "title": "Creatief Atelier",
+   "url": "https://uitdelft.com/event/creatief-atelier/",
+   "source": "Uit Delft",
+   "reason": "регулярный кружок",
+   "date": "2026-12-01"
+  },
+  {
+   "title": "Digitaal Oefenen",
+   "url": "https://uitdelft.com/event/digitaal-oefenen/",
+   "source": "Uit Delft",
+   "reason": "регулярные занятия",
+   "date": "2026-12-01"
+  },
+  {
+   "title": "IDO + Taalhuis",
+   "url": "https://uitdelft.com/event/ido-taalhuis/",
+   "source": "Uit Delft",
+   "reason": "регулярная консультация",
+   "date": "2026-12-01"
+  },
+  {
+   "title": "Informatiepunt Digitale Overheid (IDO)",
+   "url": "https://uitdelft.com/event/informatiepunt-digitale-overheid-ido-2/",
+   "source": "Uit Delft",
+   "reason": "регулярная консультация",
+   "date": "2026-12-01"
+  },
+  {
+   "title": "Jamsession @ Bebop",
+   "url": "https://uitdelft.com/event/jamsession-bebop/",
+   "source": "Uit Delft",
+   "reason": "джем-сессия в баре",
+   "date": "2026-12-01"
+  },
+  {
+   "title": "Japanese Home Cooking Workshop in Delft – December 1",
+   "url": "https://uitdelft.com/event/japanese-home-cooking-workshop-in-delft-december-1/",
+   "source": "Uit Delft",
+   "reason": "рядовой мастер-класс",
+   "date": "2026-12-01"
+  },
+  {
+   "title": "Peutervoorlezen+",
+   "url": "https://uitdelft.com/event/peutervoorlezen-2/",
+   "source": "Uit Delft",
+   "reason": "детское",
+   "date": "2026-12-01"
   }
  ],
  "events": [
   {
-   "title": "For Life, I Would Do It Again — Kevin & Masoud",
-   "when": "пт 27 нояб, 17:30",
-   "where": "",
+   "title": "Демонстрация живописи старых мастеров с Anar Rasulov",
+   "when": "до 1 февр.",
+   "where": "Vermeer Centrum Delft",
+   "price": "",
+   "summary": "Художник показывает, как писали старые мастера.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/934054046/schilderen-als-vermeer-anar-rasulov",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "Liefs uit Delft: делфтские истории в музыке",
+   "when": "сб 28 нояб, 13:00",
+   "where": "Delft",
    "price": "бесплатно",
-   "summary": "Рассказ о реальной истории побега, свободы, дружбы и стойкости.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2396311002/voorstelling-for-life-i-would-do-it-again",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Cinema Delfia: «Вудсток» (1970) со вступлением Paul van Berkel",
-   "when": "пт 27 нояб, 20:00",
-   "where": "Hal015",
-   "price": "",
-   "summary": "Спецпоказ 3,5-часового фильма о легендарном фестивале со вступительным словом; бар открыт с 19:30.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/490975594/cinema-delfia-woodstock",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "Wat bezielt jou? — Jan Vayne и Huibrecht Boluijt",
-   "when": "пт 27 нояб, 20:00",
-   "where": "Op Hodenpijl",
-   "price": "€30",
-   "summary": "Вечер с фортепианными импровизациями, психологией и историями.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/12275155/wat-bezielt-jou-een-muzikale-reis-door-de-seizoenen-van-het-leven",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "A Fine Mess — Jakop Ahlbom Company & ISH Dance Collective",
-   "when": "пт 27 – сб 28 нояб, 20:15",
-   "where": "Theater de Veste",
-   "price": "",
-   "summary": "Танцевально-театральный спектакль Jakop Ahlbom Company и ISH Dance Collective, последние показы.",
-   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1403875499/jakop-ahlbom-company-ish-dance-collective-a-fine-mess",
-   "date": "2026-11-27"
-  },
-  {
-   "title": "OHM Herfst Festival",
-   "when": "сб 28 нояб",
-   "where": "Lijm & Cultuur",
-   "price": "",
-   "summary": "Осенний фестиваль в Lijm & Cultuur; подробностей в данных нет.",
-   "url": "https://uitdelft.com/event/ohm-herfst-festival/",
+   "summary": "David Heijmans исполняет новые песни по историям из Buitenhof, Voorhof и Tanthof.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/429948050/liefs-uit-delft-1",
    "date": "2026-11-28"
   },
   {
-   "title": "Tennessee Bob & Friends",
+   "title": "Мастер-класс Kinusaiga: живопись тканью",
+   "when": "сб 28 нояб, 14:00",
+   "where": "Delft",
+   "price": "€47,50",
+   "summary": "Японское искусство Kinusaiga: картина из ткани по мотивам «Девушки с жемчужной серёжкой» Вермеера.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/1041941685/workshop-kinusaiga-3",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Синтерклаас-песни: «O kom er eens zingen!»",
+   "when": "сб 28 нояб, 16:00",
+   "where": "schuilkerk, Bagijnhof",
+   "price": "бесплатно",
+   "summary": "Совместное пение песен Синтерклааса для детей и взрослых в уютной церкви.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/3091247693/sinterklaas-inloopkoor",
+   "date": "2026-11-28"
+  },
+  {
+   "title": "Tennessee Bob: country и Americana",
    "when": "сб 28 нояб, 20:30",
    "where": "Hal015",
    "price": "€0–17,50",
-   "summary": "Вечерний концерт в Hal015.",
-   "url": "https://uitdelft.com/event/tennessee-bob-friends/",
+   "summary": "Делфтская группа играет country, folk, blues и gospel; фронтмен Bob Reinders.",
+   "url": "https://uitdelft.com/event/tennessee-bob/",
    "date": "2026-11-28"
   },
   {
-   "title": "Bach Cantatevesper в Oude Kerk",
-   "when": "вс 29 нояб, 19:00",
-   "where": "Oude Kerk",
-   "price": "бесплатно",
-   "summary": "Вечерняя служба с кантатой Баха в Oude Kerk.",
-   "url": "https://uitdelft.com/event/bach-cantatevesper-oude-kerk/",
+   "title": "Bebop Unplugged: блюзовый концерт Ron Walter & Wouter Kiers Trio",
+   "when": "вс 29 нояб, 15:30",
+   "where": "Jazzcafé Bebop",
+   "price": "",
+   "summary": "Воскресный блюзовый концерт трио в джаз-кафе.",
+   "url": "https://uitdelft.com/event/bebop-unplugged-ron-walter-wouter-kiers-trio/",
    "date": "2026-11-29"
   },
   {
-   "title": "Harrekidee — Plien и Bianca",
-   "when": "пн 30 нояб, 20:15",
+   "title": "Delft Verlicht: поиск пропавших огоньков",
+   "when": "1 дек – 3 янв, ежедневно 10:00–16:30",
+   "where": "центр Делфта",
+   "price": "",
+   "summary": "Квест по центру города в рамках Delft Verlicht: найти девять фиолетовых огоньков, собрать стикеры и выпить горячего шоколада.",
+   "url": "https://www.indelft.nl/nl/uitagenda/uitagenda-delft/2377395682/lichtjesroute-binnenstad-delft",
+   "date": "2026-12-01"
+  },
+  {
+   "title": "Harrekidee — Plien en Bianca",
+   "when": "вт 1 дек, 20:00",
    "where": "Theater de Veste",
    "price": "€33",
-   "summary": "Вечернее шоу Plien и Bianca в Theater de Veste.",
-   "url": "https://uitdelft.com/event/harrekidee-plien-en-bianca/",
-   "date": "2026-11-30"
+   "summary": "Вечерний спектакль в Theater de Veste.",
+   "url": "https://uitdelft.com/event/harrekidee-plien-en-bianca-2/",
+   "date": "2026-12-01"
   }
  ]
 }
